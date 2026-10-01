@@ -162,7 +162,7 @@ node $S/import.mjs <work> --festival <slug>
 
 **Check in:** have them reload the festival's page, show the top of the ranked list, and ask what looks off. Adjust `lanes.json` and rerun these three. Offer to delete `<work>/spotify` when they're happy; it holds their song list.
 
-**On their phone, if they want it.** `bb connect status` shows whether remote access is on. If it isn't, walk them through it: in bb, open **Settings → Remote access** and follow it to sign in and pick a handle. Then they open `https://<handle>.getbb.app` on their phone and pick the festival in the sidebar. bb has to stay open on the computer.
+**Offer it on their phone.** Once the check-in is done, ask whether they want the planner on their phone. If they do, run `bb connect status` to see whether remote access is on. If it isn't, walk them through it: in bb, open **Settings → Remote access** and follow it to sign in and pick a handle. Then they open `https://<handle>.getbb.app` on their phone and pick the festival in the sidebar. bb has to stay open on the computer.
 
 ## Later
 
