@@ -114,21 +114,40 @@ describe("template scripts", () => {
     }
   });
 
-  it("new-festival and brand give each festival its own sidebar entry", async () => {
+  it("new-festival and brand give each festival its own sidebar entry, and leave out one that won't load", async () => {
     const dir = await mkdtemp(join(tmpdir(), "festival-brand-"));
     try {
-      await run("cp", ["-r", "festivals", "package.json", dir]);
+      await run("cp", ["-r", "festivals", "examples", "package.json", dir]);
       expect((await run("node", [`${scripts}/new-festival.mjs`, "Bad Name", dir]).catch((e) => e)).code).toBe(1);
+      await run("node", [`${scripts}/new-festival.mjs`, "acl-2026", dir]);
       await run("node", [`${scripts}/new-festival.mjs`, "night-garden-2027", dir]);
-      const file = join(dir, "festivals", "night-garden-2027", "lineup.json");
-      const lineup = JSON.parse(await readFile(file, "utf8"));
+      const lineup = JSON.parse(await readFile(join(dir, "festivals", "night-garden-2027", "lineup.json"), "utf8"));
       expect(lineup.festival).toMatchObject({ name: "Night Garden", year: 2027 });
-      await run("node", [`${scripts}/brand.mjs`, dir]);
+      const unbuilt = await run("node", [`${scripts}/brand.mjs`, dir]).catch((e) => e);
+      expect(unbuilt.code).toBe(1);
+      expect(unbuilt.stderr).toContain("night-garden-2027: lineup.json");
       const index = JSON.parse(await readFile(join(dir, "festivals", "index.json"), "utf8"));
-      expect(index.map((f: { slug: string }) => f.slug)).toEqual([...loadFestivals().map((f) => f.slug), "night-garden-2027"].sort());
+      expect(index.map((f: { slug: string }) => f.slug)).toEqual([...loadFestivals().map((f) => f.slug), "acl-2026"].sort());
       const pkg = JSON.parse(await readFile(join(dir, "package.json"), "utf8"));
       expect(pkg.bb.name).toBe("Festival Planner");
       expect(pkg.bb.branding.experimental_icons.festival).toBe("./assets/icon.svg");
+    } finally {
+      await rm(dir, { recursive: true, force: true });
+    }
+  });
+
+  it("a festival folder that won't load is skipped and the rest still serve", async () => {
+    const dir = await mkdtemp(join(tmpdir(), "festival-skip-"));
+    try {
+      await run("cp", ["-r", `examples/${first.slug}`, join(dir, "good")]);
+      await run("cp", ["-r", `examples/${first.slug}`, join(dir, "bad-theme")]);
+      await writeFile(join(dir, "bad-theme", "theme.json"), JSON.stringify({ colours: {} }));
+      await run("cp", ["-r", `examples/${first.slug}`, join(dir, "bad-json")]);
+      await writeFile(join(dir, "bad-json", "lineup.json"), "{");
+      const skipped: string[] = [];
+      expect(loadFestivals((message) => skipped.push(message), dir).map((f) => f.slug)).toEqual(["good"]);
+      expect(skipped.join("\n")).toContain("festivals/bad-theme: bad-theme/theme.json doesn't match");
+      expect(skipped.join("\n")).toContain("festivals/bad-json: bad-json/lineup.json is not valid JSON");
     } finally {
       await rm(dir, { recursive: true, force: true });
     }

@@ -146,10 +146,16 @@ const FESTIVALS = join(ROOT, "festivals");
 function readJson<T>(dir: string, file: string, schema: z.ZodType<T>, fallback?: T): T {
   const path = join(dir, file);
   if (fallback !== undefined && !existsSync(path)) return fallback;
-  const parsed = schema.safeParse(JSON.parse(readFileSync(path, "utf8")));
+  let json: unknown;
+  try {
+    json = JSON.parse(readFileSync(path, "utf8"));
+  } catch {
+    throw new Error(`${basename(dir)}/${file} is not valid JSON`);
+  }
+  const parsed = schema.safeParse(json);
   if (!parsed.success) {
     const issues = parsed.error.issues.slice(0, 8).map((issue) => `  ${issue.path.join(".")}: ${issue.message}`);
-    throw new Error(`${dir.slice(ROOT.length + 1)}/${file} doesn't match the expected shape:\n${issues.join("\n")}`);
+    throw new Error(`${basename(dir)}/${file} doesn't match the expected shape:\n${issues.join("\n")}`);
   }
   return parsed.data;
 }
@@ -167,29 +173,38 @@ interface Festival {
   assets: string[];
 }
 
-// every festivals/<slug>/ folder with a lineup.json is a festival with its own page and taste
-export function loadFestivals(): Festival[] {
-  if (!existsSync(FESTIVALS)) return [];
-  return readdirSync(FESTIVALS)
-    .filter((slug) => SLUG.test(slug) && statSync(join(FESTIVALS, slug)).isDirectory() && existsSync(join(FESTIVALS, slug, "lineup.json")))
+// every festivals/<slug>/ folder with a lineup.json is a festival with its own page and taste;
+// a folder that doesn't parse is skipped and reported so the others keep working
+export function loadFestivals(skip: (message: string) => void = () => {}, root = FESTIVALS): Festival[] {
+  if (!existsSync(root)) return [];
+  return readdirSync(root)
+    .filter((slug) => SLUG.test(slug) && statSync(join(root, slug)).isDirectory() && existsSync(join(root, slug, "lineup.json")))
     .sort()
-    .map((slug) => {
-      const dir = join(FESTIVALS, slug);
-      const assetDir = join(dir, "assets");
-      return {
-        slug,
-        dir,
-        lineup: readJson(dir, "lineup.json", lineupSchema),
-        theme: readJson(dir, "theme.json", themeSchema, {}),
-        sample: {
-          taste: readJson(dir, "sample-taste.json", tasteSchema, emptyTaste),
-          previews: readJson<Previews>(dir, "sample-previews.json", previewsSchema, {}),
-        },
-        artists: readJson(dir, "artists.json", artistsSchema, {}),
-        css: existsSync(join(dir, "style.css")),
-        assets: existsSync(assetDir) ? readdirSync(assetDir).filter((file) => /^[\w.-]+$/.test(file)) : [],
-      };
+    .flatMap((slug): Festival[] => {
+      try {
+        return [readFestival(slug, join(root, slug))];
+      } catch (error) {
+        skip(`skipped festivals/${slug}: ${error instanceof Error ? error.message : String(error)}`);
+        return [];
+      }
     });
+}
+
+function readFestival(slug: string, dir: string): Festival {
+  const assetDir = join(dir, "assets");
+  return {
+    slug,
+    dir,
+    lineup: readJson(dir, "lineup.json", lineupSchema),
+    theme: readJson(dir, "theme.json", themeSchema, {}),
+    sample: {
+      taste: readJson(dir, "sample-taste.json", tasteSchema, emptyTaste),
+      previews: readJson<Previews>(dir, "sample-previews.json", previewsSchema, {}),
+    },
+    artists: readJson(dir, "artists.json", artistsSchema, {}),
+    css: existsSync(join(dir, "style.css")),
+    assets: existsSync(assetDir) ? readdirSync(assetDir).filter((file) => /^[\w.-]+$/.test(file)) : [],
+  };
 }
 
 const PERSONAL = {
@@ -213,7 +228,11 @@ festivals/<slug>/ folders; add or edit one, run \`npm run brand\`, and reinstall
 
 export default function plugin(bb: BbPluginApi): void {
   const kv = bb.storage.kv;
-  const festivals = loadFestivals();
+  const skipped: string[] = [];
+  const festivals = loadFestivals((message) => {
+    skipped.push(message);
+    bb.log.warn(message);
+  });
   const bySlug = new Map(festivals.map((f) => [f.slug, f]));
   const pending = new Map<string, string[]>();
 
@@ -337,13 +356,13 @@ export default function plugin(bb: BbPluginApi): void {
       try {
         if (command === "list") {
           const rows = festivals.map((f) => ({ slug: f.slug, festival: `${f.lineup.festival.name} ${f.lineup.festival.year}`, dates: `${f.lineup.festival.days[0].date} – ${f.lineup.festival.days.at(-1)?.date}` }));
-          return { exitCode: 0, stdout: json ? JSON.stringify(rows) : rows.map((r) => `${r.slug}\t${r.festival}\t${r.dates}`).join("\n") };
+          return { exitCode: 0, stdout: json ? JSON.stringify(rows) : rows.map((r) => `${r.slug}\t${r.festival}\t${r.dates}`).join("\n"), stderr: skipped.join("\n") };
         }
         if (command === "status") {
           const chosen = args.includes("--festival") ? [pick(args).festival] : festivals;
           const rows = await Promise.all(chosen.map(status));
-          if (json) return { exitCode: 0, stdout: JSON.stringify(args.includes("--festival") ? rows[0] : rows) };
-          return { exitCode: 0, stdout: rows.map((row) => Object.entries(row).map(([key, value]) => `${key}\t${value}`).join("\n")).join("\n\n") };
+          if (json) return { exitCode: 0, stdout: JSON.stringify(args.includes("--festival") ? rows[0] : rows), stderr: skipped.join("\n") };
+          return { exitCode: 0, stdout: rows.map((row) => Object.entries(row).map(([key, value]) => `${key}\t${value}`).join("\n")).join("\n\n"), stderr: skipped.join("\n") };
         }
         if (command === "export") {
           const { festival, rest } = pick(args);

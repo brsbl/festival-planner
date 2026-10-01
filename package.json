@@ -1,7 +1,7 @@
 {
   "name": "bb-plugin-festival-planner",
   "version": "0.1.0",
-  "description": "Your Portola 2026 schedule, built from your Spotify likes.",
+  "description": "Your Portola 2026 schedule, ranked by what you like and play on Spotify.",
   "type": "module",
   "license": "MIT",
   "private": true,
@@ -16,7 +16,7 @@
   },
   "bb": {
     "name": "Portola 2026",
-    "description": "Your Portola 2026 schedule, built from your Spotify likes.",
+    "description": "Your Portola 2026 schedule, ranked by what you like and play on Spotify.",
     "branding": {
       "icon": "./assets/icon.svg",
       "experimental_icons": {
