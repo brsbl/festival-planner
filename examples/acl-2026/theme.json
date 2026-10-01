@@ -1,0 +1,107 @@
+{
+  "style": {
+    "shape": "flat",
+    "wordmark": "outline",
+    "photos": "mono",
+    "rules": "solid",
+    "meter": "bars",
+    "marker": "highlighter",
+    "case": "upper",
+    "catalog": "off",
+    "numbers": "off",
+    "ticker": true,
+    "alternate": false
+  },
+  "texture": false,
+  "wordmark": {
+    "case": "upper"
+  },
+  "fonts": {
+    "display": "Oswald",
+    "wordmark": "Righteous",
+    "body": "Source Sans 3",
+    "mono": "Inter",
+    "hand": "Ranchers",
+    "google": "family=Oswald:wght@400..700&family=Righteous&family=Source+Sans+3:wght@300..700&family=Inter:wght@400..700&family=Ranchers"
+  },
+  "day": {
+    "paper": "#E682B4",
+    "paper-2": "#DE72A8",
+    "paper-3": "#F3C3DC",
+    "cream": "#F0E1D2",
+    "ink": "#192819",
+    "ink-deep": "#0F190F",
+    "ink-70": "#4A2F3D",
+    "ink-50": "#77465F",
+    "ink-30": "#B95D8E",
+    "black": "#0F190F",
+    "grey": "#5A3C4C",
+    "highlighter": "#FFAF19",
+    "alert": "#F03250",
+    "spotify": "#4B6E3C",
+    "knock-bg": "#192819",
+    "knock-fg": "#F0E1D2"
+  },
+  "night": {
+    "paper": "#192819",
+    "paper-2": "#22361F",
+    "paper-3": "#2C4128",
+    "cream": "#F0E1D2",
+    "ink": "#F0E1D2",
+    "ink-deep": "#FFFFFF",
+    "ink-70": "#C9BBB0",
+    "ink-50": "#9A9488",
+    "ink-30": "#4A5A45",
+    "black": "#0B130B",
+    "grey": "#B0A79C",
+    "highlighter": "#B02E62",
+    "alert": "#F56423",
+    "spotify": "#7AB440",
+    "knock-bg": "#E682B4",
+    "knock-fg": "#192819"
+  },
+  "copy": {
+    "title": "{Name} {year} · your two weekends in Zilker",
+    "side": "",
+    "compiledFor": "set list for {name} · zilker park",
+    "sampleTaste": "sample set list · ask an agent to make it yours",
+    "noTaste": "no taste yet · ask an agent to make it yours",
+    "lightsOff": "SUNDOWN",
+    "lightsOn": "SUNUP",
+    "taste": "YOUR ACL",
+    "top": "YOUR HEADLINERS",
+    "plan": "YOUR SCHEDULE",
+    "catalog": "THE LINEUP",
+    "map": "ZILKER PARK",
+    "list": "by time",
+    "grid": "by stage",
+    "linerNotes": "WHY YOU'LL DIG IT",
+    "credits": "IF YOU LIKE",
+    "footer": "unofficial · not affiliated with ACL Fest or C3 Presents · see y'all in Zilker",
+    "live": "ON NOW",
+    "now": "NOW",
+    "sep": "✦",
+    "tiers": {
+      "heavy": {
+        "stamp": "TOP OF THE BILL",
+        "filter": "top of the bill",
+        "hint": "all over your library. stake out a spot early."
+      },
+      "deep": {
+        "stamp": "IN YOUR LANE",
+        "filter": "in your lane",
+        "hint": "you already love the folks around them."
+      },
+      "wild": {
+        "stamp": "WILD CARD",
+        "filter": "wild cards",
+        "hint": "a stretch. that's what Zilker's for."
+      },
+      "new": {
+        "stamp": "FRESH FIND",
+        "filter": "fresh finds",
+        "hint": "no data yet. wander over and find out."
+      }
+    }
+  }
+}

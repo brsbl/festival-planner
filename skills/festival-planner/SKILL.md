@@ -30,7 +30,7 @@ The template installs `festivals/portola-2026` so there's something to see. When
 node $S/new-festival.mjs <slug>          # e.g. coachella-2026; starts festivals/<slug>/
 ```
 
-`examples/` holds finished festivals (Portola, Coachella, Bonnaroo, and Outside Lands 2026). When the slug matches one, `new-festival` copies it, and you can skip to **Install**. Check its source first: if the festival hasn't happened yet, compare with the official schedule for late changes. Otherwise read one or two examples before you start; they show what a finished lineup, theme, and `style.css` look like.
+`examples/` holds finished festivals (Austin City Limits, Portola, Coachella, Bonnaroo, and Outside Lands 2026). When the slug matches one, `new-festival` copies it, and you can skip to **Install**. Check its source first: if the festival hasn't happened yet, compare with the official schedule for late changes. Otherwise read one or two examples before you start; they show what a finished lineup, theme, and `style.css` look like.
 
 ### Lineup
 

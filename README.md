@@ -7,7 +7,7 @@ Your festival schedule, planned from your Spotify. Paste one prompt into [bb](ht
 
 You get a plan for each day with walking times between stages, a choice of order where your favourites overlap, song previews, and a now-and-next bar that keeps working offline on the grounds.
 
-![Four festivals set up from this template: Portola, Coachella, Bonnaroo, and Outside Lands 2026](docs/social-preview.jpg)
+![Five festivals set up from this template: Austin City Limits, Coachella, Bonnaroo, Outside Lands, and Portola 2026](docs/social-preview.jpg)
 
 ## Start
 
@@ -42,11 +42,11 @@ Your songs and scores stay in bb's plugin storage on your machine. They're never
 
 Each of these was set up from this template by an agent following its instructions, from the festival's real set times and its own site and posters. Ask for one by name and it's copied in finished.
 
-| Portola 2026 | Coachella 2026 | Bonnaroo 2026 | Outside Lands 2026 |
-| --- | --- | --- | --- |
-| ![Portola: photocopied record-zine masthead with a disco-ball O](docs/examples/portola-2026-day.jpg) | ![Coachella: desert sky over orange mountains, palms, and the Ferris wheel](docs/examples/coachella-2026-day.jpg) | ![Bonnaroo: green bubble wordmark over rolling hills and a checkerboard path](docs/examples/bonnaroo-2026-day.jpg) | ![Outside Lands: pink bubble letters over the Golden Gate in fog](docs/examples/outside-lands-2026-day.jpg) |
-| ![Portola day plan with walking times between stages](docs/examples/portola-2026-plan.jpg) | ![Coachella day plan with dot meters and stage colours](docs/examples/coachella-2026-plan.jpg) | ![Bonnaroo day plan with yellow pill markers](docs/examples/bonnaroo-2026-plan.jpg) | ![Outside Lands day plan in ticket-style cards](docs/examples/outside-lands-2026-plan.jpg) |
-| ![Portola at night](docs/examples/portola-2026-night.jpg) | ![Coachella at night, with a lit Ferris wheel](docs/examples/coachella-2026-night.jpg) | ![Bonnaroo After Hours in neon](docs/examples/bonnaroo-2026-night.jpg) | ![Outside Lands at night](docs/examples/outside-lands-2026-night.jpg) |
+| Austin City Limits 2026 | Portola 2026 | Coachella 2026 | Bonnaroo 2026 | Outside Lands 2026 |
+| --- | --- | --- | --- | --- |
+| ![ACL: outlined wordmark on bubblegum pink with weekend-one and weekend-two day buttons](docs/examples/acl-2026-day.jpg) | ![Portola: photocopied record-zine masthead with a disco-ball O](docs/examples/portola-2026-day.jpg) | ![Coachella: desert sky over orange mountains, palms, and the Ferris wheel](docs/examples/coachella-2026-day.jpg) | ![Bonnaroo: green bubble wordmark over rolling hills and a checkerboard path](docs/examples/bonnaroo-2026-day.jpg) | ![Outside Lands: pink bubble letters over the Golden Gate in fog](docs/examples/outside-lands-2026-day.jpg) |
+| ![ACL day plan with both weekends](docs/examples/acl-2026-plan.jpg) | ![Portola day plan with walking times between stages](docs/examples/portola-2026-plan.jpg) | ![Coachella day plan with dot meters and stage colours](docs/examples/coachella-2026-plan.jpg) | ![Bonnaroo day plan with yellow pill markers](docs/examples/bonnaroo-2026-plan.jpg) | ![Outside Lands day plan in ticket-style cards](docs/examples/outside-lands-2026-plan.jpg) |
+| ![ACL at night](docs/examples/acl-2026-night.jpg) | ![Portola at night](docs/examples/portola-2026-night.jpg) | ![Coachella at night, with a lit Ferris wheel](docs/examples/coachella-2026-night.jpg) | ![Bonnaroo After Hours in neon](docs/examples/bonnaroo-2026-night.jpg) | ![Outside Lands at night](docs/examples/outside-lands-2026-night.jpg) |
 
 The screenshots use a made-up listener. These are unofficial fan planners, not affiliated with the festivals, and their set times may have changed.
 
