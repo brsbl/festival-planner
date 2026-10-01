@@ -118,7 +118,7 @@ If the planner was installed from git rather than from a copy, run `bb plugin re
 node $S/spotify.mjs <work> --session <id> --festival <slug> [--page <name>] [--playlist <url> …]
 ```
 
-It takes a few minutes. It reads their songs and each act's Spotify page into `<work>/spotify/`. Then it lists acts it couldn't find, inexact matches, and same-name artists with under 1,000 listeners. Check each one:
+It takes a few minutes. It reads their songs and each act's Spotify page into `<work>/spotify/`. When they're signed in, it also reads what they actually play: their top artists and top tracks for the last month, six months, and all time (`top.json`). These count alongside likes, so an artist they play constantly but never liked still ranks. Then it lists acts it couldn't find, inexact matches, and same-name artists with under 1,000 listeners. Check each one:
 - a wrong artist goes in `skip` in `lanes.json`;
 - a b2b or renamed act gets `artists` in the lineup, since that's a fact about the festival. While you're fixing those, pass `--lineup festivals/<slug>/lineup.json` to `spotify.mjs` and `build-taste.mjs` so they read the copy rather than the installed lineup, and rerun `spotify.mjs --only artists`. Reinstall once you're done.
 - small local acts often have very few listeners, so a low count alone doesn't make a match wrong; check the genre and neighbours.

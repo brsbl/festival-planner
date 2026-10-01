@@ -28,7 +28,7 @@ A festival already in **Examples** below is ready in a few minutes. A new one ta
 
 ### Spotify
 
-The agent reads your liked songs in bb's browser. Any of these works:
+The agent reads your liked songs and what you play most (your top artists and tracks for the last month, six months, and all time) in bb's browser. Any of these works:
 
 - **Sign in once** at open.spotify.com in a bb browser tab. This is the simplest.
 - **Share public playlists** instead, if you'd rather not sign in: your own, or your Liked Songs copied into a playlist.

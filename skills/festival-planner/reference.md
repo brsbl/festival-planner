@@ -150,6 +150,8 @@ Anything left out falls back to a plain, neutral planner (`public/defaults.js`),
 - `why` is a note to yourself about the call. The planner doesn't show it.
 
 The score (0–100) adds three parts:
-- songs they've liked by the act, with recent likes counting extra (playlists have no "recent");
-- "fans also like" artists already in their likes;
+- the stronger of two signals:
+  - songs they've liked by the act, with recent likes counting extra (playlists have no "recent");
+  - how high the act sits in their top artists (last month, six months, or all time) and how many of their top tracks it has, when signed in;
+- "fans also like" artists they like or play;
 - the lane.

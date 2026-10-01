@@ -1,9 +1,10 @@
 #!/usr/bin/env node
 // Reads Spotify through a bb browser-automation session.
-// Writes <work>/spotify/liked.json (your songs, newest first) and
+// Writes <work>/spotify/liked.json (your songs, newest first), <work>/spotify/top.json (your top
+// artists and tracks over the last month, six months, and all time; signed in only), and
 // <work>/spotify/artists.json (each act's Spotify profile, top tracks and "fans also like").
 //
-//   node spotify.mjs <work> --session <id> [--page <name>] [--only liked|artists]
+//   node spotify.mjs <work> --session <id> [--page <name>] [--only liked|top|artists]
 //                    [--playlist <url> …] [--festival <slug> | --lineup <file>]
 //
 // Liked songs need the page to be signed in to Spotify. Without a sign-in, pass one or more
@@ -28,15 +29,17 @@ if (playlists.some((id) => !id)) {
   process.exit(1);
 }
 if (!work || !session) {
-  console.error("usage: node spotify.mjs <work> --session <id> [--page <name>] [--only liked|artists]");
+  console.error("usage: node spotify.mjs <work> --session <id> [--page <name>] [--only liked|top|artists]");
   process.exit(1);
 }
 const out = join(work, "spotify");
 mkdirSync(out, { recursive: true });
 
 // bb can be briefly unreachable; a call that never reached it is safe to repeat
+// bb's browser panel otherwise gets Spotify's mobile player, which lacks the profile's top lists
+const DESKTOP = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36";
 function run(body, timeout = "120s") {
-  const script = `const p = await browser.getPage(${JSON.stringify(page)});\n${body}`;
+  const script = `const p = await browser.getPage(${JSON.stringify(page)});\ntry { await p.setUserAgent(${JSON.stringify(DESKTOP)}); } catch {}\n${body}`;
   let raw;
   for (let attempt = 1; ; attempt++) {
     try {
@@ -113,7 +116,7 @@ console.log("spotify:", JSON.stringify(setup));
 if (!setup.auth) throw new Error("the page never called Spotify's API; is open.spotify.com loading in this session?");
 
 // 2. Your songs, newest first: liked songs when signed in, otherwise the playlists you passed.
-if (only !== "artists") {
+if (only === undefined || only === "liked") {
   if (!playlists.length && !setup.signedIn) throw new Error("this page isn't signed in to Spotify. Sign in to open.spotify.com in the browser (or import cookies with `bb browser import-cookies`), or pass public playlists with --playlist");
   if (playlists.length && !setup.playlist) throw new Error("couldn't see how the web player loads a playlist; check the link opens in the browser");
   run(`await p.evaluate((playlists) => {
@@ -160,8 +163,57 @@ if (only !== "artists") {
   console.log(`\r${playlists.length ? "playlist songs" : "liked songs"}: ${liked.length}       `);
 }
 
-// 3. Each act: search, then read its artist page.
-if (only !== "liked") {
+// 3. What you actually play: top artists and tracks for each time range, read with the web player's
+// own profile query. Its query id ships in the profile page's script, so find it there.
+if (!playlists.length && setup.signedIn && (only === undefined || only === "top")) {
+  run(`await p.evaluate(() => {
+    const F = window.__fp; F.top = null; F.topDone = false; F.topError = null;
+    const grab = (t) => (t.match(/"userTopContent","query","([0-9a-f]{64})"/) || [])[1];
+    const findHash = async () => {
+      if (F.ops.userTopContent) return F.ops.userTopContent;
+      const srcs = [...new Set([...performance.getEntriesByType("resource").map((e) => e.name), ...[...document.scripts].map((x) => x.src)])].filter((x) => /spotifycdn\\.com.*\\.js/.test(x));
+      let main = null;
+      for (const src of srcs) {
+        let t; try { t = await (await fetch(src)).text(); } catch { continue; }
+        const h = grab(t); if (h) return h;
+        if (t.includes('"xpui-routes-profile"')) main = { src, t };
+      }
+      if (!main) return null;
+      const id = (main.t.match(/(\\d+):"xpui-routes-profile"/) || [])[1];
+      for (const m of main.t.matchAll(new RegExp("[,{]" + id + ':"([0-9a-f]{8})"', "g"))) {
+        try { const h = grab(await (await fetch(main.src.replace(/[^/]+$/, "xpui-routes-profile." + m[1] + ".js"))).text()); if (h) return h; } catch {}
+      }
+      return null;
+    };
+    (async () => {
+      const hash = await findHash();
+      if (!hash) throw new Error("couldn't find the web player's top-content query");
+      const top = {};
+      for (const [range, value] of [["month", "SHORT_TERM"], ["sixMonths", "MID_TERM"], ["allTime", "LONG_TERM"]]) {
+        const input = { offset: 0, limit: 50, sortBy: "AFFINITY", timeRange: value };
+        const res = await fetch("https://api-partner.spotify.com/pathfinder/v2/query", { method: "POST", headers: { "content-type": "application/json;charset=UTF-8", authorization: F.cap.auth, "client-token": F.cap.ctok, "app-platform": F.cap.app || "WebPlayer", "spotify-app-version": F.cap.ver || "" }, body: JSON.stringify({ variables: { includeTopArtists: true, topArtistsInput: input, includeTopTracks: true, topTracksInput: input }, operationName: "userTopContent", extensions: { persistedQuery: { version: 1, sha256Hash: hash } } }) });
+        if (!res.ok) throw new Error("top " + range + " returned " + res.status);
+        const me = (await res.json()).data?.me?.profile ?? {};
+        top[range] = {
+          artists: (me.topArtists?.items ?? []).map((x) => ({ name: x.data?.profile?.name, id: x.data?.uri?.split(":")[2] })).filter((x) => x.name),
+          tracks: (me.topTracks?.items ?? []).map((x) => ({ name: x.data?.name, artists: (x.data?.artists?.items ?? []).map((a) => a.profile?.name) })).filter((x) => x.name),
+        };
+      }
+      F.top = top;
+    })().then(() => { F.topDone = true; }, (e) => { F.topError = String(e); });
+  }); return "started";`);
+  await waitFor("top");
+  const top = {};
+  for (const range of ["month", "sixMonths", "allTime"]) {
+    const part = run(`return await p.evaluate((r) => JSON.stringify(window.__fp.top[r]), ${JSON.stringify(range)});`, "30s");
+    top[range] = typeof part === "string" ? JSON.parse(part) : part;
+  }
+  writeFileSync(join(out, "top.json"), JSON.stringify(top, null, 1));
+  console.log(`\rtop artists: ${["month", "sixMonths", "allTime"].map((r) => `${r} ${top[r].artists.length}`).join(", ")}; top tracks: ${["month", "sixMonths", "allTime"].map((r) => top[r].tracks.length).join("/")}`);
+}
+
+// 4. Each act: search, then read its artist page.
+if (only === undefined || only === "artists") {
   const lineup = loadLineup(lineupFile, flag("--festival"));
   // an act playing twice may list different artists each time; look all of them up. artists: [] means don't look it up
   const queries = new Map();
