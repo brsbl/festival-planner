@@ -7,7 +7,7 @@ import { promisify } from "node:util";
 import { createFakePluginHost } from "@get-bb/plugin-sdk/testing";
 import { describe, expect, it } from "vitest";
 
-import plugin, { lineupSchema, loadFestivals, themeSchema } from "./server";
+import plugin, { artistsSchema, lineupSchema, loadFestivals, themeSchema } from "./server";
 
 const run = promisify(execFile);
 
@@ -36,6 +36,7 @@ describe("festival planner server", () => {
     expect((await harness.behavior.fetchHttp("GET", `/${first.slug}/index.html`)).status).toBe(200);
     expect((await served(harness, "lineup")).festival.name).toBe(festival.name);
     expect(typeof (await served(harness, "theme")).css).toBe("boolean");
+    expect(typeof (await served(harness, "artists"))).toBe("object");
     expect(JSON.parse((await harness.behavior.runCli(["list", "--json"])).stdout).map((f: { slug: string }) => f.slug)).toContain(first.slug);
     expect(JSON.parse((await harness.behavior.runCli(["status", ...on, "--json"])).stdout)).toMatchObject({ festival: `${festival.name} ${festival.year}`, taste: hasSample ? "sample" : "none yet" });
 
@@ -69,6 +70,7 @@ describe("festival planner server", () => {
     for (const slug of readdirSync("examples")) {
       expect(lineupSchema.safeParse(JSON.parse(readFileSync(`examples/${slug}/lineup.json`, "utf8"))).success, `${slug} lineup`).toBe(true);
       expect(themeSchema.safeParse(JSON.parse(readFileSync(`examples/${slug}/theme.json`, "utf8"))).success, `${slug} theme`).toBe(true);
+      if (existsSync(`examples/${slug}/artists.json`)) expect(artistsSchema.safeParse(JSON.parse(readFileSync(`examples/${slug}/artists.json`, "utf8"))).success, `${slug} artists`).toBe(true);
     }
   });
 

@@ -11,6 +11,7 @@ Formats for a festival folder, `festivals/<slug>/`, and for `lanes.json`. `festi
 | `style.css` | The festival's signature, loaded after the planner's own styles |
 | `assets/` | Images and fonts for `style.css`, used as `url(assets/<file>)` |
 | `icon.svg` | The sidebar icon: one colour, lines, `currentColor` |
+| `artists.json` | Each act's Spotify photo and link, keyed by lower-case act name; written by `photos.mjs` |
 | `sample-taste.json`, `sample-previews.json` | Optional demo listener shown until someone imports a taste |
 
 ## Lineup

@@ -1,0 +1,786 @@
+{
+ "sahar z": {
+  "img": "https://i.scdn.co/image/ab67616100005174f57903aee2dcd3f850b57741",
+  "url": "https://open.spotify.com/artist/47YdOgVXS5hzu5spoFFpHU"
+ },
+ "soraya": {
+  "img": "https://i.scdn.co/image/ab6761610000517409d9ddec4b26a759fb03c06a",
+  "url": "https://open.spotify.com/artist/3FOgzF7M25ZYbsEb7FpWxR"
+ },
+ "febuary": {
+  "img": "https://i.scdn.co/image/ab676161000051742f39c2eb1b0f8bbb2bb386f2",
+  "url": "https://open.spotify.com/artist/4CwzptvBGg45GGh2a5yOOh"
+ },
+ "jessica brankka": {
+  "img": "https://i.scdn.co/image/ab67616100005174db6a9f4606571228b2862297",
+  "url": "https://open.spotify.com/artist/0bC8yGVqpx20z9mLADTooz"
+ },
+ "fifi": {
+  "img": "https://i.scdn.co/image/ab67616100005174f536d4a509726ab98387dcfe",
+  "url": "https://open.spotify.com/artist/0G31cfQ16TnAGyi5AZG5qT"
+ },
+ "sander kleinenberg": {
+  "img": "https://i.scdn.co/image/ab67616100005174837cbb0002910c94ded479e6",
+  "url": "https://open.spotify.com/artist/3CfH3WZPzbk5mNDWXpGIy6"
+ },
+ "massio": {
+  "img": "https://i.scdn.co/image/ab6761610000517459fe0654f0dba2c761dfe736",
+  "url": "https://open.spotify.com/artist/7sBQ7opbXfUczzXlB0ENB1"
+ },
+ "radiohead: kid a mnesia": {
+  "img": "https://i.scdn.co/image/ab67616100005174959527d2fabc9c64287e57b9",
+  "url": "https://open.spotify.com/artist/4Z8W4fKeB5YxbusRsdQVPb"
+ },
+ "carolina durante": {
+  "img": "https://i.scdn.co/image/ab676161000051744319e5184793385c14ff15aa",
+  "url": "https://open.spotify.com/artist/2BVE7Pqd8kxv9xEsuvoJoE"
+ },
+ "arodes": {
+  "img": "https://i.scdn.co/image/ab6761610000517419b4f4016d144c4b13b3e058",
+  "url": "https://open.spotify.com/artist/4p2f8wUtltMAFuIJB4NR47"
+ },
+ "tiffany tyson": {
+  "img": null,
+  "url": "https://open.spotify.com/artist/26vfb56oacqQcv9oPEAyCa"
+ },
+ "slayyyter": {
+  "img": "https://i.scdn.co/image/ab67616100005174d475efee7c254f7e77a2d306",
+  "url": "https://open.spotify.com/artist/4QM5QCHicznALtX885CnZC"
+ },
+ "1tbsp": {
+  "img": "https://i.scdn.co/image/ab67616100005174a2be861b8acd55629c9cb77d",
+  "url": "https://open.spotify.com/artist/6G01WYFYF91rjG5LtwMhY4"
+ },
+ "wednesday": {
+  "img": "https://i.scdn.co/image/ab67616100005174cbf22720296d758d8b373a85",
+  "url": "https://open.spotify.com/artist/4j7DrazfBZLLD0OrVoAtEe"
+ },
+ "youna": {
+  "img": "https://i.scdn.co/image/ab676161000051745e77fbd7109faca4dae6426f",
+  "url": "https://open.spotify.com/artist/4Y7OfWwgt2hCgZfyPMFUzC"
+ },
+ "groove armada": {
+  "img": "https://i.scdn.co/image/ab67616100005174922cfaf258406578ccb12bcc",
+  "url": "https://open.spotify.com/artist/67tgMwUfnmqzYsNAtnP6YJ"
+ },
+ "dabeull": {
+  "img": "https://i.scdn.co/image/ab6761610000517487063f650fb98fb1af8556d3",
+  "url": "https://open.spotify.com/artist/7sw3xJMTpdcpfssx17hfrb"
+ },
+ "newdad": {
+  "img": "https://i.scdn.co/image/ab67616100005174cae479ff7a07b3c1de9d0ce4",
+  "url": "https://open.spotify.com/artist/1yz8XixOiIJJ9IxjbnfYV6"
+ },
+ "bullet tooth": {
+  "img": "https://i.scdn.co/image/ab6761610000517407e5be731f3ecbe714c656aa",
+  "url": "https://open.spotify.com/artist/4KWIkeAdOJfvUgXSq0bEWC"
+ },
+ "kryptogram": {
+  "img": "https://i.scdn.co/image/ab676161000051745cc2967d9adfdec917cf3d3b",
+  "url": "https://open.spotify.com/artist/184mGxeseZkY2w05Nr4Tui"
+ },
+ "bini": {
+  "img": "https://i.scdn.co/image/ab67616100005174ce669d4e7ce4d47080c7e22a",
+  "url": "https://open.spotify.com/artist/7tNO3vJC9zlHy2IJOx34ga"
+ },
+ "rossi. x chloé caillet": {
+  "img": "https://i.scdn.co/image/ab67616100005174d09cdc8b8be8bc1a8275540c",
+  "url": "https://open.spotify.com/artist/7itMGcVGRKS43LcTQvJitf"
+ },
+ "fleshwater": {
+  "img": "https://i.scdn.co/image/ab67616100005174a1726163ae16ff6fd8acb7e2",
+  "url": "https://open.spotify.com/artist/6P5ccCJCe8A4s9tDSTNFzF"
+ },
+ "hugel": {
+  "img": "https://i.scdn.co/image/ab67616100005174f2f0c84b86e48dd70d9bcc59",
+  "url": "https://open.spotify.com/artist/5PlfkPxwCpRRWQJBxCa0By"
+ },
+ "tiga": {
+  "img": "https://i.scdn.co/image/ab676161000051744cadec9a07cd964d1420a7bc",
+  "url": "https://open.spotify.com/artist/5l9wiTZVfqQTfMDOt0HtwC"
+ },
+ "mcr-t": {
+  "img": "https://i.scdn.co/image/ab6761610000517413c354bf032479d1c2437f88",
+  "url": "https://open.spotify.com/artist/4m7q9onIm2bqhwHy9utqmw"
+ },
+ "joyce manor": {
+  "img": "https://i.scdn.co/image/ab676161000051745e3e73393eb63ed14ecefb2d",
+  "url": "https://open.spotify.com/artist/7qbvNcfTfckhCNM8NiR8nN"
+ },
+ "lykke li": {
+  "img": "https://i.scdn.co/image/ab67616100005174cca02aff2b0e609b77ca0130",
+  "url": "https://open.spotify.com/artist/6oBm8HB0yfrIc9IHbxs6in"
+ },
+ "teddy swims": {
+  "img": "https://i.scdn.co/image/ab6761610000517436eb08698aa7794372c97b97",
+  "url": "https://open.spotify.com/artist/33qOK5uJ8AR2xuQQAhHump"
+ },
+ "central cee": {
+  "img": "https://i.scdn.co/image/ab676161000051746ce131983245fc2e6940f6c2",
+  "url": "https://open.spotify.com/artist/5H4yInM5zmHqpKIoMNAx4r"
+ },
+ "robin schulz": {
+  "img": "https://i.scdn.co/image/ab67616100005174869ddcc058c5ff2a459ad8d5",
+  "url": "https://open.spotify.com/artist/3t5xRXzsuZmMDkQzgOX35S"
+ },
+ "the two lips": {
+  "img": "https://i.scdn.co/image/ab676161000051745dabe86720ab1a50f0390543",
+  "url": "https://open.spotify.com/artist/0jtiZkDcuWRf647co8id50"
+ },
+ "kettama": {
+  "img": "https://i.scdn.co/image/ab6761610000517465eb52c5da399f337626be07",
+  "url": "https://open.spotify.com/artist/3an9rnsXKPCAMlZgH4A0n4"
+ },
+ "jazzy": {
+  "img": "https://i.scdn.co/image/ab6761610000517464e029d1466b4e8d38eec59c",
+  "url": "https://open.spotify.com/artist/7zAAwgV5Wqmvpb4GzvlRkP"
+ },
+ "cmat": {
+  "img": "https://i.scdn.co/image/ab67616100005174b68d7dc0f8b678bca480d8b0",
+  "url": "https://open.spotify.com/artist/3VBNIRx1LxVdRqOiPgkLwv"
+ },
+ "marlon hoffstadt": {
+  "img": "https://i.scdn.co/image/ab676161000051742744c0aa6cccfab6120ef015",
+  "url": "https://open.spotify.com/artist/0HHa7ZJZxUQlg5l2mB0N0f"
+ },
+ "dijon": {
+  "img": "https://i.scdn.co/image/ab6761610000517473479e6db034c4a43d4aee04",
+  "url": "https://open.spotify.com/artist/0knGpCTbmG4ctl1wzYRZs4"
+ },
+ "devo": {
+  "img": "https://i.scdn.co/image/ab6772690000bac375067632f15daff7ae86e32b",
+  "url": "https://open.spotify.com/artist/0UKfenbZb15sqhfPC6zbt3"
+ },
+ "the xx": {
+  "img": "https://i.scdn.co/image/ab676161000051743a96db4736ef035e1fcb2516",
+  "url": "https://open.spotify.com/artist/3iOvXCl6edW5Um0fXEBRXy"
+ },
+ "deep dish": {
+  "img": "https://i.scdn.co/image/ab67616100005174027eb9b04757f6dadedeaa3f",
+  "url": "https://open.spotify.com/artist/720JYpdCgHuTmDeryW0wEA"
+ },
+ "effin": {
+  "img": "https://i.scdn.co/image/ab67616100005174d0bdceb469c885e958ad8ee0",
+  "url": "https://open.spotify.com/artist/6l0u1oM2imxw0isrGcXpmH"
+ },
+ "ninajirachi": {
+  "img": "https://i.scdn.co/image/ab676161000051746363b3a1630b8811a4d3d718",
+  "url": "https://open.spotify.com/artist/3MekbRujJg5VZThubOlrkR"
+ },
+ "prospa": {
+  "img": "https://i.scdn.co/image/ab67616100005174695aceda1a09af723204d1d7",
+  "url": "https://open.spotify.com/artist/6HabM2PUM519iIxervGWSb"
+ },
+ "wale": {
+  "img": "https://i.scdn.co/image/ab67616100005174273bdadffd7138dcbd7b79c3",
+  "url": "https://open.spotify.com/artist/67nwj3Y5sZQLl72VNUHEYE"
+ },
+ "fakemink": {
+  "img": "https://i.scdn.co/image/ab67616100005174fea7ad1b3bc4a7f94234bd1c",
+  "url": "https://open.spotify.com/artist/0qc4BFxcwRFZfevTck4fOi"
+ },
+ "katseye": {
+  "img": "https://i.scdn.co/image/ab6761610000517404ba72b2749f90d62152ebec",
+  "url": "https://open.spotify.com/artist/3c0gDdb9lhnHGFtP4prQpn"
+ },
+ "turnstile": {
+  "img": "https://i.scdn.co/image/ab67616100005174a4c3fd0017b42344516dc16c",
+  "url": "https://open.spotify.com/artist/2qnpHrOzdmOo1S4ox3j17x"
+ },
+ "moby": {
+  "img": "https://i.scdn.co/image/ab6761610000517451998989b51d8bda6a7486f2",
+  "url": "https://open.spotify.com/artist/3OsRAKCvk37zwYcnzRf5XF"
+ },
+ "john summit": {
+  "img": "https://i.scdn.co/image/ab6761610000517420662b32f3dbabad755dfb53",
+  "url": "https://open.spotify.com/artist/7kNqXtgeIwFtelmRjWv205"
+ },
+ "zerb": {
+  "img": "https://i.scdn.co/image/ab6761610000517416543e96b13ccd77be2e5292",
+  "url": "https://open.spotify.com/artist/6mDl7lQiLxT0iQ8LYhAlWy"
+ },
+ "cachirula & loojan": {
+  "img": "https://i.scdn.co/image/ab6761610000517403a1a8e59c6d21809ce294a2",
+  "url": "https://open.spotify.com/artist/5vcFoQxKd0ZpA178xDU12G"
+ },
+ "holly humberstone": {
+  "img": "https://i.scdn.co/image/ab67616100005174fc13849ee1941d15f8f475a8",
+  "url": "https://open.spotify.com/artist/0nnYdIpahs41QiZ9MWp5Wx"
+ },
+ "max dean x luke dean": {
+  "img": "https://i.scdn.co/image/ab676161000051745908620bcbe1c73de2ae008f",
+  "url": "https://open.spotify.com/artist/65TLDWbTJxYASqadmNAxvc"
+ },
+ "pawsa": {
+  "img": "https://i.scdn.co/image/ab6761610000517420c3b42a39e774df0103bce0",
+  "url": "https://open.spotify.com/artist/4E0HD2PMY8kQJIjlShrLUS"
+ },
+ "sabrina carpenter": {
+  "img": "https://i.scdn.co/image/ab6761610000517478e45cfa4697ce3c437cb455",
+  "url": "https://open.spotify.com/artist/74KM79TiuVKeVCqs8QtB0B"
+ },
+ "levity": {
+  "img": "https://i.scdn.co/image/ab676161000051746342b598b7ee99bbba1256b6",
+  "url": "https://open.spotify.com/artist/1PbO7aQiVeKbGp8GYWDL9C"
+ },
+ "max styler": {
+  "img": "https://i.scdn.co/image/ab67616100005174ddeee9f034ca94bb6a08b66a",
+  "url": "https://open.spotify.com/artist/3NKKngINK1tP6BFy0WOyWk"
+ },
+ "joost": {
+  "img": "https://i.scdn.co/image/ab67616100005174a317ca98cdf346619c07c3cd",
+  "url": "https://open.spotify.com/artist/6s5ubAp65wXoTZefE01RNR"
+ },
+ "hot mulligan": {
+  "img": "https://i.scdn.co/image/ab67616100005174f39d742e60fa4e7246c133d4",
+  "url": "https://open.spotify.com/artist/1lKZzN2d4IqiEYxyECIEHI"
+ },
+ "disclosure": {
+  "img": "https://i.scdn.co/image/ab676161000051740b084ede947f009beade9a6a",
+  "url": "https://open.spotify.com/artist/6nS5roXSAGhTGr34W6n7Et"
+ },
+ "ethel cain": {
+  "img": "https://i.scdn.co/image/ab6761610000517491e66f73d679e4793d179f56",
+  "url": "https://open.spotify.com/artist/0avMDS4HyoCEP6RqZJWpY2"
+ },
+ "swae lee": {
+  "img": "https://i.scdn.co/image/ab67616100005174bccdbb98ab5d54454cd0fe85",
+  "url": "https://open.spotify.com/artist/1zNqQNIdeOUZHb8zbZRFMX"
+ },
+ "creepy nuts": {
+  "img": "https://i.scdn.co/image/ab6761610000517471c03bb9c1fe71f40a5fe1dc",
+  "url": "https://open.spotify.com/artist/0pWR7TsFhvSCnbmHDjWgrE"
+ },
+ "gordo": {
+  "img": "https://i.scdn.co/image/ab676161000051741d9da120103e6a8550163f17",
+  "url": "https://open.spotify.com/artist/4Ge9GwmWnOQsohwPTrXyHc"
+ },
+ "not for radio": {
+  "img": "https://i.scdn.co/image/ab6761610000517459a30bdb69e6a990c22a5d32",
+  "url": "https://open.spotify.com/artist/0oXhGlRUQ8aVTx8eO4MoMT"
+ },
+ "blood orange": {
+  "img": "https://i.scdn.co/image/ab6761610000517482a833d61eafc09c05c24882",
+  "url": "https://open.spotify.com/artist/6LEeAFiJF8OuPx747e1wxR"
+ },
+ "sexyy red": {
+  "img": "https://i.scdn.co/image/ab6761610000517486e8904eaceb12a7abce3415",
+  "url": "https://open.spotify.com/artist/3DbwFQlvLxRSi2uX8mf81A"
+ },
+ "yamagucci": {
+  "img": "https://i.scdn.co/image/ab676161000051744c9af2f1558b9d9a538adf07",
+  "url": "https://open.spotify.com/artist/6EuSg8aungYTh6vNgL1EpG"
+ },
+ "lumia": {
+  "img": "https://i.scdn.co/image/ab6761610000517440fc78a5ea0b37a24467bf03",
+  "url": "https://open.spotify.com/artist/7nxfxSbNTXNc0v5TG4ObSh"
+ },
+ "die spitz": {
+  "img": "https://i.scdn.co/image/ab67616100005174221291d43457048ddb8f0f5e",
+  "url": "https://open.spotify.com/artist/0zfZmpHTu0MlkkNr5KHeXE"
+ },
+ "seek-one": {
+  "img": "https://i.scdn.co/image/ab67616100005174a3a6e7c78887dd4fd3431145",
+  "url": "https://open.spotify.com/artist/3Se0hJ771CVbtSSvBCyx80"
+ },
+ "genesi": {
+  "img": "https://i.scdn.co/image/ab67616100005174d8ca415eb84795f2fd696dee",
+  "url": "https://open.spotify.com/artist/4OG9hOPsfAEziKvOJj2SG7"
+ },
+ "noga erez": {
+  "img": "https://i.scdn.co/image/ab676161000051747fdf9a4c6c8417b43af877e7",
+  "url": "https://open.spotify.com/artist/5VwCIS8jdx9ZHjApLFNrTZ"
+ },
+ "baalti": {
+  "img": "https://i.scdn.co/image/ab67616100005174abe340f91319d05143c10ee3",
+  "url": "https://open.spotify.com/artist/2CtpjGWvsq4QnUIx9PHDAN"
+ },
+ "blondshell": {
+  "img": "https://i.scdn.co/image/ab6761610000517455473577223a3b86b814b3a8",
+  "url": "https://open.spotify.com/artist/7qrEXiLLnWkkYHhadZ1Oij"
+ },
+ "teed": {
+  "img": "https://i.scdn.co/image/ab67616100005174413e3bbd7dccaf881d9a07c9",
+  "url": "https://open.spotify.com/artist/0g3NiCRhEv7M4SEDMrpItN"
+ },
+ "jack white": {
+  "img": "https://i.scdn.co/image/ab67616100005174719889798a431c8dc1dacbec",
+  "url": "https://open.spotify.com/artist/4FZ3j1oH43e7cukCALsCwf"
+ },
+ "riordan": {
+  "img": "https://i.scdn.co/image/ab67616100005174e89f692d6217857b3e519c48",
+  "url": "https://open.spotify.com/artist/68rU1sdZ0HjxjEC5YnSmao"
+ },
+ "freak slug": {
+  "img": "https://i.scdn.co/image/ab67616100005174df3cf4a6db3d92f95c1a7ecd",
+  "url": "https://open.spotify.com/artist/5wk7sY8GIg5ihSI09EbWeS"
+ },
+ "roddy lima": {
+  "img": "https://i.scdn.co/image/ab67616100005174f3770ef48f2afad8dabe915c",
+  "url": "https://open.spotify.com/artist/0Bg1joLOL52mJS0kf0pIDx"
+ },
+ "los hermanos flores": {
+  "img": "https://i.scdn.co/image/ab6761610000517470bf3b0db2a75b4bb78de97b",
+  "url": "https://open.spotify.com/artist/3S43VHav7suUXwnPFvoR9O"
+ },
+ "zulan": {
+  "img": "https://i.scdn.co/image/ab676161000051741990aad605000ba36b1ad725",
+  "url": "https://open.spotify.com/artist/2Yz9F5lQVc0p6SDxkw2BvF"
+ },
+ "niiko x swae": {
+  "img": "https://i.scdn.co/image/ab67616100005174439ef993d8f89c900a50c1c3",
+  "url": "https://open.spotify.com/artist/7ui1kBUIbujvJnIXxDjoWz"
+ },
+ "whatmore": {
+  "img": "https://i.scdn.co/image/ab676161000051748e518045decd21097c8c76c9",
+  "url": "https://open.spotify.com/artist/2y4kS2ljmS41pNDNA01P2Q"
+ },
+ "mahmut orhan": {
+  "img": "https://i.scdn.co/image/ab676161000051749981d0fb9b0cfa3ac351be78",
+  "url": "https://open.spotify.com/artist/3t8WiyalpvnB9AObcMufiE"
+ },
+ "baby j": {
+  "img": "https://i.scdn.co/image/ab67616100005174b692c3ac153e258d52e3b60e",
+  "url": "https://open.spotify.com/artist/5UDfhBSz4ocUxrVjiBGFTK"
+ },
+ "ecca vandal": {
+  "img": "https://i.scdn.co/image/ab6761610000517440f9fe3514200979e9aed6c8",
+  "url": "https://open.spotify.com/artist/0NhKCHTPG7Sz62S3zxV1Cf"
+ },
+ "fujii kaze": {
+  "img": "https://i.scdn.co/image/ab67616100005174adf53c59da1a6d161a55f6d4",
+  "url": "https://open.spotify.com/artist/6bDWAcdtVR3WHz2xtiIPUi"
+ },
+ "hamdi": {
+  "img": "https://i.scdn.co/image/ab67616100005174f20a26b11dfdbd843b8fac9c",
+  "url": "https://open.spotify.com/artist/7vvicoei9BbKpZix8qSeLg"
+ },
+ "joezi": {
+  "img": "https://i.scdn.co/image/ab676161000051745d7be4f392a33955a531ae13",
+  "url": "https://open.spotify.com/artist/2mC93i8OOfK2jpFERbVv8B"
+ },
+ "alex g": {
+  "img": "https://i.scdn.co/image/ab67616100005174cfa32469a372188d27bd17b7",
+  "url": "https://open.spotify.com/artist/6lcwlkAjBPSKnFBZjjZFJs"
+ },
+ "luísa sonza": {
+  "img": "https://i.scdn.co/image/ab67616100005174d6ee3bc21789280f618fb618",
+  "url": "https://open.spotify.com/artist/4PzYKhC14sTJNEr0dzoo0d"
+ },
+ "starjunk 95": {
+  "img": "https://i.scdn.co/image/ab676161000051740c1039c2fad41bb2c14a1054",
+  "url": "https://open.spotify.com/artist/523iXWyHL26prJR3GKjRhx"
+ },
+ "addison rae": {
+  "img": "https://i.scdn.co/image/ab676161000051748aaca79d5544dc02bea2b6b2",
+  "url": "https://open.spotify.com/artist/4gvjmrtzydbMpyJaXUtwvP"
+ },
+ "ceremony": {
+  "img": "https://i.scdn.co/image/ab67616100005174550a52feefcb1d8966e36c4e",
+  "url": "https://open.spotify.com/artist/5n3811iYeaFM01gSJMQuRH"
+ },
+ "ben sterling": {
+  "img": "https://i.scdn.co/image/ab6761610000517453b19bc6f387357c9c44358e",
+  "url": "https://open.spotify.com/artist/79uJoLQkQ621xZy7MyH4uL"
+ },
+ "joshwa": {
+  "img": "https://i.scdn.co/image/ab6761610000517431f1ac2c4176f4be480c0977",
+  "url": "https://open.spotify.com/artist/1PzAgFVk9v8cxn9flrqrv5"
+ },
+ "royel otis": {
+  "img": "https://i.scdn.co/image/ab67616100005174f9611f076ce2c0d5fbda708d",
+  "url": "https://open.spotify.com/artist/5b5bt4mZQpJMoCRbiQ7diH"
+ },
+ "geese": {
+  "img": "https://i.scdn.co/image/ab67616100005174bc9546a945c7563a9eb21f3d",
+  "url": "https://open.spotify.com/artist/0WCo84qtCKfbyIf1lqQWB4"
+ },
+ "tinashe (dj)": {
+  "img": "https://i.scdn.co/image/ab676161000051742aa31460f72545bb40d3fdd7",
+  "url": "https://open.spotify.com/artist/0NIIxcxNHmOoyBx03SfTCD"
+ },
+ "rusowsky": {
+  "img": "https://i.scdn.co/image/ab676161000051741ccc31898f2f43623815bac8",
+  "url": "https://open.spotify.com/artist/1XEVu7gdRFfzEFqsPrancH"
+ },
+ "sosa": {
+  "img": "https://i.scdn.co/image/ab676161000051749160969569c1ffaaa79733df",
+  "url": "https://open.spotify.com/artist/3JlN0MeWVJq0vjvsvWCRZ5"
+ },
+ "givēon": {
+  "img": "https://i.scdn.co/image/ab67616100005174e357870455bc56f7ef4147f8",
+  "url": "https://open.spotify.com/artist/4fxd5Ee7UefO4CUXgwJ7IP"
+ },
+ "afrojack x shimza": {
+  "img": "https://i.scdn.co/image/ab6761610000517456591d5d8219e6e506096c41",
+  "url": "https://open.spotify.com/artist/4D75GcNG95ebPtNvoNVXhz"
+ },
+ "sombr": {
+  "img": "https://i.scdn.co/image/ab6761610000517478edaa6468cae153565c2c97",
+  "url": "https://open.spotify.com/artist/4G9NDjRyZFDlJKMRL8hx3S"
+ },
+ "coi leray": {
+  "img": "https://i.scdn.co/image/ab67616100005174826f0a744996395ebab447c5",
+  "url": "https://open.spotify.com/artist/6AMd49uBDJfhf30Ak2QR5s"
+ },
+ "taemin": {
+  "img": "https://i.scdn.co/image/ab67616100005174585b47d7132e4ec28455ad63",
+  "url": "https://open.spotify.com/artist/13rF01aOogvnkuQXOlgTW8"
+ },
+ "romy (dj set)": {
+  "img": "https://i.scdn.co/image/ab67616100005174fdcfdc78f1aa51063b2f76be",
+  "url": "https://open.spotify.com/artist/3X2DdnmoANw8Rg8luHyZQb"
+ },
+ "54 ultra": {
+  "img": "https://i.scdn.co/image/ab676161000051748fdf273bf26657879cccdc74",
+  "url": "https://open.spotify.com/artist/6X5L6rmyvrWWu60Gx6exiZ"
+ },
+ "davido": {
+  "img": "https://i.scdn.co/image/ab676161000051742bf250c3e92f9e7542efd95c",
+  "url": "https://open.spotify.com/artist/0Y3agQaa6g2r0YmHPOO9rh"
+ },
+ "nine inch noize": {
+  "img": "https://i.scdn.co/image/ab67616100005174752fca27c5b839ea47d5100d",
+  "url": "https://open.spotify.com/artist/0X380XXQSNBYuleKzav5UO"
+ },
+ "bedouin": {
+  "img": "https://i.scdn.co/image/ab67616100005174235847fc0fabe2594fa28e7f",
+  "url": "https://open.spotify.com/artist/5bKdC6382t97Qnpvs81Rqx"
+ },
+ "sean paul": {
+  "img": "https://i.scdn.co/image/ab6761610000517460c3e9abe7327c0097738f22",
+  "url": "https://open.spotify.com/artist/3Isy6kedDrgPYoTS1dazA9"
+ },
+ "labrinth": {
+  "img": "https://i.scdn.co/image/ab6761610000517418d3c3e8a880f73e0f5688ab",
+  "url": "https://open.spotify.com/artist/2feDdbD5araYcm6JhFHHw7"
+ },
+ "andhim": {
+  "img": "https://i.scdn.co/image/ab676161000051741b3da90ba96e40faf9db9eb0",
+  "url": "https://open.spotify.com/artist/6XJeFzmI6vrWyHcdB7EImP"
+ },
+ "pinkpantheress": {
+  "img": "https://i.scdn.co/image/ab676161000051746bf10d74063b45938f5d8656",
+  "url": "https://open.spotify.com/artist/78rUTD7y6Cy67W1RVzYs7t"
+ },
+ "the strokes": {
+  "img": "https://i.scdn.co/image/ab6761610000517498856eea770468af6dd999d9",
+  "url": "https://open.spotify.com/artist/0epOFNiUfyON9EYx7Tpr6V"
+ },
+ "bia": {
+  "img": "https://i.scdn.co/image/ab676161000051748a40d5c59ee760ec96d7f2be",
+  "url": "https://open.spotify.com/artist/6veh5zbFpm31XsPdjBgPER"
+ },
+ "david guetta": {
+  "img": "https://i.scdn.co/image/ab67616100005174f150017ca69c8793503c2d4f",
+  "url": "https://open.spotify.com/artist/1Cs0zKBU1kc0i8ypK3B9ai"
+ },
+ "rezz": {
+  "img": "https://i.scdn.co/image/ab6761610000517431e4af683fea450c23fba5b0",
+  "url": "https://open.spotify.com/artist/4aKdmOXdUKX07HVd3sGgzw"
+ },
+ "andruss": {
+  "img": "https://i.scdn.co/image/ab6761610000517425cde1422d6b459269730f35",
+  "url": "https://open.spotify.com/artist/6HZwb7Zbnvfo8u1sst4QrI"
+ },
+ "anfisa letyago": {
+  "img": "https://i.scdn.co/image/ab67616100005174348da04d6efecefe16b43721",
+  "url": "https://open.spotify.com/artist/7icoOm5fKKPo49jVxoj1Cq"
+ },
+ "mind enterprises": {
+  "img": "https://i.scdn.co/image/ab67616100005174adfbc1058442ed8b996a6ae7",
+  "url": "https://open.spotify.com/artist/5pN1DJhPFDKso4OtC0QhnB"
+ },
+ "boys noize": {
+  "img": "https://i.scdn.co/image/ab67616100005174feba5f12b9eae4f42ac96063",
+  "url": "https://open.spotify.com/artist/62k5LKMhymqlDNo2DWOvvv"
+ },
+ "morat": {
+  "img": "https://i.scdn.co/image/ab6761610000517440b636d92aa7de0fc068ac77",
+  "url": "https://open.spotify.com/artist/5C4PDR4LnhZTbVnKWXuDKD"
+ },
+ "interpol": {
+  "img": "https://i.scdn.co/image/ab676161000051740679cf4a5178225946cdccba",
+  "url": "https://open.spotify.com/artist/3WaJSfKnzc65VDgmj2zU8B"
+ },
+ "david byrne": {
+  "img": "https://i.scdn.co/image/ab67616100005174da1661b56190449e92327438",
+  "url": "https://open.spotify.com/artist/20vuBdFblWUo2FCOvUzusB"
+ },
+ "adriatique": {
+  "img": "https://i.scdn.co/image/ab676161000051742f77c08232851bd6820c1398",
+  "url": "https://open.spotify.com/artist/02DWGcShQivFepRvGJ7xhB"
+ },
+ "kettama b2b ¥øu$uk€ ¥uk1mat$u": {
+  "img": "https://i.scdn.co/image/ab6761610000517465eb52c5da399f337626be07",
+  "url": "https://open.spotify.com/artist/3an9rnsXKPCAMlZgH4A0n4"
+ },
+ "armin van buuren x adam beyer": {
+  "img": "https://i.scdn.co/image/ab6761610000517460f60edeaa78efbf3d335b2c",
+  "url": "https://open.spotify.com/artist/0SfsnGyD8FpIN4U4WCkBZ5"
+ },
+ "justin bieber": {
+  "img": "https://i.scdn.co/image/ab67616100005174af20f7db5288bce9beede034",
+  "url": "https://open.spotify.com/artist/1uNFoZAHBGtllmzznpCI3s"
+ },
+ "prospa b2b josh baker": {
+  "img": "https://i.scdn.co/image/ab67616100005174695aceda1a09af723204d1d7",
+  "url": "https://open.spotify.com/artist/6HabM2PUM519iIxervGWSb"
+ },
+ "worship": {
+  "img": "https://i.scdn.co/image/ab67616100005174f11a05a5d308bd624a9222c8",
+  "url": "https://open.spotify.com/artist/6HYVC0sJVnVnsVmuH0Ofre"
+ },
+ "le yora": {
+  "img": "https://i.scdn.co/image/ab67616100005174b08b2bf2cf4c60111250188e",
+  "url": "https://open.spotify.com/artist/0JguaqQNo1CgVjFqtIXyGR"
+ },
+ "soul purpose": {
+  "img": "https://i.scdn.co/image/ab676161000051747dfd21531466c45519c8c5c3",
+  "url": "https://open.spotify.com/artist/17rzd2LQuxe5iRccR9FBl1"
+ },
+ "glitterer": {
+  "img": "https://i.scdn.co/image/ab67616100005174b0d755de1a8992262b21e86e",
+  "url": "https://open.spotify.com/artist/2bTjArGDYivNxnYFH5jUcj"
+ },
+ "azzecca": {
+  "img": "https://i.scdn.co/image/ab67616100005174d34603065ae649a222d138c6",
+  "url": "https://open.spotify.com/artist/2k5DY2QDU3kBi5DX7OQlWj"
+ },
+ "cincity": {
+  "img": "https://i.scdn.co/image/ab676161000051747438cdae8bc4c07ce6d61a8e",
+  "url": "https://open.spotify.com/artist/2JTUg3LgzJsqxzNnPB9hen"
+ },
+ "flowerovlove": {
+  "img": "https://i.scdn.co/image/ab67616100005174825d1ca6f213da1a88e879d3",
+  "url": "https://open.spotify.com/artist/1JspXUvEv3D9ddMeLNqYWj"
+ },
+ "loboman": {
+  "img": "https://i.scdn.co/image/ab67616100005174e2a2fa410433cfe1c38b1093",
+  "url": "https://open.spotify.com/artist/4kRkMkGkRKUP9HfdHU4hv3"
+ },
+ "gabe real": {
+  "img": "https://i.scdn.co/image/ab676161000051745c300d402217244b09a05eae",
+  "url": "https://open.spotify.com/artist/0yeC3KlivVqaE4MGdopqvF"
+ },
+ "the chats": {
+  "img": "https://i.scdn.co/image/ab67616100005174a43a92d50e11b126604d710e",
+  "url": "https://open.spotify.com/artist/1aQ7P3HtKOQFW16ebjiks1"
+ },
+ "&friends": {
+  "img": "https://i.scdn.co/image/ab676161000051745f7b6d2676d14be5d404db23",
+  "url": "https://open.spotify.com/artist/0Z7zcsIphrPDnfZj9Ppqw0"
+ },
+ "jackie hollander": {
+  "img": "https://i.scdn.co/image/ab6761610000517404730d14f2dacff8566b8c6e",
+  "url": "https://open.spotify.com/artist/5ykY9Uweo3gl5VFpb6z6pQ"
+ },
+ "mild minds": {
+  "img": "https://i.scdn.co/image/ab67616100005174aeb41338520b9c4134bbca3d",
+  "url": "https://open.spotify.com/artist/3Ka3k9K2WStR52UJVtbJZW"
+ },
+ "model/actriz": {
+  "img": "https://i.scdn.co/image/ab676161000051741359d08341c26bd15c4549e0",
+  "url": "https://open.spotify.com/artist/7gdb1IQFHFQqCc5KoLTYNC"
+ },
+ "samia": {
+  "img": "https://i.scdn.co/image/ab676161000051742d2126fd7b1dac0a7e138d54",
+  "url": "https://open.spotify.com/artist/1Uk1GyijF6fSfX4mWq5bfR"
+ },
+ "girl math (vnssa x nala)": {
+  "img": "https://i.scdn.co/image/ab67616100005174b65e129c0765e7e697154775",
+  "url": "https://open.spotify.com/artist/6fjbZ7zQBYEy3kvB5JL5PM"
+ },
+ "tijuana panthers": {
+  "img": "https://i.scdn.co/image/ab67616100005174c2a5b885887617e771baa13a",
+  "url": "https://open.spotify.com/artist/5XGoUe0WjmbOtppHlB7Taf"
+ },
+ "gigi perez": {
+  "img": "https://i.scdn.co/image/ab67616100005174d58f13475be93b37bb63893f",
+  "url": "https://open.spotify.com/artist/1iCnM8foFssWlPRLfAbIwo"
+ },
+ "brunello": {
+  "img": "https://i.scdn.co/image/ab67616100005174f09aeff34e4a5c220d6627a5",
+  "url": "https://open.spotify.com/artist/7FZIk8RSha4GBa4ZEPuytU"
+ },
+ "oskar med k": {
+  "img": "https://i.scdn.co/image/ab676161000051743d852477c0758a128a8ac2af",
+  "url": "https://open.spotify.com/artist/28ntgpEkMU9Zm7F3gLDMhZ"
+ },
+ "cobrah": {
+  "img": "https://i.scdn.co/image/ab67616100005174de3de14c12807415634467b5",
+  "url": "https://open.spotify.com/artist/1AHswQqsDNmu1xaE8KpBne"
+ },
+ "mëstiza": {
+  "img": "https://i.scdn.co/image/ab67616100005174304d6212d5112fcd5aa0a1fb",
+  "url": "https://open.spotify.com/artist/1l6pQ0SDItjXzbG9zloE2n"
+ },
+ "jane remover": {
+  "img": "https://i.scdn.co/image/ab67616100005174b3ba80684c90081ad8c0b7f2",
+  "url": "https://open.spotify.com/artist/2rLGlNI6htigNxx172qxLu"
+ },
+ "little simz": {
+  "img": "https://i.scdn.co/image/ab67616100005174a22264dfbad2d96ffc6ee2e0",
+  "url": "https://open.spotify.com/artist/6eXZu6O7nAUA5z6vLV8NKI"
+ },
+ "wet leg": {
+  "img": "https://i.scdn.co/image/ab67616100005174a4e6cf8b3d6ea5a6b4b5fb8f",
+  "url": "https://open.spotify.com/artist/2TwOrUcYnAlIiKmVQkkoSZ"
+ },
+ "bunt.": {
+  "img": "https://i.scdn.co/image/ab6761610000517410afd7f6a1c191d032d6a573",
+  "url": "https://open.spotify.com/artist/2CpLIMBoE2ZzyY3ZBCRZ7j"
+ },
+ "poolside’s daytime disco": {
+  "img": "https://i.scdn.co/image/ab67616100005174695052f2d2c898a24dfe12c8",
+  "url": "https://open.spotify.com/artist/5szdY7KaSi7epwyffrbV8c"
+ },
+ "clipse": {
+  "img": "https://i.scdn.co/image/ab676161000051747d6973a4df776665c9852f26",
+  "url": "https://open.spotify.com/artist/2J257euzcjnDLipsyJH3F2"
+ },
+ "oklou": {
+  "img": "https://i.scdn.co/image/ab67616100005174f8b90fcffca3c4e28564f0e3",
+  "url": "https://open.spotify.com/artist/6fFcUOFcbjeIuEomuUthkw"
+ },
+ "los retros": {
+  "img": "https://i.scdn.co/image/ab676161000051741029b911082b784f824dc096",
+  "url": "https://open.spotify.com/artist/0qraFJK6boYSp4ZMMX4PzG"
+ },
+ "carlita x josh baker": {
+  "img": "https://i.scdn.co/image/ab67616100005174e31bbc78c8116c3b09e2819d",
+  "url": "https://open.spotify.com/artist/1GVbOnrND8b3eh2JZ4opw8"
+ },
+ "suicidal tendencies": {
+  "img": "https://i.scdn.co/image/ab6761610000517434e9707779175a2453a1d786",
+  "url": "https://open.spotify.com/artist/3WPKDlucMsXH6FC1XaclZC"
+ },
+ "less than jake": {
+  "img": "https://i.scdn.co/image/ab67616100005174768516690f8c06f29608b827",
+  "url": "https://open.spotify.com/artist/20oQv3LStCKCjI9oQ0JNha"
+ },
+ "joy (anonymous)": {
+  "img": "https://i.scdn.co/image/ab67616100005174eda5511a7988582d41588e70",
+  "url": "https://open.spotify.com/artist/3pK4EcflBpG1Kpmjk5LK2R"
+ },
+ "isaiah rashad & kal banx": {
+  "img": "https://i.scdn.co/image/ab67616100005174517611aeb0c03ac44eb92dfe",
+  "url": "https://open.spotify.com/artist/6aaMZ3fcfLv4tEbmY7bjRM"
+ },
+ "major lazer": {
+  "img": "https://i.scdn.co/image/ab67616100005174ab312009266614f4d3185229",
+  "url": "https://open.spotify.com/artist/738wLrAtLtCtFOLvQBXOXp"
+ },
+ "duke dumont": {
+  "img": "https://i.scdn.co/image/ab67616100005174c0791f9c2d17dfd58e301c91",
+  "url": "https://open.spotify.com/artist/61lyPtntblHJvA7FMMhi7E"
+ },
+ "black flag": {
+  "img": "https://i.scdn.co/image/ab6761610000517464f57c3f54c287c42cadf773",
+  "url": "https://open.spotify.com/artist/5Mhs3Eu8lU6sRCtRYsmABV"
+ },
+ "røz": {
+  "img": "https://i.scdn.co/image/ab67616100005174c0de2d8306a376f544dd8c8a",
+  "url": "https://open.spotify.com/artist/0aULg7LximLNhI6lLzxcXI"
+ },
+ "deer jade": {
+  "img": "https://i.scdn.co/image/ab67616100005174bc312efb21d82d38ad17c42e",
+  "url": "https://open.spotify.com/artist/0QJ6lXlYOHexjfIg4CQrgv"
+ },
+ "foster the people": {
+  "img": "https://i.scdn.co/image/ab6761610000517422b8e662f0cfdddac8ab22bb",
+  "url": "https://open.spotify.com/artist/7gP3bB2nilZXLfPHJhMdvc"
+ },
+ "röyksopp": {
+  "img": "https://i.scdn.co/image/ab676161000051746bc3053447db6b61f3fe444c",
+  "url": "https://open.spotify.com/artist/5nPOO9iTcrs9k6yFffPxjH"
+ },
+ "motion city soundtrack": {
+  "img": "https://i.scdn.co/image/ab676161000051748e2cf681623ebffc4eb29795",
+  "url": "https://open.spotify.com/artist/19zqV9DV3txjMUjHvltl2D"
+ },
+ "iggy pop": {
+  "img": "https://i.scdn.co/image/ab6761610000517421e6d14c3d8aab9887380d00",
+  "url": "https://open.spotify.com/artist/33EUXrFKGjpUSGacqEHhU4"
+ },
+ "mochakk": {
+  "img": "https://i.scdn.co/image/ab6761610000517425eb7fae06eeb3765c8832c0",
+  "url": "https://open.spotify.com/artist/0rTh1tAdrEbdKZBTiiAQSo"
+ },
+ "omar+": {
+  "img": "https://i.scdn.co/image/ab676161000051745275b110394aadca8a62c5dc",
+  "url": "https://open.spotify.com/artist/06HO1b1nd4kQzRakdZBTSc"
+ },
+ "tomora": {
+  "img": "https://i.scdn.co/image/ab676161000051745e397a04c6e3b0254d9de3c7",
+  "url": "https://open.spotify.com/artist/5r0BuurxKQugj8cjHiO8pY"
+ },
+ "young thug": {
+  "img": "https://i.scdn.co/image/ab676161000051749f2fb33940aac624dc5d100d",
+  "url": "https://open.spotify.com/artist/50co4Is1HCEo8bhOyUWKpn"
+ },
+ "drain": {
+  "img": "https://i.scdn.co/image/ab67616100005174821ff80e88a1da42c3edd795",
+  "url": "https://open.spotify.com/artist/7FAAkDlPg6pg0860CIDzmu"
+ },
+ "fatboy slim": {
+  "img": "https://i.scdn.co/image/ab67616100005174c20ed3229eeced918966a009",
+  "url": "https://open.spotify.com/artist/4Y7tXHSEejGu1vQ9bwDdXW"
+ },
+ "nimino (dj set)": {
+  "img": "https://i.scdn.co/image/ab67616100005174a1ad01d0f9d550ea556655e4",
+  "url": "https://open.spotify.com/artist/5x0R3zoC09GMiRJomoexLV"
+ },
+ "whomadewho": {
+  "img": "https://i.scdn.co/image/ab6761610000517411cdb87d955ea3af2f8174d0",
+  "url": "https://open.spotify.com/artist/50Lr1puweM1hFsF1LpIZLM"
+ },
+ "laufey": {
+  "img": "https://i.scdn.co/image/ab67616100005174c751deb23ed62e7cadfb669a",
+  "url": "https://open.spotify.com/artist/7gW0r5CkdEUMm42w9XpyZO"
+ },
+ "fka twigs": {
+  "img": "https://i.scdn.co/image/ab676161000051743f6b8973be0344896d8680ab",
+  "url": "https://open.spotify.com/artist/6nB0iY1cjSY1KyhYyuIIKH"
+ },
+ "omnom": {
+  "img": "https://i.scdn.co/image/ab67616100005174083bbf2e09eb8fd5c6a72698",
+  "url": "https://open.spotify.com/artist/3PYRXP25JcbqhvNaJYcnWy"
+ },
+ "the rapture": {
+  "img": "https://i.scdn.co/image/ab676161000051749f184452ed39346bc5e0849a",
+  "url": "https://open.spotify.com/artist/166Dz1GX3xonSQ3Z6CQW26"
+ },
+ "subtronics": {
+  "img": "https://i.scdn.co/image/ab67616100005174cfc9970da15bab17462de33a",
+  "url": "https://open.spotify.com/artist/3NJ94iuAmmMjbszODYT6pO"
+ },
+ "french police": {
+  "img": "https://i.scdn.co/image/ab67616100005174a8cae3b22c79dfbb1ab22621",
+  "url": "https://open.spotify.com/artist/75vqTLIltGApfI0NxcsJaC"
+ },
+ "whethan": {
+  "img": "https://i.scdn.co/image/ab676161000051742717c8959d00aa37044bbb74",
+  "url": "https://open.spotify.com/artist/0vqJkZ0RpLZixt3lTmD8vP"
+ },
+ "karol g": {
+  "img": "https://i.scdn.co/image/ab676161000051743869e286c9043f85e8e4bc06",
+  "url": "https://open.spotify.com/artist/790FomKkXshlbRYZFtlgla"
+ },
+ "green velvet x ayybo": {
+  "img": "https://i.scdn.co/image/ab67616100005174c4538f995f4e9a6e153dcb71",
+  "url": "https://open.spotify.com/artist/3ABaec4jjl95VqmG1iD4k2"
+ },
+ "bigbang": {
+  "img": "https://i.scdn.co/image/ab6761610000517441f3b91c5c5bf6651da98956",
+  "url": "https://open.spotify.com/artist/4Kxlr1PRlDKEB0ekOCyHgX"
+ },
+ "kaskade": {
+  "img": "https://i.scdn.co/image/ab67616100005174e753ae706df5e8a8da8497cc",
+  "url": "https://open.spotify.com/artist/6TQj5BFPooTa08A7pk8AQ1"
+ },
+ "anyma b2b marlon hoffstadt": {
+  "img": "https://i.scdn.co/image/ab67616100005174a5fe44561b6ce2a566c1f272",
+  "url": "https://open.spotify.com/artist/4iBwchw0U0GZv5RfVYSMxN"
+ }
+}

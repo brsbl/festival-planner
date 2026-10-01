@@ -14,6 +14,7 @@ const TH = merge(window.THEME_DEFAULTS || {}, window.THEME || {});
 const C = TH.copy || {};
 const fill = (t, vars) => String(t).replace(/\{(\w+)\}/g, (_, k) => vars[k] ?? "");
 const PV = window.PREVIEWS || {};
+const ART = window.ARTISTS || {};
 const $ = (s, el = document) => el.querySelector(s);
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
@@ -66,7 +67,12 @@ function festNow() {
 /* ---------------- taste lookups ---------------- */
 const STAGE = Object.fromEntries(L.stages.map((s) => [s.id, s]));
 const key = (name) => name.toLowerCase();
-const match = (set) => (T && T.matches[key(set.name)]) || { score: 0, tier: null, evidence: [], riyl: [] };
+// photos and Spotify links are facts about the festival (artists.json), so they show before anyone imports a taste
+const match = (set) => {
+  const m = (T && T.matches[key(set.name)]) || { score: 0, tier: null, evidence: [], riyl: [] };
+  const a = ART[key(set.name)];
+  return a && (!m.img || !m.url) ? { ...m, img: m.img || a.img, url: m.url || a.url } : m;
+};
 const score = (set) => match(set).score || 0;
 const TIER = Object.fromEntries(["heavy", "deep", "wild", "new"].map((k) => { const t = (C.tiers || {})[k] || {}; return [k, [t.stamp || k.toUpperCase(), t.hint || "", t.filter || k]]; }));
 const tierOf = (set) => match(set).tier || "new";

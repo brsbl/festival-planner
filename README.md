@@ -67,6 +67,7 @@ The screenshots use a made-up listener. These are unofficial fan planners, not a
 | `theme.json` | Style switches, day and night colours, fonts, and wording |
 | `style.css`, `assets/` | The festival's signature look |
 | `icon.svg` | Its sidebar icon |
+| `artists.json` | Each act's photo and Spotify link |
 
 `skills/festival-planner/SKILL.md` is the agent's guide, and `reference.md` beside it documents every field. To add a festival by hand:
 

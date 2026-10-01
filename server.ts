@@ -96,6 +96,8 @@ export const tasteSchema = z.object({
   })),
 });
 
+export const artistsSchema = z.record(z.string(), z.object({ img: z.string().nullable(), url: z.string().nullable() }));
+
 export const previewsSchema = z.record(z.string(), z.array(z.object({ n: z.string(), url: z.string().url() })));
 
 // Validation only: public/defaults.js fills in whatever a theme leaves out, so a preview built
@@ -160,6 +162,7 @@ interface Festival {
   lineup: Lineup;
   theme: Theme;
   sample: { taste: Taste; previews: Previews };
+  artists: z.infer<typeof artistsSchema>;
   css: boolean;
   assets: string[];
 }
@@ -182,6 +185,7 @@ export function loadFestivals(): Festival[] {
           taste: readJson(dir, "sample-taste.json", tasteSchema, emptyTaste),
           previews: readJson<Previews>(dir, "sample-previews.json", previewsSchema, {}),
         },
+        artists: readJson(dir, "artists.json", artistsSchema, {}),
         css: existsSync(join(dir, "style.css")),
         assets: existsSync(assetDir) ? readdirSync(assetDir).filter((file) => /^[\w.-]+$/.test(file)) : [],
       };
@@ -243,6 +247,7 @@ export default function plugin(bb: BbPluginApi): void {
     bb.http.route("GET", `${base}/`, () => file(join(ROOT, "public", "index.html"), TYPES.html));
     for (const name of PUBLIC_FILES) bb.http.route("GET", `${base}/${name}`, () => file(join(ROOT, "public", name), TYPES[name.slice(name.lastIndexOf(".") + 1)]));
     bb.http.route("GET", `${base}/data/lineup.js`, () => script("LINEUP", f.lineup));
+    bb.http.route("GET", `${base}/data/artists.js`, () => script("ARTISTS", f.artists));
     bb.http.route("GET", `${base}/data/theme.js`, () => script("THEME", { ...f.theme, css: f.css }));
     for (const kind of PERSONAL_NAMES) bb.http.route("GET", `${base}/data/${kind}.js`, async () => script(PERSONAL[kind].global, (await current(f))[kind]));
     bb.http.route("GET", `${base}/festival.css`, async () =>

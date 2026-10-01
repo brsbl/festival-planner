@@ -42,6 +42,7 @@ const files = {
   "data/theme.js": script("THEME", JSON.stringify({ ...JSON.parse(festival("theme.json", "{}")), css: existsSync(join(festivalDir, "style.css")) })),
   "data/taste.js": script("TASTE", read(flag("--taste"), festival("sample-taste.json", demoTaste()))),
   "data/previews.js": script("PREVIEWS", read(flag("--previews"), festival("sample-previews.json", "{}"))),
+  "data/artists.js": script("ARTISTS", festival("artists.json", "{}")),
   "festival.css": festival("style.css", ""),
 };
 for (const file of ["index.html", "styles.css", "app.js", "defaults.js"]) files[file] = readFileSync(join(root, "public", file), "utf8");

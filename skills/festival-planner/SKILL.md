@@ -51,6 +51,17 @@ Then `node $S/build-lineup.mjs festivals/<slug>/lineup.json` fills in ids and ca
 
 With no venue map to work from, leave out `festival.map`, place the stages roughly, estimate walks from distances, and tell them those are guesses.
 
+### Artist photos
+
+Look up every act on Spotify so the page has photos and links before anyone connects their account. This works signed out, in a headless session (`bb browser-automation open --backend local --headless --machine <host>`; its page is `main`):
+
+```sh
+node $S/spotify.mjs <work> --session <id> --only artists --lineup festivals/<slug>/lineup.json
+node $S/photos.mjs <work> festivals/<slug> [--skip "<act>"]    # skip acts matched to the wrong artist
+```
+
+Use the same `<work>` folder in step 2, so you don't look the acts up twice.
+
 **Check in:** sets, stages, and days, your sources, what you inferred or left out, and anything cancelled.
 
 ### Look and language
