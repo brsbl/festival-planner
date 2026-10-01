@@ -65,7 +65,7 @@ Find the official set times and write `festivals/<slug>/lineup.json` (format in 
   - Drop-in programming (screenings, bingo, talks, an all-day room) goes on its own stage marked `ambient`. Give non-music acts `"artists": []` so they aren't looked up on Spotify.
   - Drop exact duplicates (the same act and slot listed twice). If a stage's name changes by day, keep one stage and note the partner in each set's `blurb`.
   - Before the festival, keep the published schedule. After it, leave cancelled sets out.
-- **Weekends.** A festival with two weekends can have both: give each its own day ids and labels, as `examples/acl-2026` does. Ask whether they want one weekend or both.
+- **Weekends.** A festival with two weekends can have both: give each its own day ids and labels, as `examples/acl-2026` does. The page shows a switcher between them. Ask whether they want one weekend or both.
 
 Then `node $S/build-lineup.mjs festivals/<slug>/lineup.json` fills in ids and catalogue numbers in place. Fix what it reports. Set each stage's `short` label yourself; the automatic one just cuts the name.
 

@@ -42,6 +42,15 @@ const fmt = (m) => { const h = Math.floor(m / 60), mm = m % 60, h12 = ((h + 11) 
 const fmtAP = (m) => fmt(m) + (Math.floor(m / 60) % 24 >= 12 ? "pm" : "am");
 const hm = (t) => { const [h, m] = String(t).split(":").map(Number); return h * 60 + (m || 0); };
 const DAY = Object.fromEntries(F.days.map((d) => [d.id, d]));
+// days more than two days apart are separate weekends (ACL, Coachella): each one is planned on its own,
+// so an act playing both weekends shows up once
+const WEEKENDS = F.days.reduce((ws, d) => {
+  const prev = ws.at(-1)?.at(-1);
+  if (prev && Date.parse(d.date) - Date.parse(prev.date) <= 2 * 864e5) ws.at(-1).push(d); else ws.push([d]);
+  return ws;
+}, []);
+const WEEKEND_OF = Object.fromEntries(WEEKENDS.flatMap((w, i) => w.map((d) => [d.id, i])));
+const weekendSets = () => L.sets.filter((s) => WEEKEND_OF[s.day] === state.weekend);
 // a day's hours: its own doors/close if it has them, else the festival's; a close before doors is after midnight
 const hours = (id) => {
   const d = DAY[id] || {}, doors = hm(d.doors || F.doors), raw = hm(d.close || F.close);
@@ -256,7 +265,7 @@ function skyline(svg) {
 
 /* ---------------- render: masthead / taste ---------------- */
 function renderTaste() {
-  const all = L.sets.filter((s) => !STAGE[s.stage].ambient);
+  const all = weekendSets().filter((s) => !STAGE[s.stage].ambient);
   const uniq = [...new Map(all.map((s) => [key(s.name), s])).values()];
   const ranked = [...uniq].sort((a, b) => score(b) - score(a));
   const tasted = Object.keys(T.matches).length > 0;
@@ -280,8 +289,11 @@ const meterText = (v) => GLYPHS[0] ? GLYPHS[0].repeat(Math.round(v / 10)) + (GLY
 /* ---------------- render: plan ---------------- */
 function renderPlan() {
   const now = festNow();
-  const day = DAY[state.day] ? state.day : now.day || F.days[0].id;
+  const days = WEEKENDS[state.weekend];
+  const day = days.some((d) => d.id === state.day) ? state.day : days.some((d) => d.id === now.day) ? now.day : days[0].id;
   state.day = day;
+  const side = (i) => fill(C.side, { letter: String.fromCharCode(65 + i), n: i + 1 });
+  $("#day-tabs").innerHTML = days.map((d) => { const i = F.days.indexOf(d); return `<button class="label label--btn" role="tab" data-day="${esc(d.id)}">${side(i) ? side(i) + " · " : ""}${esc(d.label)}</button>`; }).join("");
   document.querySelectorAll("[data-day]").forEach((b) => b.setAttribute("aria-selected", String(b.dataset.day === day)));
   document.querySelectorAll("[data-view]").forEach((b) => b.setAttribute("aria-selected", String(b.dataset.view === state.view)));
   const P = plan(day);
@@ -456,7 +468,7 @@ function drawRoute() {
 
 /* ---------------- render: catalog ---------------- */
 function renderCatalog() {
-  const all = L.sets;
+  const all = weekendSets();
   const counts = { all: all.length };
   for (const s of all) counts[tierOf(s)] = (counts[tierOf(s)] || 0) + 1;
   const FILTERS = [["all", "all"], ...["heavy", "deep", "wild", "new"].map((k) => [k, TIER[k][2]])];
@@ -538,7 +550,10 @@ function swapOrder(a, b) {
   store.set("order", state.order);
   rerender();
 }
-function rerender() { renderTaste(); renderPlan(); renderCatalog(); renderNow(); }
+function rerender() {
+  document.querySelectorAll("[data-weekend]").forEach((b) => b.setAttribute("aria-selected", String(+b.dataset.weekend === state.weekend)));
+  renderTaste(); renderPlan(); renderCatalog(); renderNow();
+}
 function setMark(id, m) {
   const set = L.sets.find((s) => s.id === id);
   if (markOf(set) === m) { if (match(set).pinned) state.marks[id] = "off"; else delete state.marks[id]; } else state.marks[id] = m;
@@ -548,7 +563,8 @@ function setMark(id, m) {
 document.addEventListener("click", (e) => {
   const b = e.target.closest("button, [data-cycle]");
   if (!b) return;
-  if (b.dataset.day) { state.day = b.dataset.day; store.set("day", state.day); renderPlan(); }
+  if (b.dataset.weekend) { state.weekend = +b.dataset.weekend; store.set("weekend", state.weekend); state.slot = null; state.open = null; rerender(); }
+  else if (b.dataset.day) { state.day = b.dataset.day; store.set("day", state.day); renderPlan(); }
   else if (b.dataset.view) { state.view = b.dataset.view; store.set("view", state.view); renderPlan(); }
   else if (b.dataset.play) togglePlay(b.dataset.play);
   else if (b.dataset.slot) { state.slot = state.slot === b.dataset.slot ? null : b.dataset.slot; renderPlan(); }
@@ -598,8 +614,10 @@ function renderMast() {
   const words = letters.join("").split(" ").map((w) => { const html = [...w].map((c) => tile(c, at++)).join(""); at++; return html; });
   wm.innerHTML = (words.length > 1 ? words.map((w) => `<span class="word">${w}</span>`).join('<span class="gap" aria-hidden="true"></span>') : words[0])
     + `<span class="yearstack" aria-hidden="true">${[...String(F.year)].map((d) => `<b>${d}</b>`).join("")}</span>`;
-  $("#mast-days").innerHTML = F.days.map((d, i) => `<span class="label${i ? "" : " label--ink"}">${side(i) ? side(i) + " · " : ""}${esc(d.label)} ${mmdd(d)}</span>`).join("");
-  $("#day-tabs").innerHTML = F.days.map((d, i) => `<button class="label label--btn" role="tab" data-day="${esc(d.id)}">${side(i) ? side(i) + " · " : ""}${esc(d.label)}</button>`).join("");
+  $("#mast-days").innerHTML = WEEKENDS.length > 1
+    ? WEEKENDS.map((w, i) => `<button class="label label--btn" type="button" role="tab" data-weekend="${i}">Weekend ${i + 1} · ${mmdd(w[0])}–${mmdd(w.at(-1))}</button>`).join("")
+    : F.days.map((d, i) => `<span class="label${i ? "" : " label--ink"}">${side(i) ? side(i) + " · " : ""}${esc(d.label)} ${mmdd(d)}</span>`).join("");
+  if (WEEKENDS.length > 1) $("#mast-days").setAttribute("role", "tablist");
   $("#map-title").textContent = C.map || (F.map && F.map.title) || "THE GROUNDS";
   for (const el of document.querySelectorAll("[data-copy]")) el.textContent = C[el.dataset.copy] ?? el.textContent;
   $("#foot-source").textContent = C.footer + (F.source ? " · times via " + F.source : "");
@@ -654,6 +672,10 @@ function applyLook() {
 }
 
 /* ---------------- boot ---------------- */
+// the weekend that's on now, else the one you last picked, else the next one coming up
+const NOW = festNow();
+const upcoming = WEEKENDS.findIndex((w) => w.at(-1).date >= NOW.date);
+state.weekend = NOW.day ? WEEKEND_OF[NOW.day] : WEEKENDS[store.get("weekend", -1)] ? store.get("weekend") : Math.max(0, upcoming);
 applyLook();
 renderMast();
 applyTheme();

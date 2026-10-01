@@ -29,6 +29,7 @@ Formats for a festival folder, `festivals/<slug>/`, and for `lanes.json`. `festi
 
 **Festival**
 - **Hours.** `doors` is when the first set starts and `close` when the last ends. A `close` earlier than `doors` means after midnight (`"06:30"` for an all-nighter). A day with different hours gets its own `doors`/`close`.
+- **Weekends.** Days more than two days apart are separate weekends. The page then shows a weekend switcher at the top and plans each weekend on its own, so an act playing both weekends appears once. Give each weekend's days their own ids (`w1-fri`, `w2-fri`).
 - `source` is shown in the footer. `code` (optional) is the catalogue prefix, like `"CCH-26"`.
 - `map` (optional) is drawn in a 620×330 box:
   - `title`: the section name;

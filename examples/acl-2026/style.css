@@ -55,7 +55,9 @@ html[data-theme] .mast__days { gap: 6px; }
 html[data-theme] :is(.label, .chip) { border: 2px solid var(--ink); border-radius: 0; box-shadow: none; }
 html[data-theme] .label { font: 600 13px/1 var(--f-display); letter-spacing: .07em; padding: 7px 9px 6px; background: var(--paper-3); color: var(--acl-green); }
 html[data-theme] .mast__days .label { background: var(--acl-amber); color: var(--acl-green); border-color: var(--acl-green); }
-html[data-theme] .mast__days .label:nth-child(n+4) { background: var(--acl-sky); }
+html[data-theme] .mast__days .label--btn[data-weekend="1"] { background: var(--acl-sky); }
+html[data-theme] .mast__days .label--btn[data-weekend="0"][aria-selected="true"] { background: var(--acl-green); color: var(--acl-amber); }
+html[data-theme] .mast__days .label--btn[data-weekend="1"][aria-selected="true"] { background: var(--acl-green); color: var(--acl-sky); }
 html[data-theme] .label--btn[data-day^="w1"] { background: var(--acl-amber); color: var(--acl-green); border-color: var(--acl-green); }
 html[data-theme] .label--btn[data-day^="w2"] { background: var(--acl-sky); color: var(--acl-green); border-color: var(--acl-green); }
 html[data-theme] .label--btn[data-day^="w1"][aria-selected="true"] { background: var(--acl-green); color: var(--acl-amber); }
