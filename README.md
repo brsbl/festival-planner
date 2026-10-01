@@ -11,20 +11,18 @@ You get a plan for each day with walking times between stages, a choice of order
 
 ## Start
 
-You need a Mac with Apple silicon (or Linux), and a Claude or ChatGPT plan.
-
-1. **Get bb.** [Download it](https://getbb.app) and open it.
-2. **Start a thread.** Click **New thread**. If bb says Claude Code isn't installed, click **Install Claude Code**. To use Codex instead, pick it in the thread's agent menu.
-3. **Sign in to your agent once.** Open Terminal, run `claude`, and follow the sign-in (for Codex, run `codex login`).
-4. **Paste this into the thread:**
+1. **Get bb.** [Download it](https://getbb.app) for a Mac with Apple silicon and open it. On Linux, Windows (through WSL), or an Intel Mac, install it with `npx bb-app@latest` instead.
+2. **Start a thread** with Claude Code or Codex, and paste:
 
    > Set up the festival planner from https://github.com/brsbl/festival-planner for **&lt;festival&gt; &lt;year&gt;**, and make it mine from my Spotify.
 
-**Agents:** clone this repository and follow [`skills/festival-planner/SKILL.md`](skills/festival-planner/SKILL.md).
+New to Claude Code? You need a Claude plan. When bb says **Claude Code not installed**, click **Install Claude Code**. Then sign in once: open a terminal (in bb, **Start terminal**; or the Terminal app), run `claude`, and follow its sign-in. Codex works too, with a ChatGPT plan, if you already have it.
 
-The agent checks in as it goes: with the lineup it found, with screenshots of the look, and with your ranked acts. It also asks which acts you won't miss and how to read your Spotify.
+The agent does the rest, and installs what's missing along the way, like Node. When it needs you (to approve a macOS prompt, sign in to Spotify, or pick the acts you won't miss), it asks one step at a time and waits for you. It also checks in with the lineup it found, screenshots of the look, and your ranked acts.
 
-A festival already in **Examples** below is ready in a few minutes. A new one takes about an hour, mostly finding set times. When it's done, open the festival from bb's sidebar.
+A festival already in **Examples** below takes under half an hour, most of it reading your Spotify. A new one takes an hour or two, mostly finding set times and designing its look. When it's done, open the festival from bb's sidebar.
+
+**Agents:** follow [`skills/festival-planner/SKILL.md`](skills/festival-planner/SKILL.md) from step 0.
 
 **More festivals:** ask *"Add &lt;festival&gt; &lt;year&gt; to my festival planner."* Each gets its own sidebar entry and its own ranking.
 
@@ -32,11 +30,12 @@ A festival already in **Examples** below is ready in a few minutes. A new one ta
 
 The agent reads your liked songs and what you play most (your top artists and tracks for the last month, six months, and all time) in bb's browser. Any of these works:
 
-- **Sign in once** at open.spotify.com in a bb browser tab. This is the simplest.
+- **Copy your sign-in** from Chrome, Arc, Brave, Edge, Firefox, or Safari, if you're signed in to Spotify there. You quit that browser while it copies. Chrome, Arc, Brave, and Edge make macOS ask for your password once; Safari needs Full Disk Access for bb. This copies all of that browser's cookies into bb's browser, not just Spotify's.
+- **Sign in once** at open.spotify.com in a bb browser tab.
 - **Share public playlists** instead, if you'd rather not sign in: your own, or your Liked Songs copied into a playlist.
 - **Just tell the agent** the artists you love. It ranks from that, with less to go on.
 
-If you're already signed in to Spotify in Chrome, Arc, or Safari, the agent can copy that sign-in into bb's browser. Your Mac will ask for permission first, because those browsers lock their cookies.
+There's no Spotify app to authorise: `spotify.mjs` reuses the Spotify web player's own (unofficial) requests in bb's browser, and `fetch-previews.mjs` reads Spotify's public song embed pages for preview clips.
 
 Your songs and scores stay in bb's plugin storage on your machine. They're never written into the repository or sent anywhere else.
 
