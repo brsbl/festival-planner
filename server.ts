@@ -222,7 +222,7 @@ export default function plugin(bb: BbPluginApi): void {
     if (value === undefined) return null;
     const parsed = PERSONAL[kind].schema.safeParse(value);
     if (parsed.success) return parsed.data as z.infer<(typeof PERSONAL)[K]["schema"]>;
-    bb.log.warn("ignoring invalid stored data", { slug, kind });
+    bb.log.warn(`ignoring invalid stored ${kind} for ${slug}`);
     return null;
   }
 
@@ -257,7 +257,7 @@ export default function plugin(bb: BbPluginApi): void {
       if (type) bb.http.route("GET", `${base}/assets/${asset}`, () => file(join(f.dir, "assets", asset), type));
     }
   }
-  bb.log.info("festivals", { slugs: festivals.map((f) => f.slug) });
+  bb.log.info(`festivals: ${festivals.map((f) => f.slug).join(", ")}`);
 
   async function importPart(f: Festival, kind: Personal, text: string, part: string | undefined, base64: boolean): Promise<{ done: boolean; message: string }> {
     const key = kvKey(f.slug, kind);
