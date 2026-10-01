@@ -215,7 +215,7 @@ export default function plugin(bb: BbPluginApi): void {
   const kv = bb.storage.kv;
   const festivals = loadFestivals();
   const bySlug = new Map(festivals.map((f) => [f.slug, f]));
-  const pending = new Map<string, Buffer[]>();
+  const pending = new Map<string, string[]>();
 
   async function stored<K extends Personal>(slug: string, kind: K): Promise<z.infer<(typeof PERSONAL)[K]["schema"]> | null> {
     const value = await kv.get<unknown>(kvKey(slug, kind));
@@ -269,12 +269,12 @@ export default function plugin(bb: BbPluginApi): void {
       count = Number(match[2]);
       if (index < 1 || index > count) throw new Error("--part index is out of range");
     }
-    const parts: Buffer[] | undefined = index === 1 ? [] : pending.get(key);
+    const parts: string[] | undefined = index === 1 ? [] : pending.get(key);
     if (!parts || parts.length !== index - 1) {
       pending.delete(key);
       throw new Error(`expected part ${parts ? parts.length + 1 : 1} of ${kind}; start again from 1/${count}`);
     }
-    parts.push(Buffer.from(text, base64 ? "base64" : "utf8"));
+    parts.push(text);
     if (index < count) {
       pending.set(key, parts);
       return { done: false, message: `received ${kind} part ${index}/${count}` };
@@ -282,7 +282,7 @@ export default function plugin(bb: BbPluginApi): void {
     pending.delete(key);
     let json: unknown;
     try {
-      json = JSON.parse(Buffer.concat(parts).toString("utf8"));
+      json = JSON.parse(base64 ? Buffer.from(parts.join(""), "base64").toString("utf8") : parts.join(""));
     } catch {
       throw new Error(`${kind} is not valid JSON`);
     }
