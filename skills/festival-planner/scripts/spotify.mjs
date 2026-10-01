@@ -34,9 +34,20 @@ if (!work || !session) {
 const out = join(work, "spotify");
 mkdirSync(out, { recursive: true });
 
+// bb can be briefly unreachable; a call that never reached it is safe to repeat
 function run(body, timeout = "120s") {
   const script = `const p = await browser.getPage(${JSON.stringify(page)});\n${body}`;
-  const raw = execFileSync("bb", ["browser-automation", "run", session, "--script", script, "--timeout", timeout, "--json"], { encoding: "utf8", maxBuffer: 64 << 20 });
+  let raw;
+  for (let attempt = 1; ; attempt++) {
+    try {
+      raw = execFileSync("bb", ["browser-automation", "run", session, "--script", script, "--timeout", timeout, "--json"], { encoding: "utf8", maxBuffer: 64 << 20, stdio: ["ignore", "pipe", "pipe"] });
+      break;
+    } catch (error) {
+      const out = String(error.stdout ?? "") + String(error.stderr ?? "");
+      if (attempt < 5 && /server_unreachable|did not respond/.test(out)) { Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, 3000 * attempt); continue; }
+      throw error;
+    }
+  }
   const result = JSON.parse(raw);
   if (result.ok === false) throw new Error(result.error?.message ?? raw);
   try { return JSON.parse(result.text); } catch { return result.text; }
@@ -79,8 +90,10 @@ const sniff = (req) => {
       const vars = JSON.stringify(b.variables || {});
       if (/LikedSongs|LibraryTracks/.test(b.operationName) && !likedQuery) likedQuery = { op: b.operationName, vars: b.variables || {} };
       if (PLAYLIST && vars.includes(PLAYLIST) && !playlistQuery) playlistQuery = { op: b.operationName, vars: b.variables };
-      if (vars.includes("daft punk")) search = { op: b.operationName, vars: b.variables };
-      if (vars.includes("4tZwfgrHOc3mvqYlEYSvVi") && /artist/i.test(b.operationName) && !overview) overview = { op: b.operationName, vars: b.variables };
+      // signed in, the player drops the query from the search URL, so recognise these by name and fill in the query later
+      const isSearch = /^(searchDesktop|findTopResults|searchTopResultsList|searchAll)$/.test(b.operationName);
+      if (isSearch && (!search || (b.operationName === "searchDesktop" && search.op !== "searchDesktop"))) search = { op: b.operationName, vars: b.variables || {} };
+      if (/ArtistOverview/.test(b.operationName) && !overview) overview = { op: b.operationName, vars: b.variables || {} };
     }
   } catch {}
 };
@@ -154,24 +167,33 @@ if (only !== "liked") {
   const queries = new Map();
   for (const s of lineup.sets) queries.set(s.name, [...new Set([...(queries.get(s.name) ?? []), ...(Array.isArray(s.artists) ? s.artists : [s.name])])]);
   const acts = [...queries.entries()].filter(([, q]) => q.length);
-  if (!setup.search || !setup.overview) throw new Error("couldn't see how the web player searches and loads artists; check open.spotify.com loads in the page and rerun");
+  if (!setup.search) throw new Error("couldn't see how the web player searches; check open.spotify.com loads in the page and rerun");
   run(`await p.evaluate((acts) => {
     const F = window.__fp; F.artists = {}; F.artistsDone = false; F.artistsError = null;
     const norm = (s) => s.toLowerCase().normalize("NFD").replace(/[\\u0300-\\u036f]/g, "").replace(/[^a-z0-9]/g, "");
-    const query = async (spec, from, to) => {
-      const variables = JSON.parse(JSON.stringify(spec.vars).split(from).join(to.replace(/"/g, "")));
+    const query = async (spec, set) => {
+      const variables = { ...spec.vars, ...set(spec.vars) };
       const res = await fetch("https://api-partner.spotify.com/pathfinder/v2/query", { method: "POST", headers: { "content-type": "application/json;charset=UTF-8", authorization: F.cap.auth, "client-token": F.cap.ctok, "app-platform": F.cap.app || "WebPlayer", "spotify-app-version": F.cap.ver || "" }, body: JSON.stringify({ variables, operationName: spec.op, extensions: { persistedQuery: { version: 1, sha256Hash: F.ops[spec.op] } } }) });
       if (!res.ok) throw new Error(spec.op + " returned " + res.status);
       return res.json();
     };
     const search = async (q) => {
       const found = []; const walk = (o) => { if (!o || typeof o !== "object") return; if (o.__typename === "Artist" && o.profile?.name && o.uri) found.push(o); for (const k in o) walk(o[k]); };
-      walk(await query(F.search, "daft punk", q));
+      walk(await query(F.search, (v) => ("searchTerm" in v ? { searchTerm: q } : { query: q })));
       const uniq = [...new Map(found.map((a) => [a.uri, a])).values()];
       return uniq.find((a) => norm(a.profile.name) === norm(q)) || uniq[0] || null;
     };
+    // the desktop player asks for an artist's overview; the mobile one (which bb's browser panel gets)
+    // embeds the same data in the page as base64 initialState
+    const fromPage = async (id) => {
+      const html = await (await fetch("/artist/" + id)).text();
+      const m = html.match(/<script id="initialState" type="text\\/plain">([^<]+)<\\/script>/);
+      if (!m) return null;
+      const state = JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(m[1]), (c) => c.charCodeAt(0))));
+      return state.entities?.items?.["spotify:artist:" + id] ?? null;
+    };
     const profile = async (id) => {
-      const a = (await query(F.overview, "4tZwfgrHOc3mvqYlEYSvVi", id)).data?.artistUnion;
+      const a = F.overview ? (await query(F.overview, () => ({ uri: "spotify:artist:" + id }))).data?.artistUnion : await fromPage(id);
       if (!a) return {};
       const img = (a.visuals?.avatarImage?.sources || []).slice().sort((x, y) => Math.abs((x.width || 640) - 320) - Math.abs((y.width || 640) - 320))[0]?.url ?? null;
       return {
