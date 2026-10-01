@@ -229,11 +229,16 @@ if (only === undefined || only === "artists") {
       if (!res.ok) throw new Error(spec.op + " returned " + res.status);
       return res.json();
     };
+    // under load Spotify sometimes answers a search with nothing, so an empty answer is retried
     const search = async (q) => {
-      const found = []; const walk = (o) => { if (!o || typeof o !== "object") return; if (o.__typename === "Artist" && o.profile?.name && o.uri) found.push(o); for (const k in o) walk(o[k]); };
-      walk(await query(F.search, (v) => ("searchTerm" in v ? { searchTerm: q } : { query: q })));
-      const uniq = [...new Map(found.map((a) => [a.uri, a])).values()];
-      return uniq.find((a) => norm(a.profile.name) === norm(q)) || uniq[0] || null;
+      for (let attempt = 1; attempt <= 3; attempt++) {
+        const found = []; const walk = (o) => { if (!o || typeof o !== "object") return; if (o.__typename === "Artist" && o.profile?.name && o.uri) found.push(o); for (const k in o) walk(o[k]); };
+        try { walk(await query(F.search, (v) => ("searchTerm" in v ? { searchTerm: q } : { query: q }))); } catch (e) { if (attempt === 3) throw e; }
+        const uniq = [...new Map(found.map((a) => [a.uri, a])).values()];
+        if (uniq.length) return uniq.find((a) => norm(a.profile.name) === norm(q)) || uniq[0];
+        await new Promise((r) => setTimeout(r, 1500 * attempt));
+      }
+      return null;
     };
     // the desktop player asks for an artist's overview; the mobile one (which bb's browser panel gets)
     // embeds the same data in the page as base64 initialState
@@ -278,5 +283,5 @@ if (only === undefined || only === "artists") {
     h.exact ? `${act}: "${h.name}" has only ${h.listeners ?? 0} monthly listeners; a small local act, or a namesake` : `${act}: searched "${h.q}", got "${h.name}"`));
   console.log(`\rartists: ${Object.keys(artists).length}       `);
   if (misses.length) console.log("not found on spotify:", misses.join(", "));
-  if (loose.length) console.log("check these matches (set \"artists\" in the lineup, or \"skip\" in lanes.json):\n  " + loose.join("\n  "));
+  if (loose.length) console.log("check these matches. Different names are ignored unless only a typo apart; if one is right, put its Spotify name in the act's \"artists\" in the lineup. A same-name artist that's wrong goes in \"skip\" in lanes.json:\n  " + loose.join("\n  "));
 }

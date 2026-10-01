@@ -6,6 +6,7 @@
 //   node photos.mjs <work> festivals/<slug> [--skip "<act>"…]     skip acts whose match is wrong
 import { readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
+import { trustedHit } from "./lib.mjs";
 
 const args = process.argv.slice(2);
 const [work, folder] = args.filter((a, i) => !a.startsWith("--") && args[i - 1] !== "--skip");
@@ -18,7 +19,7 @@ const harvest = JSON.parse(readFileSync(join(work, "spotify", "artists.json"), "
 const artists = {};
 for (const [act, hits] of Object.entries(harvest)) {
   if (skip.has(act.toLowerCase())) continue;
-  const hit = hits.find((h) => h.id && h.exact) ?? hits.find((h) => h.id);
+  const hit = hits.find((h) => h.id && h.exact) ?? hits.find(trustedHit);
   if (hit) artists[act.toLowerCase()] = { img: hit.img ?? null, url: hit.url ?? null };
 }
 writeFileSync(join(folder, "artists.json"), JSON.stringify(artists, null, 1) + "\n");

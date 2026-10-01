@@ -6,7 +6,7 @@
 //
 // Inputs: spotify/liked.json, spotify/artists.json, spotify/top.json (if signed in), lanes.json, and the
 // installed festival's lineup (--festival <slug> when more than one is installed), or --lineup <file>.
-// Score (0–100) = direct (the stronger of: songs you've liked by the act, recent likes counting extra;
+// Score (0–98, tapering above 70) = direct (the stronger of: songs you've liked by the act, recent likes counting extra;
 //                         or how high the act is in your top artists and top tracks)
 //               + neighbour (how many of Spotify's "fans also like" artists you like or play)
 //               + lane (0–40, your judgment of how well the act fits the lanes the library shows).
@@ -24,7 +24,7 @@
 //   skip   Spotify search queries whose match is the wrong artist
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import { loadLineup } from "./lib.mjs";
+import { loadLineup, trustedHit } from "./lib.mjs";
 
 const args = process.argv.slice(2);
 const work = args[0];
@@ -71,7 +71,9 @@ const acts = [...new Map(lineup.sets.map((s) => [low(s.name), s])).values()];
 function signals(set) {
   const key = low(set.name), lane = { ...(lanes["*"] ?? {}), ...(lanes[key] ?? {}) };
   const skip = new Set((lane.skip ?? []).map(low));
-  const hits = (harvest[set.name] ?? []).filter((h) => h.id && !skip.has(low(h.q)));
+  const all = (harvest[set.name] ?? []).filter((h) => h.id && !skip.has(low(h.q)));
+  const hits = all.filter(trustedHit);
+  const guesses = all.filter((h) => !trustedHit(h));
   const credit = new Set([key, ...hits.map((h) => low(h.name)), ...(lane.credit ?? []).map(low)]);
   const mine = liked.filter((t) => t.artists.some((a) => credit.has(low(a))));
   // best placing in any range's top artists (1 = first this month), and distinct top tracks by the act
@@ -90,7 +92,7 @@ function signals(set) {
     const v = found.reduce((sum, [, c]) => sum + Math.min(1, Math.log2(1 + c) / 3.5), 0) * 12;
     if (v > neighbour) { neighbour = v; near = found; }
   }
-  return { key, lane, hits, mine, heard, ranks, tracksPlayed, neighbour: Math.min(24, neighbour), near };
+  return { key, lane, hits, guesses, mine, heard, ranks, tracksPlayed, neighbour: Math.min(24, neighbour), near };
 }
 
 const fmtN = (n) => (n >= 1e6 ? (n / 1e6).toFixed(1).replace(/\.0$/, "") + "m" : n >= 1e3 ? Math.round(n / 1e3) + "k" : String(n));
@@ -104,7 +106,7 @@ if (args.includes("--profile")) {
   console.log("act | your likes | top artists and tracks | fans-also-like you like or play | spotify match (listeners) | lane");
   for (const set of acts) {
     const s = signals(set);
-    const match = s.hits.map((h) => `${h.name}${h.exact ? "" : ` [searched "${h.q}"]`} (${h.listeners ? fmtN(h.listeners) : "?"})`).join(" + ") || "not found";
+    const match = [...s.hits.map((h) => `${h.name}${h.exact ? "" : ` [searched "${h.q}"]`} (${h.listeners ? fmtN(h.listeners) : "?"})`), ...s.guesses.map((h) => `IGNORED "${h.q}" → ${h.name}`)].join(" + ") || "not found";
     const near = s.near.sort((a, b) => b[1] - a[1]).slice(0, 4).map(([n, c]) => `${n} ${c}`).join(", ");
     const playing = [s.ranks.join(", "), s.tracksPlayed.length ? `${s.tracksPlayed.length} top tracks` : ""].filter(Boolean).join("; ");
     console.log(`${set.name} | ${s.mine.length} | ${playing || "-"} | ${near || "-"} | ${match} | ${s.lane.lane ?? "MISSING"}`);
@@ -124,9 +126,12 @@ for (const set of acts) {
   const n = mine.length || lane.told || 0;
   const fromLikes = n ? 28 + 7 * (Math.min(n, 4) - 1) + (mine[0]?.i < RECENT ? 8 : 0) : 0;
   const fromPlays = heard || tracksPlayed.length ? (heard ? 26 + 20 * heard : 26) + 3 * Math.min(tracksPlayed.length, 3) : 0;
-  const direct = Math.max(fromLikes, fromPlays);
+  // the stronger signal counts in full and the other adds a little, so liking and playing beats either alone
+  const direct = Math.max(fromLikes, fromPlays) + 0.25 * Math.min(fromLikes, fromPlays);
   const known = n > 0 || fromPlays > 0;
-  let score = Math.round(clamp(direct + neighbour + (lane.lane ?? 0), 3, 98));
+  // above 70 the score tapers instead of hitting a cap, so favourites stay in order rather than tying
+  const raw = direct + neighbour + (lane.lane ?? 0);
+  let score = Math.round(clamp(raw <= 70 ? raw : 70 + 28 * (1 - Math.exp(-(raw - 70) / 35)), 3, 98));
   if (lane.cap !== undefined) score = Math.min(score, lane.cap);
   else if (ambient.has(set.stage)) score = Math.min(score, 55);
   const tier = known && score >= 45 ? "heavy" : known ? "deep" : lane.tier === "wild" ? "wild" : score >= 40 ? "deep" : null;
