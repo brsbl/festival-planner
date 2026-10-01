@@ -32,13 +32,11 @@ Sign in at [open.spotify.com](https://open.spotify.com) in a bb browser tab when
 | ![ACL day plan with both weekends](docs/examples/acl-2026-plan.jpg) | ![Portola day plan with walking times between stages](docs/examples/portola-2026-plan.jpg) | ![Coachella day plan with dot meters and stage colours](docs/examples/coachella-2026-plan.jpg) | ![Bonnaroo day plan with yellow pill markers](docs/examples/bonnaroo-2026-plan.jpg) | ![Outside Lands day plan in ticket-style cards](docs/examples/outside-lands-2026-plan.jpg) |
 | ![ACL at night](docs/examples/acl-2026-night.jpg) | ![Portola at night](docs/examples/portola-2026-night.jpg) | ![Coachella at night, with a lit Ferris wheel](docs/examples/coachella-2026-night.jpg) | ![Bonnaroo After Hours in neon](docs/examples/bonnaroo-2026-night.jpg) | ![Outside Lands at night](docs/examples/outside-lands-2026-night.jpg) |
 
-Made-up listener. Unofficial fan planners, not affiliated with the festivals.
-
 ## How to use
 
 - Mark acts ✓ go, ? maybe, or ✕ skip and the plan reroutes.
 - **Grid** shows every stage; the **catalogue** lists every act with previews.
-- **On your phone:** the agent sets this up for you at the end.
+- **On your phone:** the agent will walk you through how to get this set up on your phone at the end.
 
 ## Develop
 
