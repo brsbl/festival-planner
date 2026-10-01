@@ -1,0 +1,99 @@
+{
+  "style": {
+    "shape": "soft",
+    "wordmark": "solid",
+    "photos": "color",
+    "rules": "solid",
+    "meter": "dots",
+    "marker": "underline",
+    "catalog": "off",
+    "ticker": false
+  },
+  "fonts": {
+    "display": "Bricolage Grotesque",
+    "serif": "Gupter",
+    "body": "Funnel Sans",
+    "mono": "Jost",
+    "hand": "Mansalva",
+    "google": "family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&family=Gupter:wght@400;500;700&family=Funnel+Sans:wght@300..800&family=Jost:wght@300..700&family=Mansalva"
+  },
+  "day": {
+    "paper": "#F7E8D3",
+    "paper-2": "#EFDDBE",
+    "paper-3": "#FEFBF6",
+    "cream": "#FEFBF6",
+    "ink": "#1D4B57",
+    "ink-deep": "#0E0C0A",
+    "ink-70": "#336D8E",
+    "ink-50": "#44A1A4",
+    "ink-30": "#A8D8CF",
+    "black": "#0E0C0A",
+    "grey": "#5F5251",
+    "highlighter": "#FFAB37",
+    "alert": "#F36835",
+    "knock-bg": "#336D8E",
+    "knock-fg": "#FEFBF6"
+  },
+  "night": {
+    "paper": "#11353F",
+    "paper-2": "#184451",
+    "paper-3": "#1C4C59",
+    "cream": "#FEFBF6",
+    "ink": "#F7EEDF",
+    "ink-deep": "#FEFBF6",
+    "ink-70": "#BCD6CF",
+    "ink-50": "#8DD4C8",
+    "ink-30": "#3D7884",
+    "black": "#071C21",
+    "grey": "#A9B7B3",
+    "highlighter": "#D33D32",
+    "alert": "#F36835",
+    "knock-bg": "#F36835",
+    "knock-fg": "#0E0C0A"
+  },
+  "texture": false,
+  "wordmark": {
+    "ball": false
+  },
+  "skyline": "none",
+  "copy": {
+    "title": "Your {Name} Weekend",
+    "side": "Day {n}",
+    "compiledFor": "weekend one · made for {name}",
+    "sampleTaste": "sample taste · ask an agent to make it yours",
+    "noTaste": "no taste yet · ask an agent to make it yours",
+    "lightsOff": "Sundown",
+    "lightsOn": "Sunrise",
+    "taste": "Your Coachella",
+    "top": "Your top 4",
+    "plan": "Your set times",
+    "catalog": "The lineup",
+    "list": "my day",
+    "grid": "all stages",
+    "linerNotes": "WHY YOU",
+    "credits": "SOUNDS LIKE",
+    "footer": "unofficial fan planner · not affiliated with Coachella or Goldenvoice",
+    "tiers": {
+      "heavy": {
+        "stamp": "Front Row",
+        "filter": "front row",
+        "hint": "you know every word. get there early."
+      },
+      "deep": {
+        "stamp": "In Your Orbit",
+        "filter": "in your orbit",
+        "hint": "you play everyone around them."
+      },
+      "wild": {
+        "stamp": "Desert Dare",
+        "filter": "desert dares",
+        "hint": "a stretch. the desert rewards it."
+      },
+      "new": {
+        "stamp": "Discover",
+        "filter": "discover",
+        "hint": "no data yet. wander in."
+      }
+    }
+  }
+}

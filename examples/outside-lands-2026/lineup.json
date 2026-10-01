@@ -1,0 +1,2851 @@
+{
+ "festival": {
+  "name": "Outside Lands",
+  "year": 2026,
+  "code": "OSL-26",
+  "venue": "Golden Gate Park, San Francisco",
+  "timeZone": "America/Los_Angeles",
+  "source": "sfoutsidelands.com",
+  "doors": "12:00",
+  "close": "22:00",
+  "days": [
+   {
+    "id": "fri",
+    "label": "FRI",
+    "date": "2026-08-07"
+   },
+   {
+    "id": "sat",
+    "label": "SAT",
+    "date": "2026-08-08"
+   },
+   {
+    "id": "sun",
+    "label": "SUN",
+    "date": "2026-08-09"
+   }
+  ],
+  "map": {
+   "title": "THE PARK",
+   "ground": "M14 40 C80 22 200 28 320 34 C430 40 520 30 606 46 L606 292 C520 306 420 300 320 298 C210 296 90 306 14 292 Z",
+   "water": [
+    [
+     16,
+     120,
+     10,
+     120
+    ]
+   ],
+   "labels": [
+    [
+     28,
+     24,
+     "← OCEAN BEACH"
+    ],
+    [
+     250,
+     24,
+     "FULTON ST (NORTH)"
+    ],
+    [
+     250,
+     318,
+     "LINCOLN WAY"
+    ],
+    [
+     520,
+     24,
+     "HAIGHT →"
+    ]
+   ],
+   "paths": [
+    [
+     "sutro",
+     "lands-end"
+    ],
+    [
+     "sutro",
+     "soma"
+    ],
+    [
+     "lands-end",
+     "duboce"
+    ],
+    [
+     "soma",
+     "duboce"
+    ],
+    [
+     "duboce",
+     "twin-peaks"
+    ],
+    [
+     "twin-peaks",
+     "panhandle"
+    ],
+    [
+     "lands-end",
+     "dolores"
+    ],
+    [
+     "dolores",
+     "cocktail-magic"
+    ]
+   ]
+  }
+ },
+ "stages": [
+  {
+   "id": "lands-end",
+   "name": "Lands End",
+   "short": "LANDS",
+   "icon": "stage",
+   "x": 0.36,
+   "y": 0.72,
+   "wide": true
+  },
+  {
+   "id": "twin-peaks",
+   "name": "Twin Peaks",
+   "short": "PEAKS",
+   "icon": "stage",
+   "x": 0.86,
+   "y": 0.3
+  },
+  {
+   "id": "sutro",
+   "name": "Sutro",
+   "short": "SUTRO",
+   "icon": "tent",
+   "x": 0.12,
+   "y": 0.28
+  },
+  {
+   "id": "panhandle",
+   "name": "Panhandle",
+   "short": "PAN",
+   "icon": "stage",
+   "x": 0.86,
+   "y": 0.74
+  },
+  {
+   "id": "soma",
+   "name": "SOMA",
+   "short": "SOMA",
+   "icon": "ball",
+   "x": 0.38,
+   "y": 0.24
+  },
+  {
+   "id": "dolores",
+   "name": "Dolores'",
+   "short": "DOLO",
+   "icon": "tent",
+   "x": 0.64,
+   "y": 0.8
+  },
+  {
+   "id": "duboce",
+   "name": "Duboce Triangle",
+   "short": "DUBO",
+   "icon": "tent",
+   "x": 0.62,
+   "y": 0.42
+  },
+  {
+   "id": "cocktail-magic",
+   "name": "Cocktail Magic",
+   "short": "MAGIC",
+   "icon": "warehouse",
+   "x": 0.08,
+   "y": 0.8,
+   "ambient": true
+  }
+ ],
+ "walk": {
+  "lands-end|sutro": 8,
+  "lands-end|soma": 8,
+  "lands-end|duboce": 9,
+  "lands-end|twin-peaks": 15,
+  "lands-end|panhandle": 14,
+  "lands-end|dolores": 7,
+  "lands-end|cocktail-magic": 5,
+  "sutro|soma": 7,
+  "sutro|duboce": 13,
+  "sutro|twin-peaks": 20,
+  "sutro|panhandle": 20,
+  "sutro|dolores": 13,
+  "sutro|cocktail-magic": 8,
+  "soma|duboce": 7,
+  "soma|twin-peaks": 13,
+  "soma|panhandle": 14,
+  "soma|dolores": 10,
+  "soma|cocktail-magic": 10,
+  "duboce|twin-peaks": 7,
+  "duboce|panhandle": 8,
+  "duboce|dolores": 6,
+  "duboce|cocktail-magic": 12,
+  "twin-peaks|panhandle": 5,
+  "twin-peaks|dolores": 10,
+  "twin-peaks|cocktail-magic": 18,
+  "panhandle|dolores": 8,
+  "panhandle|cocktail-magic": 17,
+  "dolores|cocktail-magic": 9
+ },
+ "sets": [
+  {
+   "id": "dani-satin-and-always-hallways-fri",
+   "cat": "OSL-26-001",
+   "pos": "A1",
+   "name": "Dani Satin and Always Hallways",
+   "qualifier": null,
+   "billing": "Dani Satin and Always Hallways",
+   "day": "fri",
+   "stage": "panhandle",
+   "start": 720,
+   "end": 750,
+   "blurb": "",
+   "tags": [
+    "indie",
+    "bay area"
+   ],
+   "artists": [
+    "Dani Satin",
+    "Always Hallways"
+   ]
+  },
+  {
+   "id": "vertigo-fri",
+   "cat": "OSL-26-002",
+   "pos": "A2",
+   "name": "Vertigo",
+   "qualifier": null,
+   "billing": "Vertigo",
+   "day": "fri",
+   "stage": "soma",
+   "start": 720,
+   "end": 775,
+   "blurb": "",
+   "tags": [
+    "house"
+   ]
+  },
+  {
+   "id": "faouzia-fri",
+   "cat": "OSL-26-003",
+   "pos": "A3",
+   "name": "Faouzia",
+   "qualifier": null,
+   "billing": "Faouzia",
+   "day": "fri",
+   "stage": "lands-end",
+   "start": 725,
+   "end": 770,
+   "blurb": "",
+   "tags": [
+    "pop"
+   ]
+  },
+  {
+   "id": "bad-nerves-fri",
+   "cat": "OSL-26-004",
+   "pos": "A4",
+   "name": "Bad Nerves",
+   "qualifier": null,
+   "billing": "Bad Nerves",
+   "day": "fri",
+   "stage": "sutro",
+   "start": 745,
+   "end": 790,
+   "blurb": "",
+   "tags": [
+    "punk"
+   ]
+  },
+  {
+   "id": "dj-erinyes-fri",
+   "cat": "OSL-26-005",
+   "pos": "A5",
+   "name": "DJ Erinyes",
+   "qualifier": null,
+   "billing": "DJ Erinyes",
+   "day": "fri",
+   "stage": "dolores",
+   "start": 750,
+   "end": 795,
+   "blurb": "Hot Goth GF takeover",
+   "tags": [
+    "drag",
+    "queer nightlife"
+   ],
+   "artists": [
+    "ErinYes"
+   ]
+  },
+  {
+   "id": "bingo-loco-fri",
+   "cat": "OSL-26-006",
+   "pos": "A6",
+   "name": "BINGO LOCO",
+   "qualifier": null,
+   "billing": "BINGO LOCO",
+   "day": "fri",
+   "stage": "cocktail-magic",
+   "start": 750,
+   "end": 795,
+   "blurb": "",
+   "tags": [
+    "party"
+   ]
+  },
+  {
+   "id": "nezza-fri",
+   "cat": "OSL-26-007",
+   "pos": "A7",
+   "name": "NEZZA",
+   "qualifier": null,
+   "billing": "NEZZA",
+   "day": "fri",
+   "stage": "twin-peaks",
+   "start": 755,
+   "end": 800,
+   "blurb": "",
+   "tags": [
+    "pop",
+    "latin"
+   ]
+  },
+  {
+   "id": "luke-alessi-fri",
+   "cat": "OSL-26-008",
+   "pos": "A8",
+   "name": "Luke Alessi",
+   "qualifier": null,
+   "billing": "Luke Alessi",
+   "day": "fri",
+   "stage": "soma",
+   "start": 775,
+   "end": 865,
+   "blurb": "",
+   "tags": [
+    "house",
+    "tech house"
+   ]
+  },
+  {
+   "id": "dj-dolomedes-fri",
+   "cat": "OSL-26-009",
+   "pos": "A9",
+   "name": "DJ Dolomedes",
+   "qualifier": null,
+   "billing": "DJ Dolomedes",
+   "day": "fri",
+   "stage": "dolores",
+   "start": 795,
+   "end": 840,
+   "blurb": "Hot Goth GF takeover",
+   "tags": [
+    "drag",
+    "queer nightlife"
+   ]
+  },
+  {
+   "id": "grace-ives-fri",
+   "cat": "OSL-26-010",
+   "pos": "A10",
+   "name": "Grace Ives",
+   "qualifier": null,
+   "billing": "Grace Ives",
+   "day": "fri",
+   "stage": "lands-end",
+   "start": 800,
+   "end": 845,
+   "blurb": "",
+   "tags": [
+    "indie pop"
+   ]
+  },
+  {
+   "id": "chezile-fri",
+   "cat": "OSL-26-011",
+   "pos": "A11",
+   "name": "Chezile",
+   "qualifier": null,
+   "billing": "Chezile",
+   "day": "fri",
+   "stage": "panhandle",
+   "start": 800,
+   "end": 840,
+   "blurb": "",
+   "tags": [
+    "singer-songwriter"
+   ]
+  },
+  {
+   "id": "die-spitz-fri",
+   "cat": "OSL-26-012",
+   "pos": "A12",
+   "name": "Die Spitz",
+   "qualifier": null,
+   "billing": "Die Spitz",
+   "day": "fri",
+   "stage": "sutro",
+   "start": 820,
+   "end": 865,
+   "blurb": "",
+   "tags": [
+    "punk",
+    "grunge"
+   ]
+  },
+  {
+   "id": "bingo-loco-fri-2",
+   "cat": "OSL-26-013",
+   "pos": "A13",
+   "name": "BINGO LOCO",
+   "qualifier": null,
+   "billing": "BINGO LOCO",
+   "day": "fri",
+   "stage": "cocktail-magic",
+   "start": 820,
+   "end": 865,
+   "blurb": "",
+   "tags": [
+    "party"
+   ]
+  },
+  {
+   "id": "pink-stiletto-fri",
+   "cat": "OSL-26-014",
+   "pos": "A14",
+   "name": "Pink Stiletto",
+   "qualifier": null,
+   "billing": "Pink Stiletto",
+   "day": "fri",
+   "stage": "dolores",
+   "start": 840,
+   "end": 870,
+   "blurb": "Hot Goth GF takeover",
+   "tags": [
+    "drag",
+    "queer nightlife"
+   ]
+  },
+  {
+   "id": "kerala-dust-fri",
+   "cat": "OSL-26-015",
+   "pos": "A15",
+   "name": "Kerala Dust",
+   "qualifier": null,
+   "billing": "Kerala Dust",
+   "day": "fri",
+   "stage": "twin-peaks",
+   "start": 845,
+   "end": 890,
+   "blurb": "",
+   "tags": [
+    "electronic",
+    "indie dance"
+   ]
+  },
+  {
+   "id": "nezza-fri-2",
+   "cat": "OSL-26-016",
+   "pos": "A16",
+   "name": "NEZZA",
+   "qualifier": null,
+   "billing": "NEZZA",
+   "day": "fri",
+   "stage": "duboce",
+   "start": 845,
+   "end": 875,
+   "blurb": "intimate set in the eucalyptus",
+   "tags": [
+    "pop",
+    "latin"
+   ]
+  },
+  {
+   "id": "tobiahs-fri",
+   "cat": "OSL-26-017",
+   "pos": "A17",
+   "name": "tobiahs",
+   "qualifier": null,
+   "billing": "tobiahs",
+   "day": "fri",
+   "stage": "soma",
+   "start": 865,
+   "end": 955,
+   "blurb": "",
+   "tags": [
+    "house"
+   ]
+  },
+  {
+   "id": "dj-starr-noir-fri",
+   "cat": "OSL-26-018",
+   "pos": "A18",
+   "name": "DJ Starr Noir",
+   "qualifier": null,
+   "billing": "DJ Starr Noir",
+   "day": "fri",
+   "stage": "dolores",
+   "start": 870,
+   "end": 920,
+   "blurb": "Hot Goth GF takeover",
+   "tags": [
+    "drag",
+    "queer nightlife"
+   ]
+  },
+  {
+   "id": "durand-bernarr-fri",
+   "cat": "OSL-26-019",
+   "pos": "A19",
+   "name": "Durand Bernarr",
+   "qualifier": null,
+   "billing": "Durand Bernarr",
+   "day": "fri",
+   "stage": "lands-end",
+   "start": 875,
+   "end": 925,
+   "blurb": "",
+   "tags": [
+    "r&b",
+    "funk"
+   ]
+  },
+  {
+   "id": "sawyer-hill-fri",
+   "cat": "OSL-26-020",
+   "pos": "A20",
+   "name": "Sawyer Hill",
+   "qualifier": null,
+   "billing": "Sawyer Hill",
+   "day": "fri",
+   "stage": "panhandle",
+   "start": 890,
+   "end": 930,
+   "blurb": "",
+   "tags": [
+    "folk",
+    "indie"
+   ]
+  },
+  {
+   "id": "bingo-loco-fri-3",
+   "cat": "OSL-26-021",
+   "pos": "A21",
+   "name": "BINGO LOCO",
+   "qualifier": null,
+   "billing": "BINGO LOCO",
+   "day": "fri",
+   "stage": "cocktail-magic",
+   "start": 890,
+   "end": 935,
+   "blurb": "",
+   "tags": [
+    "party"
+   ]
+  },
+  {
+   "id": "the-story-so-far-fri",
+   "cat": "OSL-26-022",
+   "pos": "A22",
+   "name": "The Story So Far",
+   "qualifier": null,
+   "billing": "The Story So Far",
+   "day": "fri",
+   "stage": "sutro",
+   "start": 895,
+   "end": 940,
+   "blurb": "",
+   "tags": [
+    "pop punk"
+   ]
+  },
+  {
+   "id": "hot-goth-freak-show-fri",
+   "cat": "OSL-26-023",
+   "pos": "A23",
+   "name": "Hot Goth Freak Show",
+   "qualifier": null,
+   "billing": "Hot Goth Freak Show",
+   "day": "fri",
+   "stage": "dolores",
+   "start": 920,
+   "end": 950,
+   "blurb": "Hot Goth GF takeover",
+   "tags": [
+    "drag",
+    "queer nightlife"
+   ]
+  },
+  {
+   "id": "chezile-fri-2",
+   "cat": "OSL-26-024",
+   "pos": "A24",
+   "name": "Chezile",
+   "qualifier": null,
+   "billing": "Chezile",
+   "day": "fri",
+   "stage": "duboce",
+   "start": 925,
+   "end": 955,
+   "blurb": "intimate set in the eucalyptus",
+   "tags": [
+    "singer-songwriter"
+   ]
+  },
+  {
+   "id": "alleycvt-fri",
+   "cat": "OSL-26-025",
+   "pos": "A25",
+   "name": "ALLEYCVT",
+   "qualifier": null,
+   "billing": "ALLEYCVT",
+   "day": "fri",
+   "stage": "twin-peaks",
+   "start": 935,
+   "end": 985,
+   "blurb": "",
+   "tags": [
+    "bass",
+    "dubstep"
+   ]
+  },
+  {
+   "id": "soltera-fri",
+   "cat": "OSL-26-026",
+   "pos": "A26",
+   "name": "Soltera",
+   "qualifier": null,
+   "billing": "Soltera",
+   "day": "fri",
+   "stage": "dolores",
+   "start": 950,
+   "end": 995,
+   "blurb": "Hot Goth GF takeover",
+   "tags": [
+    "drag",
+    "queer nightlife"
+   ]
+  },
+  {
+   "id": "wet-leg-fri",
+   "cat": "OSL-26-027",
+   "pos": "A27",
+   "name": "Wet Leg",
+   "qualifier": null,
+   "billing": "Wet Leg",
+   "day": "fri",
+   "stage": "lands-end",
+   "start": 955,
+   "end": 1005,
+   "blurb": "",
+   "tags": [
+    "indie rock",
+    "post-punk"
+   ]
+  },
+  {
+   "id": "mph-fri",
+   "cat": "OSL-26-028",
+   "pos": "A28",
+   "name": "MPH",
+   "qualifier": null,
+   "billing": "MPH",
+   "day": "fri",
+   "stage": "soma",
+   "start": 955,
+   "end": 1045,
+   "blurb": "",
+   "tags": [
+    "uk garage",
+    "house"
+   ]
+  },
+  {
+   "id": "open-mic-fri",
+   "cat": "OSL-26-029",
+   "pos": "A29",
+   "name": "Open Mic",
+   "qualifier": "hosted by Rainbow Girls",
+   "billing": "Open Mic hosted by Rainbow Girls",
+   "day": "fri",
+   "stage": "cocktail-magic",
+   "start": 965,
+   "end": 1010,
+   "blurb": "",
+   "tags": [
+    "party"
+   ],
+   "artists": [
+    "Rainbow Girls"
+   ]
+  },
+  {
+   "id": "sierra-ferrell-fri",
+   "cat": "OSL-26-030",
+   "pos": "A30",
+   "name": "Sierra Ferrell",
+   "qualifier": null,
+   "billing": "Sierra Ferrell",
+   "day": "fri",
+   "stage": "sutro",
+   "start": 970,
+   "end": 1030,
+   "blurb": "",
+   "tags": [
+    "americana",
+    "folk"
+   ]
+  },
+  {
+   "id": "billie-marten-fri",
+   "cat": "OSL-26-031",
+   "pos": "A31",
+   "name": "Billie Marten",
+   "qualifier": null,
+   "billing": "Billie Marten",
+   "day": "fri",
+   "stage": "panhandle",
+   "start": 985,
+   "end": 1025,
+   "blurb": "",
+   "tags": [
+    "folk",
+    "singer-songwriter"
+   ]
+  },
+  {
+   "id": "dj-hopeless-hot-goth-pole-show-fri",
+   "cat": "OSL-26-032",
+   "pos": "A32",
+   "name": "DJ Hopeless & Hot Goth Pole Show",
+   "qualifier": null,
+   "billing": "DJ Hopeless & Hot Goth Pole Show",
+   "day": "fri",
+   "stage": "dolores",
+   "start": 995,
+   "end": 1040,
+   "blurb": "Hot Goth GF takeover",
+   "tags": [
+    "drag",
+    "queer nightlife"
+   ],
+   "artists": [
+    "Hopeless"
+   ]
+  },
+  {
+   "id": "luke-alessi-fri-2",
+   "cat": "OSL-26-033",
+   "pos": "A33",
+   "name": "Luke Alessi",
+   "qualifier": null,
+   "billing": "Luke Alessi",
+   "day": "fri",
+   "stage": "duboce",
+   "start": 1005,
+   "end": 1035,
+   "blurb": "intimate set in the eucalyptus",
+   "tags": [
+    "house",
+    "tech house"
+   ]
+  },
+  {
+   "id": "bootie-mashup-fri",
+   "cat": "OSL-26-034",
+   "pos": "A34",
+   "name": "Bootie Mashup",
+   "qualifier": "Diva Pop w/ DJ Tyme",
+   "billing": "Bootie Mashup: Diva Pop w/ DJ Tyme",
+   "day": "fri",
+   "stage": "cocktail-magic",
+   "start": 1025,
+   "end": 1085,
+   "blurb": "",
+   "tags": [
+    "party"
+   ],
+   "artists": [
+    "Bootie Mashup"
+   ]
+  },
+  {
+   "id": "tinashe-fri",
+   "cat": "OSL-26-035",
+   "pos": "A35",
+   "name": "Tinashe",
+   "qualifier": null,
+   "billing": "Tinashe",
+   "day": "fri",
+   "stage": "twin-peaks",
+   "start": 1030,
+   "end": 1080,
+   "blurb": "",
+   "tags": [
+    "r&b",
+    "pop"
+   ]
+  },
+  {
+   "id": "glorilla-fri",
+   "cat": "OSL-26-036",
+   "pos": "A36",
+   "name": "GloRilla",
+   "qualifier": null,
+   "billing": "GloRilla",
+   "day": "fri",
+   "stage": "lands-end",
+   "start": 1035,
+   "end": 1080,
+   "blurb": "",
+   "tags": [
+    "hip-hop"
+   ]
+  },
+  {
+   "id": "ms-boan-fri",
+   "cat": "OSL-26-037",
+   "pos": "A37",
+   "name": "Ms. Boan",
+   "qualifier": null,
+   "billing": "Ms. Boan",
+   "day": "fri",
+   "stage": "dolores",
+   "start": 1040,
+   "end": 1085,
+   "blurb": "Hot Goth GF takeover",
+   "tags": [
+    "drag",
+    "queer nightlife"
+   ]
+  },
+  {
+   "id": "ki-ki-fri",
+   "cat": "OSL-26-038",
+   "pos": "A38",
+   "name": "KI/KI",
+   "qualifier": null,
+   "billing": "KI/KI",
+   "day": "fri",
+   "stage": "soma",
+   "start": 1045,
+   "end": 1135,
+   "blurb": "",
+   "tags": [
+    "techno",
+    "trance"
+   ]
+  },
+  {
+   "id": "geese-fri",
+   "cat": "OSL-26-039",
+   "pos": "A39",
+   "name": "Geese",
+   "qualifier": null,
+   "billing": "Geese",
+   "day": "fri",
+   "stage": "sutro",
+   "start": 1070,
+   "end": 1130,
+   "blurb": "",
+   "tags": [
+    "indie rock"
+   ]
+  },
+  {
+   "id": "goldie-boutilier-fri",
+   "cat": "OSL-26-040",
+   "pos": "A40",
+   "name": "Goldie Boutilier",
+   "qualifier": null,
+   "billing": "Goldie Boutilier",
+   "day": "fri",
+   "stage": "panhandle",
+   "start": 1080,
+   "end": 1120,
+   "blurb": "",
+   "tags": [
+    "pop",
+    "dream pop"
+   ]
+  },
+  {
+   "id": "hot-goth-freak-show-fri-2",
+   "cat": "OSL-26-041",
+   "pos": "A41",
+   "name": "Hot Goth Freak Show",
+   "qualifier": null,
+   "billing": "Hot Goth Freak Show",
+   "day": "fri",
+   "stage": "dolores",
+   "start": 1085,
+   "end": 1115,
+   "blurb": "Hot Goth GF takeover",
+   "tags": [
+    "drag",
+    "queer nightlife"
+   ]
+  },
+  {
+   "id": "alleycvt-fri-2",
+   "cat": "OSL-26-042",
+   "pos": "A42",
+   "name": "ALLEYCVT",
+   "qualifier": null,
+   "billing": "ALLEYCVT",
+   "day": "fri",
+   "stage": "duboce",
+   "start": 1095,
+   "end": 1125,
+   "blurb": "intimate set in the eucalyptus",
+   "tags": [
+    "bass",
+    "dubstep"
+   ]
+  },
+  {
+   "id": "the-emo-night-tour-fri",
+   "cat": "OSL-26-043",
+   "pos": "A43",
+   "name": "The Emo Night Tour",
+   "qualifier": null,
+   "billing": "The Emo Night Tour",
+   "day": "fri",
+   "stage": "cocktail-magic",
+   "start": 1100,
+   "end": 1160,
+   "blurb": "",
+   "tags": [
+    "party"
+   ]
+  },
+  {
+   "id": "labrinth-fri",
+   "cat": "OSL-26-044",
+   "pos": "A44",
+   "name": "Labrinth",
+   "qualifier": null,
+   "billing": "Labrinth",
+   "day": "fri",
+   "stage": "lands-end",
+   "start": 1110,
+   "end": 1180,
+   "blurb": "",
+   "tags": [
+    "pop",
+    "r&b"
+   ]
+  },
+  {
+   "id": "clipse-fri",
+   "cat": "OSL-26-045",
+   "pos": "A45",
+   "name": "Clipse",
+   "qualifier": null,
+   "billing": "Clipse",
+   "day": "fri",
+   "stage": "twin-peaks",
+   "start": 1125,
+   "end": 1175,
+   "blurb": "",
+   "tags": [
+    "hip-hop"
+   ]
+  },
+  {
+   "id": "light-asylum-fri",
+   "cat": "OSL-26-046",
+   "pos": "A46",
+   "name": "Light Asylum",
+   "qualifier": null,
+   "billing": "Light Asylum",
+   "day": "fri",
+   "stage": "dolores",
+   "start": 1125,
+   "end": 1170,
+   "blurb": "Hot Goth GF takeover",
+   "tags": [
+    "darkwave",
+    "synth"
+   ]
+  },
+  {
+   "id": "u-uk-uk1mat-u-fri",
+   "cat": "OSL-26-047",
+   "pos": "A47",
+   "name": "¥ØU$UK€ ¥UK1MAT$U",
+   "qualifier": null,
+   "billing": "¥ØU$UK€ ¥UK1MAT$U",
+   "day": "fri",
+   "stage": "soma",
+   "start": 1135,
+   "end": 1225,
+   "blurb": "",
+   "tags": [
+    "hard techno"
+   ]
+  },
+  {
+   "id": "turnstile-fri",
+   "cat": "OSL-26-048",
+   "pos": "A48",
+   "name": "Turnstile",
+   "qualifier": null,
+   "billing": "Turnstile",
+   "day": "fri",
+   "stage": "sutro",
+   "start": 1160,
+   "end": 1220,
+   "blurb": "",
+   "tags": [
+    "hardcore",
+    "rock"
+   ]
+  },
+  {
+   "id": "romy-fri",
+   "cat": "OSL-26-049",
+   "pos": "A49",
+   "name": "Romy",
+   "qualifier": "DJ Set",
+   "billing": "Romy (DJ Set)",
+   "day": "fri",
+   "stage": "dolores",
+   "start": 1170,
+   "end": 1230,
+   "blurb": "Hot Goth GF takeover",
+   "tags": [
+    "house",
+    "dance"
+   ]
+  },
+  {
+   "id": "dylan-brady-fri",
+   "cat": "OSL-26-050",
+   "pos": "A50",
+   "name": "Dylan Brady",
+   "qualifier": null,
+   "billing": "Dylan Brady",
+   "day": "fri",
+   "stage": "panhandle",
+   "start": 1175,
+   "end": 1220,
+   "blurb": "",
+   "tags": [
+    "hyperpop",
+    "electronic"
+   ]
+  },
+  {
+   "id": "tobiahs-fri-2",
+   "cat": "OSL-26-051",
+   "pos": "A51",
+   "name": "tobiahs",
+   "qualifier": null,
+   "billing": "tobiahs",
+   "day": "fri",
+   "stage": "duboce",
+   "start": 1195,
+   "end": 1240,
+   "blurb": "intimate set in the eucalyptus",
+   "tags": [
+    "house"
+   ]
+  },
+  {
+   "id": "griztronics-fri",
+   "cat": "OSL-26-052",
+   "pos": "A52",
+   "name": "GRIZTRONICS",
+   "qualifier": null,
+   "billing": "GRIZTRONICS",
+   "day": "fri",
+   "stage": "twin-peaks",
+   "start": 1225,
+   "end": 1315,
+   "blurb": "GRiZ and Subtronics as one act",
+   "tags": [
+    "bass",
+    "electronic"
+   ],
+   "artists": [
+    "GRiZ",
+    "Subtronics"
+   ]
+  },
+  {
+   "id": "odd-mob-omnom-fri",
+   "cat": "OSL-26-053",
+   "pos": "A53",
+   "name": "Odd Mob & OMNOM",
+   "qualifier": "HYPERBEAM",
+   "billing": "ODD MOB & OMNOM present HYPERBEAM",
+   "day": "fri",
+   "stage": "soma",
+   "start": 1225,
+   "end": 1315,
+   "blurb": "",
+   "tags": [
+    "house",
+    "tech house"
+   ],
+   "artists": [
+    "Odd Mob",
+    "OMNOM"
+   ]
+  },
+  {
+   "id": "charli-xcx-fri",
+   "cat": "OSL-26-054",
+   "pos": "A54",
+   "name": "Charli xcx",
+   "qualifier": null,
+   "billing": "Charli xcx",
+   "day": "fri",
+   "stage": "lands-end",
+   "start": 1240,
+   "end": 1320,
+   "blurb": "",
+   "tags": [
+    "pop",
+    "hyperpop"
+   ]
+  },
+  {
+   "id": "modest-mouse-fri",
+   "cat": "OSL-26-055",
+   "pos": "A55",
+   "name": "Modest Mouse",
+   "qualifier": null,
+   "billing": "Modest Mouse",
+   "day": "fri",
+   "stage": "sutro",
+   "start": 1250,
+   "end": 1310,
+   "blurb": "",
+   "tags": [
+    "indie rock"
+   ]
+  },
+  {
+   "id": "ryman-sat",
+   "cat": "OSL-26-056",
+   "pos": "B1",
+   "name": "RYMAN",
+   "qualifier": null,
+   "billing": "RYMAN",
+   "day": "sat",
+   "stage": "panhandle",
+   "start": 720,
+   "end": 750,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "bandalos-chinos-sat",
+   "cat": "OSL-26-057",
+   "pos": "B2",
+   "name": "Bandalos Chinos",
+   "qualifier": null,
+   "billing": "Bandalos Chinos",
+   "day": "sat",
+   "stage": "lands-end",
+   "start": 730,
+   "end": 775,
+   "blurb": "",
+   "tags": [
+    "latin indie",
+    "rock"
+   ]
+  },
+  {
+   "id": "tycho-sat",
+   "cat": "OSL-26-058",
+   "pos": "B3",
+   "name": "Tycho",
+   "qualifier": "DJ Set",
+   "billing": "TYCHO DJ SET",
+   "day": "sat",
+   "stage": "duboce",
+   "start": 735,
+   "end": 825,
+   "blurb": "surprise set, announced Aug 6",
+   "tags": [
+    "electronic",
+    "downtempo"
+   ],
+   "artists": [
+    "Tycho"
+   ]
+  },
+  {
+   "id": "red-leather-sat",
+   "cat": "OSL-26-059",
+   "pos": "B4",
+   "name": "Red Leather",
+   "qualifier": null,
+   "billing": "Red Leather",
+   "day": "sat",
+   "stage": "twin-peaks",
+   "start": 750,
+   "end": 790,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "out-tonight-sat",
+   "cat": "OSL-26-060",
+   "pos": "B5",
+   "name": "OUT TONIGHT",
+   "qualifier": "singalong w/ D'Arcy Drollinger",
+   "billing": "OUT TONIGHT: A Musical Singalong feat. D'Arcy Drollinger",
+   "day": "sat",
+   "stage": "dolores",
+   "start": 750,
+   "end": 810,
+   "blurb": "OASIS takeover",
+   "tags": [
+    "drag",
+    "queer nightlife"
+   ],
+   "artists": [
+    "D'Arcy Drollinger"
+   ]
+  },
+  {
+   "id": "bingo-loco-sat",
+   "cat": "OSL-26-061",
+   "pos": "B6",
+   "name": "BINGO LOCO",
+   "qualifier": null,
+   "billing": "BINGO LOCO",
+   "day": "sat",
+   "stage": "cocktail-magic",
+   "start": 750,
+   "end": 795,
+   "blurb": "",
+   "tags": [
+    "party"
+   ]
+  },
+  {
+   "id": "rio-kosta-sat",
+   "cat": "OSL-26-062",
+   "pos": "B7",
+   "name": "RIO KOSTA",
+   "qualifier": null,
+   "billing": "RIO KOSTA",
+   "day": "sat",
+   "stage": "sutro",
+   "start": 755,
+   "end": 800,
+   "blurb": "",
+   "tags": [
+    "house"
+   ]
+  },
+  {
+   "id": "bad-juuju-sat",
+   "cat": "OSL-26-063",
+   "pos": "B8",
+   "name": "bad juuju",
+   "qualifier": null,
+   "billing": "bad juuju",
+   "day": "sat",
+   "stage": "soma",
+   "start": 755,
+   "end": 835,
+   "blurb": "",
+   "tags": [
+    "tech house"
+   ]
+  },
+  {
+   "id": "racing-mount-pleasant-sat",
+   "cat": "OSL-26-064",
+   "pos": "B9",
+   "name": "Racing Mount Pleasant",
+   "qualifier": null,
+   "billing": "Racing Mount Pleasant",
+   "day": "sat",
+   "stage": "panhandle",
+   "start": 790,
+   "end": 830,
+   "blurb": "",
+   "tags": [
+    "indie rock"
+   ]
+  },
+  {
+   "id": "haute-freddy-sat",
+   "cat": "OSL-26-065",
+   "pos": "B10",
+   "name": "Haute & Freddy",
+   "qualifier": null,
+   "billing": "Haute & Freddy",
+   "day": "sat",
+   "stage": "lands-end",
+   "start": 805,
+   "end": 850,
+   "blurb": "",
+   "tags": [
+    "alt-pop",
+    "r&b"
+   ]
+  },
+  {
+   "id": "beverly-chills-sat",
+   "cat": "OSL-26-066",
+   "pos": "B11",
+   "name": "Beverly Chills",
+   "qualifier": "OASIS DJ Set",
+   "billing": "OASIS DJ Set: Beverly Chills",
+   "day": "sat",
+   "stage": "dolores",
+   "start": 810,
+   "end": 855,
+   "blurb": "OASIS takeover",
+   "tags": [
+    "drag",
+    "queer nightlife"
+   ],
+   "artists": [
+    "Beverly Chills"
+   ]
+  },
+  {
+   "id": "bingo-loco-sat-2",
+   "cat": "OSL-26-067",
+   "pos": "B12",
+   "name": "BINGO LOCO",
+   "qualifier": null,
+   "billing": "BINGO LOCO",
+   "day": "sat",
+   "stage": "cocktail-magic",
+   "start": 820,
+   "end": 865,
+   "blurb": "",
+   "tags": [
+    "party"
+   ]
+  },
+  {
+   "id": "wunderhorse-sat",
+   "cat": "OSL-26-068",
+   "pos": "B13",
+   "name": "Wunderhorse",
+   "qualifier": null,
+   "billing": "Wunderhorse",
+   "day": "sat",
+   "stage": "sutro",
+   "start": 830,
+   "end": 875,
+   "blurb": "",
+   "tags": [
+    "indie rock",
+    "grunge"
+   ]
+  },
+  {
+   "id": "after-sat",
+   "cat": "OSL-26-069",
+   "pos": "B14",
+   "name": "After",
+   "qualifier": null,
+   "billing": "After",
+   "day": "sat",
+   "stage": "twin-peaks",
+   "start": 835,
+   "end": 875,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "1-800-girls-sat",
+   "cat": "OSL-26-070",
+   "pos": "B15",
+   "name": "1-800 GIRLS",
+   "qualifier": null,
+   "billing": "1-800 GIRLS",
+   "day": "sat",
+   "stage": "soma",
+   "start": 835,
+   "end": 925,
+   "blurb": "",
+   "tags": [
+    "house",
+    "uk garage"
+   ]
+  },
+  {
+   "id": "bandalos-chinos-sat-2",
+   "cat": "OSL-26-071",
+   "pos": "B16",
+   "name": "Bandalos Chinos",
+   "qualifier": null,
+   "billing": "Bandalos Chinos",
+   "day": "sat",
+   "stage": "duboce",
+   "start": 850,
+   "end": 880,
+   "blurb": "intimate set in the eucalyptus",
+   "tags": [
+    "latin indie",
+    "rock"
+   ]
+  },
+  {
+   "id": "reparations-sat",
+   "cat": "OSL-26-072",
+   "pos": "B17",
+   "name": "REPARATIONS",
+   "qualifier": "w/ DJ Newoncé",
+   "billing": "REPARATIONS w/ DJ Newoncé",
+   "day": "sat",
+   "stage": "dolores",
+   "start": 855,
+   "end": 915,
+   "blurb": "OASIS takeover",
+   "tags": [
+    "drag",
+    "queer nightlife"
+   ],
+   "artists": [
+    "Newoncé Gazelle"
+   ]
+  },
+  {
+   "id": "ally-evenson-sat",
+   "cat": "OSL-26-073",
+   "pos": "B18",
+   "name": "Ally Evenson",
+   "qualifier": null,
+   "billing": "Ally Evenson",
+   "day": "sat",
+   "stage": "panhandle",
+   "start": 875,
+   "end": 905,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "audrey-hobert-sat",
+   "cat": "OSL-26-074",
+   "pos": "B19",
+   "name": "Audrey Hobert",
+   "qualifier": null,
+   "billing": "Audrey Hobert",
+   "day": "sat",
+   "stage": "lands-end",
+   "start": 880,
+   "end": 930,
+   "blurb": "",
+   "tags": [
+    "pop",
+    "indie pop"
+   ]
+  },
+  {
+   "id": "bingo-loco-sat-3",
+   "cat": "OSL-26-075",
+   "pos": "B20",
+   "name": "BINGO LOCO",
+   "qualifier": null,
+   "billing": "BINGO LOCO",
+   "day": "sat",
+   "stage": "cocktail-magic",
+   "start": 890,
+   "end": 935,
+   "blurb": "",
+   "tags": [
+    "party"
+   ]
+  },
+  {
+   "id": "sienna-spiro-sat",
+   "cat": "OSL-26-076",
+   "pos": "B21",
+   "name": "Sienna Spiro",
+   "qualifier": null,
+   "billing": "Sienna Spiro",
+   "day": "sat",
+   "stage": "sutro",
+   "start": 905,
+   "end": 950,
+   "blurb": "",
+   "tags": [
+    "pop",
+    "soul"
+   ]
+  },
+  {
+   "id": "laszewo-sat",
+   "cat": "OSL-26-077",
+   "pos": "B22",
+   "name": "Laszewo",
+   "qualifier": null,
+   "billing": "Laszewo",
+   "day": "sat",
+   "stage": "twin-peaks",
+   "start": 910,
+   "end": 960,
+   "blurb": "",
+   "tags": [
+    "indie pop",
+    "electronic"
+   ],
+   "artists": [
+    "Łaszewo"
+   ]
+  },
+  {
+   "id": "reparations-sat-2",
+   "cat": "OSL-26-078",
+   "pos": "B23",
+   "name": "REPARATIONS",
+   "qualifier": "w/ Nicki Jizz feat. Kori King",
+   "billing": "REPARATIONS w/ Nicki Jizz feat. Kori King",
+   "day": "sat",
+   "stage": "dolores",
+   "start": 915,
+   "end": 1005,
+   "blurb": "OASIS takeover",
+   "tags": [
+    "drag",
+    "queer nightlife"
+   ],
+   "artists": [
+    "Kori King"
+   ]
+  },
+  {
+   "id": "camoufly-sat",
+   "cat": "OSL-26-079",
+   "pos": "B24",
+   "name": "camoufly",
+   "qualifier": null,
+   "billing": "camoufly",
+   "day": "sat",
+   "stage": "soma",
+   "start": 925,
+   "end": 1015,
+   "blurb": "",
+   "tags": [
+    "house"
+   ]
+  },
+  {
+   "id": "racing-mount-pleasant-sat-2",
+   "cat": "OSL-26-080",
+   "pos": "B25",
+   "name": "Racing Mount Pleasant",
+   "qualifier": null,
+   "billing": "Racing Mount Pleasant",
+   "day": "sat",
+   "stage": "duboce",
+   "start": 930,
+   "end": 960,
+   "blurb": "intimate set in the eucalyptus",
+   "tags": [
+    "indie rock"
+   ]
+  },
+  {
+   "id": "lucy-dacus-sat",
+   "cat": "OSL-26-081",
+   "pos": "B26",
+   "name": "Lucy Dacus",
+   "qualifier": null,
+   "billing": "Lucy Dacus",
+   "day": "sat",
+   "stage": "lands-end",
+   "start": 960,
+   "end": 1010,
+   "blurb": "",
+   "tags": [
+    "indie rock",
+    "singer-songwriter"
+   ]
+  },
+  {
+   "id": "automatic-sat",
+   "cat": "OSL-26-082",
+   "pos": "B27",
+   "name": "Automatic",
+   "qualifier": null,
+   "billing": "Automatic",
+   "day": "sat",
+   "stage": "panhandle",
+   "start": 960,
+   "end": 1000,
+   "blurb": "",
+   "tags": [
+    "post-punk",
+    "synth"
+   ]
+  },
+  {
+   "id": "open-mic-sat",
+   "cat": "OSL-26-083",
+   "pos": "B28",
+   "name": "Open Mic",
+   "qualifier": "hosted by Rainbow Girls",
+   "billing": "Open Mic hosted by Rainbow Girls",
+   "day": "sat",
+   "stage": "cocktail-magic",
+   "start": 965,
+   "end": 1010,
+   "blurb": "",
+   "tags": [
+    "party"
+   ],
+   "artists": [
+    "Rainbow Girls"
+   ]
+  },
+  {
+   "id": "yard-act-sat",
+   "cat": "OSL-26-084",
+   "pos": "B29",
+   "name": "Yard Act",
+   "qualifier": null,
+   "billing": "Yard Act",
+   "day": "sat",
+   "stage": "sutro",
+   "start": 980,
+   "end": 1025,
+   "blurb": "",
+   "tags": [
+    "post-punk"
+   ]
+  },
+  {
+   "id": "malcolm-todd-sat",
+   "cat": "OSL-26-085",
+   "pos": "B30",
+   "name": "Malcolm Todd",
+   "qualifier": null,
+   "billing": "Malcolm Todd",
+   "day": "sat",
+   "stage": "twin-peaks",
+   "start": 1005,
+   "end": 1065,
+   "blurb": "",
+   "tags": [
+    "indie pop",
+    "bedroom pop"
+   ]
+  },
+  {
+   "id": "dj-ion-the-prize-sat",
+   "cat": "OSL-26-086",
+   "pos": "B31",
+   "name": "DJ Ion The Prize",
+   "qualifier": "OASIS DJ Set",
+   "billing": "OASIS DJ Set: DJ Ion The Prize",
+   "day": "sat",
+   "stage": "dolores",
+   "start": 1005,
+   "end": 1065,
+   "blurb": "OASIS takeover",
+   "tags": [
+    "drag",
+    "queer nightlife"
+   ],
+   "artists": [
+    "Ion The Prize"
+   ]
+  },
+  {
+   "id": "rio-kosta-sat-2",
+   "cat": "OSL-26-087",
+   "pos": "B32",
+   "name": "RIO KOSTA",
+   "qualifier": "DJ Set",
+   "billing": "RIO KOSTA (DJ Set)",
+   "day": "sat",
+   "stage": "duboce",
+   "start": 1010,
+   "end": 1040,
+   "blurb": "intimate set in the eucalyptus",
+   "tags": [
+    "house"
+   ]
+  },
+  {
+   "id": "sultan-shepard-sat",
+   "cat": "OSL-26-088",
+   "pos": "B33",
+   "name": "Sultan + Shepard",
+   "qualifier": null,
+   "billing": "Sultan + Shepard",
+   "day": "sat",
+   "stage": "soma",
+   "start": 1015,
+   "end": 1105,
+   "blurb": "",
+   "tags": [
+    "progressive house"
+   ]
+  },
+  {
+   "id": "bootie-mashup-sat",
+   "cat": "OSL-26-089",
+   "pos": "B34",
+   "name": "Bootie Mashup",
+   "qualifier": "Hip Hop Fuego w/ DJ Airsun",
+   "billing": "Bootie Mashup: Hip Hop Fuego w/ DJ Airsun",
+   "day": "sat",
+   "stage": "cocktail-magic",
+   "start": 1025,
+   "end": 1085,
+   "blurb": "",
+   "tags": [
+    "party"
+   ],
+   "artists": [
+    "Bootie Mashup"
+   ]
+  },
+  {
+   "id": "ethel-cain-sat",
+   "cat": "OSL-26-090",
+   "pos": "B35",
+   "name": "Ethel Cain",
+   "qualifier": null,
+   "billing": "Ethel Cain",
+   "day": "sat",
+   "stage": "lands-end",
+   "start": 1040,
+   "end": 1100,
+   "blurb": "",
+   "tags": [
+    "gothic americana",
+    "slowcore"
+   ]
+  },
+  {
+   "id": "snow-strippers-sat",
+   "cat": "OSL-26-091",
+   "pos": "B36",
+   "name": "Snow Strippers",
+   "qualifier": null,
+   "billing": "Snow Strippers",
+   "day": "sat",
+   "stage": "sutro",
+   "start": 1055,
+   "end": 1100,
+   "blurb": "",
+   "tags": [
+    "electroclash"
+   ]
+  },
+  {
+   "id": "silvana-estrada-sat",
+   "cat": "OSL-26-092",
+   "pos": "B37",
+   "name": "Silvana Estrada",
+   "qualifier": null,
+   "billing": "Silvana Estrada",
+   "day": "sat",
+   "stage": "panhandle",
+   "start": 1065,
+   "end": 1105,
+   "blurb": "",
+   "tags": [
+    "folk",
+    "latin"
+   ]
+  },
+  {
+   "id": "princess-sat",
+   "cat": "OSL-26-093",
+   "pos": "B38",
+   "name": "PRINCESS",
+   "qualifier": "w/ Tito Soto feat. Lydia B Kollins",
+   "billing": "PRINCESS w/ Tito Soto feat. Lydia B Kollins",
+   "day": "sat",
+   "stage": "dolores",
+   "start": 1065,
+   "end": 1155,
+   "blurb": "OASIS takeover",
+   "tags": [
+    "drag",
+    "queer nightlife"
+   ],
+   "artists": [
+    "Lydia B Kollins"
+   ]
+  },
+  {
+   "id": "laszewo-sat-2",
+   "cat": "OSL-26-094",
+   "pos": "B39",
+   "name": "Laszewo",
+   "qualifier": null,
+   "billing": "Laszewo",
+   "day": "sat",
+   "stage": "duboce",
+   "start": 1100,
+   "end": 1130,
+   "blurb": "intimate set in the eucalyptus",
+   "tags": [
+    "indie pop",
+    "electronic"
+   ],
+   "artists": [
+    "Łaszewo"
+   ]
+  },
+  {
+   "id": "electric-feels-sat",
+   "cat": "OSL-26-095",
+   "pos": "B40",
+   "name": "Electric Feels",
+   "qualifier": null,
+   "billing": "Electric Feels",
+   "day": "sat",
+   "stage": "cocktail-magic",
+   "start": 1100,
+   "end": 1160,
+   "blurb": "",
+   "tags": [
+    "party"
+   ]
+  },
+  {
+   "id": "dijon-sat",
+   "cat": "OSL-26-096",
+   "pos": "B41",
+   "name": "Dijon",
+   "qualifier": null,
+   "billing": "Dijon",
+   "day": "sat",
+   "stage": "twin-peaks",
+   "start": 1110,
+   "end": 1160,
+   "blurb": "",
+   "tags": [
+    "r&b",
+    "indie soul"
+   ]
+  },
+  {
+   "id": "ben-bohmer-sat",
+   "cat": "OSL-26-097",
+   "pos": "B42",
+   "name": "Ben Böhmer",
+   "qualifier": null,
+   "billing": "Ben Böhmer",
+   "day": "sat",
+   "stage": "soma",
+   "start": 1120,
+   "end": 1210,
+   "blurb": "",
+   "tags": [
+    "melodic house"
+   ]
+  },
+  {
+   "id": "djo-sat",
+   "cat": "OSL-26-098",
+   "pos": "B43",
+   "name": "Djo",
+   "qualifier": null,
+   "billing": "Djo",
+   "day": "sat",
+   "stage": "lands-end",
+   "start": 1130,
+   "end": 1190,
+   "blurb": "",
+   "tags": [
+    "indie rock",
+    "synth pop"
+   ]
+  },
+  {
+   "id": "it-s-murph-sat",
+   "cat": "OSL-26-099",
+   "pos": "B44",
+   "name": "it's murph",
+   "qualifier": null,
+   "billing": "it's murph",
+   "day": "sat",
+   "stage": "sutro",
+   "start": 1130,
+   "end": 1200,
+   "blurb": "",
+   "tags": [
+    "house",
+    "dance"
+   ]
+  },
+  {
+   "id": "trixie-mattel-sat",
+   "cat": "OSL-26-100",
+   "pos": "B45",
+   "name": "Trixie Mattel",
+   "qualifier": "DJ Set",
+   "billing": "DJ Trixie Mattel",
+   "day": "sat",
+   "stage": "panhandle",
+   "start": 1160,
+   "end": 1205,
+   "blurb": "",
+   "tags": [
+    "drag",
+    "dj"
+   ],
+   "artists": [
+    "Trixie Mattel"
+   ]
+  },
+  {
+   "id": "bad-juuju-sat-2",
+   "cat": "OSL-26-101",
+   "pos": "B46",
+   "name": "bad juuju",
+   "qualifier": null,
+   "billing": "bad juuju",
+   "day": "sat",
+   "stage": "duboce",
+   "start": 1190,
+   "end": 1235,
+   "blurb": "intimate set in the eucalyptus",
+   "tags": [
+    "tech house"
+   ]
+  },
+  {
+   "id": "the-xx-sat",
+   "cat": "OSL-26-102",
+   "pos": "B47",
+   "name": "The xx",
+   "qualifier": null,
+   "billing": "The xx",
+   "day": "sat",
+   "stage": "twin-peaks",
+   "start": 1210,
+   "end": 1285,
+   "blurb": "",
+   "tags": [
+    "indie pop",
+    "electronic"
+   ]
+  },
+  {
+   "id": "lane-8-sat",
+   "cat": "OSL-26-103",
+   "pos": "B48",
+   "name": "Lane 8",
+   "qualifier": null,
+   "billing": "Lane 8",
+   "day": "sat",
+   "stage": "soma",
+   "start": 1225,
+   "end": 1315,
+   "blurb": "",
+   "tags": [
+    "melodic house",
+    "deep house"
+   ]
+  },
+  {
+   "id": "the-strokes-sat",
+   "cat": "OSL-26-104",
+   "pos": "B49",
+   "name": "The Strokes",
+   "qualifier": null,
+   "billing": "The Strokes",
+   "day": "sat",
+   "stage": "lands-end",
+   "start": 1235,
+   "end": 1315,
+   "blurb": "",
+   "tags": [
+    "indie rock",
+    "garage rock"
+   ]
+  },
+  {
+   "id": "pinkpantheress-sat",
+   "cat": "OSL-26-105",
+   "pos": "B50",
+   "name": "PinkPantheress",
+   "qualifier": null,
+   "billing": "PinkPantheress",
+   "day": "sat",
+   "stage": "sutro",
+   "start": 1245,
+   "end": 1305,
+   "blurb": "",
+   "tags": [
+    "pop",
+    "uk garage"
+   ]
+  },
+  {
+   "id": "sf-gay-men-s-chorus-sun",
+   "cat": "OSL-26-106",
+   "pos": "C1",
+   "name": "SF Gay Men's Chorus",
+   "qualifier": null,
+   "billing": "SF Gay Men's Chorus",
+   "day": "sun",
+   "stage": "lands-end",
+   "start": 720,
+   "end": 760,
+   "blurb": "",
+   "tags": [
+    "choral",
+    "sf local"
+   ],
+   "artists": [
+    "San Francisco Gay Men's Chorus"
+   ]
+  },
+  {
+   "id": "cruz-beckham-sun",
+   "cat": "OSL-26-107",
+   "pos": "C2",
+   "name": "Cruz Beckham",
+   "qualifier": null,
+   "billing": "Cruz Beckham",
+   "day": "sun",
+   "stage": "panhandle",
+   "start": 720,
+   "end": 760,
+   "blurb": "",
+   "tags": [
+    "pop"
+   ]
+  },
+  {
+   "id": "etari-sun",
+   "cat": "OSL-26-108",
+   "pos": "C3",
+   "name": "Etari",
+   "qualifier": null,
+   "billing": "Etari",
+   "day": "sun",
+   "stage": "soma",
+   "start": 725,
+   "end": 815,
+   "blurb": "",
+   "tags": [
+    "house"
+   ]
+  },
+  {
+   "id": "bingo-loco-sun",
+   "cat": "OSL-26-109",
+   "pos": "C4",
+   "name": "BINGO LOCO",
+   "qualifier": null,
+   "billing": "BINGO LOCO",
+   "day": "sun",
+   "stage": "cocktail-magic",
+   "start": 750,
+   "end": 795,
+   "blurb": "",
+   "tags": [
+    "party"
+   ]
+  },
+  {
+   "id": "death-cab-for-cutie-sun",
+   "cat": "OSL-26-110",
+   "pos": "C5",
+   "name": "Death Cab for Cutie",
+   "qualifier": null,
+   "billing": "Death Cab for Cutie",
+   "day": "sun",
+   "stage": "sutro",
+   "start": 760,
+   "end": 810,
+   "blurb": "",
+   "tags": [
+    "indie rock"
+   ]
+  },
+  {
+   "id": "magnus-ferrell-sun",
+   "cat": "OSL-26-111",
+   "pos": "C6",
+   "name": "Magnus Ferrell",
+   "qualifier": null,
+   "billing": "Magnus Ferrell",
+   "day": "sun",
+   "stage": "twin-peaks",
+   "start": 765,
+   "end": 805,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "charles-hawthorne-sun",
+   "cat": "OSL-26-112",
+   "pos": "C7",
+   "name": "Charles Hawthorne",
+   "qualifier": null,
+   "billing": "Charles Hawthorne",
+   "day": "sun",
+   "stage": "dolores",
+   "start": 765,
+   "end": 865,
+   "blurb": "Polyglamorous takeover",
+   "tags": [
+    "drag",
+    "queer nightlife"
+   ]
+  },
+  {
+   "id": "sports-sun",
+   "cat": "OSL-26-113",
+   "pos": "C8",
+   "name": "Sports",
+   "qualifier": null,
+   "billing": "Sports",
+   "day": "sun",
+   "stage": "lands-end",
+   "start": 790,
+   "end": 835,
+   "blurb": "",
+   "tags": [
+    "indie rock"
+   ]
+  },
+  {
+   "id": "day-we-ran-sun",
+   "cat": "OSL-26-114",
+   "pos": "C9",
+   "name": "Day We Ran",
+   "qualifier": null,
+   "billing": "Day We Ran",
+   "day": "sun",
+   "stage": "panhandle",
+   "start": 805,
+   "end": 845,
+   "blurb": "",
+   "tags": [
+    "indie pop"
+   ]
+  },
+  {
+   "id": "x-club-sun",
+   "cat": "OSL-26-115",
+   "pos": "C10",
+   "name": "X CLUB.",
+   "qualifier": null,
+   "billing": "X CLUB.",
+   "day": "sun",
+   "stage": "soma",
+   "start": 815,
+   "end": 910,
+   "blurb": "",
+   "tags": [
+    "techno"
+   ]
+  },
+  {
+   "id": "bingo-loco-sun-2",
+   "cat": "OSL-26-116",
+   "pos": "C11",
+   "name": "BINGO LOCO",
+   "qualifier": null,
+   "billing": "BINGO LOCO",
+   "day": "sun",
+   "stage": "cocktail-magic",
+   "start": 820,
+   "end": 865,
+   "blurb": "",
+   "tags": [
+    "party"
+   ]
+  },
+  {
+   "id": "marlon-funaki-sun",
+   "cat": "OSL-26-117",
+   "pos": "C12",
+   "name": "Marlon Funaki",
+   "qualifier": null,
+   "billing": "Marlon Funaki",
+   "day": "sun",
+   "stage": "sutro",
+   "start": 830,
+   "end": 870,
+   "blurb": "",
+   "tags": [
+    "singer-songwriter",
+    "r&b"
+   ]
+  },
+  {
+   "id": "britton-sun",
+   "cat": "OSL-26-118",
+   "pos": "C13",
+   "name": "Britton",
+   "qualifier": null,
+   "billing": "Britton",
+   "day": "sun",
+   "stage": "duboce",
+   "start": 845,
+   "end": 875,
+   "blurb": "intimate set in the eucalyptus",
+   "tags": [
+    "singer-songwriter"
+   ]
+  },
+  {
+   "id": "sosocamo-sun",
+   "cat": "OSL-26-119",
+   "pos": "C14",
+   "name": "sosocamo",
+   "qualifier": null,
+   "billing": "sosocamo",
+   "day": "sun",
+   "stage": "twin-peaks",
+   "start": 850,
+   "end": 895,
+   "blurb": "",
+   "tags": [
+    "hip-hop",
+    "r&b"
+   ]
+  },
+  {
+   "id": "balu-brigada-sun",
+   "cat": "OSL-26-120",
+   "pos": "C15",
+   "name": "Balu Brigada",
+   "qualifier": null,
+   "billing": "Balu Brigada",
+   "day": "sun",
+   "stage": "lands-end",
+   "start": 865,
+   "end": 915,
+   "blurb": "",
+   "tags": [
+    "indie pop"
+   ]
+  },
+  {
+   "id": "mark-o-brien-sun",
+   "cat": "OSL-26-121",
+   "pos": "C16",
+   "name": "Mark O'Brien",
+   "qualifier": null,
+   "billing": "Mark O'Brien",
+   "day": "sun",
+   "stage": "dolores",
+   "start": 865,
+   "end": 945,
+   "blurb": "Polyglamorous takeover",
+   "tags": [
+    "drag",
+    "queer nightlife"
+   ]
+  },
+  {
+   "id": "bingo-loco-sun-3",
+   "cat": "OSL-26-122",
+   "pos": "C17",
+   "name": "BINGO LOCO",
+   "qualifier": null,
+   "billing": "BINGO LOCO",
+   "day": "sun",
+   "stage": "cocktail-magic",
+   "start": 890,
+   "end": 935,
+   "blurb": "",
+   "tags": [
+    "party"
+   ]
+  },
+  {
+   "id": "amble-sun",
+   "cat": "OSL-26-123",
+   "pos": "C18",
+   "name": "Amble",
+   "qualifier": null,
+   "billing": "Amble",
+   "day": "sun",
+   "stage": "panhandle",
+   "start": 895,
+   "end": 935,
+   "blurb": "",
+   "tags": [
+    "folk"
+   ]
+  },
+  {
+   "id": "momma-sun",
+   "cat": "OSL-26-124",
+   "pos": "C19",
+   "name": "Momma",
+   "qualifier": null,
+   "billing": "Momma",
+   "day": "sun",
+   "stage": "sutro",
+   "start": 900,
+   "end": 945,
+   "blurb": "",
+   "tags": [
+    "indie rock",
+    "grunge"
+   ]
+  },
+  {
+   "id": "carlita-sun",
+   "cat": "OSL-26-125",
+   "pos": "C20",
+   "name": "Carlita",
+   "qualifier": null,
+   "billing": "Carlita",
+   "day": "sun",
+   "stage": "soma",
+   "start": 910,
+   "end": 1005,
+   "blurb": "",
+   "tags": [
+    "melodic house"
+   ]
+  },
+  {
+   "id": "day-we-ran-sun-2",
+   "cat": "OSL-26-126",
+   "pos": "C21",
+   "name": "Day We Ran",
+   "qualifier": null,
+   "billing": "Day We Ran",
+   "day": "sun",
+   "stage": "duboce",
+   "start": 925,
+   "end": 955,
+   "blurb": "intimate set in the eucalyptus",
+   "tags": [
+    "indie pop"
+   ]
+  },
+  {
+   "id": "destin-conrad-sun",
+   "cat": "OSL-26-127",
+   "pos": "C22",
+   "name": "DESTIN CONRAD",
+   "qualifier": null,
+   "billing": "DESTIN CONRAD",
+   "day": "sun",
+   "stage": "twin-peaks",
+   "start": 940,
+   "end": 990,
+   "blurb": "",
+   "tags": [
+    "r&b"
+   ]
+  },
+  {
+   "id": "jade-sun",
+   "cat": "OSL-26-128",
+   "pos": "C23",
+   "name": "JADE",
+   "qualifier": null,
+   "billing": "JADE",
+   "day": "sun",
+   "stage": "lands-end",
+   "start": 945,
+   "end": 1005,
+   "blurb": "",
+   "tags": [
+    "pop"
+   ]
+  },
+  {
+   "id": "grace-towers-friends-sun",
+   "cat": "OSL-26-129",
+   "pos": "C24",
+   "name": "Grace Towers & Friends",
+   "qualifier": null,
+   "billing": "Grace Towers & Friends",
+   "day": "sun",
+   "stage": "dolores",
+   "start": 945,
+   "end": 965,
+   "blurb": "Polyglamorous takeover",
+   "tags": [
+    "drag",
+    "queer nightlife"
+   ],
+   "artists": [
+    "Grace Towers"
+   ]
+  },
+  {
+   "id": "stanley-frank-sensation-sun",
+   "cat": "OSL-26-130",
+   "pos": "C25",
+   "name": "Stanley Frank Sensation",
+   "qualifier": null,
+   "billing": "Stanley Frank Sensation",
+   "day": "sun",
+   "stage": "dolores",
+   "start": 965,
+   "end": 1025,
+   "blurb": "Polyglamorous takeover",
+   "tags": [
+    "drag",
+    "queer nightlife"
+   ],
+   "artists": [
+    "Stanley Frank"
+   ]
+  },
+  {
+   "id": "open-mic-sun",
+   "cat": "OSL-26-131",
+   "pos": "C26",
+   "name": "Open Mic",
+   "qualifier": "hosted by Rainbow Girls",
+   "billing": "Open Mic hosted by Rainbow Girls",
+   "day": "sun",
+   "stage": "cocktail-magic",
+   "start": 965,
+   "end": 1010,
+   "blurb": "",
+   "tags": [
+    "party"
+   ],
+   "artists": [
+    "Rainbow Girls"
+   ]
+  },
+  {
+   "id": "kingfishr-sun",
+   "cat": "OSL-26-132",
+   "pos": "C27",
+   "name": "Kingfishr",
+   "qualifier": null,
+   "billing": "Kingfishr",
+   "day": "sun",
+   "stage": "sutro",
+   "start": 975,
+   "end": 1025,
+   "blurb": "",
+   "tags": [
+    "folk",
+    "indie rock"
+   ]
+  },
+  {
+   "id": "night-tapes-sun",
+   "cat": "OSL-26-133",
+   "pos": "C28",
+   "name": "Night Tapes",
+   "qualifier": null,
+   "billing": "Night Tapes",
+   "day": "sun",
+   "stage": "panhandle",
+   "start": 990,
+   "end": 1030,
+   "blurb": "",
+   "tags": [
+    "dream pop",
+    "electronic"
+   ]
+  },
+  {
+   "id": "boys-noize-sun",
+   "cat": "OSL-26-134",
+   "pos": "C29",
+   "name": "Boys Noize",
+   "qualifier": null,
+   "billing": "Boys Noize",
+   "day": "sun",
+   "stage": "soma",
+   "start": 1005,
+   "end": 1100,
+   "blurb": "",
+   "tags": [
+    "techno",
+    "electro"
+   ]
+  },
+  {
+   "id": "frost-children-sun",
+   "cat": "OSL-26-135",
+   "pos": "C30",
+   "name": "Frost Children",
+   "qualifier": "DJ Set",
+   "billing": "Frost Children (DJ Set)",
+   "day": "sun",
+   "stage": "duboce",
+   "start": 1005,
+   "end": 1050,
+   "blurb": "intimate set in the eucalyptus",
+   "tags": [
+    "hyperpop",
+    "dj"
+   ]
+  },
+  {
+   "id": "beya-sun",
+   "cat": "OSL-26-136",
+   "pos": "C31",
+   "name": "BEYA",
+   "qualifier": null,
+   "billing": "BEYA",
+   "day": "sun",
+   "stage": "dolores",
+   "start": 1025,
+   "end": 1085,
+   "blurb": "Polyglamorous takeover",
+   "tags": [
+    "drag",
+    "queer nightlife"
+   ]
+  },
+  {
+   "id": "disco-lines-sun",
+   "cat": "OSL-26-137",
+   "pos": "C32",
+   "name": "Disco Lines",
+   "qualifier": null,
+   "billing": "Disco Lines",
+   "day": "sun",
+   "stage": "lands-end",
+   "start": 1035,
+   "end": 1095,
+   "blurb": "",
+   "tags": [
+    "house",
+    "dance"
+   ]
+  },
+  {
+   "id": "kwn-sun",
+   "cat": "OSL-26-138",
+   "pos": "C33",
+   "name": "kwn",
+   "qualifier": null,
+   "billing": "kwn",
+   "day": "sun",
+   "stage": "twin-peaks",
+   "start": 1035,
+   "end": 1085,
+   "blurb": "",
+   "tags": [
+    "alt r&b"
+   ]
+  },
+  {
+   "id": "aidan-corcoran-sun",
+   "cat": "OSL-26-139",
+   "pos": "C34",
+   "name": "Aidan Corcoran",
+   "qualifier": null,
+   "billing": "Aidan Corcoran",
+   "day": "sun",
+   "stage": "cocktail-magic",
+   "start": 1035,
+   "end": 1065,
+   "blurb": "",
+   "tags": [
+    "party"
+   ]
+  },
+  {
+   "id": "the-temper-trap-sun",
+   "cat": "OSL-26-140",
+   "pos": "C35",
+   "name": "The Temper Trap",
+   "qualifier": null,
+   "billing": "The Temper Trap",
+   "day": "sun",
+   "stage": "sutro",
+   "start": 1055,
+   "end": 1105,
+   "blurb": "",
+   "tags": [
+    "indie rock"
+   ]
+  },
+  {
+   "id": "help-me-lose-my-mind-sun",
+   "cat": "OSL-26-141",
+   "pos": "C36",
+   "name": "Help Me Lose My Mind",
+   "qualifier": "UKG & house w/ MPHD",
+   "billing": "Help Me Lose My Mind: UK Garage & House w/ MPHD",
+   "day": "sun",
+   "stage": "cocktail-magic",
+   "start": 1080,
+   "end": 1140,
+   "blurb": "",
+   "tags": [
+    "party"
+   ],
+   "artists": [
+    "MPHD"
+   ]
+  },
+  {
+   "id": "infinity-song-sun",
+   "cat": "OSL-26-142",
+   "pos": "C37",
+   "name": "Infinity Song",
+   "qualifier": null,
+   "billing": "Infinity Song",
+   "day": "sun",
+   "stage": "panhandle",
+   "start": 1085,
+   "end": 1125,
+   "blurb": "",
+   "tags": [
+    "soul",
+    "folk"
+   ]
+  },
+  {
+   "id": "grace-towers-friends-sun-2",
+   "cat": "OSL-26-143",
+   "pos": "C38",
+   "name": "Grace Towers & Friends",
+   "qualifier": null,
+   "billing": "Grace Towers & Friends",
+   "day": "sun",
+   "stage": "dolores",
+   "start": 1085,
+   "end": 1105,
+   "blurb": "Polyglamorous takeover",
+   "tags": [
+    "drag",
+    "queer nightlife"
+   ],
+   "artists": [
+    "Grace Towers"
+   ]
+  },
+  {
+   "id": "marlon-funaki-sun-2",
+   "cat": "OSL-26-144",
+   "pos": "C39",
+   "name": "Marlon Funaki",
+   "qualifier": null,
+   "billing": "Marlon Funaki",
+   "day": "sun",
+   "stage": "duboce",
+   "start": 1095,
+   "end": 1125,
+   "blurb": "intimate set in the eucalyptus",
+   "tags": [
+    "singer-songwriter",
+    "r&b"
+   ]
+  },
+  {
+   "id": "miss-monique-sun",
+   "cat": "OSL-26-145",
+   "pos": "C40",
+   "name": "Miss Monique",
+   "qualifier": null,
+   "billing": "Miss Monique",
+   "day": "sun",
+   "stage": "soma",
+   "start": 1100,
+   "end": 1195,
+   "blurb": "",
+   "tags": [
+    "melodic techno"
+   ]
+  },
+  {
+   "id": "elaine-robin-sun",
+   "cat": "OSL-26-146",
+   "pos": "C41",
+   "name": "Elaine & Robin",
+   "qualifier": null,
+   "billing": "Elaine & Robin",
+   "day": "sun",
+   "stage": "dolores",
+   "start": 1105,
+   "end": 1165,
+   "blurb": "Polyglamorous takeover",
+   "tags": [
+    "drag",
+    "queer nightlife"
+   ]
+  },
+  {
+   "id": "empire-of-the-sun-sun",
+   "cat": "OSL-26-147",
+   "pos": "C42",
+   "name": "Empire Of The Sun",
+   "qualifier": null,
+   "billing": "Empire Of The Sun",
+   "day": "sun",
+   "stage": "lands-end",
+   "start": 1125,
+   "end": 1185,
+   "blurb": "",
+   "tags": [
+    "synth pop",
+    "electronic"
+   ]
+  },
+  {
+   "id": "mariah-the-scientist-sun",
+   "cat": "OSL-26-148",
+   "pos": "C43",
+   "name": "Mariah the Scientist",
+   "qualifier": null,
+   "billing": "Mariah the Scientist",
+   "day": "sun",
+   "stage": "twin-peaks",
+   "start": 1130,
+   "end": 1190,
+   "blurb": "",
+   "tags": [
+    "r&b"
+   ]
+  },
+  {
+   "id": "not-for-radio-sun",
+   "cat": "OSL-26-149",
+   "pos": "C44",
+   "name": "Not for Radio",
+   "qualifier": null,
+   "billing": "Not for Radio",
+   "day": "sun",
+   "stage": "sutro",
+   "start": 1145,
+   "end": 1195,
+   "blurb": "",
+   "tags": [
+    "dream pop"
+   ]
+  },
+  {
+   "id": "dj-minx-sun",
+   "cat": "OSL-26-150",
+   "pos": "C45",
+   "name": "DJ Minx",
+   "qualifier": null,
+   "billing": "DJ Minx",
+   "day": "sun",
+   "stage": "dolores",
+   "start": 1165,
+   "end": 1225,
+   "blurb": "Polyglamorous takeover",
+   "tags": [
+    "house",
+    "detroit"
+   ]
+  },
+  {
+   "id": "leon-bridges-sun",
+   "cat": "OSL-26-151",
+   "pos": "C46",
+   "name": "Leon Bridges",
+   "qualifier": "Happiness Anytime",
+   "billing": "Leon Bridges Presents: Happiness Anytime",
+   "day": "sun",
+   "stage": "duboce",
+   "start": 1185,
+   "end": 1245,
+   "blurb": "surprise set, revealed an hour before",
+   "tags": [
+    "soul",
+    "r&b"
+   ],
+   "artists": [
+    "Leon Bridges"
+   ]
+  },
+  {
+   "id": "frost-children-sun-2",
+   "cat": "OSL-26-152",
+   "pos": "C47",
+   "name": "Frost Children",
+   "qualifier": null,
+   "billing": "Frost Children",
+   "day": "sun",
+   "stage": "panhandle",
+   "start": 1190,
+   "end": 1235,
+   "blurb": "",
+   "tags": [
+    "hyperpop",
+    "electronic"
+   ]
+  },
+  {
+   "id": "boris-brejcha-sun",
+   "cat": "OSL-26-153",
+   "pos": "C48",
+   "name": "Boris Brejcha",
+   "qualifier": null,
+   "billing": "Boris Brejcha",
+   "day": "sun",
+   "stage": "soma",
+   "start": 1195,
+   "end": 1315,
+   "blurb": "",
+   "tags": [
+    "minimal techno"
+   ]
+  },
+  {
+   "id": "rufus-du-sol-sun",
+   "cat": "OSL-26-154",
+   "pos": "C49",
+   "name": "RÜFÜS DU SOL",
+   "qualifier": null,
+   "billing": "RÜFÜS DU SOL",
+   "day": "sun",
+   "stage": "lands-end",
+   "start": 1225,
+   "end": 1315,
+   "blurb": "",
+   "tags": [
+    "electronic",
+    "dance"
+   ]
+  },
+  {
+   "id": "death-cab-for-cutie-sun-2",
+   "cat": "OSL-26-155",
+   "pos": "C50",
+   "name": "Death Cab for Cutie",
+   "qualifier": null,
+   "billing": "Death Cab for Cutie",
+   "day": "sun",
+   "stage": "sutro",
+   "start": 1225,
+   "end": 1300,
+   "blurb": "",
+   "tags": [
+    "indie rock"
+   ]
+  },
+  {
+   "id": "baby-keem-sun",
+   "cat": "OSL-26-156",
+   "pos": "C51",
+   "name": "Baby Keem",
+   "qualifier": null,
+   "billing": "Baby Keem",
+   "day": "sun",
+   "stage": "twin-peaks",
+   "start": 1240,
+   "end": 1315,
+   "blurb": "",
+   "tags": [
+    "hip-hop"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,105 @@
+{
+  "fonts": {
+    "display": "Archivo",
+    "serif": "Stint Ultra Condensed",
+    "body": "Roboto Condensed",
+    "mono": "IBM Plex Mono",
+    "hand": "Reenie Beanie",
+    "google": "family=Archivo:wdth,wght@62..125,300..900&family=Stint+Ultra+Condensed&family=Roboto+Condensed:wght@300;400;700&family=IBM+Plex+Mono:wght@400;500;600&family=Reenie+Beanie"
+  },
+  "day": {
+    "paper": "#DFDCDF",
+    "paper-2": "#D1CED9",
+    "paper-3": "#EBECF1",
+    "cream": "#FFFFF5",
+    "ink": "#253992",
+    "ink-deep": "#0B1973",
+    "ink-70": "#5A68A6",
+    "ink-50": "#7489C8",
+    "ink-30": "#9DAAD2",
+    "black": "#222623",
+    "grey": "#6E6C75",
+    "highlighter": "#FFE800",
+    "alert": "#FF6C2F",
+    "knock-bg": "#222623",
+    "knock-fg": "#DFDCDF"
+  },
+  "night": {
+    "paper": "#2B2A2A",
+    "paper-2": "#353333",
+    "paper-3": "#3F3D3D",
+    "cream": "#FFFFF5",
+    "ink": "#C7C2B9",
+    "ink-deep": "#FFFFF5",
+    "ink-70": "#A5A19C",
+    "ink-50": "#8E8A85",
+    "ink-30": "#5B5959",
+    "black": "#111111",
+    "grey": "#A5A19C",
+    "highlighter": "#4951AE",
+    "alert": "#FF6C2F",
+    "knock-bg": "#4951AE",
+    "knock-fg": "#EDE9E1"
+  },
+  "texture": true,
+  "wordmark": {
+    "ball": true
+  },
+  "skyline": "port",
+  "style": {
+    "shape": "print",
+    "wordmark": "tiles",
+    "photos": "duotone",
+    "rules": "dashed",
+    "meter": "bars",
+    "marker": "highlighter",
+    "catalog": "on",
+    "ticker": true,
+    "numbers": "on",
+    "case": "upper",
+    "alternate": true
+  },
+  "copy": {
+    "title": "your {name}, catalogued",
+    "side": "SIDE {letter}",
+    "compiledFor": "compiled for {name}",
+    "sampleTaste": "sample taste · ask an agent to make it yours",
+    "noTaste": "no taste yet · ask an agent to make it yours",
+    "lightsOff": "LIGHTS OFF",
+    "lightsOn": "LIGHTS ON",
+    "taste": "YOUR TASTE",
+    "top": "TOP 4",
+    "plan": "THE PLAN",
+    "catalog": "THE CATALOG",
+    "list": "tracklist",
+    "grid": "grid",
+    "linerNotes": "LINER NOTES",
+    "credits": "CREDITS",
+    "tiers": {
+      "heavy": {
+        "stamp": "HEAVY ROTATION",
+        "filter": "heavy rotation",
+        "hint": "you already know. don't be late."
+      },
+      "deep": {
+        "stamp": "DEEP CUT",
+        "filter": "deep cuts",
+        "hint": "you've played everyone around them."
+      },
+      "wild": {
+        "stamp": "WILDCARD",
+        "filter": "wildcards",
+        "hint": "a stretch. trust the process (the process is math)."
+      },
+      "new": {
+        "stamp": "NEW TO YOU",
+        "filter": "new to you",
+        "hint": "no data. pure vibes."
+      }
+    },
+    "footer": "unofficial",
+    "live": "LIVE",
+    "now": "NOW",
+    "sep": "✦"
+  }
+}

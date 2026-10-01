@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#DFDCDF">
+<title>catalogued</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23253992'/%3E%3Ccircle cx='16' cy='16' r='10' fill='%23DFDCDF'/%3E%3Cpath d='M6 16h20M16 6v20M8 11h16M8 21h16M11 7.5v17M21 7.5v17' stroke='%23253992' stroke-width='1.4'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script src="defaults.js"></script>
+<script src="data/theme.js"></script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="xerox"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="7" result="t"/><feDisplacementMap in="SourceGraphic" in2="t" scale="2.2"/></filter>
+  <filter id="xerox-heavy"><feTurbulence type="fractalNoise" baseFrequency=".6" numOctaves="2" seed="3" result="t"/><feDisplacementMap in="SourceGraphic" in2="t" scale="3.4"/></filter>
+  <filter id="duotone" color-interpolation-filters="sRGB">
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer><feFuncR type="table" tableValues="0.145 0.875"/><feFuncG type="table" tableValues="0.224 0.863"/><feFuncB type="table" tableValues="0.573 0.875"/></feComponentTransfer>
+  </filter>
+</svg>
+
+<div class="nowbar" id="nowbar" hidden></div>
+
+<div class="page" id="app">
+  <header class="mast">
+    <div class="mast__meta mono">
+      <span id="compiled-for">compiled for —</span>
+    </div>
+    <h1 class="wordmark" id="wordmark"></h1>
+    <div class="mast__row">
+      <div class="mast__labels">
+        <span class="mast__days" id="mast-days"></span>
+        <button class="label label--btn" id="theme-toggle" type="button" aria-pressed="false"></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="ticker" aria-hidden="true"><div class="ticker__track" id="ticker"></div></div>
+
+  <section class="sect" id="taste">
+    <h2 class="sect__head"><span class="mono">01 /</span> <span data-copy="taste">YOUR TASTE</span></h2>
+    <div class="taste">
+      <div class="taste__side">
+        <h3 class="minihead mono" data-copy="top">TOP 4</h3>
+        <ol class="shelf" id="shelf"></ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="sect" id="plan">
+    <h2 class="sect__head"><span class="mono">02 /</span> <span data-copy="plan">THE PLAN</span></h2>
+    <div class="toolbar">
+      <div class="seg" role="tablist" aria-label="day" id="day-tabs"></div>
+      <div class="seg" role="tablist" aria-label="view">
+        <button class="chip" role="tab" data-view="list" data-copy="list">tracklist</button>
+        <button class="chip" role="tab" data-view="grid" data-copy="grid">grid</button>
+      </div>
+    </div>
+    <div class="plan-stats mono" id="plan-stats"></div>
+    <div id="plan-body"></div>
+  </section>
+
+  <section class="sect" id="catalog">
+    <h2 class="sect__head"><span class="mono">03 /</span> <span data-copy="catalog">THE CATALOG</span></h2>
+    <div class="toolbar">
+      <div class="seg" id="filters"></div>
+      <div class="seg" id="sorts"></div>
+    </div>
+    <ol class="index" id="index"></ol>
+  </section>
+
+  <section class="sect" id="map">
+    <h2 class="sect__head"><span class="mono">04 /</span> <span id="map-title"></span></h2>
+    <div class="mapwrap" id="mapwrap"></div>
+  </section>
+
+  <footer class="foot">
+    <svg class="skyline" viewBox="0 0 1200 90" preserveAspectRatio="none" aria-hidden="true" id="skyline"></svg>
+    <div class="foot__body mono">
+      <p id="foot-source"></p>
+    </div>
+  </footer>
+</div>
+
+
+<script src="data/lineup.js"></script>
+<script src="data/taste.js"></script>
+<script src="data/previews.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+/* Outside Lands 2026: Karl the Fog over a park-ranger gig poster. Navy on mist, gold sticker buttons, bubblegum bubble letters, the bridge in the fog. */
+:root {
+  --park: url(assets/park-day.svg);
+  --park-h: max(92px, 15vw);
+  --line: 2px solid var(--ink);
+  --drop: 6px 6px 0 var(--ink);
+  --lime: #ACE728;
+  --pink: #FF9CD9;
+  --gold: #F7C63D;
+}
+html[data-theme="night"] {
+  --park: url(assets/park-night.svg);
+  --line: 2px solid var(--ink-30);
+  --drop: 6px 6px 0 var(--black);
+}
+
+/* masthead: bubble letters over the bridge in the fog */
+html[data-theme] .mast {
+  position: relative; text-align: center;
+  margin-inline: calc(50% - 50vw); padding: 22px calc(50vw - 50% + var(--edge)) calc(var(--park-h) + 6px);
+  background: var(--park) center bottom / max(100%, 720px) var(--park-h) no-repeat, var(--paper);
+}
+html[data-theme] .mast__meta { justify-content: center; border: 0; padding: 0; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; font-size: 11px; }
+html[data-theme] .mast__meta span:last-child { margin: 0; }
+html[data-theme] .wordmark {
+  justify-content: center; flex-wrap: wrap; gap: 0; margin: 14px 0 0;
+  font: 400 clamp(46px, 13.4vw, 132px)/.92 var(--f-wordmark); letter-spacing: -.01em; white-space: nowrap;
+}
+html[data-theme] .wordmark .knock {
+  color: var(--pink); background: none; padding: 0; min-width: 0; height: auto;
+  -webkit-text-stroke: .045em var(--ink); paint-order: stroke fill;
+  text-shadow: .05em .06em 0 var(--ink);
+}
+html[data-theme] .wordmark .knock:nth-child(odd) { transform: translateY(-.03em); }
+html[data-theme] .wordmark .yearstack { order: 3; flex: 0 0 100%; flex-direction: row; justify-content: center; gap: 4px; margin: 12px 0 0; font: 800 15px/1 var(--f-display); font-stretch: 80%; text-shadow: none; -webkit-text-stroke: 0; }
+html[data-theme] .wordmark .yearstack b { background: var(--gold); color: #0A2F3F; border: 2px solid #0A2F3F; border-radius: 6px; padding: 4px 6px 3px; }
+html[data-theme] :is(.mast__row, .mast__labels, .mast__days) { justify-content: center; }
+html[data-theme] .mast__row { margin-top: 16px; }
+
+/* gold sticker buttons with a navy outline, like the site's */
+html[data-theme] :is(.label, .chip) {
+  border: 2px solid #0A2F3F; border-radius: 8px; background: var(--gold); color: #0A2F3F;
+  font: 800 14px/1 var(--f-display); font-stretch: 78%; letter-spacing: .02em; text-transform: uppercase;
+}
+html[data-theme] .label { padding: 9px 12px 8px; box-shadow: 3px 3px 0 #0A2F3F; }
+html[data-theme] .chip { background: var(--paper-3); color: var(--ink); border-color: var(--ink); }
+html[data-theme] :is(.label--ink, .label--btn[aria-selected="true"], .label--btn[aria-pressed="true"], .chip[aria-selected="true"]) { background: #0A2F3F; color: #FFF9E9; border-color: #0A2F3F; }
+html[data-theme] #theme-toggle { background: var(--pink); }
+html[data-theme] #theme-toggle[aria-pressed="true"] { background: var(--gold); color: #0A2F3F; }
+html[data-theme] .label--btn:hover { transform: translate(-2px, -2px); box-shadow: 5px 5px 0 #0A2F3F; }
+html[data-theme="night"] :is(.label--ink, .label--btn[aria-selected="true"], .chip[aria-selected="true"]) { background: #FFF9E9; color: #0A2F3F; border-color: #FFF9E9; }
+html[data-theme="night"] .chip { border-color: var(--ink-30); }
+
+/* the ticker: the site's navy band, lime type, pink spirals */
+html[data-theme] .ticker { margin-top: 0; border: 0; background: #0A2F3F; color: var(--lime); }
+html[data-theme] .ticker__track { font-stretch: 75%; font-weight: 900; font-size: 16px; padding: 9px 0; }
+html[data-theme] .ticker__track span::after { color: var(--pink); font-size: 15px; vertical-align: 0; }
+html[data-theme="night"] .ticker { border-block: 2px solid var(--ink-30); }
+
+/* sections: outlined cards with a hard navy drop, like the ticket cards */
+html[data-theme] .sect { margin-top: 34px; padding: 22px 16px 24px; border: var(--line); border-radius: 24px; background: var(--paper-3); box-shadow: var(--drop); }
+html[data-theme] .sect__head {
+  border: 0; padding: 0; margin-bottom: 18px;
+  font: 900 clamp(34px, 10vw, 60px)/.9 var(--f-display); font-stretch: 62%; letter-spacing: -.005em; text-transform: uppercase;
+}
+html[data-theme] .minihead { font-weight: 600; letter-spacing: .12em; }
+
+/* can't-miss shelf */
+html[data-theme] .sleeve { border: 2px solid var(--ink); border-radius: 16px; box-shadow: 4px 4px 0 var(--ink); }
+html[data-theme] .shelf .sticker { background: var(--pink); color: #0A2F3F; border: 2px solid #0A2F3F; border-radius: 6px; font-family: var(--f-display); font-weight: 800; }
+html[data-theme] .shelf .cap { font-stretch: 68%; font-weight: 900; }
+
+/* plan and bill */
+html[data-theme] :is(.row__name .nm, .irow .nm, .adder__nm) { font-family: var(--f-display); font-weight: 900; font-stretch: 66%; letter-spacing: 0; }
+html[data-theme] .stamp { border-radius: 6px; border-width: 2px; font-family: var(--f-display); font-stretch: 80%; font-weight: 800; }
+html[data-theme] .stamp--heavy { background: var(--pink); color: #0A2F3F; border-color: #0A2F3F; }
+html[data-theme] .gbox { border-radius: 10px; border-width: 2px; }
+html[data-theme] .gbox.is-pick { background: #0A2F3F; color: #FFF9E9; }
+html[data-theme="night"] .gbox.is-pick { background: var(--gold); color: #0A2F3F; border-color: var(--gold); }
+html[data-theme] .gridv__head { font-family: var(--f-display); font-stretch: 70%; font-weight: 900; }
+
+/* footer: back into the fog */
+html[data-theme] .foot { margin-top: 40px; margin-inline: calc(50% - 50vw); padding: 0 calc(50vw - 50% + var(--edge)) 28px; background: #0A2F3F; color: #FFF9E9; }
+html[data-theme] .foot::before {
+  content: ""; display: block; height: 26px; margin-inline: calc(50% - 50vw);
+  background: radial-gradient(circle at 20px 0, var(--paper) 19px, transparent 20px) 0 0 / 40px 26px repeat-x;
+}
+html[data-theme] .foot__body { background: none; color: #FFF9E9; margin: 0; padding: 14px 0 0; letter-spacing: .06em; }
+html[data-theme="night"] .foot { border-top: 2px solid var(--ink-30); }
+html[data-theme="night"] .foot::before { display: none; }
+html[data-theme] .wordmark .gap { flex: 0 0 100%; height: 0; }

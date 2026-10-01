@@ -1,0 +1,35 @@
+// What a festival's theme.json falls back to for anything it leaves out: a plain, neutral planner.
+// Portola's zine look is spelled out in its own festival/theme.json.
+window.THEME_DEFAULTS = {
+  texture: false,
+  wordmark: { ball: false, case: "upper" },
+  skyline: "none",
+  style: { shape: "flat", wordmark: "solid", photos: "color", rules: "solid", meter: "dots", marker: "underline", catalog: "off", ticker: false, numbers: "off", case: "natural", alternate: false },
+  copy: {
+    title: "{name} planner",
+    side: "DAY {n}",
+    compiledFor: "made for {name}",
+    sampleTaste: "sample taste · ask an agent to make it yours",
+    noTaste: "no taste yet · ask an agent to make it yours",
+    lightsOff: "NIGHT",
+    lightsOn: "DAY",
+    taste: "YOUR TASTE",
+    top: "TOP 4",
+    plan: "YOUR PLAN",
+    catalog: "LINEUP",
+    list: "list",
+    grid: "grid",
+    linerNotes: "WHY",
+    credits: "MORE",
+    footer: "unofficial",
+    live: "LIVE",
+    now: "NOW",
+    sep: "·",
+    tiers: {
+      heavy: { stamp: "FAVORITE", filter: "favorites", hint: "you already love them." },
+      deep: { stamp: "CLOSE MATCH", filter: "close matches", hint: "everyone around them is in your library." },
+      wild: { stamp: "WILDCARD", filter: "wildcards", hint: "a stretch worth taking." },
+      new: { stamp: "NEW TO YOU", filter: "new to you", hint: "no data yet." },
+    },
+  },
+};

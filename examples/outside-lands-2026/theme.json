@@ -1,0 +1,106 @@
+{
+  "style": {
+    "shape": "soft",
+    "wordmark": "solid",
+    "photos": "color",
+    "rules": "solid",
+    "meter": "dots",
+    "marker": "highlighter",
+    "case": "upper",
+    "catalog": "off",
+    "numbers": "off",
+    "ticker": true,
+    "alternate": false
+  },
+  "wordmark": {
+    "case": "upper"
+  },
+  "fonts": {
+    "display": "Anybody",
+    "wordmark": "Titan One",
+    "body": "DM Sans",
+    "mono": "IBM Plex Mono",
+    "hand": "Permanent Marker",
+    "google": "family=Anybody:wdth,wght@50..150,100..900&family=Titan+One&family=DM+Sans:opsz,wght@9..40,400..700&family=IBM+Plex+Mono:wght@400;500;600&family=Permanent+Marker"
+  },
+  "day": {
+    "paper": "#FFF9E9",
+    "paper-2": "#F4EDD6",
+    "paper-3": "#FFFDF6",
+    "cream": "#FFF9E9",
+    "ink": "#0A2F3F",
+    "ink-deep": "#06202B",
+    "ink-70": "#3A5A67",
+    "ink-50": "#6D8790",
+    "ink-30": "#A9BDC0",
+    "black": "#06202B",
+    "grey": "#56707A",
+    "highlighter": "#F7C63D",
+    "alert": "#F0633A",
+    "spotify": "#6EA541",
+    "knock-bg": "#FF9CD9",
+    "knock-fg": "#0A2F3F"
+  },
+  "night": {
+    "paper": "#0A2F3F",
+    "paper-2": "#0F3A4D",
+    "paper-3": "#123F52",
+    "cream": "#FFF9E9",
+    "ink": "#FFF9E9",
+    "ink-deep": "#FFFFFF",
+    "ink-70": "#C9D6CF",
+    "ink-50": "#93AEB0",
+    "ink-30": "#3C6372",
+    "black": "#031821",
+    "grey": "#A4B8B8",
+    "highlighter": "#42693D",
+    "alert": "#F0633A",
+    "spotify": "#ACE728",
+    "knock-bg": "#F7C63D",
+    "knock-fg": "#0A2F3F"
+  },
+  "copy": {
+    "title": "{Name} {year} · your weekend in the park",
+    "side": "DAY {n}",
+    "compiledFor": "planned for {name} · golden gate park",
+    "sampleTaste": "sample weekend · ask an agent to make it yours",
+    "noTaste": "no taste yet · ask an agent to make it yours",
+    "lightsOff": "FOG ROLLS IN",
+    "lightsOn": "SUN'S OUT",
+    "taste": "YOUR SOUND",
+    "top": "CAN'T MISS",
+    "plan": "YOUR DAY IN THE PARK",
+    "catalog": "THE WHOLE BILL",
+    "map": "THE PARK",
+    "list": "by time",
+    "grid": "by stage",
+    "linerNotes": "THE SCOOP",
+    "credits": "WHO'S WHO",
+    "footer": "unofficial · not affiliated with Outside Lands · see you in the park",
+    "live": "ON NOW",
+    "now": "NOW",
+    "sep": "◎",
+    "tiers": {
+      "heavy": {
+        "stamp": "CAN'T MISS",
+        "filter": "can't miss",
+        "hint": "on repeat in your library. get there early."
+      },
+      "deep": {
+        "stamp": "IN YOUR ORBIT",
+        "filter": "in your orbit",
+        "hint": "you love everyone around them."
+      },
+      "wild": {
+        "stamp": "WANDER OVER",
+        "filter": "wander overs",
+        "hint": "a stretch. the best parts happen when you least expect them."
+      },
+      "new": {
+        "stamp": "FRESH FACE",
+        "filter": "fresh faces",
+        "hint": "no data. follow the fog."
+      }
+    }
+  }
+}

@@ -1,0 +1,1757 @@
+{
+ "sample": true,
+ "user": {
+  "name": "a sample listener"
+ },
+ "matches": {
+  "airwolf paradise": {
+   "score": 8,
+   "tier": null,
+   "known": false,
+   "evidence": [
+    "81k monthly listeners on spotify"
+   ],
+   "riyl": [
+    "Matt Guy",
+    "Mass Medium",
+    "Sound De-Zign"
+   ],
+   "topTrack": "don't hurt me baby",
+   "tracks": [
+    {
+     "n": "Don't Hurt Me Baby",
+     "id": "7ez7Ld3pAXLa7QWgnr5a1e"
+    },
+    {
+     "n": "Din Da Da",
+     "id": "0uWrn7NVzQzNRNxgREBG4x"
+    },
+    {
+     "n": "Son of a Gun",
+     "id": "5qkiiTb3a3dIApyaxaAPEE"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/0c3I7EPZUCCG7khbUwQDjl",
+   "img": "https://i.scdn.co/image/ab67616100005174dad1aeef18f709d507d3f60c"
+  },
+  "gelli haha": {
+   "score": 20,
+   "tier": null,
+   "known": false,
+   "evidence": [
+    "95k monthly listeners on spotify"
+   ],
+   "riyl": [
+    "Avalon Emerson",
+    "Water From Your Eyes",
+    "Chinese American Bear"
+   ],
+   "topTrack": "bounce house",
+   "tracks": [
+    {
+     "n": "Bounce House",
+     "id": "6WTAM3OQpBxEpMeGHQjmU2"
+    },
+    {
+     "n": "Normalize",
+     "id": "78wSPTkjANvBcOn1YQQllm"
+    },
+    {
+     "n": "Funny Music",
+     "id": "6MmAivK0RnhKHwdwRprvLe"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/4O0acxqHYUQGGMqOICiSeI",
+   "img": "https://i.scdn.co/image/ab67616100005174eeedc69add90968d948b0c25"
+  },
+  "oskar med k": {
+   "score": 6,
+   "tier": null,
+   "known": false,
+   "evidence": [
+    "10.6m monthly listeners on spotify"
+   ],
+   "riyl": [
+    "MA:RK",
+    "Haley Joelle",
+    "all things break"
+   ],
+   "topTrack": "make me feel",
+   "tracks": [
+    {
+     "n": "Make Me Feel",
+     "id": "6VLEP2a1vS5k2IUugZrn0z"
+    },
+    {
+     "n": "i think i'm addicted",
+     "id": "6ux2llhjAuhSLggEaBoaLY"
+    },
+    {
+     "n": "i'm way too self aware",
+     "id": "62cC7C7e8buEM15ReSWjff"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/28ntgpEkMU9Zm7F3gLDMhZ",
+   "img": "https://i.scdn.co/image/ab676161000051743d852477c0758a128a8ac2af"
+  },
+  "fcukers": {
+   "score": 71,
+   "tier": "deep",
+   "known": false,
+   "evidence": [
+    "1.8m monthly listeners on spotify"
+   ],
+   "riyl": [
+    "Shygirl",
+    "Boys Noize",
+    "Slayyyter"
+   ],
+   "topTrack": "if you wanna party, come over to my house",
+   "tracks": [
+    {
+     "n": "if you wanna party, come over to my house",
+     "id": "0snzpWpjUj6dxRFrsNQOZs"
+    },
+    {
+     "n": "L.U.C.K.Y",
+     "id": "1KoTSKG0vs2vbzMvrbpWjp"
+    },
+    {
+     "n": "I Like It Like That",
+     "id": "139izBI0AhdIJRMvCz1VZz"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/3UtzOHYm3lQALkKzVD4wyO",
+   "img": "https://i.scdn.co/image/ab67616100005174257b47af6ca3a62995dfef9a"
+  },
+  "tove lo": {
+   "score": 22,
+   "tier": null,
+   "known": false,
+   "evidence": [
+    "28.7m monthly listeners on spotify"
+   ],
+   "riyl": [
+    "Rihanna",
+    "Selena Gomez",
+    "Diplo"
+   ],
+   "topTrack": "talking body",
+   "tracks": [
+    {
+     "n": "Talking Body",
+     "id": "2tpfxAXiI52znho4WE3XFA"
+    },
+    {
+     "n": "Habits (Stay High)",
+     "id": "14OxJlLdcHNpgsm4DRwDOB"
+    },
+    {
+     "n": "des fleurs x stromae",
+     "id": "6wd7B81g0ESsv9SmteNSDM"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/4NHQUGzhtTLFvgF5SZesLK",
+   "img": "https://i.scdn.co/image/ab67616100005174052316e437e3525c9f9b473b"
+  },
+  "robyn": {
+   "score": 37,
+   "tier": "wild",
+   "known": false,
+   "evidence": [
+    "11.1m monthly listeners on spotify"
+   ],
+   "riyl": [
+    "Carly Rae Jepsen",
+    "Tove Lo",
+    "Lykke Li"
+   ],
+   "topTrack": "dancing on my own - radio edit",
+   "tracks": [
+    {
+     "n": "Dancing On My Own - Radio Edit",
+     "id": "7g13jf3zqlP5S68Voo5v9m"
+    },
+    {
+     "n": "Hang With Me",
+     "id": "6rW8q1p2GCjGMRAlnxBeo7"
+    },
+    {
+     "n": "Talk To Me, Zara",
+     "id": "58bQU5JRk0sBMUMdRy7sjk"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/6UE7nl9mha6s8z0wFQFIZ2",
+   "img": "https://i.scdn.co/image/ab676161000051742c3e32b43bbec423c3f0051e"
+  },
+  "dog blood": {
+   "score": 37,
+   "tier": "wild",
+   "known": false,
+   "evidence": [
+    "127k monthly listeners on spotify"
+   ],
+   "riyl": [
+    "X&G",
+    "Alvin Risk",
+    "JOYRYDE"
+   ],
+   "topTrack": "break law",
+   "tracks": [
+    {
+     "n": "BREAK LAW",
+     "id": "223t7TwvWm5PuE1IuWpRZM"
+    },
+    {
+     "n": "TURN OFF THE LIGHTS",
+     "id": "1oHzQa4WZxjsQs5hC80fKr"
+    },
+    {
+     "n": "Next Order",
+     "id": "4rFbNHh4gX7kGTbfCGEOMF"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/2amyu5pkgYMYdNQZmB3GgY",
+   "img": "https://i.scdn.co/image/ab6761610000517423c3bd069a1bee32bbc2225c"
+  },
+  "erika b2b sf cowboy": {
+   "score": 8,
+   "tier": null,
+   "known": false,
+   "evidence": [],
+   "riyl": [],
+   "topTrack": null,
+   "tracks": [],
+   "url": null,
+   "img": null
+  },
+  "tricky": {
+   "score": 26,
+   "tier": "wild",
+   "known": false,
+   "evidence": [
+    "1m monthly listeners on spotify"
+   ],
+   "riyl": [
+    "Martina Topley-Bird",
+    "UNKLE",
+    "Sneaker Pimps"
+   ],
+   "topTrack": "hell is round the corner",
+   "tracks": [
+    {
+     "n": "Hell Is Round The Corner",
+     "id": "2wC0qK8JN6gblb0ZJzE2d9"
+    },
+    {
+     "n": "Aftermath",
+     "id": "5reVzrX7DYn3v3Db6OmtYE"
+    },
+    {
+     "n": "Overcome",
+     "id": "0tYEsmdrsv5Fi3UOn58bou"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/6hhA8TKRNryM8FNzqCqdDO",
+   "img": "https://i.scdn.co/image/ab676161000051744d984aa9a0e818883be927fa"
+  },
+  "nimino": {
+   "score": 15,
+   "tier": null,
+   "known": false,
+   "evidence": [
+    "5m monthly listeners on spotify"
+   ],
+   "riyl": [
+    "Swimming Paul",
+    "Manta",
+    "oskar med k"
+   ],
+   "topTrack": "i only smoke when i drink",
+   "tracks": [
+    {
+     "n": "I Only Smoke When I Drink",
+     "id": "39glDGcpBhLVMSsQhvtqHR"
+    },
+    {
+     "n": "Better",
+     "id": "6oUgmZK0McW4706SLJlfDh"
+    },
+    {
+     "n": "Beside Of Me",
+     "id": "58o0HSUXC0oHTU7UvhyWuI"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/5x0R3zoC09GMiRJomoexLV",
+   "img": "https://i.scdn.co/image/ab67616100005174a1ad01d0f9d550ea556655e4"
+  },
+  "dj shadow": {
+   "score": 45,
+   "tier": "deep",
+   "known": false,
+   "evidence": [
+    "7.1m monthly listeners on spotify"
+   ],
+   "riyl": [
+    "Dr. Dre",
+    "M.I.A.",
+    "De La Soul"
+   ],
+   "topTrack": "six days - remix",
+   "tracks": [
+    {
+     "n": "Six Days - Remix",
+     "id": "6ifNuuYjiS5NdMabN4Jvrs"
+    },
+    {
+     "n": "Nobody Speak",
+     "id": "7Gc9OoiYsUrByC8tzD7kYY"
+    },
+    {
+     "n": "Six Days",
+     "id": "525vGLj61tNqCToVJ9cPzp"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/5CE2IfdYZEQGIDsfiRm8SI",
+   "img": "https://i.scdn.co/image/ab67616100005174745460b0ffdbf5144c34498d"
+  },
+  "fatboy slim": {
+   "score": 31,
+   "tier": null,
+   "known": false,
+   "evidence": [
+    "7m monthly listeners on spotify"
+   ],
+   "riyl": [
+    "Underworld",
+    "The Chemical Brothers",
+    "Groove Armada"
+   ],
+   "topTrack": "praise you",
+   "tracks": [
+    {
+     "n": "Praise You",
+     "id": "3yGy1JYz3zQKlxSgjgpQqX"
+    },
+    {
+     "n": "Right Here, Right Now",
+     "id": "3Pb9QabepyR9e9D8NqorPH"
+    },
+    {
+     "n": "The Rockafeller Skank",
+     "id": "7mCQK9YB25WZw1saUjfL4e"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/4Y7tXHSEejGu1vQ9bwDdXW",
+   "img": "https://i.scdn.co/image/ab67616100005174c20ed3229eeced918966a009"
+  },
+  "soulwax": {
+   "score": 80,
+   "tier": "deep",
+   "known": false,
+   "evidence": [
+    "894k monthly listeners on spotify"
+   ],
+   "riyl": [
+    "Marie Davidson",
+    "Hot Chip",
+    "Simian Mobile Disco"
+   ],
+   "topTrack": "let it happen - soulwax remix",
+   "tracks": [
+    {
+     "n": "Let It Happen - Soulwax Remix",
+     "id": "5Z1E4jrUzitOQRczI8gfSL"
+    },
+    {
+     "n": "Work It - Soulwax Remix",
+     "id": "6WfL1pwMyFf3IvFWLnre4P"
+    },
+    {
+     "n": "Deadly Valentine (Soulwax Remix)",
+     "id": "57KDDGijeqbwsiBOhdo4PT"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/43mWhBXSflupNLuNjM5vff",
+   "img": "https://i.scdn.co/image/ab67616100005174ca556b991df304bb6835dc58"
+  },
+  "sam alfred": {
+   "score": 5,
+   "tier": null,
+   "known": false,
+   "evidence": [
+    "217k monthly listeners on spotify"
+   ],
+   "riyl": [
+    "WOLTERS",
+    "Clouds",
+    "Kyle Starkey"
+   ],
+   "topTrack": "feel the friction",
+   "tracks": [
+    {
+     "n": "Feel The Friction",
+     "id": "3drghRAvtI2VrNDZsHsmlZ"
+    },
+    {
+     "n": "No More",
+     "id": "56US40GllguPaCuhGcgeUj"
+    },
+    {
+     "n": "I Want You To Know",
+     "id": "3lXC7mTOd15oE6nmrG0HLW"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/4PVzoVUDxey3mxGdkf4HgR",
+   "img": "https://i.scdn.co/image/ab67616100005174ffa825ff78ede8d6238a06eb"
+  },
+  "ranger trucco b2b alisha": {
+   "score": 4,
+   "tier": null,
+   "known": false,
+   "evidence": [
+    "532k monthly listeners on spotify"
+   ],
+   "riyl": [
+    "Nate Katz",
+    "Kyle Walker",
+    "Chesster"
+   ],
+   "topTrack": "the bridge",
+   "tracks": [
+    {
+     "n": "The Bridge",
+     "id": "5MxV3ngklsCd8Mveeq1Vpm"
+    },
+    {
+     "n": "Another Night - Ranger Trucco Remix",
+     "id": "29Ryx73SRQjFLovbWRuG57"
+    },
+    {
+     "n": "Another Night - Ranger Trucco Extended Remix",
+     "id": "1SGWgUxLSnLllNc8CXQdCj"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/36N80lh8tNu7XedcW55NC3",
+   "img": "https://i.scdn.co/image/ab67616100005174aa0c12877bba785af4b0b3b1"
+  },
+  "chloé caillet": {
+   "score": 10,
+   "tier": null,
+   "known": false,
+   "evidence": [
+    "847k monthly listeners on spotify"
+   ],
+   "riyl": [
+    "Luke Alessi",
+    "Kevin Saunderson",
+    "Luuk Van Dijk"
+   ],
+   "topTrack": "the one (feat. jocelyn brown)",
+   "tracks": [
+    {
+     "n": "The One (feat. Jocelyn Brown)",
+     "id": "4fErrQvOX1LPDIPFDFI4eM"
+    },
+    {
+     "n": "Lemme Dance",
+     "id": "5mw7Yu0K0iCAI3pIKxnZ9B"
+    },
+    {
+     "n": "Change",
+     "id": "6ORHa9jA7SGhtAZXhqrvpk"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/68ywCN6ZpInbcilOfLBa3a",
+   "img": "https://i.scdn.co/image/ab676161000051748b2b654e2c6e47f32aac96b7"
+  },
+  "groove armada": {
+   "score": 21,
+   "tier": null,
+   "known": false,
+   "evidence": [
+    "3.2m monthly listeners on spotify"
+   ],
+   "riyl": [
+    "Underworld",
+    "Fatboy Slim",
+    "Blue Boy"
+   ],
+   "topTrack": "superstylin'",
+   "tracks": [
+    {
+     "n": "Superstylin'",
+     "id": "2yWyFT6bW1Rd9cjVvYi4v8"
+    },
+    {
+     "n": "My Friend",
+     "id": "5LRxSyiIRHQD26h1mdM0Ir"
+    },
+    {
+     "n": "At the River",
+     "id": "0KIPa0YuQ5QFmlAqRyXNd9"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/67tgMwUfnmqzYsNAtnP6YJ",
+   "img": "https://i.scdn.co/image/ab67616100005174922cfaf258406578ccb12bcc"
+  },
+  "max styler": {
+   "score": 4,
+   "tier": null,
+   "known": false,
+   "evidence": [
+    "1.7m monthly listeners on spotify"
+   ],
+   "riyl": [
+    "GENESI",
+    "Layton Giordani",
+    "Green Velvet"
+   ],
+   "topTrack": "freaky 1",
+   "tracks": [
+    {
+     "n": "Freaky 1",
+     "id": "5cefCIhgIJgsG3r3LcRmwB"
+    },
+    {
+     "n": "Love Forever (feat. Kuuda)",
+     "id": "1TnejgU7YqwYrWRu2ZFxRU"
+    },
+    {
+     "n": "I Know You Want To",
+     "id": "3qhf5WajCHsJibQ7cQ2qYS"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/3NKKngINK1tP6BFy0WOyWk",
+   "img": "https://i.scdn.co/image/ab67616100005174ddeee9f034ca94bb6a08b66a"
+  },
+  "kettama": {
+   "score": 62,
+   "tier": "deep",
+   "known": false,
+   "evidence": [
+    "4.6m monthly listeners on spotify"
+   ],
+   "riyl": [
+    "Interplanetary Criminal",
+    "TWOFACED",
+    "Silva Bumpa"
+   ],
+   "topTrack": "comes and goes",
+   "tracks": [
+    {
+     "n": "Comes and Goes",
+     "id": "3xQPerJjDVZrSFVE340D8r"
+    },
+    {
+     "n": "It Gets Better - Forever Mix",
+     "id": "5fEg39wxUxNG9Ig5cFpWlc"
+    },
+    {
+     "n": "Yosemite",
+     "id": "6Z3cE0ZK0tmj7131PFIOeZ"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/3an9rnsXKPCAMlZgH4A0n4",
+   "img": "https://i.scdn.co/image/ab6761610000517465eb52c5da399f337626be07"
+  },
+  "beltran b2b ben sterling": {
+   "score": 4,
+   "tier": null,
+   "known": false,
+   "evidence": [
+    "1.1m monthly listeners on spotify"
+   ],
+   "riyl": [
+    "Mochakk",
+    "Ragie Ban",
+    "BRN"
+   ],
+   "topTrack": "smack yo'",
+   "tracks": [
+    {
+     "n": "Smack Yo'",
+     "id": "2UdCQIDwFvGhslUYZH5tRR"
+    },
+    {
+     "n": "Passion (R U Satisfied)",
+     "id": "6XqRL8W59LbyLuIQ7wyjON"
+    },
+    {
+     "n": "Moonlight",
+     "id": "39JDdezxhax7XyjkRpM6Ds"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/1jgSqmZTBltb5O2L7ErmEP",
+   "img": "https://i.scdn.co/image/ab676161000051741b312f15d86abf0ee2df347b"
+  },
+  "prospa": {
+   "score": 56,
+   "tier": "deep",
+   "known": false,
+   "evidence": [
+    "12.7m monthly listeners on spotify"
+   ],
+   "riyl": [
+    "Cloonee",
+    "Sybil",
+    "Silva Bumpa"
+   ],
+   "topTrack": "free your mind",
+   "tracks": [
+    {
+     "n": "Free Your Mind",
+     "id": "39hHUnYBmyMwprzRaPODCX"
+    },
+    {
+     "n": "Good Girl",
+     "id": "263Ecah3YA4hVZHxR2Ex9p"
+    },
+    {
+     "n": "This Rhythm (feat. RAHH)",
+     "id": "4NtQwxR7o3ixPVKLyOTS66"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/6HabM2PUM519iIxervGWSb",
+   "img": "https://i.scdn.co/image/ab67616100005174695aceda1a09af723204d1d7"
+  },
+  "felly fell": {
+   "score": 6,
+   "tier": null,
+   "known": false,
+   "evidence": [],
+   "riyl": [],
+   "topTrack": null,
+   "tracks": [],
+   "url": null,
+   "img": null
+  },
+  "mgna crrrta": {
+   "score": 16,
+   "tier": null,
+   "known": false,
+   "evidence": [
+    "216k monthly listeners on spotify"
+   ],
+   "riyl": [
+    "Frost Children",
+    "Tommy Fleece",
+    "daine"
+   ],
+   "topTrack": "angel music",
+   "tracks": [
+    {
+     "n": "Angel Music",
+     "id": "42oFAKZp13nkMiEkDVGu7Q"
+    },
+    {
+     "n": "Deadtome",
+     "id": "0LrXxKKEgB6zVA1MbwQBks"
+    },
+    {
+     "n": "Pür Love",
+     "id": "16kxUNqPjD0agRJ27MDvuf"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/1pNs3qwMBJ0q4lyASth9Ye",
+   "img": "https://i.scdn.co/image/ab67616100005174ada2a07f5da89dbadba642e4"
+  },
+  "six sex": {
+   "score": 10,
+   "tier": null,
+   "known": false,
+   "evidence": [
+    "643k monthly listeners on spotify"
+   ],
+   "riyl": [
+    "dj g2g",
+    "TAICHU",
+    "Fiah"
+   ],
+   "topTrack": "pasarella 👠",
+   "tracks": [
+    {
+     "n": "pasarella 👠",
+     "id": "5jX8y3uTztypaMgOinxYMw"
+    },
+    {
+     "n": "Tócame (feat. Dillom)",
+     "id": "0hrrIKyJYc5BNLOn6zsCE6"
+    },
+    {
+     "n": "4 noviosS",
+     "id": "5jTL6HHZnDvCkjrChTVIGz"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/29rvPhemBdOLYdLr2xI8dr",
+   "img": "https://i.scdn.co/image/ab6761610000517475ae12fabb1e288ef73524f2"
+  },
+  "mike d 5d": {
+   "score": 20,
+   "tier": null,
+   "known": false,
+   "evidence": [
+    "8.4m monthly listeners on spotify"
+   ],
+   "riyl": [
+    "Rage Against The Machine",
+    "Run–D.M.C.",
+    "House Of Pain"
+   ],
+   "topTrack": "sabotage",
+   "tracks": [
+    {
+     "n": "Sabotage",
+     "id": "0Puj4YlTm6xNzDDADXHMI9"
+    },
+    {
+     "n": "No Sleep Till Brooklyn",
+     "id": "5qxChyzKLEyoPJ5qGrdurN"
+    },
+    {
+     "n": "Fight For Your Right",
+     "id": "5NLuC70kZQv8q34QyQa1DP"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/03r4iKL2g2442PT9n2UKsx",
+   "img": "https://i.scdn.co/image/eb9a69f247e84b9e9ce8b03f1ab5cca399b49cbc"
+  },
+  "jyoty": {
+   "score": 22,
+   "tier": null,
+   "known": false,
+   "evidence": [
+    "1k monthly listeners on spotify"
+   ],
+   "riyl": [
+    "Styn",
+    "HONEY B",
+    "DJ SWISHA"
+   ],
+   "topTrack": "stamina",
+   "tracks": [
+    {
+     "n": "Stamina",
+     "id": "72JPymDyLsHMHfUzA67NSZ"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/5yniF5litJGW61RAUeO3Mw",
+   "img": "https://i.scdn.co/image/ab676161000051744f8f1e906a11bf98d20d7fe5"
+  },
+  "bassvictim": {
+   "score": 66,
+   "tier": "deep",
+   "known": false,
+   "evidence": [
+    "750k monthly listeners on spotify"
+   ],
+   "riyl": [
+    "The Hellp",
+    "Joey Cash",
+    "ear"
+   ],
+   "topTrack": "dog tag freestyle",
+   "tracks": [
+    {
+     "n": "Dog Tag freestyle",
+     "id": "6cxHYtmqND5Y9DCILvncGP"
+    },
+    {
+     "n": "27a Pitfield St",
+     "id": "3zakxPIQHKsT9gbzahvFeI"
+    },
+    {
+     "n": "Forever salty",
+     "id": "2BNWCIN4nxYbNhcSIol2BG"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/7f8ydynRRnrJBqWxevKLcM",
+   "img": "https://i.scdn.co/image/ab67616100005174f1311904a5968e7d2069f40c"
+  },
+  "jigitz": {
+   "score": 15,
+   "tier": null,
+   "known": false,
+   "evidence": [
+    "3.2m monthly listeners on spotify"
+   ],
+   "riyl": [
+    "Swimming Paul",
+    "Charlotte Plank",
+    "Łaszewo"
+   ],
+   "topTrack": "car crash",
+   "tracks": [
+    {
+     "n": "car crash",
+     "id": "7iTvPYqoZ5mN2kUikWLGo0"
+    },
+    {
+     "n": "tell you straight",
+     "id": "2C96iPyCRXL5sOKivhlOWp"
+    },
+    {
+     "n": "seeing stars",
+     "id": "4sVsOR2Gsi42ClWuzB1i9x"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/7sfn5Z6ItzDkOF9cYzxWPZ",
+   "img": "https://i.scdn.co/image/ab676161000051748b354e7fbf7ec799aa7439c2"
+  },
+  "nate sib": {
+   "score": 27,
+   "tier": "wild",
+   "known": false,
+   "evidence": [
+    "582k monthly listeners on spotify"
+   ],
+   "riyl": [
+    "Jane Remover",
+    "Sorisa",
+    "Saska"
+   ],
+   "topTrack": "afraid (feat. nate sib)",
+   "tracks": [
+    {
+     "n": "afraid (feat. nate sib)",
+     "id": "41YlWhySoJVw2TXaxW1q5G"
+    },
+    {
+     "n": "back & forth (feat. 2hollis)",
+     "id": "6LK6tRsPgSZ3yKpY5zxrAw"
+    },
+    {
+     "n": "hold on",
+     "id": "2VuOOQ8aG0Kn7pO8kyoEb9"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/4TNu2ZIE566yKwEhOT8eTv",
+   "img": "https://i.scdn.co/image/ab67616100005174670af682ed7ee6d7596ad12d"
+  },
+  "melanie c": {
+   "score": 10,
+   "tier": null,
+   "known": false,
+   "evidence": [
+    "1m monthly listeners on spotify"
+   ],
+   "riyl": [
+    "Sugababes",
+    "All Saints",
+    "Emma Bunton"
+   ],
+   "topTrack": "never be the same again",
+   "tracks": [
+    {
+     "n": "Never Be The Same Again",
+     "id": "79EAVfOpzgfHx3IE2BVFQv"
+    },
+    {
+     "n": "I Turn To You - Hex Hector Radio Mix",
+     "id": "5x5zRAJy1a8lSKWCCKSCIH"
+    },
+    {
+     "n": "I Turn To You",
+     "id": "1Le4SDanBrX8OtmnnyTNrh"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/60vX3zLcdKRXvKLITVh5Df",
+   "img": "https://i.scdn.co/image/ab676161000051745daca84edb142b89a0376fab"
+  },
+  "despacio": {
+   "score": 55,
+   "tier": "deep",
+   "known": false,
+   "evidence": [
+    "8k monthly listeners on spotify"
+   ],
+   "riyl": [
+    "Samantha Fu",
+    "Ineffekt",
+    "Decius"
+   ],
+   "topTrack": "theme from banger",
+   "tracks": [
+    {
+     "n": "Theme From Banger",
+     "id": "5P2NdcejmwC3eR6xBaWlwa"
+    },
+    {
+     "n": "Dans Le Club",
+     "id": "45FdIf1Y0u4OQerv4S5Egv"
+    },
+    {
+     "n": "Dans Le Lab",
+     "id": "55JRQpdEUd6vLU5vgVAwjq"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/5bppICntghQ2YaiMPjk8l3",
+   "img": "https://i.scdn.co/image/ab676161000051744f446c123d0cd61bba6da1f3"
+  },
+  "clearcast": {
+   "score": 8,
+   "tier": null,
+   "known": false,
+   "evidence": [
+    "12k monthly listeners on spotify"
+   ],
+   "riyl": [
+    "Eyezic",
+    "dg.",
+    "shy tea"
+   ],
+   "topTrack": "end of time",
+   "tracks": [
+    {
+     "n": "END OF TIME",
+     "id": "3iHkMbxCgRZJTasZ8z0UPq"
+    },
+    {
+     "n": "obsessed",
+     "id": "2f2p60hjXhJCIJFre5ZbfF"
+    },
+    {
+     "n": "You Don’t Feel The Same (Clearcast Remix)",
+     "id": "09FJGbEK15PCVqx4w7kpEI"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/3dRhjQBCaVo5zMuXyjv7Su",
+   "img": "https://i.scdn.co/image/ab67616100005174c919b14abd86c8bc41408171"
+  },
+  "mind enterprises": {
+   "score": 25,
+   "tier": null,
+   "known": false,
+   "evidence": [
+    "647k monthly listeners on spotify"
+   ],
+   "riyl": [
+    "Cerrone",
+    "Maxero",
+    "Whodamanny"
+   ],
+   "topTrack": "galaxy",
+   "tracks": [
+    {
+     "n": "Galaxy",
+     "id": "6pubDVlpqhxvbemF9zI5zt"
+    },
+    {
+     "n": "Idol",
+     "id": "0o15nDyr5XH7vy3MV1JK8B"
+    },
+    {
+     "n": "Burn It!",
+     "id": "0XHSwT15ALpe58lcehwlP6"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/5pN1DJhPFDKso4OtC0QhnB",
+   "img": "https://i.scdn.co/image/ab67616100005174adfbc1058442ed8b996a6ae7"
+  },
+  "channel tres": {
+   "score": 79,
+   "tier": "deep",
+   "known": false,
+   "evidence": [
+    "2.7m monthly listeners on spotify"
+   ],
+   "riyl": [
+    "Jungle",
+    "KAYTRANADA",
+    "SG Lewis"
+   ],
+   "topTrack": "i've been in love",
+   "tracks": [
+    {
+     "n": "I've Been In Love",
+     "id": "7j3zZ2jAjzFD60UjhldhHo"
+    },
+    {
+     "n": "Topdown",
+     "id": "17MK2u7iHFpNb3tPuJnUdw"
+    },
+    {
+     "n": "Tunnel",
+     "id": "4at0npP4QkdIUulFZIsYft"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/4cUkGQyhLFqKHBtL58HYVp",
+   "img": "https://i.scdn.co/image/ab67616100005174f26fb34bdfb2c9c96613de78"
+  },
+  "sg lewis": {
+   "score": 63,
+   "tier": "deep",
+   "known": false,
+   "evidence": [
+    "4.7m monthly listeners on spotify"
+   ],
+   "riyl": [
+    "Channel Tres",
+    "DRAMA",
+    "The Magician"
+   ],
+   "topTrack": "be the one",
+   "tracks": [
+    {
+     "n": "Be The One",
+     "id": "4gDKviRLkpZowZhcnRPqqE"
+    },
+    {
+     "n": "More Than A Woman - SG's Paradise Edit",
+     "id": "0L3XCv9i9IHs8cJEVhsJ3J"
+    },
+    {
+     "n": "HEAT",
+     "id": "3Du9k9oZz7DJCMZviju2lD"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/0GG2cWaonE4JPrjcCCQ1EG",
+   "img": "https://i.scdn.co/image/ab67616100005174e902aac7237fe43f1fb6bdfe"
+  },
+  "mochakk": {
+   "score": 8,
+   "tier": null,
+   "known": false,
+   "evidence": [
+    "1.5m monthly listeners on spotify"
+   ],
+   "riyl": [
+    "Beltran",
+    "Jamie Jones",
+    "The Martinez Brothers"
+   ],
+   "topTrack": "da fonk (feat. joni)",
+   "tracks": [
+    {
+     "n": "Da Fonk (feat. Joni)",
+     "id": "6ryPKHgiz6MSGJ1wYqn28b"
+    },
+    {
+     "n": "Jealous",
+     "id": "5Ir9mqfAUnXkSkXHF1yvM0"
+    },
+    {
+     "n": "False Need",
+     "id": "1Q4LKR0aa9ISDZ3UELDNeH"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/0rTh1tAdrEbdKZBTiiAQSo",
+   "img": "https://i.scdn.co/image/ab6761610000517425eb7fae06eeb3765c8832c0"
+  },
+  "zara larsson": {
+   "score": 17,
+   "tier": null,
+   "known": false,
+   "evidence": [
+    "55.7m monthly listeners on spotify"
+   ],
+   "riyl": [
+    "Ariana Grande",
+    "Rihanna",
+    "RAYE"
+   ],
+   "topTrack": "lush life",
+   "tracks": [
+    {
+     "n": "Lush Life",
+     "id": "1rIKgCH4H52lrvDcz50hS8"
+    },
+    {
+     "n": "Midnight Sun",
+     "id": "1qRV1dKLOfH1s00b9J2LUQ"
+    },
+    {
+     "n": "Stateside + Zara Larsson",
+     "id": "1DwscornXpj8fmOmYVlqZt"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/1Xylc3o4UrD53lo9CvFvVg",
+   "img": "https://i.scdn.co/image/ab67616100005174d519a7e349541cba8f85e965"
+  },
+  "swedish house mafia": {
+   "score": 27,
+   "tier": null,
+   "known": false,
+   "evidence": [
+    "26.9m monthly listeners on spotify"
+   ],
+   "riyl": [
+    "Disclosure",
+    "Alesso",
+    "David Guetta"
+   ],
+   "topTrack": "moth to a flame (with the weeknd)",
+   "tracks": [
+    {
+     "n": "Moth To A Flame (with The Weeknd)",
+     "id": "0VO8gYVDSwM1Qdd2GsMoYK"
+    },
+    {
+     "n": "Don't You Worry Child (feat. John Martin) - Radio Edit",
+     "id": "5tALkmrC4bRfrSDLimAzuq"
+    },
+    {
+     "n": "Happiness Is So Sad",
+     "id": "5Vz9XUiw2emOIRLobTMEkD"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/1h6Cn3P4NGzXbaXidqURXs",
+   "img": "https://i.scdn.co/image/ab676161000051749614fcf985ad6fc5b4a7c3de"
+  },
+  "torren foot": {
+   "score": 12,
+   "tier": null,
+   "known": false,
+   "evidence": [
+    "781k monthly listeners on spotify"
+   ],
+   "riyl": [
+    "Princess Superstar",
+    "Mason",
+    "Azealia Banks"
+   ],
+   "topTrack": "new bottega",
+   "tracks": [
+    {
+     "n": "New Bottega",
+     "id": "05IOuexttkZG6eQLFi3v40"
+    },
+    {
+     "n": "Be Randy",
+     "id": "5mPFXECMRYfPOqm8gGfCEc"
+    },
+    {
+     "n": "Candy",
+     "id": "2aiy3gAjU8yynkrbpEVQm9"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/7lQOxDl96wmNoqGoW4kgv4",
+   "img": "https://i.scdn.co/image/ab67616100005174757f9284997fc4d677fbecf0"
+  },
+  "azzecca": {
+   "score": 4,
+   "tier": null,
+   "known": false,
+   "evidence": [
+    "388k monthly listeners on spotify"
+   ],
+   "riyl": [
+    "Walker & Royce",
+    "Nala",
+    "Deeper Purpose"
+   ],
+   "topTrack": "other side",
+   "tracks": [
+    {
+     "n": "Other Side",
+     "id": "6gLDnzjpM0AwOeh9NmmHE0"
+    },
+    {
+     "n": "oh my yuma!",
+     "id": "0gCVfzNzYGBk95GBLQ6US4"
+    },
+    {
+     "n": "dissolve",
+     "id": "3aKeZ75NMlUdk75F3N8mix"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/2k5DY2QDU3kBi5DX7OQlWj",
+   "img": "https://i.scdn.co/image/ab67616100005174d34603065ae649a222d138c6"
+  },
+  "adéla": {
+   "score": 37,
+   "tier": "wild",
+   "known": false,
+   "evidence": [
+    "24.8m monthly listeners on spotify"
+   ],
+   "riyl": [
+    "Charli xcx",
+    "Ariana Grande",
+    "Slayyyter"
+   ],
+   "topTrack": "ain't in la",
+   "tracks": [
+    {
+     "n": "Ain't In LA",
+     "id": "6U9VpmP3dEinuezxCJ2Zg9"
+    },
+    {
+     "n": "Nicole Kidman",
+     "id": "70cHKK8bHAfJrOGVnfRG9J"
+    },
+    {
+     "n": "KGB",
+     "id": "3eXYltBvZSCOs6fM1La6ho"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/2qanRMyA5bNuTvz1dK45OP",
+   "img": "https://i.scdn.co/image/ab676161000051742005cc18964c60e22c4759b5"
+  },
+  "zulan": {
+   "score": 14,
+   "tier": null,
+   "known": false,
+   "evidence": [
+    "963k monthly listeners on spotify"
+   ],
+   "riyl": [
+    "Baika",
+    "IN PARALLEL",
+    "Łaszewo"
+   ],
+   "topTrack": "forever",
+   "tracks": [
+    {
+     "n": "Forever",
+     "id": "32GOfiLnbER2VOOxJkg29P"
+    },
+    {
+     "n": "Campeón",
+     "id": "5TpWybXTsLTUAj4WcUYkP0"
+    },
+    {
+     "n": "Match My Speed",
+     "id": "0Jc3LSbd1KQaKpMC716iBX"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/2Yz9F5lQVc0p6SDxkw2BvF",
+   "img": "https://i.scdn.co/image/ab676161000051741990aad605000ba36b1ad725"
+  },
+  "underscores": {
+   "score": 33,
+   "tier": "wild",
+   "known": false,
+   "evidence": [
+    "1.9m monthly listeners on spotify"
+   ],
+   "riyl": [
+    "Jane Remover",
+    "Tiffany Day",
+    "Frost Children"
+   ],
+   "topTrack": "the peace",
+   "tracks": [
+    {
+     "n": "The Peace",
+     "id": "6wm3t4VpTxSFfOUgTMlHZM"
+    },
+    {
+     "n": "Music",
+     "id": "6gPbjxlebqkFyCaLY4SRVm"
+    },
+    {
+     "n": "Do It",
+     "id": "4BBL8YQ1SUhSbcsEguX8kL"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/7HfUJxeVTgrvhk0eWHFzV7",
+   "img": "https://i.scdn.co/image/ab67616100005174de8dfaf8e64fee65ef479e68"
+  },
+  "ninajirachi": {
+   "score": 21,
+   "tier": null,
+   "known": false,
+   "evidence": [
+    "1.7m monthly listeners on spotify"
+   ],
+   "riyl": [
+    "Jane Remover",
+    "Frost Children",
+    "underscores"
+   ],
+   "topTrack": "wannacry",
+   "tracks": [
+    {
+     "n": "WannaCry",
+     "id": "7JW8FRWVCOQDs40IjEXdPi"
+    },
+    {
+     "n": "iPod Touch",
+     "id": "1xqT27jSG1Y15vOXfsV0gv"
+    },
+    {
+     "n": "Fuck My Computer",
+     "id": "5ZbztTcvj6QWWbeYsL4GTa"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/3MekbRujJg5VZThubOlrkR",
+   "img": "https://i.scdn.co/image/ab676161000051746363b3a1630b8811a4d3d718"
+  },
+  "horsegiirl": {
+   "score": 17,
+   "tier": null,
+   "known": false,
+   "evidence": [
+    "977k monthly listeners on spotify"
+   ],
+   "riyl": [
+    "Shygirl",
+    "MCR-T",
+    "Miss Bashful"
+   ],
+   "topTrack": "my little white pony",
+   "tracks": [
+    {
+     "n": "My Little White Pony",
+     "id": "46PRAC9BDGinxWR2Jw6chN"
+    },
+    {
+     "n": "Farmcore",
+     "id": "6eWWXpjkeF62wUEkW41cLC"
+    },
+    {
+     "n": "My Barn My Rules",
+     "id": "1bXW9UIZWmXtoSGXJvyyAm"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/0auP293abZeTWwMUi3fZw2",
+   "img": "https://i.scdn.co/image/ab6761610000517450fd23946deeb6991ef1ee09"
+  },
+  "parcels": {
+   "score": 81,
+   "tier": "deep",
+   "known": false,
+   "evidence": [
+    "5.8m monthly listeners on spotify"
+   ],
+   "riyl": [
+    "L'Impératrice",
+    "Jungle",
+    "Tom Misch"
+   ],
+   "topTrack": "tieduprightnow",
+   "tracks": [
+    {
+     "n": "Tieduprightnow",
+     "id": "66tkDkPsznE5zIHNt4QkXB"
+    },
+    {
+     "n": "Gamesofluck",
+     "id": "0rdWkO7ncrh1lrJGDmLq9L"
+    },
+    {
+     "n": "Overnight",
+     "id": "0hhXziDUO0wNYPsstDQWN6"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/3oKRxpszQKUjjaHz388fVA",
+   "img": "https://i.scdn.co/image/ab676161000051743f64ee564d3617f6a764f933"
+  },
+  "dean turnley": {
+   "score": 9,
+   "tier": null,
+   "known": false,
+   "evidence": [
+    "1.1m monthly listeners on spotify"
+   ],
+   "riyl": [
+    "Chris Lorenzo",
+    "Joshwa",
+    "GUDFELLA"
+   ],
+   "topTrack": "actin' tough",
+   "tracks": [
+    {
+     "n": "Actin' Tough",
+     "id": "507j66jaEEUU11uFSTOHFM"
+    },
+    {
+     "n": "Actin' Tough - A.B.C. Remix",
+     "id": "0t94CEbIDQZO99iP8Ibjr7"
+    },
+    {
+     "n": "Actin' Tough - Mall Grab Remix",
+     "id": "2TqCiv7A1vIf8dPwNItdZl"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/3BcWcwYXVjvLWHMGKsuvsd",
+   "img": "https://i.scdn.co/image/ab67616100005174eaab6c2f430d35bce8b88240"
+  },
+  "silva bumpa": {
+   "score": 15,
+   "tier": null,
+   "known": false,
+   "evidence": [
+    "5.6m monthly listeners on spotify"
+   ],
+   "riyl": [
+    "Prospa",
+    "Kolter",
+    "Josh Baker"
+   ],
+   "topTrack": "on 2nite",
+   "tracks": [
+    {
+     "n": "On 2nite",
+     "id": "2BoSbGSp2OaDBOx5NFHkrr"
+    },
+    {
+     "n": "HOLD DA PHONE",
+     "id": "2IKns7PcTCTa8WcrfF7tsY"
+    },
+    {
+     "n": "Doin' it featuring MC DT",
+     "id": "4bdbgZDx6LkHTNyy5PZW9h"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/2dPLkqesvPXpIlP65JoLrf",
+   "img": "https://i.scdn.co/image/ab67616100005174293cb44a73e10113db56a3f5"
+  },
+  "brunello": {
+   "score": 4,
+   "tier": null,
+   "known": false,
+   "evidence": [
+    "597k monthly listeners on spotify"
+   ],
+   "riyl": [
+    "Bonafique",
+    "Adam Ten",
+    "Hilel Lev"
+   ],
+   "topTrack": "ghost dance",
+   "tracks": [
+    {
+     "n": "Ghost Dance",
+     "id": "3x6CEyquRREaQ9ZBbBhrGe"
+    },
+    {
+     "n": "Science Fiction",
+     "id": "6FTveMyq8szPAloptdZ17g"
+    },
+    {
+     "n": "Illusions",
+     "id": "5vdYKeo49iIaBRXoug9bsi"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/7FZIk8RSha4GBa4ZEPuytU",
+   "img": "https://i.scdn.co/image/ab67616100005174f09aeff34e4a5c220d6627a5"
+  },
+  "vtss": {
+   "score": 8,
+   "tier": null,
+   "known": false,
+   "evidence": [
+    "220k monthly listeners on spotify"
+   ],
+   "riyl": [
+    "LSDXOXO",
+    "DBBD",
+    "DJ Fuckoff"
+   ],
+   "topTrack": "make you scream - yunè pinku remix",
+   "tracks": [
+    {
+     "n": "Make You Scream - yunè pinku Remix",
+     "id": "5sB6nWsUKo40L5AeJ7Ja7Q"
+    },
+    {
+     "n": "Can't Catch Me",
+     "id": "3Qd3EeuoHj4LXzCkff7DFT"
+    },
+    {
+     "n": "TITS, LIPS, HIPS, KISS (10/10 Remix)",
+     "id": "3KkesrPkSGFZYXUHtk1Zfn"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/0zo109NM3S7CqHpvlXwqEN",
+   "img": "https://i.scdn.co/image/ab676161000051742c592ef981e3103fac56b539"
+  },
+  "marlon hoffstadt": {
+   "score": 8,
+   "tier": null,
+   "known": false,
+   "evidence": [
+    "7.5m monthly listeners on spotify"
+   ],
+   "riyl": [
+    "KI/KI",
+    "Dj Konik",
+    "Dimitri Vegas"
+   ],
+   "topTrack": "makina time",
+   "tracks": [
+    {
+     "n": "Makina Time",
+     "id": "4jSrN7kXdQUmbVxJe5x6Xg"
+    },
+    {
+     "n": "It's That Time - FISHER Remix",
+     "id": "3GiORO0zRwRT3g9CCklzkQ"
+    },
+    {
+     "n": "Losing Control",
+     "id": "3gJ16QEGGhLFPNLvbXgB1u"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/0HHa7ZJZxUQlg5l2mB0N0f",
+   "img": "https://i.scdn.co/image/ab676161000051742744c0aa6cccfab6120ef015"
+  },
+  "tiësto": {
+   "score": 6,
+   "tier": null,
+   "known": false,
+   "evidence": [
+    "33.3m monthly listeners on spotify"
+   ],
+   "riyl": [
+    "MEDUZA",
+    "R3HAB",
+    "David Guetta"
+   ],
+   "topTrack": "thank you (not so bad)",
+   "tracks": [
+    {
+     "n": "Thank You (Not So Bad)",
+     "id": "09CnYHiZ5jGT1wr1TXJ9Zt"
+    },
+    {
+     "n": "10:35",
+     "id": "36gcliMRX1vCpgnrZE3dFZ"
+    },
+    {
+     "n": "The Business",
+     "id": "57uNXnf4ciHYP4HktbIbzC"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/2o5jDhtHVPhrJdv3cEQ99Z",
+   "img": "https://i.scdn.co/image/ab67616100005174f4973f7346a2f35e56b63d57"
+  },
+  "overmono": {
+   "score": 80,
+   "tier": "deep",
+   "known": false,
+   "evidence": [
+    "1.3m monthly listeners on spotify"
+   ],
+   "riyl": [
+    "Jacques Greene",
+    "O'Flynn",
+    "DJ Seinfeld"
+   ],
+   "topTrack": "good lies",
+   "tracks": [
+    {
+     "n": "Good Lies",
+     "id": "1ZnghCVtXCrtmKJH32z4UK"
+    },
+    {
+     "n": "After The Rain",
+     "id": "0rclr5nd7iwF4rJTYRLlJq"
+    },
+    {
+     "n": "stayinit",
+     "id": "2dtZQhnuHQ9aKawfKfhGVe"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/01PnN11ovfen6xUOHfNpn3",
+   "img": "https://i.scdn.co/image/ab67616100005174af9223204ffd235e81cde035"
+  },
+  "four tet": {
+   "score": 75,
+   "tier": "deep",
+   "known": false,
+   "evidence": [
+    "3.4m monthly listeners on spotify"
+   ],
+   "riyl": [
+    "Caribou",
+    "Overmono",
+    "Jamie xx"
+   ],
+   "topTrack": "volver",
+   "tracks": [
+    {
+     "n": "VOLVER",
+     "id": "3Bp0XlRQv0URQMM6ABKhEE"
+    },
+    {
+     "n": "Baby again..",
+     "id": "0UgLrEaEcTnoGOLawTvPts"
+    },
+    {
+     "n": "glow",
+     "id": "3i9QKRl5Ql3pgUfNdYBVTc"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/7Eu1txygG6nJttLHbZdQOh",
+   "img": "https://i.scdn.co/image/ab6761610000517421c0ea7fc21ab3038d111ec2"
+  },
+  "kaytree": {
+   "score": 5,
+   "tier": null,
+   "known": false,
+   "evidence": [],
+   "riyl": [],
+   "topTrack": null,
+   "tracks": [],
+   "url": null,
+   "img": null
+  },
+  "riria": {
+   "score": 5,
+   "tier": null,
+   "known": false,
+   "evidence": [],
+   "riyl": [],
+   "topTrack": null,
+   "tracks": [],
+   "url": null,
+   "img": null
+  },
+  "ear": {
+   "score": 29,
+   "tier": "wild",
+   "known": false,
+   "evidence": [
+    "452k monthly listeners on spotify"
+   ],
+   "riyl": [
+    "Bassvictim",
+    "the sound chalk makes",
+    "meat computer"
+   ],
+   "topTrack": "real life",
+   "tracks": [
+    {
+     "n": "Real Life",
+     "id": "1Dcfp94Bmjnih9IYD6qV6K"
+    },
+    {
+     "n": "Ne Plus Ultra",
+     "id": "3JcLs0pJ2u3ptbFDfbGxBg"
+    },
+    {
+     "n": "Nerves",
+     "id": "6aWR7XlrJ5bveVG5YuIWpW"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/3bABCGLkFvjnNIKHvPVHDG",
+   "img": "https://i.scdn.co/image/ab6761610000517481d97c4377ca8866fc5e61fa"
+  },
+  "ben ufo": {
+   "score": 32,
+   "tier": "wild",
+   "known": false,
+   "evidence": [
+    "3k monthly listeners on spotify"
+   ],
+   "riyl": [
+    "ISAbella",
+    "Elias Allesandro",
+    "Paurro"
+   ],
+   "topTrack": "ben ufo - rinse: 16",
+   "tracks": [
+    {
+     "n": "Ben UFO - Rinse: 16",
+     "id": "6kwrdIvoDtQ9oD1JZ9j3pn"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/44j1ebTzFis2TUjf7boDpM",
+   "img": "https://i.scdn.co/image/ab67616d00001e02819cfb3f891635a288a44818"
+  },
+  "daphni": {
+   "score": 73,
+   "tier": "deep",
+   "known": false,
+   "evidence": [
+    "417k monthly listeners on spotify"
+   ],
+   "riyl": [
+    "Jacques Greene",
+    "HAAi",
+    "1-800 GIRLS"
+   ],
+   "topTrack": "poly",
+   "tracks": [
+    {
+     "n": "Poly",
+     "id": "70GeFg0Hy8uvIoujccyWgz"
+    },
+    {
+     "n": "Carry On",
+     "id": "1B1QyU5S0rIrokfaV9Zq4a"
+    },
+    {
+     "n": "Waiting So Long",
+     "id": "26AsQVWhBFdIZj9fTcKmjY"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/4nhvb6x9ZhPiYCzrHDNia9",
+   "img": "https://i.scdn.co/image/ab6761610000517464a6f350a866eb6e119a5a6e"
+  },
+  "kelela": {
+   "score": 49,
+   "tier": "deep",
+   "known": false,
+   "evidence": [
+    "1.2m monthly listeners on spotify"
+   ],
+   "riyl": [
+    "FKA twigs",
+    "Empress Of",
+    "Eartheater"
+   ],
+   "topTrack": "the bridge",
+   "tracks": [
+    {
+     "n": "the bridge",
+     "id": "1PpODh3GDSFoG7EGOekVu2"
+    },
+    {
+     "n": "linknb",
+     "id": "1J3tjMAfIQFrSBHApTA3R4"
+    },
+    {
+     "n": "idea 1",
+     "id": "0p7MiR9kVY9pX8z3v4vys3"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/1U0sIzpRtDkvu1hXXzxh60",
+   "img": "https://i.scdn.co/image/ab6761610000517483ffae7fe0242c07cc55adbb"
+  },
+  "jt": {
+   "score": 36,
+   "tier": null,
+   "known": false,
+   "evidence": [
+    "6.1m monthly listeners on spotify"
+   ],
+   "riyl": [
+    "Sexyy Red",
+    "Megan Thee Stallion",
+    "GloRilla"
+   ],
+   "topTrack": "alter ego (with jt)",
+   "tracks": [
+    {
+     "n": "Alter Ego (with JT)",
+     "id": "2xaaJcmvMOmpDbTwlWnjFh"
+    },
+    {
+     "n": "OKAY",
+     "id": "3C8lsLOz4Jk0ELFpf0eUIk"
+    },
+    {
+     "n": "Muñekita (with El Alfa & JT)",
+     "id": "20LZsv2s3dXvoBuPUEOlAv"
+    }
+   ],
+   "url": "https://open.spotify.com/artist/39af15p0feaAOdL9DTRj3m",
+   "img": "https://i.scdn.co/image/ab67616100005174946cdd15330e5f492ff532ac"
+  },
+  "baby j": {
+   "score": 8,
+   "tier": null,
+   "known": false,
+   "evidence": [],
+   "riyl": [],
+   "topTrack": null,
+   "tracks": [],
+   "url": null,
+   "img": null
+  }
+ }
+}

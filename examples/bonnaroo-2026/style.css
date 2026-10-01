@@ -1,0 +1,225 @@
+/* Bonnaroo 2026: candy farm psychedelia. Sky over green hills, glossy lollipops, neon tubes,
+   a checkerboard path, pink pill buttons, and the chunky rounded lowercase wordmark. */
+:root {
+  --roo: #79C531;
+  --roo-hi: #D6F2A6;
+  --pink: #F3788C;
+  --teal: #7EBFBC;
+  --purple: #7A5FBC;
+  --orange: #F26922;
+  --yolk: #FFC32F;
+  --outline: #161616;
+  --sky-top: #7DB3D9;
+  --tube: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 120'%3E%3Cpath d='M18 -6C2 30 14 64 52 60c30-3 20 26 44 34s40-6 58-2' fill='none' stroke='%2379C531' stroke-width='10' stroke-linecap='round'/%3E%3Cpath d='M18 -6C2 30 14 64 52 60c30-3 20 26 44 34s40-6 58-2' fill='none' stroke='%23E4F7C2' stroke-width='3' stroke-linecap='round' opacity='.85'/%3E%3C/svg%3E");
+  --hills: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 80' preserveAspectRatio='none'%3E%3Cpath d='M0 44C50 18 110 22 170 40S300 14 400 34V80H0Z' fill='%234E9A2E'/%3E%3Cpath d='M150 64L400 46V56L170 72Z' fill='%23161616'/%3E%3Cpath d='M0 58C70 36 140 44 210 60S330 44 400 54V80H0Z' fill='%2379C531'/%3E%3C/svg%3E");
+  --cloud: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 50'%3E%3Cpath d='M14 46a12 12 0 0 1 4-23 16 16 0 0 1 28-10 20 20 0 0 1 36 2 14 14 0 0 1 22 12 10 10 0 0 1 4 19z' fill='%23fff'/%3E%3C/svg%3E");
+  --checker: repeating-conic-gradient(var(--outline) 0 25%, #F8F1D4 0 50%);
+}
+html[data-theme="night"] {
+  --roo: #8BD450;
+  --sky-top: #0B0F0F;
+  --hills: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 80' preserveAspectRatio='none'%3E%3Cpath d='M0 44C50 18 110 22 170 40S300 14 400 34V80H0Z' fill='%231C3E25'/%3E%3Cpath d='M150 64L400 46V56L170 72Z' fill='%23F8F1D4' opacity='.25'/%3E%3Cpath d='M0 58C70 36 140 44 210 60S330 44 400 54V80H0Z' fill='%232B6234'/%3E%3C/svg%3E");
+}
+
+/* ---------- the sky ---------- */
+html[data-theme="night"] body { background: linear-gradient(180deg, var(--paper) 0, var(--paper) 35%, #1B3433 100%); }
+.mast {
+  position: relative; margin: 0 calc(50% - 50vw); padding: 18px calc(50vw - 50%) 78px;
+  background:
+    var(--hills) 0 100% / 100% 82px no-repeat,
+    var(--cloud) 84% calc(100% - 70px) / 104px auto no-repeat,
+    var(--cloud) 56% calc(100% - 84px) / 54px auto no-repeat,
+    linear-gradient(180deg, var(--sky-top), var(--paper) 92%);
+}
+html[data-theme="night"] .mast {
+  background:
+    var(--hills) 0 100% / 100% 82px no-repeat,
+    radial-gradient(circle at 12% 30%, #F8F1D4 0 1.2px, transparent 2px),
+    radial-gradient(circle at 34% 12%, #F8F1D4 0 1px, transparent 1.8px),
+    radial-gradient(circle at 58% 40%, #F8F1D4 0 1.4px, transparent 2.2px),
+    radial-gradient(circle at 72% 70%, #F8F1D4 0 1px, transparent 1.8px),
+    radial-gradient(circle at 24% 72%, #F8F1D4 0 1px, transparent 1.8px),
+    linear-gradient(180deg, var(--sky-top), #173130 92%);
+}
+.mast__meta { border-bottom: 0; padding-bottom: 0; padding-right: 96px; color: var(--ink); font-weight: 500; }
+html[data-theme="night"] .mast__meta { color: var(--teal); }
+.mast__meta span:last-child { margin-left: 0; }
+
+/* ---------- the wordmark: lowercase, rounded, roo green with a candy drop ---------- */
+.mast .wordmark {
+  margin: 44px 0 0; gap: 0; align-items: flex-end;
+  font: 700 clamp(64px, 19vw, 168px)/.86 var(--f-display); font-stretch: 100%; letter-spacing: -.035em;
+}
+html[data-wordmark] .wordmark .knock {
+  color: var(--roo); text-transform: lowercase; padding: 0; min-width: 0; height: auto; background: none;
+  clip-path: none; transform: none;
+}
+.mast .wordmark { filter: drop-shadow(.02em .045em 0 var(--outline)); }
+html[data-theme="night"] .mast .wordmark { filter: drop-shadow(0 0 .14em rgb(139 212 80 / .4)) drop-shadow(.02em .045em 0 #000); }
+.wordmark .knock:nth-last-child(3) { display: none; }
+html[data-wordmark] .wordmark .knock:nth-last-child(2) {
+  color: transparent; width: 1.16em; height: 1em; margin-left: .03em; background: var(--roo);
+  -webkit-mask: var(--roomark) center bottom / contain no-repeat; mask: var(--roomark) center bottom / contain no-repeat;
+}
+.wordmark { --roomark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 116 100'%3E%3Cg fill='none' stroke='%23000' stroke-width='17'%3E%3Ccircle cx='28' cy='70' r='20'/%3E%3Cpath d='M48 70a20 20 0 0 1 20-20c-8 0-14-7-14-16a16 16 0 0 1 32 0c0 9-6 16-14 16a20 20 0 1 1-20 20'/%3E%3C/g%3E%3C/svg%3E"); }
+
+/* the date as a glossy lollipop, like the poster's */
+.mast .wordmark .yearstack {
+  position: absolute; top: -74px; right: -6px; margin: 0; z-index: 2;
+  flex-direction: row; flex-wrap: wrap; justify-content: center; align-content: center; gap: 0;
+  width: 80px; height: 80px; border-radius: 50%; transform: rotate(-9deg);
+  font: 700 21px/1 var(--f-display); letter-spacing: -.01em; color: #6B2A0C;
+  background: radial-gradient(circle at 34% 28%, #FFF4C2 0 7%, #FFD45A 26%, var(--yolk) 52%, #E9851C 100%);
+  box-shadow: inset -5px -7px 12px rgb(160 70 0 / .35);
+  border: 2px solid var(--outline);
+}
+.mast .wordmark .yearstack b { background: none; color: inherit; padding: 0; transform: none; }
+.mast .wordmark .yearstack::before, .mast .wordmark .yearstack::after { flex-basis: 100%; text-align: center; font: 600 9.5px/1.15 var(--f-mono); letter-spacing: .04em; }
+.mast .wordmark .yearstack::before { content: "JUNE 11–14"; margin-bottom: 2px; font-size: 11px; }
+.mast .wordmark .yearstack::after { content: "MANCHESTER TN"; margin-top: 3px; }
+html[data-theme="night"] .mast .wordmark .yearstack {
+  color: #F8F1D4; box-shadow: inset -5px -7px 12px rgb(40 30 110 / .4);
+  background: radial-gradient(circle at 30% 24%, #A993EA 0 9%, var(--purple) 46%, #4B338F 100%);
+}
+html[data-theme="night"] .mast .wordmark .yearstack::before, html[data-theme="night"] .mast .wordmark .yearstack::after { color: #F8F1D4; }
+
+/* ---------- pills: day colours from the poster, pink buttons from the site ---------- */
+.label, .label--btn {
+  font: 600 13px/1 var(--f-display); font-stretch: 95%; letter-spacing: .03em;
+  padding: 8px 12px 7px; border: 2px solid var(--outline); background: var(--paper-3); color: var(--outline);
+}
+.mast__row { margin-top: 18px; position: relative; z-index: 1; }
+.mast__labels { justify-content: flex-start; }
+.mast__days .label { box-shadow: 0 2px 0 var(--outline); }
+.mast__days .label:nth-child(1), .label--btn[data-day="thu"][aria-selected="true"] { background: var(--orange); color: var(--outline); }
+.mast__days .label:nth-child(2), .label--btn[data-day="fri"][aria-selected="true"] { background: var(--pink); color: var(--outline); }
+.mast__days .label:nth-child(3), .label--btn[data-day="sat"][aria-selected="true"] { background: var(--purple); color: #FFF9E8; }
+.mast__days .label:nth-child(4), .label--btn[data-day="sun"][aria-selected="true"] { background: var(--teal); color: var(--outline); }
+.label--btn[aria-selected="true"] { box-shadow: 0 2px 0 var(--outline); }
+#theme-toggle { background: var(--outline); color: var(--teal); border-color: var(--outline); box-shadow: 0 2px 0 #000; }
+html[data-theme="night"] #theme-toggle { background: var(--yolk); color: var(--outline); }
+html[data-theme="night"] .label:not(.label--btn[aria-selected="true"]):not(.mast__days .label):not(#theme-toggle) { background: var(--paper-3); color: var(--ink); border-color: var(--ink-30); }
+
+.chip {
+  border: 2px solid var(--ink); font: 600 14px/1 var(--f-display); letter-spacing: .01em; padding: 7px 12px;
+}
+.chip[aria-selected="true"] { background: var(--pink); color: var(--outline); border-color: var(--outline); }
+.chip:hover:not([aria-selected="true"]) { background: var(--paper-3); }
+html[data-theme="night"] .chip:hover:not([aria-selected="true"]) { background: var(--paper-2); }
+
+/* ---------- ticker: the checkerboard path ---------- */
+.ticker {
+  margin: 0 calc(50% - 50vw); border: 0; color: var(--outline); padding: 10px 0;
+  background: var(--checker) 0 0 / 20px 20px repeat-x, var(--checker) 0 100% / 20px 20px repeat-x, var(--roo);
+  background-size: 20px 10px, 20px 10px, auto;
+}
+.ticker__track { font: 700 16px/1 var(--f-display); font-stretch: 90%; letter-spacing: .03em; padding: 9px 0; }
+.ticker__track span::after { content: "•"; font-size: 18px; vertical-align: 0; margin-left: 24px; }
+
+/* ---------- section heads: fat rounded caps on a neon tube ---------- */
+.sect__head {
+  border-bottom: 0; padding-bottom: 18px; color: var(--ink); flex-wrap: nowrap; align-items: center; gap: 10px;
+  font: 700 clamp(30px, 8.6vw, 54px)/.95 var(--f-display); font-stretch: 106%; letter-spacing: -.01em; text-transform: uppercase;
+  text-shadow: 0 3px 0 var(--roo);
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 14'%3E%3Cpath d='M4 7c20-8 30 8 50 0s30-8 50 0 30 8 50 0 26-8 42 0' fill='none' stroke='%2379C531' stroke-width='6' stroke-linecap='round'/%3E%3Cpath d='M4 7c20-8 30 8 50 0s30-8 50 0 30 8 50 0 26-8 42 0' fill='none' stroke='%23E4F7C2' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") 0 100% / 180px 14px no-repeat;
+}
+html[data-theme="night"] .sect__head { color: var(--teal); text-shadow: 0 3px 0 #0B0F0F; }
+.sect__head .mono {
+  display: inline-grid; flex: none; width: 28px; height: 28px; border-radius: 50%; align-self: center;
+  background: radial-gradient(circle at 34% 28%, #FFE0E6 0 8%, var(--pink) 50%, #D24A66 100%);
+  border: 2px solid var(--outline); color: var(--outline); font: 700 13px/1 var(--f-display); letter-spacing: 0; text-shadow: none;
+  font-size: 0;
+}
+.minihead { font: 500 15px/1 var(--f-hand); text-transform: lowercase; letter-spacing: .01em; color: var(--ink-70); }
+
+/* ---------- top 4: arches, like the Centeroo arch and the poster's rainbow ---------- */
+.sleeve { border: 2px solid var(--outline); border-radius: 999px 999px 14px 14px; background: var(--paper-2); }
+html[data-shape] .shelf .sleeve { border-radius: 999px 999px 14px 14px; }
+.sleeve--blank { color: var(--outline); font: 700 44px/1 var(--f-display); text-transform: lowercase; }
+.shelf li:nth-child(1) .sleeve { background: linear-gradient(180deg, var(--pink), #FFD1D9); }
+.shelf li:nth-child(2) .sleeve { background: linear-gradient(180deg, var(--yolk), #FFF0B8); }
+.shelf li:nth-child(3) .sleeve { background: linear-gradient(180deg, var(--purple), #CFC2F2); }
+.shelf li:nth-child(4) .sleeve { background: linear-gradient(180deg, var(--teal), #D6F0EE); }
+.shelf .sticker {
+  border: 2px solid var(--outline); box-shadow: none; font: 700 14px/1 var(--f-display);
+  background: radial-gradient(circle at 34% 28%, #F4FFE0 0 10%, var(--roo) 55%, #4E9A2E 100%); color: var(--outline);
+}
+[data-theme="night"] .shelf .sticker { color: var(--outline); }
+.shelf .cap { font: 700 15px/1.05 var(--f-display); font-stretch: 85%; }
+
+/* ---------- the plan ---------- */
+.plan-stats { font: 500 13px var(--f-mono); }
+.tl, .index { border-top: 2px solid var(--ink); }
+.row__name .nm, .row__name .nm.serif, .irow .nm, .irow .nm.serif, .adder__nm {
+  font: 700 23px/1.05 var(--f-display); font-stretch: 82%; letter-spacing: .005em; text-transform: uppercase;
+}
+.row.is-pick .nm {
+  background: var(--highlighter); border-radius: 999px; padding: 1px 9px 0; margin-left: -9px;
+  -webkit-box-decoration-break: clone; box-decoration-break: clone; animation: pop .3s cubic-bezier(.2, 1.6, .4, 1) both;
+}
+@keyframes pop { from { transform: scale(.94); opacity: .4; } }
+.row.is-filler .nm { font-size: 19px; }
+.row__time, .row__stage, .note-row, .adder__when { font-family: var(--f-mono); }
+.row__time { font-size: 15px; font-weight: 500; }
+.row.is-live::before { content: "LIVE NOW"; background: var(--pink); color: var(--outline); border-radius: 999px; padding: 3px 7px; font: 600 10px/1 var(--f-mono); top: 0; }
+.note-row .hand { font: 500 19px/1 var(--f-hand); color: var(--ink); }
+.meter i { color: var(--ink); }
+.meter i.off { color: var(--ink-30); }
+.marks { border-width: 2px; }
+.marks button + button { border-left-width: 2px; }
+.marks button[aria-pressed="true"] { background: var(--ink); color: var(--paper-3); }
+html[data-theme="night"] .marks button[aria-pressed="true"] { color: var(--paper); }
+.play { border-width: 2px; }
+.play--none { display: none; }
+
+.stamp { font: 700 11px/1 var(--f-display); letter-spacing: .05em; border: 2px solid var(--outline); padding: 5px 9px 4px; }
+.stamp--heavy { background: var(--yolk); color: var(--outline); }
+.stamp--deep { background: var(--pink); color: var(--outline); }
+.stamp--wild { background: var(--teal); color: var(--outline); border-style: solid; }
+.stamp--new { background: var(--paper-3); color: var(--outline); }
+[data-theme="night"] .stamp--heavy { color: var(--outline); }
+
+/* grid: cream stickers on sky; your picks in grape */
+.gridv__head { font: 700 15px/1 var(--f-display); font-stretch: 75%; border-bottom: 2px solid var(--ink); }
+.gbox { border: 2px solid var(--outline); border-radius: 12px; font: 700 13.5px/1.05 var(--f-display); font-stretch: 85%; color: var(--outline); }
+html[data-theme="night"] .gbox:not(.is-pick) { border-color: var(--ink-30); color: var(--ink); }
+.gbox.is-pick { background: var(--ink); color: var(--paper-3); border-color: var(--outline); }
+.gbox.is-pick .m { color: var(--yolk); }
+.gbox .slice { width: 5px; background: var(--pink); }
+.gridv__route path { stroke: var(--roo); stroke-width: 3; stroke-dasharray: none; filter: drop-shadow(0 1px 0 var(--outline)); }
+.gridv__route circle { fill: var(--roo); stroke: var(--outline); stroke-width: 2; }
+.gridv__now { border-top: 3px solid var(--pink); }
+.gridv__now::before { background: var(--pink); color: var(--outline); border-radius: 999px; padding: 3px 6px; top: -10px; }
+
+/* ---------- the whole farm ---------- */
+.irow .rank { font: 700 22px/1 var(--f-display); color: var(--ink-70); }
+.tag { border-radius: 999px; padding: 3px 7px; font-family: var(--f-mono); }
+.irow.is-open .irow__main, .irow__main:hover { background: var(--paper-2); border-radius: 14px; }
+html[data-theme="night"] .irow.is-open .irow__main { background: var(--paper-3); }
+.liner h4, .credits h4 { font: 700 12px var(--f-display); letter-spacing: .08em; color: var(--ink); }
+html[data-shape] .irow .photo { border-radius: 999px 999px 12px 12px; border: 2px solid var(--outline); }
+
+/* ---------- map: green fields ---------- */
+.map { border: 2px solid var(--outline); background: var(--paper-2); }
+.map .ground { fill: #A6DA74; stroke: var(--outline); stroke-width: 2; }
+html[data-theme="night"] .map .ground { fill: #2B6234; }
+.map .stg rect { rx: 14px; fill: var(--ink); }
+html[data-theme="night"] .map .stg rect { fill: var(--teal); }
+html[data-theme="night"] .map .stg text { fill: var(--outline); }
+.map .stg text { font: 700 13px var(--f-display); }
+
+/* ---------- now bar: the site's black nav ---------- */
+.nowbar { box-shadow: none; border-bottom: 3px solid var(--roo); }
+.nowbar .now b { font: 700 19px/1 var(--f-display); font-stretch: 85%; color: #F8F1D4; }
+.nowbar .live i { border-radius: 50%; background: var(--pink); }
+[data-theme="night"] .nowbar { box-shadow: none; border-bottom-color: var(--pink); }
+[data-theme="night"] .nowbar .live i { background: var(--outline); }
+
+/* ---------- footer: back over the hills ---------- */
+.page { padding-bottom: 0; }
+.foot::before { content: ""; display: block; height: 70px; margin: 0 calc(50% - 50vw); background: var(--hills) 0 100% / 100% 100% no-repeat; }
+.foot__body { background: var(--outline); color: #F8F1D4; margin: 0 calc(50% - 50vw); padding: 18px calc(50vw - 50%) 48px; }
+html[data-theme="night"] .foot__body { background: #000; }
+@media (min-width: 761px) {
+  html:not([data-theme="night"]) .mast { background-position: 0 100%, 82% 160px, 70% 122px, 0 0; }
+}

@@ -1,0 +1,44 @@
+{
+  "name": "bb-plugin-festival-planner",
+  "version": "0.1.0",
+  "description": "Your Portola 2026 schedule, built from your Spotify likes.",
+  "type": "module",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "brand": "node skills/festival-planner/scripts/brand.mjs",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "bb": ">=0.44.0",
+    "bbPluginSdk": ">=0.5.29"
+  },
+  "bb": {
+    "name": "Portola 2026",
+    "description": "Your Portola 2026 schedule, built from your Spotify likes.",
+    "branding": {
+      "icon": "./assets/icon.svg",
+      "experimental_icons": {
+        "festival": "./assets/icon.svg",
+        "portola-2026": "./festivals/portola-2026/icon.svg"
+      }
+    },
+    "server": "./server.ts",
+    "app": "./app.tsx",
+    "skills": [
+      "skills"
+    ]
+  },
+  "dependencies": {
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@get-bb/plugin-sdk": "0.5.29",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.7.0",
+    "vitest": "^4.1.8"
+  }
+}

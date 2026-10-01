@@ -1,0 +1,1997 @@
+{
+ "festival": {
+  "name": "Bonnaroo",
+  "year": 2026,
+  "code": "ROO-26",
+  "venue": "Great Stage Park, Manchester TN",
+  "timeZone": "America/Chicago",
+  "source": "clashfinder.com/s/b2026 · bonnaroo.com",
+  "doors": "12:00",
+  "close": "06:30",
+  "days": [
+   {
+    "id": "thu",
+    "label": "THURS",
+    "date": "2026-06-11"
+   },
+   {
+    "id": "fri",
+    "label": "FRI",
+    "date": "2026-06-12"
+   },
+   {
+    "id": "sat",
+    "label": "SAT",
+    "date": "2026-06-13"
+   },
+   {
+    "id": "sun",
+    "label": "SUN",
+    "date": "2026-06-14"
+   }
+  ]
+ },
+ "stages": [
+  {
+   "id": "what",
+   "name": "What Stage",
+   "short": "WHAT",
+   "icon": "stage",
+   "x": 0.5,
+   "y": 0.86,
+   "wide": true
+  },
+  {
+   "id": "that",
+   "name": "That Tent",
+   "short": "THAT",
+   "icon": "tent",
+   "x": 0.5,
+   "y": 0.5
+  },
+  {
+   "id": "where",
+   "name": "Where Stage",
+   "short": "WHERE",
+   "icon": "ball",
+   "x": 0.8,
+   "y": 0.52
+  },
+  {
+   "id": "which",
+   "name": "Which Stage",
+   "short": "WHICH",
+   "icon": "stage",
+   "x": 0.14,
+   "y": 0.22,
+   "wide": true
+  },
+  {
+   "id": "this",
+   "name": "This Tent",
+   "short": "THIS",
+   "icon": "tent",
+   "x": 0.42,
+   "y": 0.18
+  },
+  {
+   "id": "other",
+   "name": "The Other Tent",
+   "short": "OTHER",
+   "icon": "tent",
+   "x": 0.78,
+   "y": 0.16
+  }
+ ],
+ "walk": {
+  "what|that": 6,
+  "what|where": 8,
+  "what|which": 13,
+  "what|this": 11,
+  "what|other": 11,
+  "that|where": 5,
+  "that|which": 8,
+  "that|this": 5,
+  "that|other": 6,
+  "where|which": 11,
+  "where|this": 7,
+  "where|other": 5,
+  "which|this": 5,
+  "which|other": 10,
+  "this|other": 6
+ },
+ "sets": [
+  {
+   "id": "spiritual-cramp-thu",
+   "cat": "ROO-26-001",
+   "pos": "A1",
+   "name": "Spiritual Cramp",
+   "qualifier": null,
+   "billing": "Spiritual Cramp",
+   "day": "thu",
+   "stage": "what",
+   "start": 1050,
+   "end": 1110,
+   "blurb": "",
+   "tags": [
+    "punk"
+   ]
+  },
+  {
+   "id": "vince-staples-thu",
+   "cat": "ROO-26-002",
+   "pos": "A2",
+   "name": "Vince Staples",
+   "qualifier": null,
+   "billing": "Vince Staples",
+   "day": "thu",
+   "stage": "what",
+   "start": 1140,
+   "end": 1200,
+   "blurb": "",
+   "tags": [
+    "hip-hop"
+   ]
+  },
+  {
+   "id": "four-tet-thu",
+   "cat": "ROO-26-003",
+   "pos": "A3",
+   "name": "Four Tet",
+   "qualifier": null,
+   "billing": "Four Tet",
+   "day": "thu",
+   "stage": "what",
+   "start": 1230,
+   "end": 1320,
+   "blurb": "",
+   "tags": [
+    "electronic"
+   ]
+  },
+  {
+   "id": "skrillex-thu",
+   "cat": "ROO-26-004",
+   "pos": "A4",
+   "name": "Skrillex",
+   "qualifier": null,
+   "billing": "Skrillex",
+   "day": "thu",
+   "stage": "what",
+   "start": 1350,
+   "end": 1440,
+   "blurb": "",
+   "tags": [
+    "dubstep",
+    "bass"
+   ]
+  },
+  {
+   "id": "dora-jar-fri",
+   "cat": "ROO-26-005",
+   "pos": "B1",
+   "name": "Dora Jar",
+   "qualifier": null,
+   "billing": "Dora Jar",
+   "day": "fri",
+   "stage": "that",
+   "start": 780,
+   "end": 825,
+   "blurb": "",
+   "tags": [
+    "indie pop"
+   ]
+  },
+  {
+   "id": "lambrini-girls-fri",
+   "cat": "ROO-26-006",
+   "pos": "B2",
+   "name": "Lambrini Girls",
+   "qualifier": null,
+   "billing": "Lambrini Girls",
+   "day": "fri",
+   "stage": "which",
+   "start": 795,
+   "end": 840,
+   "blurb": "",
+   "tags": [
+    "punk"
+   ]
+  },
+  {
+   "id": "pawpaw-rod-fri",
+   "cat": "ROO-26-007",
+   "pos": "B3",
+   "name": "Pawpaw Rod",
+   "qualifier": null,
+   "billing": "Pawpaw Rod",
+   "day": "fri",
+   "stage": "this",
+   "start": 810,
+   "end": 855,
+   "blurb": "",
+   "tags": [
+    "soul",
+    "r&b"
+   ]
+  },
+  {
+   "id": "villanelle-fri",
+   "cat": "ROO-26-008",
+   "pos": "B4",
+   "name": "Villanelle",
+   "qualifier": null,
+   "billing": "Villanelle",
+   "day": "fri",
+   "stage": "what",
+   "start": 825,
+   "end": 870,
+   "blurb": "",
+   "tags": [
+    "indie"
+   ]
+  },
+  {
+   "id": "wolfmother-fri",
+   "cat": "ROO-26-009",
+   "pos": "B5",
+   "name": "Wolfmother",
+   "qualifier": null,
+   "billing": "Wolfmother",
+   "day": "fri",
+   "stage": "which",
+   "start": 870,
+   "end": 915,
+   "blurb": "",
+   "tags": [
+    "hard rock"
+   ]
+  },
+  {
+   "id": "wednesday-fri",
+   "cat": "ROO-26-010",
+   "pos": "B6",
+   "name": "Wednesday",
+   "qualifier": null,
+   "billing": "Wednesday",
+   "day": "fri",
+   "stage": "that",
+   "start": 870,
+   "end": 915,
+   "blurb": "",
+   "tags": [
+    "indie rock",
+    "alt-country"
+   ]
+  },
+  {
+   "id": "goldie-boutilier-fri",
+   "cat": "ROO-26-011",
+   "pos": "B7",
+   "name": "Goldie Boutilier",
+   "qualifier": null,
+   "billing": "Goldie Boutilier",
+   "day": "fri",
+   "stage": "this",
+   "start": 885,
+   "end": 930,
+   "blurb": "",
+   "tags": [
+    "pop"
+   ]
+  },
+  {
+   "id": "amble-fri",
+   "cat": "ROO-26-012",
+   "pos": "B8",
+   "name": "Amble",
+   "qualifier": null,
+   "billing": "Amble",
+   "day": "fri",
+   "stage": "what",
+   "start": 915,
+   "end": 960,
+   "blurb": "",
+   "tags": [
+    "irish folk"
+   ]
+  },
+  {
+   "id": "zack-fox-fri",
+   "cat": "ROO-26-013",
+   "pos": "B9",
+   "name": "Zack Fox",
+   "qualifier": null,
+   "billing": "Zack Fox",
+   "day": "fri",
+   "stage": "which",
+   "start": 960,
+   "end": 1020,
+   "blurb": "",
+   "tags": [
+    "rap",
+    "comedy"
+   ]
+  },
+  {
+   "id": "the-chats-fri",
+   "cat": "ROO-26-014",
+   "pos": "B10",
+   "name": "The Chats",
+   "qualifier": null,
+   "billing": "The Chats",
+   "day": "fri",
+   "stage": "that",
+   "start": 960,
+   "end": 1005,
+   "blurb": "",
+   "tags": [
+    "punk"
+   ]
+  },
+  {
+   "id": "jackie-hollander-fri",
+   "cat": "ROO-26-015",
+   "pos": "B11",
+   "name": "Jackie Hollander",
+   "qualifier": null,
+   "billing": "Jackie Hollander",
+   "day": "fri",
+   "stage": "other",
+   "start": 960,
+   "end": 1020,
+   "blurb": "",
+   "tags": [
+    "house"
+   ]
+  },
+  {
+   "id": "rachel-chinouriri-fri",
+   "cat": "ROO-26-016",
+   "pos": "B12",
+   "name": "Rachel Chinouriri",
+   "qualifier": null,
+   "billing": "Rachel Chinouriri",
+   "day": "fri",
+   "stage": "this",
+   "start": 975,
+   "end": 1035,
+   "blurb": "",
+   "tags": [
+    "indie pop"
+   ]
+  },
+  {
+   "id": "blues-traveler-fri",
+   "cat": "ROO-26-017",
+   "pos": "B13",
+   "name": "Blues Traveler",
+   "qualifier": null,
+   "billing": "Blues Traveler",
+   "day": "fri",
+   "stage": "what",
+   "start": 1005,
+   "end": 1065,
+   "blurb": "",
+   "tags": [
+    "jam",
+    "blues rock"
+   ]
+  },
+  {
+   "id": "daniel-allan-fri",
+   "cat": "ROO-26-018",
+   "pos": "B14",
+   "name": "Daniel Allan",
+   "qualifier": null,
+   "billing": "Daniel Allan",
+   "day": "fri",
+   "stage": "other",
+   "start": 1035,
+   "end": 1095,
+   "blurb": "",
+   "tags": [
+    "house"
+   ]
+  },
+  {
+   "id": "bbno-fri",
+   "cat": "ROO-26-019",
+   "pos": "B15",
+   "name": "bbno$",
+   "qualifier": null,
+   "billing": "bbno$",
+   "day": "fri",
+   "stage": "that",
+   "start": 1065,
+   "end": 1125,
+   "blurb": "",
+   "tags": [
+    "rap"
+   ]
+  },
+  {
+   "id": "wet-leg-fri",
+   "cat": "ROO-26-020",
+   "pos": "B16",
+   "name": "Wet Leg",
+   "qualifier": null,
+   "billing": "Wet Leg",
+   "day": "fri",
+   "stage": "which",
+   "start": 1080,
+   "end": 1140,
+   "blurb": "",
+   "tags": [
+    "indie rock"
+   ]
+  },
+  {
+   "id": "mother-mother-fri",
+   "cat": "ROO-26-021",
+   "pos": "B17",
+   "name": "Mother Mother",
+   "qualifier": null,
+   "billing": "Mother Mother",
+   "day": "fri",
+   "stage": "this",
+   "start": 1080,
+   "end": 1140,
+   "blurb": "",
+   "tags": [
+    "indie rock"
+   ]
+  },
+  {
+   "id": "aszewo-fri",
+   "cat": "ROO-26-022",
+   "pos": "B18",
+   "name": "Łaszewo",
+   "qualifier": null,
+   "billing": "Łaszewo",
+   "day": "fri",
+   "stage": "other",
+   "start": 1110,
+   "end": 1170,
+   "blurb": "",
+   "tags": [
+    "house"
+   ]
+  },
+  {
+   "id": "yungblud-fri",
+   "cat": "ROO-26-023",
+   "pos": "B19",
+   "name": "YUNGBLUD",
+   "qualifier": null,
+   "billing": "YUNGBLUD",
+   "day": "fri",
+   "stage": "what",
+   "start": 1125,
+   "end": 1185,
+   "blurb": "",
+   "tags": [
+    "pop punk"
+   ]
+  },
+  {
+   "id": "smino-fri",
+   "cat": "ROO-26-024",
+   "pos": "B20",
+   "name": "Smino",
+   "qualifier": null,
+   "billing": "Smino",
+   "day": "fri",
+   "stage": "this",
+   "start": 1185,
+   "end": 1245,
+   "blurb": "",
+   "tags": [
+    "hip-hop"
+   ]
+  },
+  {
+   "id": "geese-fri",
+   "cat": "ROO-26-025",
+   "pos": "B21",
+   "name": "Geese",
+   "qualifier": null,
+   "billing": "Geese",
+   "day": "fri",
+   "stage": "that",
+   "start": 1185,
+   "end": 1245,
+   "blurb": "",
+   "tags": [
+    "indie rock"
+   ]
+  },
+  {
+   "id": "notion-fri",
+   "cat": "ROO-26-026",
+   "pos": "B22",
+   "name": "NOTION",
+   "qualifier": null,
+   "billing": "NOTION",
+   "day": "fri",
+   "stage": "other",
+   "start": 1185,
+   "end": 1245,
+   "blurb": "",
+   "tags": [
+    "uk garage"
+   ]
+  },
+  {
+   "id": "jessie-murph-fri",
+   "cat": "ROO-26-027",
+   "pos": "B23",
+   "name": "Jessie Murph",
+   "qualifier": null,
+   "billing": "Jessie Murph",
+   "day": "fri",
+   "stage": "which",
+   "start": 1200,
+   "end": 1260,
+   "blurb": "",
+   "tags": [
+    "pop",
+    "country"
+   ]
+  },
+  {
+   "id": "griz-fri",
+   "cat": "ROO-26-028",
+   "pos": "B24",
+   "name": "GRiZ",
+   "qualifier": null,
+   "billing": "GRiZ",
+   "day": "fri",
+   "stage": "what",
+   "start": 1245,
+   "end": 1320,
+   "blurb": "",
+   "tags": [
+    "electro-funk",
+    "bass"
+   ]
+  },
+  {
+   "id": "adventure-club-fri",
+   "cat": "ROO-26-029",
+   "pos": "B25",
+   "name": "Adventure Club",
+   "qualifier": null,
+   "billing": "Adventure Club",
+   "day": "fri",
+   "stage": "other",
+   "start": 1260,
+   "end": 1320,
+   "blurb": "",
+   "tags": [
+    "dubstep"
+   ]
+  },
+  {
+   "id": "hot-mulligan-fri",
+   "cat": "ROO-26-030",
+   "pos": "B26",
+   "name": "Hot Mulligan",
+   "qualifier": null,
+   "billing": "Hot Mulligan",
+   "day": "fri",
+   "stage": "this",
+   "start": 1290,
+   "end": 1350,
+   "blurb": "",
+   "tags": [
+    "emo"
+   ]
+  },
+  {
+   "id": "mt-joy-fri",
+   "cat": "ROO-26-031",
+   "pos": "B27",
+   "name": "Mt. Joy",
+   "qualifier": null,
+   "billing": "Mt. Joy",
+   "day": "fri",
+   "stage": "which",
+   "start": 1320,
+   "end": 1380,
+   "blurb": "",
+   "tags": [
+    "indie folk"
+   ]
+  },
+  {
+   "id": "blood-orange-fri",
+   "cat": "ROO-26-032",
+   "pos": "B28",
+   "name": "Blood Orange",
+   "qualifier": null,
+   "billing": "Blood Orange",
+   "day": "fri",
+   "stage": "that",
+   "start": 1320,
+   "end": 1380,
+   "blurb": "",
+   "tags": [
+    "r&b",
+    "indie"
+   ]
+  },
+  {
+   "id": "sidepiece-fri",
+   "cat": "ROO-26-033",
+   "pos": "B29",
+   "name": "SIDEPIECE",
+   "qualifier": null,
+   "billing": "SIDEPIECE",
+   "day": "fri",
+   "stage": "other",
+   "start": 1335,
+   "end": 1395,
+   "blurb": "",
+   "tags": [
+    "house"
+   ]
+  },
+  {
+   "id": "the-strokes-fri",
+   "cat": "ROO-26-034",
+   "pos": "B30",
+   "name": "The Strokes",
+   "qualifier": null,
+   "billing": "The Strokes",
+   "day": "fri",
+   "stage": "what",
+   "start": 1380,
+   "end": 1455,
+   "blurb": "",
+   "tags": [
+    "indie rock"
+   ]
+  },
+  {
+   "id": "probcause-fri",
+   "cat": "ROO-26-035",
+   "pos": "B31",
+   "name": "Probcause",
+   "qualifier": null,
+   "billing": "Probcause",
+   "day": "fri",
+   "stage": "where",
+   "start": 1395,
+   "end": 1440,
+   "blurb": "",
+   "tags": [
+    "bass"
+   ]
+  },
+  {
+   "id": "cloonee-fri",
+   "cat": "ROO-26-036",
+   "pos": "B32",
+   "name": "Cloonee",
+   "qualifier": null,
+   "billing": "Cloonee",
+   "day": "fri",
+   "stage": "other",
+   "start": 1440,
+   "end": 1500,
+   "blurb": "",
+   "tags": [
+    "tech house"
+   ]
+  },
+  {
+   "id": "lil-jon-fri",
+   "cat": "ROO-26-037",
+   "pos": "B33",
+   "name": "Lil Jon",
+   "qualifier": null,
+   "billing": "Lil Jon",
+   "day": "fri",
+   "stage": "that",
+   "start": 1455,
+   "end": 1530,
+   "blurb": "",
+   "tags": [
+    "crunk",
+    "dj set"
+   ]
+  },
+  {
+   "id": "turnstile-fri",
+   "cat": "ROO-26-038",
+   "pos": "B34",
+   "name": "Turnstile",
+   "qualifier": null,
+   "billing": "Turnstile",
+   "day": "fri",
+   "stage": "which",
+   "start": 1470,
+   "end": 1545,
+   "blurb": "",
+   "tags": [
+    "hardcore"
+   ]
+  },
+  {
+   "id": "the-dare-fri",
+   "cat": "ROO-26-039",
+   "pos": "B35",
+   "name": "The Dare",
+   "qualifier": null,
+   "billing": "The Dare",
+   "day": "fri",
+   "stage": "this",
+   "start": 1530,
+   "end": 1605,
+   "blurb": "",
+   "tags": [
+    "electroclash"
+   ]
+  },
+  {
+   "id": "major-lazer-fri",
+   "cat": "ROO-26-040",
+   "pos": "B36",
+   "name": "Major Lazer",
+   "qualifier": null,
+   "billing": "Major Lazer",
+   "day": "fri",
+   "stage": "other",
+   "start": 1530,
+   "end": 1590,
+   "blurb": "",
+   "tags": [
+    "dancehall",
+    "edm"
+   ]
+  },
+  {
+   "id": "mary-droppinz-fri",
+   "cat": "ROO-26-041",
+   "pos": "B37",
+   "name": "Mary Droppinz",
+   "qualifier": null,
+   "billing": "Mary Droppinz",
+   "day": "fri",
+   "stage": "where",
+   "start": 1575,
+   "end": 1620,
+   "blurb": "",
+   "tags": [
+    "bass"
+   ]
+  },
+  {
+   "id": "ganja-white-night-fri",
+   "cat": "ROO-26-042",
+   "pos": "B38",
+   "name": "Ganja White Night",
+   "qualifier": null,
+   "billing": "Ganja White Night",
+   "day": "fri",
+   "stage": "other",
+   "start": 1605,
+   "end": 1680,
+   "blurb": "",
+   "tags": [
+    "dubstep"
+   ]
+  },
+  {
+   "id": "richard-finger-fri",
+   "cat": "ROO-26-043",
+   "pos": "B39",
+   "name": "Richard Finger",
+   "qualifier": null,
+   "billing": "Richard Finger",
+   "day": "fri",
+   "stage": "where",
+   "start": 1635,
+   "end": 1680,
+   "blurb": "",
+   "tags": [
+    "bass"
+   ]
+  },
+  {
+   "id": "inzo-fri",
+   "cat": "ROO-26-044",
+   "pos": "B40",
+   "name": "INZO",
+   "qualifier": "sunrise set",
+   "billing": "INZO (Sunrise Set)",
+   "day": "fri",
+   "stage": "other",
+   "start": 1695,
+   "end": 1770,
+   "blurb": "",
+   "tags": [
+    "bass",
+    "chill electronic"
+   ]
+  },
+  {
+   "id": "eazybaked-fri",
+   "cat": "ROO-26-045",
+   "pos": "B41",
+   "name": "Eazybaked",
+   "qualifier": null,
+   "billing": "Eazybaked",
+   "day": "fri",
+   "stage": "where",
+   "start": 1695,
+   "end": 1740,
+   "blurb": "",
+   "tags": [
+    "bass"
+   ]
+  },
+  {
+   "id": "lumasi-fri",
+   "cat": "ROO-26-046",
+   "pos": "B42",
+   "name": "Lumasi",
+   "qualifier": null,
+   "billing": "Lumasi",
+   "day": "fri",
+   "stage": "where",
+   "start": 1755,
+   "end": 1800,
+   "blurb": "",
+   "tags": [
+    "bass"
+   ]
+  },
+  {
+   "id": "sunami-sat",
+   "cat": "ROO-26-047",
+   "pos": "C1",
+   "name": "Sunami",
+   "qualifier": null,
+   "billing": "Sunami",
+   "day": "sat",
+   "stage": "this",
+   "start": 765,
+   "end": 810,
+   "blurb": "",
+   "tags": [
+    "hardcore"
+   ]
+  },
+  {
+   "id": "the-stews-sat",
+   "cat": "ROO-26-048",
+   "pos": "C2",
+   "name": "The Stews",
+   "qualifier": null,
+   "billing": "The Stews",
+   "day": "sat",
+   "stage": "that",
+   "start": 780,
+   "end": 825,
+   "blurb": "",
+   "tags": [
+    "rock"
+   ]
+  },
+  {
+   "id": "steph-strings-sat",
+   "cat": "ROO-26-049",
+   "pos": "C3",
+   "name": "Steph Strings",
+   "qualifier": null,
+   "billing": "Steph Strings",
+   "day": "sat",
+   "stage": "which",
+   "start": 795,
+   "end": 840,
+   "blurb": "",
+   "tags": [
+    "jam",
+    "indie"
+   ]
+  },
+  {
+   "id": "midnight-generation-sat",
+   "cat": "ROO-26-050",
+   "pos": "C4",
+   "name": "Midnight Generation",
+   "qualifier": null,
+   "billing": "Midnight Generation",
+   "day": "sat",
+   "stage": "what",
+   "start": 825,
+   "end": 870,
+   "blurb": "",
+   "tags": [
+    "synth pop"
+   ]
+  },
+  {
+   "id": "congress-the-band-sat",
+   "cat": "ROO-26-051",
+   "pos": "C5",
+   "name": "Congress the Band",
+   "qualifier": null,
+   "billing": "Congress the Band",
+   "day": "sat",
+   "stage": "this",
+   "start": 840,
+   "end": 885,
+   "blurb": "",
+   "tags": [
+    "jam"
+   ]
+  },
+  {
+   "id": "mountain-grass-unit-sat",
+   "cat": "ROO-26-052",
+   "pos": "C6",
+   "name": "Mountain Grass Unit",
+   "qualifier": null,
+   "billing": "Mountain Grass Unit",
+   "day": "sat",
+   "stage": "which",
+   "start": 870,
+   "end": 915,
+   "blurb": "",
+   "tags": [
+    "bluegrass"
+   ]
+  },
+  {
+   "id": "confidence-man-sat",
+   "cat": "ROO-26-053",
+   "pos": "C7",
+   "name": "Confidence Man",
+   "qualifier": null,
+   "billing": "Confidence Man",
+   "day": "sat",
+   "stage": "that",
+   "start": 870,
+   "end": 915,
+   "blurb": "",
+   "tags": [
+    "dance pop"
+   ]
+  },
+  {
+   "id": "arcy-drive-sat",
+   "cat": "ROO-26-054",
+   "pos": "C8",
+   "name": "Arcy Drive",
+   "qualifier": null,
+   "billing": "Arcy Drive",
+   "day": "sat",
+   "stage": "what",
+   "start": 915,
+   "end": 960,
+   "blurb": "",
+   "tags": [
+    "indie rock"
+   ]
+  },
+  {
+   "id": "waylon-wyatt-sat",
+   "cat": "ROO-26-055",
+   "pos": "C9",
+   "name": "Waylon Wyatt",
+   "qualifier": null,
+   "billing": "Waylon Wyatt",
+   "day": "sat",
+   "stage": "this",
+   "start": 930,
+   "end": 975,
+   "blurb": "",
+   "tags": [
+    "country"
+   ]
+  },
+  {
+   "id": "nikita-the-wicked-sat",
+   "cat": "ROO-26-056",
+   "pos": "C10",
+   "name": "Nikita, The Wicked",
+   "qualifier": null,
+   "billing": "Nikita, The Wicked",
+   "day": "sat",
+   "stage": "other",
+   "start": 945,
+   "end": 1005,
+   "blurb": "",
+   "tags": [
+    "techno"
+   ]
+  },
+  {
+   "id": "holly-humberstone-sat",
+   "cat": "ROO-26-057",
+   "pos": "C11",
+   "name": "Holly Humberstone",
+   "qualifier": null,
+   "billing": "Holly Humberstone",
+   "day": "sat",
+   "stage": "which",
+   "start": 960,
+   "end": 1020,
+   "blurb": "",
+   "tags": [
+    "indie pop"
+   ]
+  },
+  {
+   "id": "dj-trixie-mattel-sat",
+   "cat": "ROO-26-058",
+   "pos": "C12",
+   "name": "DJ Trixie Mattel",
+   "qualifier": null,
+   "billing": "DJ Trixie Mattel",
+   "day": "sat",
+   "stage": "that",
+   "start": 960,
+   "end": 1005,
+   "blurb": "",
+   "tags": [
+    "dj set",
+    "drag"
+   ],
+   "artists": [
+    "Trixie Mattel"
+   ]
+  },
+  {
+   "id": "tash-sultana-sat",
+   "cat": "ROO-26-059",
+   "pos": "C13",
+   "name": "Tash Sultana",
+   "qualifier": null,
+   "billing": "Tash Sultana",
+   "day": "sat",
+   "stage": "what",
+   "start": 1005,
+   "end": 1065,
+   "blurb": "",
+   "tags": [
+    "psych",
+    "looping"
+   ]
+  },
+  {
+   "id": "the-runarounds-sat",
+   "cat": "ROO-26-060",
+   "pos": "C14",
+   "name": "The Runarounds",
+   "qualifier": null,
+   "billing": "The Runarounds",
+   "day": "sat",
+   "stage": "this",
+   "start": 1020,
+   "end": 1080,
+   "blurb": "",
+   "tags": [
+    "rock"
+   ]
+  },
+  {
+   "id": "juelz-sat",
+   "cat": "ROO-26-061",
+   "pos": "C15",
+   "name": "Juelz",
+   "qualifier": null,
+   "billing": "Juelz",
+   "day": "sat",
+   "stage": "other",
+   "start": 1020,
+   "end": 1080,
+   "blurb": "",
+   "tags": [
+    "bass house"
+   ]
+  },
+  {
+   "id": "amyl-and-the-sniffers-sat",
+   "cat": "ROO-26-062",
+   "pos": "C16",
+   "name": "Amyl and the Sniffers",
+   "qualifier": null,
+   "billing": "Amyl and the Sniffers",
+   "day": "sat",
+   "stage": "which",
+   "start": 1065,
+   "end": 1125,
+   "blurb": "",
+   "tags": [
+    "punk"
+   ]
+  },
+  {
+   "id": "wyatt-flores-sat",
+   "cat": "ROO-26-063",
+   "pos": "C17",
+   "name": "Wyatt Flores",
+   "qualifier": null,
+   "billing": "Wyatt Flores",
+   "day": "sat",
+   "stage": "that",
+   "start": 1065,
+   "end": 1125,
+   "blurb": "",
+   "tags": [
+    "country"
+   ]
+  },
+  {
+   "id": "deathpact-sat",
+   "cat": "ROO-26-064",
+   "pos": "C18",
+   "name": "Deathpact",
+   "qualifier": null,
+   "billing": "Deathpact",
+   "day": "sat",
+   "stage": "other",
+   "start": 1095,
+   "end": 1155,
+   "blurb": "",
+   "tags": [
+    "bass"
+   ]
+  },
+  {
+   "id": "steve-cory-are-dead-sat",
+   "cat": "ROO-26-065",
+   "pos": "C19",
+   "name": "Steve & Cory Are Dead",
+   "qualifier": null,
+   "billing": "Steve & Cory Are Dead",
+   "day": "sat",
+   "stage": "where",
+   "start": 1110,
+   "end": 1200,
+   "blurb": "",
+   "tags": [
+    "?"
+   ]
+  },
+  {
+   "id": "alabama-shakes-sat",
+   "cat": "ROO-26-066",
+   "pos": "C20",
+   "name": "Alabama Shakes",
+   "qualifier": null,
+   "billing": "Alabama Shakes",
+   "day": "sat",
+   "stage": "what",
+   "start": 1125,
+   "end": 1185,
+   "blurb": "",
+   "tags": [
+    "soul rock"
+   ]
+  },
+  {
+   "id": "passion-pit-sat",
+   "cat": "ROO-26-067",
+   "pos": "C21",
+   "name": "Passion Pit",
+   "qualifier": null,
+   "billing": "Passion Pit",
+   "day": "sat",
+   "stage": "this",
+   "start": 1125,
+   "end": 1185,
+   "blurb": "",
+   "tags": [
+    "synth pop"
+   ]
+  },
+  {
+   "id": "boys-noize-sat",
+   "cat": "ROO-26-068",
+   "pos": "C22",
+   "name": "Boys Noize",
+   "qualifier": null,
+   "billing": "Boys Noize",
+   "day": "sat",
+   "stage": "other",
+   "start": 1170,
+   "end": 1230,
+   "blurb": "",
+   "tags": [
+    "techno"
+   ]
+  },
+  {
+   "id": "rainbow-kitten-surprise-sat",
+   "cat": "ROO-26-069",
+   "pos": "C23",
+   "name": "Rainbow Kitten Surprise",
+   "qualifier": null,
+   "billing": "Rainbow Kitten Surprise",
+   "day": "sat",
+   "stage": "which",
+   "start": 1185,
+   "end": 1245,
+   "blurb": "",
+   "tags": [
+    "indie rock"
+   ]
+  },
+  {
+   "id": "sg-lewis-sat",
+   "cat": "ROO-26-070",
+   "pos": "C24",
+   "name": "SG Lewis",
+   "qualifier": null,
+   "billing": "SG Lewis",
+   "day": "sat",
+   "stage": "that",
+   "start": 1185,
+   "end": 1245,
+   "blurb": "",
+   "tags": [
+    "house",
+    "disco"
+   ]
+  },
+  {
+   "id": "the-neighbourhood-sat",
+   "cat": "ROO-26-071",
+   "pos": "C25",
+   "name": "The Neighbourhood",
+   "qualifier": null,
+   "billing": "The Neighbourhood",
+   "day": "sat",
+   "stage": "what",
+   "start": 1245,
+   "end": 1320,
+   "blurb": "",
+   "tags": [
+    "alt pop"
+   ]
+  },
+  {
+   "id": "kesha-presents-superjam-esoterica-sat",
+   "cat": "ROO-26-072",
+   "pos": "C26",
+   "name": "Kesha Presents: SuperJâm Esoterica",
+   "qualifier": "the alchemy of pop",
+   "billing": "Kesha Presents: SuperJâm Esoterica: The Alchemy of Pop",
+   "day": "sat",
+   "stage": "this",
+   "start": 1245,
+   "end": 1350,
+   "blurb": "",
+   "tags": [
+    "pop",
+    "superjam"
+   ],
+   "artists": [
+    "Kesha"
+   ]
+  },
+  {
+   "id": "sub-focus-sat",
+   "cat": "ROO-26-073",
+   "pos": "C27",
+   "name": "Sub Focus",
+   "qualifier": null,
+   "billing": "Sub Focus",
+   "day": "sat",
+   "stage": "other",
+   "start": 1245,
+   "end": 1305,
+   "blurb": "",
+   "tags": [
+    "drum & bass"
+   ]
+  },
+  {
+   "id": "teddy-swims-sat",
+   "cat": "ROO-26-074",
+   "pos": "C28",
+   "name": "Teddy Swims",
+   "qualifier": null,
+   "billing": "Teddy Swims",
+   "day": "sat",
+   "stage": "which",
+   "start": 1305,
+   "end": 1380,
+   "blurb": "",
+   "tags": [
+    "soul",
+    "pop"
+   ]
+  },
+  {
+   "id": "flipturn-sat",
+   "cat": "ROO-26-075",
+   "pos": "C29",
+   "name": "Flipturn",
+   "qualifier": null,
+   "billing": "Flipturn",
+   "day": "sat",
+   "stage": "that",
+   "start": 1320,
+   "end": 1380,
+   "blurb": "",
+   "tags": [
+    "indie rock"
+   ]
+  },
+  {
+   "id": "sara-landry-sat",
+   "cat": "ROO-26-076",
+   "pos": "C30",
+   "name": "Sara Landry",
+   "qualifier": null,
+   "billing": "Sara Landry",
+   "day": "sat",
+   "stage": "other",
+   "start": 1320,
+   "end": 1380,
+   "blurb": "",
+   "tags": [
+    "hard techno"
+   ]
+  },
+  {
+   "id": "rufus-du-sol-sat",
+   "cat": "ROO-26-077",
+   "pos": "C31",
+   "name": "RÜFÜS DU SOL",
+   "qualifier": null,
+   "billing": "RÜFÜS DU SOL",
+   "day": "sat",
+   "stage": "what",
+   "start": 1390,
+   "end": 1480,
+   "blurb": "",
+   "tags": [
+    "electronic",
+    "dance"
+   ]
+  },
+  {
+   "id": "costa-sat",
+   "cat": "ROO-26-078",
+   "pos": "C32",
+   "name": "Costa",
+   "qualifier": null,
+   "billing": "Costa",
+   "day": "sat",
+   "stage": "where",
+   "start": 1410,
+   "end": 1455,
+   "blurb": "",
+   "tags": [
+    "bass"
+   ]
+  },
+  {
+   "id": "osees-sat",
+   "cat": "ROO-26-079",
+   "pos": "C33",
+   "name": "Osees",
+   "qualifier": null,
+   "billing": "Osees",
+   "day": "sat",
+   "stage": "this",
+   "start": 1470,
+   "end": 1530,
+   "blurb": "",
+   "tags": [
+    "garage rock"
+   ]
+  },
+  {
+   "id": "weird-al-yankovic-sat",
+   "cat": "ROO-26-080",
+   "pos": "C34",
+   "name": "\"Weird Al\" Yankovic",
+   "qualifier": "late night roovue",
+   "billing": "\"Weird Al\" Yankovic: Bigger & Weirder Late Night Roovue",
+   "day": "sat",
+   "stage": "which",
+   "start": 1480,
+   "end": 1570,
+   "blurb": "",
+   "tags": [
+    "comedy",
+    "parody"
+   ]
+  },
+  {
+   "id": "chase-status-sat",
+   "cat": "ROO-26-081",
+   "pos": "C35",
+   "name": "Chase & Status",
+   "qualifier": null,
+   "billing": "Chase & Status",
+   "day": "sat",
+   "stage": "other",
+   "start": 1480,
+   "end": 1555,
+   "blurb": "",
+   "tags": [
+    "drum & bass"
+   ]
+  },
+  {
+   "id": "freddie-gibbs-the-alchemist-sat",
+   "cat": "ROO-26-082",
+   "pos": "C36",
+   "name": "Freddie Gibbs & The Alchemist",
+   "qualifier": null,
+   "billing": "Freddie Gibbs & The Alchemist",
+   "day": "sat",
+   "stage": "that",
+   "start": 1490,
+   "end": 1565,
+   "blurb": "",
+   "tags": [
+    "hip-hop"
+   ],
+   "artists": [
+    "Freddie Gibbs",
+    "The Alchemist"
+   ]
+  },
+  {
+   "id": "snow-strippers-sat",
+   "cat": "ROO-26-083",
+   "pos": "C37",
+   "name": "Snow Strippers",
+   "qualifier": null,
+   "billing": "Snow Strippers",
+   "day": "sat",
+   "stage": "this",
+   "start": 1560,
+   "end": 1605,
+   "blurb": "",
+   "tags": [
+    "electroclash"
+   ]
+  },
+  {
+   "id": "gorgon-city-sat",
+   "cat": "ROO-26-084",
+   "pos": "C38",
+   "name": "Gorgon City",
+   "qualifier": "sunrise set",
+   "billing": "Gorgon City (Sunrise Set)",
+   "day": "sat",
+   "stage": "other",
+   "start": 1575,
+   "end": 1755,
+   "blurb": "",
+   "tags": [
+    "house"
+   ]
+  },
+  {
+   "id": "clozee-sat",
+   "cat": "ROO-26-085",
+   "pos": "C39",
+   "name": "CloZee",
+   "qualifier": null,
+   "billing": "CloZee",
+   "day": "sat",
+   "stage": "where",
+   "start": 1605,
+   "end": 1650,
+   "blurb": "",
+   "tags": [
+    "bass",
+    "world"
+   ]
+  },
+  {
+   "id": "big-gigantic-sat",
+   "cat": "ROO-26-086",
+   "pos": "C40",
+   "name": "Big Gigantic",
+   "qualifier": null,
+   "billing": "Big Gigantic",
+   "day": "sat",
+   "stage": "where",
+   "start": 1665,
+   "end": 1710,
+   "blurb": "",
+   "tags": [
+    "electro-funk"
+   ]
+  },
+  {
+   "id": "smoakland-sat",
+   "cat": "ROO-26-087",
+   "pos": "C41",
+   "name": "Smoakland",
+   "qualifier": null,
+   "billing": "Smoakland",
+   "day": "sat",
+   "stage": "where",
+   "start": 1725,
+   "end": 1770,
+   "blurb": "",
+   "tags": [
+    "bass"
+   ]
+  },
+  {
+   "id": "effin-sat",
+   "cat": "ROO-26-088",
+   "pos": "C42",
+   "name": "Effin",
+   "qualifier": null,
+   "billing": "Effin",
+   "day": "sat",
+   "stage": "where",
+   "start": 1785,
+   "end": 1830,
+   "blurb": "",
+   "tags": [
+    "bass"
+   ]
+  },
+  {
+   "id": "nat-myers-sun",
+   "cat": "ROO-26-089",
+   "pos": "D1",
+   "name": "Nat Myers",
+   "qualifier": null,
+   "billing": "Nat Myers",
+   "day": "sun",
+   "stage": "this",
+   "start": 750,
+   "end": 795,
+   "blurb": "",
+   "tags": [
+    "blues"
+   ]
+  },
+  {
+   "id": "soupless-sun",
+   "cat": "ROO-26-090",
+   "pos": "D2",
+   "name": "Soupless",
+   "qualifier": null,
+   "billing": "Soupless",
+   "day": "sun",
+   "stage": "that",
+   "start": 750,
+   "end": 780,
+   "blurb": "",
+   "tags": [
+    "?"
+   ]
+  },
+  {
+   "id": "little-stranger-sun",
+   "cat": "ROO-26-091",
+   "pos": "D3",
+   "name": "Little Stranger",
+   "qualifier": null,
+   "billing": "Little Stranger",
+   "day": "sun",
+   "stage": "which",
+   "start": 795,
+   "end": 840,
+   "blurb": "",
+   "tags": [
+    "indie",
+    "hip-hop"
+   ]
+  },
+  {
+   "id": "girl-tones-sun",
+   "cat": "ROO-26-092",
+   "pos": "D4",
+   "name": "Girl Tones",
+   "qualifier": null,
+   "billing": "Girl Tones",
+   "day": "sun",
+   "stage": "that",
+   "start": 810,
+   "end": 855,
+   "blurb": "",
+   "tags": [
+    "rock"
+   ]
+  },
+  {
+   "id": "buffalo-traffic-jam-sun",
+   "cat": "ROO-26-093",
+   "pos": "D5",
+   "name": "Buffalo Traffic Jam",
+   "qualifier": null,
+   "billing": "Buffalo Traffic Jam",
+   "day": "sun",
+   "stage": "this",
+   "start": 825,
+   "end": 870,
+   "blurb": "",
+   "tags": [
+    "jam",
+    "bluegrass"
+   ]
+  },
+  {
+   "id": "motifv-sun",
+   "cat": "ROO-26-094",
+   "pos": "D6",
+   "name": "Motifv",
+   "qualifier": null,
+   "billing": "Motifv",
+   "day": "sun",
+   "stage": "other",
+   "start": 825,
+   "end": 885,
+   "blurb": "",
+   "tags": [
+    "bass"
+   ]
+  },
+  {
+   "id": "aly-aj-sun",
+   "cat": "ROO-26-095",
+   "pos": "D7",
+   "name": "Aly & AJ",
+   "qualifier": null,
+   "billing": "Aly & AJ",
+   "day": "sun",
+   "stage": "what",
+   "start": 855,
+   "end": 900,
+   "blurb": "",
+   "tags": [
+    "pop"
+   ],
+   "artists": [
+    "Aly & AJ"
+   ]
+  },
+  {
+   "id": "spacey-jane-sun",
+   "cat": "ROO-26-096",
+   "pos": "D8",
+   "name": "Spacey Jane",
+   "qualifier": null,
+   "billing": "Spacey Jane",
+   "day": "sun",
+   "stage": "which",
+   "start": 885,
+   "end": 945,
+   "blurb": "",
+   "tags": [
+    "indie rock"
+   ]
+  },
+  {
+   "id": "blondshell-sun",
+   "cat": "ROO-26-097",
+   "pos": "D9",
+   "name": "Blondshell",
+   "qualifier": null,
+   "billing": "Blondshell",
+   "day": "sun",
+   "stage": "that",
+   "start": 900,
+   "end": 945,
+   "blurb": "",
+   "tags": [
+    "indie rock"
+   ]
+  },
+  {
+   "id": "a-hundred-drums-sun",
+   "cat": "ROO-26-098",
+   "pos": "D10",
+   "name": "A Hundred Drums",
+   "qualifier": null,
+   "billing": "A Hundred Drums",
+   "day": "sun",
+   "stage": "other",
+   "start": 900,
+   "end": 960,
+   "blurb": "",
+   "tags": [
+    "bass"
+   ]
+  },
+  {
+   "id": "hemlocke-springs-sun",
+   "cat": "ROO-26-099",
+   "pos": "D11",
+   "name": "Hemlocke Springs",
+   "qualifier": null,
+   "billing": "Hemlocke Springs",
+   "day": "sun",
+   "stage": "this",
+   "start": 920,
+   "end": 960,
+   "blurb": "",
+   "tags": [
+    "pop"
+   ]
+  },
+  {
+   "id": "trombone-shorty-sun",
+   "cat": "ROO-26-100",
+   "pos": "D12",
+   "name": "Trombone Shorty",
+   "qualifier": "& orleans avenue",
+   "billing": "Trombone Shorty & Orleans Avenue",
+   "day": "sun",
+   "stage": "what",
+   "start": 945,
+   "end": 1005,
+   "blurb": "",
+   "tags": [
+    "funk",
+    "new orleans"
+   ]
+  },
+  {
+   "id": "san-holo-sun",
+   "cat": "ROO-26-101",
+   "pos": "D13",
+   "name": "San Holo",
+   "qualifier": null,
+   "billing": "San Holo",
+   "day": "sun",
+   "stage": "other",
+   "start": 975,
+   "end": 1035,
+   "blurb": "",
+   "tags": [
+    "future bass"
+   ]
+  },
+  {
+   "id": "japanese-breakfast-sun",
+   "cat": "ROO-26-102",
+   "pos": "D14",
+   "name": "Japanese Breakfast",
+   "qualifier": null,
+   "billing": "Japanese Breakfast",
+   "day": "sun",
+   "stage": "which",
+   "start": 990,
+   "end": 1050,
+   "blurb": "",
+   "tags": [
+    "indie pop"
+   ]
+  },
+  {
+   "id": "fcukers-sun",
+   "cat": "ROO-26-103",
+   "pos": "D15",
+   "name": "FCUKERS",
+   "qualifier": null,
+   "billing": "FCUKERS",
+   "day": "sun",
+   "stage": "this",
+   "start": 1005,
+   "end": 1065,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "audrey-hobert-sun",
+   "cat": "ROO-26-104",
+   "pos": "D16",
+   "name": "Audrey Hobert",
+   "qualifier": null,
+   "billing": "Audrey Hobert",
+   "day": "sun",
+   "stage": "that",
+   "start": 1005,
+   "end": 1050,
+   "blurb": "",
+   "tags": [
+    "pop"
+   ]
+  },
+  {
+   "id": "tedeschi-trucks-band-sun",
+   "cat": "ROO-26-105",
+   "pos": "D17",
+   "name": "Tedeschi Trucks Band",
+   "qualifier": null,
+   "billing": "Tedeschi Trucks Band",
+   "day": "sun",
+   "stage": "what",
+   "start": 1050,
+   "end": 1110,
+   "blurb": "",
+   "tags": [
+    "blues rock",
+    "jam"
+   ]
+  },
+  {
+   "id": "big-gigantic-sun",
+   "cat": "ROO-26-106",
+   "pos": "D18",
+   "name": "Big Gigantic",
+   "qualifier": null,
+   "billing": "Big Gigantic",
+   "day": "sun",
+   "stage": "other",
+   "start": 1050,
+   "end": 1110,
+   "blurb": "",
+   "tags": [
+    "electro-funk"
+   ]
+  },
+  {
+   "id": "clipse-sun",
+   "cat": "ROO-26-107",
+   "pos": "D19",
+   "name": "Clipse",
+   "qualifier": null,
+   "billing": "Clipse",
+   "day": "sun",
+   "stage": "which",
+   "start": 1110,
+   "end": 1170,
+   "blurb": "",
+   "tags": [
+    "hip-hop"
+   ]
+  },
+  {
+   "id": "turnover-sun",
+   "cat": "ROO-26-108",
+   "pos": "D20",
+   "name": "Turnover",
+   "qualifier": null,
+   "billing": "Turnover",
+   "day": "sun",
+   "stage": "this",
+   "start": 1110,
+   "end": 1170,
+   "blurb": "",
+   "tags": [
+    "dream pop"
+   ]
+  },
+  {
+   "id": "del-water-gap-sun",
+   "cat": "ROO-26-109",
+   "pos": "D21",
+   "name": "Del Water Gap",
+   "qualifier": null,
+   "billing": "Del Water Gap",
+   "day": "sun",
+   "stage": "that",
+   "start": 1110,
+   "end": 1170,
+   "blurb": "",
+   "tags": [
+    "indie pop"
+   ]
+  },
+  {
+   "id": "daily-bread-sun",
+   "cat": "ROO-26-110",
+   "pos": "D22",
+   "name": "Daily Bread",
+   "qualifier": null,
+   "billing": "Daily Bread",
+   "day": "sun",
+   "stage": "other",
+   "start": 1125,
+   "end": 1185,
+   "blurb": "",
+   "tags": [
+    "bass",
+    "hip-hop"
+   ]
+  },
+  {
+   "id": "role-model-sun",
+   "cat": "ROO-26-111",
+   "pos": "D23",
+   "name": "Role Model",
+   "qualifier": null,
+   "billing": "Role Model",
+   "day": "sun",
+   "stage": "what",
+   "start": 1170,
+   "end": 1230,
+   "blurb": "",
+   "tags": [
+    "indie pop"
+   ]
+  },
+  {
+   "id": "modest-mouse-sun",
+   "cat": "ROO-26-112",
+   "pos": "D24",
+   "name": "Modest Mouse",
+   "qualifier": null,
+   "billing": "Modest Mouse",
+   "day": "sun",
+   "stage": "this",
+   "start": 1215,
+   "end": 1290,
+   "blurb": "",
+   "tags": [
+    "indie rock"
+   ]
+  },
+  {
+   "id": "lszee-sun",
+   "cat": "ROO-26-113",
+   "pos": "D25",
+   "name": "LSZEE",
+   "qualifier": null,
+   "billing": "LSZEE",
+   "day": "sun",
+   "stage": "other",
+   "start": 1215,
+   "end": 1290,
+   "blurb": "",
+   "tags": [
+    "bass"
+   ]
+  },
+  {
+   "id": "kesha-sun",
+   "cat": "ROO-26-114",
+   "pos": "D26",
+   "name": "Kesha",
+   "qualifier": null,
+   "billing": "Kesha",
+   "day": "sun",
+   "stage": "which",
+   "start": 1230,
+   "end": 1290,
+   "blurb": "",
+   "tags": [
+    "pop"
+   ]
+  },
+  {
+   "id": "mariah-the-scientist-sun",
+   "cat": "ROO-26-115",
+   "pos": "D27",
+   "name": "Mariah the Scientist",
+   "qualifier": null,
+   "billing": "Mariah the Scientist",
+   "day": "sun",
+   "stage": "that",
+   "start": 1230,
+   "end": 1290,
+   "blurb": "",
+   "tags": [
+    "r&b"
+   ]
+  },
+  {
+   "id": "noah-kahan-sun",
+   "cat": "ROO-26-116",
+   "pos": "D28",
+   "name": "Noah Kahan",
+   "qualifier": null,
+   "billing": "Noah Kahan",
+   "day": "sun",
+   "stage": "what",
+   "start": 1290,
+   "end": 1380,
+   "blurb": "",
+   "tags": [
+    "folk pop"
+   ]
+  }
+ ]
+}

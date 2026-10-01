@@ -1,0 +1,3922 @@
+{
+ "festival": {
+  "name": "Coachella",
+  "year": 2026,
+  "code": "CHL-26",
+  "venue": "Empire Polo Club, Indio CA",
+  "timeZone": "America/Los_Angeles",
+  "source": "clashfinder.com/s/coachella2026w1 + coachella.com",
+  "doors": "13:00",
+  "close": "01:00",
+  "days": [
+   {
+    "id": "fri",
+    "label": "FRI",
+    "date": "2026-04-10"
+   },
+   {
+    "id": "sat",
+    "label": "SAT",
+    "date": "2026-04-11"
+   },
+   {
+    "id": "sun",
+    "label": "SUN",
+    "date": "2026-04-12"
+   }
+  ],
+  "map": {
+   "title": "THE POLO FIELDS",
+   "labels": [
+    [
+     24,
+     316,
+     "← NORTH"
+    ],
+    [
+     300,
+     322,
+     "MAIN ENTRANCE ↓"
+    ]
+   ],
+   "paths": [
+    [
+     "coachella",
+     "outdoor"
+    ],
+    [
+     "coachella",
+     "sonora"
+    ],
+    [
+     "sonora",
+     "gobi"
+    ],
+    [
+     "gobi",
+     "mojave"
+    ],
+    [
+     "mojave",
+     "quasar"
+    ],
+    [
+     "quasar",
+     "dolab"
+    ],
+    [
+     "dolab",
+     "bunker"
+    ],
+    [
+     "bunker",
+     "sahara"
+    ],
+    [
+     "coachella",
+     "yuma"
+    ],
+    [
+     "yuma",
+     "dolab"
+    ],
+    [
+     "outdoor",
+     "heineken"
+    ]
+   ]
+  }
+ },
+ "stages": [
+  {
+   "id": "coachella",
+   "name": "Coachella Stage",
+   "short": "MAIN",
+   "icon": "stage",
+   "x": 0.08,
+   "y": 0.5,
+   "wide": true
+  },
+  {
+   "id": "outdoor",
+   "name": "Outdoor Theatre",
+   "short": "OUTDR",
+   "icon": "stage",
+   "x": 0.08,
+   "y": 0.12
+  },
+  {
+   "id": "yuma",
+   "name": "Yuma",
+   "short": "YUMA",
+   "icon": "tent",
+   "x": 0.3,
+   "y": 0.88
+  },
+  {
+   "id": "sonora",
+   "name": "Sonora",
+   "short": "SONRA",
+   "icon": "tent",
+   "x": 0.28,
+   "y": 0.3
+  },
+  {
+   "id": "heineken",
+   "name": "Heineken House",
+   "short": "HNKN",
+   "icon": "warehouse",
+   "x": 0.4,
+   "y": 0.06
+  },
+  {
+   "id": "gobi",
+   "name": "Gobi",
+   "short": "GOBI",
+   "icon": "tent",
+   "x": 0.46,
+   "y": 0.3
+  },
+  {
+   "id": "mojave",
+   "name": "Mojave",
+   "short": "MOJVE",
+   "icon": "tent",
+   "x": 0.64,
+   "y": 0.3
+  },
+  {
+   "id": "quasar",
+   "name": "Quasar",
+   "short": "QSAR",
+   "icon": "stage",
+   "x": 0.66,
+   "y": 0.55
+  },
+  {
+   "id": "dolab",
+   "name": "Do LaB",
+   "short": "DOLAB",
+   "icon": "ball",
+   "x": 0.62,
+   "y": 0.78
+  },
+  {
+   "id": "bunker",
+   "name": "The Bunker",
+   "short": "BUNKR",
+   "icon": "warehouse",
+   "x": 0.8,
+   "y": 0.82,
+   "ambient": true
+  },
+  {
+   "id": "sahara",
+   "name": "Sahara",
+   "short": "SAHRA",
+   "icon": "tent",
+   "x": 0.93,
+   "y": 0.62
+  }
+ ],
+ "walk": {
+  "coachella|outdoor": 7,
+  "coachella|yuma": 8,
+  "coachella|sonora": 7,
+  "coachella|heineken": 9,
+  "coachella|gobi": 8,
+  "coachella|mojave": 10,
+  "coachella|quasar": 12,
+  "coachella|dolab": 11,
+  "coachella|bunker": 14,
+  "coachella|sahara": 16,
+  "outdoor|yuma": 13,
+  "outdoor|sonora": 6,
+  "outdoor|heineken": 6,
+  "outdoor|gobi": 7,
+  "outdoor|mojave": 10,
+  "outdoor|quasar": 13,
+  "outdoor|dolab": 14,
+  "outdoor|bunker": 16,
+  "outdoor|sahara": 18,
+  "yuma|sonora": 10,
+  "yuma|heineken": 12,
+  "yuma|gobi": 10,
+  "yuma|mojave": 11,
+  "yuma|quasar": 10,
+  "yuma|dolab": 7,
+  "yuma|bunker": 10,
+  "yuma|sahara": 12,
+  "sonora|heineken": 3,
+  "sonora|gobi": 3,
+  "sonora|mojave": 5,
+  "sonora|quasar": 8,
+  "sonora|dolab": 10,
+  "sonora|bunker": 11,
+  "sonora|sahara": 13,
+  "heineken|gobi": 4,
+  "heineken|mojave": 5,
+  "heineken|quasar": 9,
+  "heineken|dolab": 11,
+  "heineken|bunker": 12,
+  "heineken|sahara": 14,
+  "gobi|mojave": 3,
+  "gobi|quasar": 7,
+  "gobi|dolab": 8,
+  "gobi|bunker": 10,
+  "gobi|sahara": 12,
+  "mojave|quasar": 5,
+  "mojave|dolab": 8,
+  "mojave|bunker": 8,
+  "mojave|sahara": 10,
+  "quasar|dolab": 4,
+  "quasar|bunker": 4,
+  "quasar|sahara": 6,
+  "dolab|bunker": 3,
+  "dolab|sahara": 5,
+  "bunker|sahara": 3
+ },
+ "sets": [
+  {
+   "id": "doom-dave-fri",
+   "cat": "CHL-26-001",
+   "pos": "A1",
+   "name": "Doom Dave",
+   "qualifier": null,
+   "billing": "Doom Dave",
+   "day": "fri",
+   "stage": "sonora",
+   "start": 780,
+   "end": 820,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "sahar-z-fri",
+   "cat": "CHL-26-002",
+   "pos": "A2",
+   "name": "Sahar Z",
+   "qualifier": null,
+   "billing": "Sahar Z",
+   "day": "fri",
+   "stage": "yuma",
+   "start": 780,
+   "end": 825,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "soraya-fri",
+   "cat": "CHL-26-003",
+   "pos": "A3",
+   "name": "Soraya",
+   "qualifier": null,
+   "billing": "Soraya",
+   "day": "fri",
+   "stage": "dolab",
+   "start": 780,
+   "end": 840,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "febuary-fri",
+   "cat": "CHL-26-004",
+   "pos": "A4",
+   "name": "Febuary",
+   "qualifier": null,
+   "billing": "Febuary",
+   "day": "fri",
+   "stage": "sonora",
+   "start": 820,
+   "end": 850,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "jessica-brankka-fri",
+   "cat": "CHL-26-005",
+   "pos": "A5",
+   "name": "Jessica Brankka",
+   "qualifier": null,
+   "billing": "Jessica Brankka",
+   "day": "fri",
+   "stage": "yuma",
+   "start": 825,
+   "end": 885,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "novasoul-fri",
+   "cat": "CHL-26-006",
+   "pos": "A6",
+   "name": "Novasoul",
+   "qualifier": null,
+   "billing": "Novasoul",
+   "day": "fri",
+   "stage": "mojave",
+   "start": 840,
+   "end": 890,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "fifi-fri",
+   "cat": "CHL-26-007",
+   "pos": "A7",
+   "name": "Fifi",
+   "qualifier": null,
+   "billing": "Fifi",
+   "day": "fri",
+   "stage": "dolab",
+   "start": 840,
+   "end": 900,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "sander-kleinenberg-fri",
+   "cat": "CHL-26-008",
+   "pos": "A8",
+   "name": "Sander Kleinenberg",
+   "qualifier": null,
+   "billing": "Sander Kleinenberg",
+   "day": "fri",
+   "stage": "heineken",
+   "start": 840,
+   "end": 960,
+   "blurb": "",
+   "tags": [
+    "progressive house"
+   ]
+  },
+  {
+   "id": "cahuilla-bird-singers-and-dancers-fri",
+   "cat": "CHL-26-009",
+   "pos": "A9",
+   "name": "Cahuilla Bird Singers and Dancers",
+   "qualifier": null,
+   "billing": "Cahuilla Bird Singers and Dancers",
+   "day": "fri",
+   "stage": "gobi",
+   "start": 855,
+   "end": 885,
+   "blurb": "",
+   "tags": [
+    "bird songs",
+    "cahuilla tradition"
+   ]
+  },
+  {
+   "id": "massio-fri",
+   "cat": "CHL-26-010",
+   "pos": "A10",
+   "name": "MASSIO",
+   "qualifier": null,
+   "billing": "MASSIO",
+   "day": "fri",
+   "stage": "sahara",
+   "start": 870,
+   "end": 935,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "radiohead-kid-a-mnesia-fri",
+   "cat": "CHL-26-011",
+   "pos": "A11",
+   "name": "Radiohead: Kid A Mnesia",
+   "qualifier": null,
+   "billing": "Radiohead: Kid A Mnesia",
+   "day": "fri",
+   "stage": "bunker",
+   "start": 870,
+   "end": 945,
+   "blurb": "",
+   "tags": [
+    "screening",
+    "art rock"
+   ],
+   "artists": [
+    "Radiohead"
+   ]
+  },
+  {
+   "id": "carolina-durante-fri",
+   "cat": "CHL-26-012",
+   "pos": "A12",
+   "name": "Carolina Durante",
+   "qualifier": null,
+   "billing": "Carolina Durante",
+   "day": "fri",
+   "stage": "sonora",
+   "start": 875,
+   "end": 915,
+   "blurb": "",
+   "tags": [
+    "spanish indie",
+    "punk"
+   ]
+  },
+  {
+   "id": "arodes-fri",
+   "cat": "CHL-26-013",
+   "pos": "A13",
+   "name": "Arodes",
+   "qualifier": null,
+   "billing": "Arodes",
+   "day": "fri",
+   "stage": "yuma",
+   "start": 885,
+   "end": 945,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "tiffany-tyson-fri",
+   "cat": "CHL-26-014",
+   "pos": "A14",
+   "name": "Tiffany Tyson",
+   "qualifier": null,
+   "billing": "Tiffany Tyson",
+   "day": "fri",
+   "stage": "outdoor",
+   "start": 890,
+   "end": 950,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "bob-baker-marionettes-fri",
+   "cat": "CHL-26-015",
+   "pos": "A15",
+   "name": "Bob Baker Marionettes",
+   "qualifier": null,
+   "billing": "Bob Baker Marionettes",
+   "day": "fri",
+   "stage": "gobi",
+   "start": 895,
+   "end": 935,
+   "blurb": "",
+   "tags": [
+    "puppetry"
+   ]
+  },
+  {
+   "id": "slayyyter-fri",
+   "cat": "CHL-26-016",
+   "pos": "A16",
+   "name": "Slayyyter",
+   "qualifier": null,
+   "billing": "Slayyyter",
+   "day": "fri",
+   "stage": "mojave",
+   "start": 900,
+   "end": 945,
+   "blurb": "",
+   "tags": [
+    "electropop"
+   ]
+  },
+  {
+   "id": "1tbsp-fri",
+   "cat": "CHL-26-017",
+   "pos": "A17",
+   "name": "1tbsp",
+   "qualifier": null,
+   "billing": "1tbsp",
+   "day": "fri",
+   "stage": "dolab",
+   "start": 900,
+   "end": 960,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "wednesday-fri",
+   "cat": "CHL-26-018",
+   "pos": "A18",
+   "name": "Wednesday",
+   "qualifier": null,
+   "billing": "Wednesday",
+   "day": "fri",
+   "stage": "sonora",
+   "start": 940,
+   "end": 980,
+   "blurb": "",
+   "tags": [
+    "indie rock",
+    "alt-country"
+   ]
+  },
+  {
+   "id": "youna-fri",
+   "cat": "CHL-26-019",
+   "pos": "A19",
+   "name": "Youna",
+   "qualifier": null,
+   "billing": "Youna",
+   "day": "fri",
+   "stage": "sahara",
+   "start": 945,
+   "end": 995,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "groove-armada-fri",
+   "cat": "CHL-26-020",
+   "pos": "A20",
+   "name": "Groove Armada",
+   "qualifier": null,
+   "billing": "Groove Armada",
+   "day": "fri",
+   "stage": "yuma",
+   "start": 945,
+   "end": 1005,
+   "blurb": "",
+   "tags": [
+    "house",
+    "downtempo"
+   ]
+  },
+  {
+   "id": "dabeull-fri",
+   "cat": "CHL-26-021",
+   "pos": "A21",
+   "name": "Dabeull",
+   "qualifier": null,
+   "billing": "Dabeull",
+   "day": "fri",
+   "stage": "outdoor",
+   "start": 960,
+   "end": 1010,
+   "blurb": "",
+   "tags": [
+    "funk",
+    "boogie"
+   ]
+  },
+  {
+   "id": "newdad-fri",
+   "cat": "CHL-26-022",
+   "pos": "A22",
+   "name": "NewDad",
+   "qualifier": null,
+   "billing": "NewDad",
+   "day": "fri",
+   "stage": "gobi",
+   "start": 960,
+   "end": 1000,
+   "blurb": "",
+   "tags": [
+    "dream pop",
+    "shoegaze"
+   ]
+  },
+  {
+   "id": "bullet-tooth-fri",
+   "cat": "CHL-26-023",
+   "pos": "A23",
+   "name": "Bullet Tooth",
+   "qualifier": null,
+   "billing": "Bullet Tooth",
+   "day": "fri",
+   "stage": "dolab",
+   "start": 960,
+   "end": 1020,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "kryptogram-fri",
+   "cat": "CHL-26-024",
+   "pos": "A24",
+   "name": "Kryptogram",
+   "qualifier": null,
+   "billing": "Kryptogram",
+   "day": "fri",
+   "stage": "heineken",
+   "start": 960,
+   "end": 1050,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "record-safari-fri",
+   "cat": "CHL-26-025",
+   "pos": "A25",
+   "name": "Record Safari",
+   "qualifier": null,
+   "billing": "Record Safari",
+   "day": "fri",
+   "stage": "coachella",
+   "start": 975,
+   "end": 1040,
+   "blurb": "",
+   "tags": [
+    "dj set",
+    "disco"
+   ]
+  },
+  {
+   "id": "bini-fri",
+   "cat": "CHL-26-026",
+   "pos": "A26",
+   "name": "BINI",
+   "qualifier": null,
+   "billing": "BINI",
+   "day": "fri",
+   "stage": "mojave",
+   "start": 975,
+   "end": 1020,
+   "blurb": "",
+   "tags": [
+    "p-pop"
+   ]
+  },
+  {
+   "id": "rossi-x-chloe-caillet-fri",
+   "cat": "CHL-26-027",
+   "pos": "A27",
+   "name": "Rossi. x Chloé Caillet",
+   "qualifier": null,
+   "billing": "Rossi. x Chloé Caillet",
+   "day": "fri",
+   "stage": "yuma",
+   "start": 1005,
+   "end": 1080,
+   "blurb": "",
+   "tags": [
+    "house"
+   ],
+   "artists": [
+    "Rossi.",
+    "Chloé Caillet"
+   ]
+  },
+  {
+   "id": "radiohead-kid-a-mnesia-fri-2",
+   "cat": "CHL-26-028",
+   "pos": "A28",
+   "name": "Radiohead: Kid A Mnesia",
+   "qualifier": null,
+   "billing": "Radiohead: Kid A Mnesia",
+   "day": "fri",
+   "stage": "bunker",
+   "start": 1005,
+   "end": 1080,
+   "blurb": "",
+   "tags": [
+    "screening",
+    "art rock"
+   ],
+   "artists": [
+    "Radiohead"
+   ]
+  },
+  {
+   "id": "fleshwater-fri",
+   "cat": "CHL-26-029",
+   "pos": "A29",
+   "name": "Fleshwater",
+   "qualifier": null,
+   "billing": "Fleshwater",
+   "day": "fri",
+   "stage": "sonora",
+   "start": 1010,
+   "end": 1050,
+   "blurb": "",
+   "tags": [
+    "alt rock",
+    "shoegaze"
+   ]
+  },
+  {
+   "id": "hugel-fri",
+   "cat": "CHL-26-030",
+   "pos": "A30",
+   "name": "HUGEL",
+   "qualifier": null,
+   "billing": "HUGEL",
+   "day": "fri",
+   "stage": "sahara",
+   "start": 1010,
+   "end": 1070,
+   "blurb": "",
+   "tags": [
+    "house"
+   ]
+  },
+  {
+   "id": "tiga-fri",
+   "cat": "CHL-26-031",
+   "pos": "A31",
+   "name": "Tiga",
+   "qualifier": null,
+   "billing": "Tiga",
+   "day": "fri",
+   "stage": "quasar",
+   "start": 1020,
+   "end": 1140,
+   "blurb": "",
+   "tags": [
+    "electro",
+    "techno"
+   ]
+  },
+  {
+   "id": "mcr-t-fri",
+   "cat": "CHL-26-032",
+   "pos": "A32",
+   "name": "MCR-T",
+   "qualifier": null,
+   "billing": "MCR-T",
+   "day": "fri",
+   "stage": "dolab",
+   "start": 1020,
+   "end": 1080,
+   "blurb": "",
+   "tags": [
+    "club",
+    "jersey club"
+   ]
+  },
+  {
+   "id": "joyce-manor-fri",
+   "cat": "CHL-26-033",
+   "pos": "A33",
+   "name": "Joyce Manor",
+   "qualifier": null,
+   "billing": "Joyce Manor",
+   "day": "fri",
+   "stage": "gobi",
+   "start": 1030,
+   "end": 1070,
+   "blurb": "",
+   "tags": [
+    "pop-punk",
+    "emo"
+   ]
+  },
+  {
+   "id": "lykke-li-fri",
+   "cat": "CHL-26-034",
+   "pos": "A34",
+   "name": "Lykke Li",
+   "qualifier": null,
+   "billing": "Lykke Li",
+   "day": "fri",
+   "stage": "outdoor",
+   "start": 1040,
+   "end": 1090,
+   "blurb": "",
+   "tags": [
+    "indie pop"
+   ]
+  },
+  {
+   "id": "teddy-swims-fri",
+   "cat": "CHL-26-035",
+   "pos": "A35",
+   "name": "Teddy Swims",
+   "qualifier": null,
+   "billing": "Teddy Swims",
+   "day": "fri",
+   "stage": "coachella",
+   "start": 1050,
+   "end": 1100,
+   "blurb": "",
+   "tags": [
+    "soul",
+    "pop"
+   ]
+  },
+  {
+   "id": "central-cee-fri",
+   "cat": "CHL-26-036",
+   "pos": "A36",
+   "name": "Central Cee",
+   "qualifier": null,
+   "billing": "Central Cee",
+   "day": "fri",
+   "stage": "mojave",
+   "start": 1050,
+   "end": 1095,
+   "blurb": "",
+   "tags": [
+    "uk rap"
+   ]
+  },
+  {
+   "id": "robin-schulz-fri",
+   "cat": "CHL-26-037",
+   "pos": "A37",
+   "name": "Robin Schulz",
+   "qualifier": null,
+   "billing": "Robin Schulz",
+   "day": "fri",
+   "stage": "heineken",
+   "start": 1050,
+   "end": 1140,
+   "blurb": "",
+   "tags": [
+    "deep house",
+    "pop dance"
+   ]
+  },
+  {
+   "id": "the-two-lips-fri",
+   "cat": "CHL-26-038",
+   "pos": "A38",
+   "name": "The Two Lips",
+   "qualifier": null,
+   "billing": "The Two Lips",
+   "day": "fri",
+   "stage": "sonora",
+   "start": 1080,
+   "end": 1120,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "kettama-fri",
+   "cat": "CHL-26-039",
+   "pos": "A39",
+   "name": "Kettama",
+   "qualifier": null,
+   "billing": "Kettama",
+   "day": "fri",
+   "stage": "yuma",
+   "start": 1080,
+   "end": 1155,
+   "blurb": "",
+   "tags": [
+    "house",
+    "breaks"
+   ]
+  },
+  {
+   "id": "jazzy-fri",
+   "cat": "CHL-26-040",
+   "pos": "A40",
+   "name": "Jazzy",
+   "qualifier": null,
+   "billing": "Jazzy",
+   "day": "fri",
+   "stage": "dolab",
+   "start": 1080,
+   "end": 1145,
+   "blurb": "",
+   "tags": [
+    "house",
+    "uk dance"
+   ]
+  },
+  {
+   "id": "cmat-fri",
+   "cat": "CHL-26-041",
+   "pos": "A41",
+   "name": "CMAT",
+   "qualifier": null,
+   "billing": "CMAT",
+   "day": "fri",
+   "stage": "gobi",
+   "start": 1095,
+   "end": 1135,
+   "blurb": "",
+   "tags": [
+    "pop",
+    "country"
+   ]
+  },
+  {
+   "id": "marlon-hoffstadt-fri",
+   "cat": "CHL-26-042",
+   "pos": "A42",
+   "name": "Marlon Hoffstadt",
+   "qualifier": null,
+   "billing": "Marlon Hoffstadt",
+   "day": "fri",
+   "stage": "sahara",
+   "start": 1095,
+   "end": 1155,
+   "blurb": "",
+   "tags": [
+    "house",
+    "techno"
+   ]
+  },
+  {
+   "id": "dijon-fri",
+   "cat": "CHL-26-043",
+   "pos": "A43",
+   "name": "Dijon",
+   "qualifier": null,
+   "billing": "Dijon",
+   "day": "fri",
+   "stage": "outdoor",
+   "start": 1120,
+   "end": 1170,
+   "blurb": "",
+   "tags": [
+    "r&b",
+    "indie soul"
+   ]
+  },
+  {
+   "id": "devo-fri",
+   "cat": "CHL-26-044",
+   "pos": "A44",
+   "name": "Devo",
+   "qualifier": null,
+   "billing": "Devo",
+   "day": "fri",
+   "stage": "mojave",
+   "start": 1125,
+   "end": 1180,
+   "blurb": "",
+   "tags": [
+    "new wave",
+    "synth-punk"
+   ]
+  },
+  {
+   "id": "the-xx-fri",
+   "cat": "CHL-26-045",
+   "pos": "A45",
+   "name": "The xx",
+   "qualifier": null,
+   "billing": "The xx",
+   "day": "fri",
+   "stage": "coachella",
+   "start": 1140,
+   "end": 1195,
+   "blurb": "",
+   "tags": [
+    "indie",
+    "electronic"
+   ]
+  },
+  {
+   "id": "deep-dish-fri",
+   "cat": "CHL-26-046",
+   "pos": "A46",
+   "name": "Deep Dish",
+   "qualifier": null,
+   "billing": "Deep Dish",
+   "day": "fri",
+   "stage": "quasar",
+   "start": 1140,
+   "end": 1260,
+   "blurb": "",
+   "tags": [
+    "progressive house"
+   ]
+  },
+  {
+   "id": "radiohead-kid-a-mnesia-fri-3",
+   "cat": "CHL-26-047",
+   "pos": "A47",
+   "name": "Radiohead: Kid A Mnesia",
+   "qualifier": null,
+   "billing": "Radiohead: Kid A Mnesia",
+   "day": "fri",
+   "stage": "bunker",
+   "start": 1140,
+   "end": 1215,
+   "blurb": "",
+   "tags": [
+    "screening",
+    "art rock"
+   ],
+   "artists": [
+    "Radiohead"
+   ]
+  },
+  {
+   "id": "effin-fri",
+   "cat": "CHL-26-048",
+   "pos": "A48",
+   "name": "Effin",
+   "qualifier": null,
+   "billing": "Effin",
+   "day": "fri",
+   "stage": "dolab",
+   "start": 1145,
+   "end": 1205,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "ninajirachi-fri",
+   "cat": "CHL-26-049",
+   "pos": "A49",
+   "name": "Ninajirachi",
+   "qualifier": null,
+   "billing": "Ninajirachi",
+   "day": "fri",
+   "stage": "sonora",
+   "start": 1150,
+   "end": 1200,
+   "blurb": "",
+   "tags": [
+    "electro",
+    "club"
+   ]
+  },
+  {
+   "id": "prospa-fri",
+   "cat": "CHL-26-050",
+   "pos": "A50",
+   "name": "Prospa",
+   "qualifier": null,
+   "billing": "Prospa",
+   "day": "fri",
+   "stage": "yuma",
+   "start": 1155,
+   "end": 1230,
+   "blurb": "",
+   "tags": [
+    "rave",
+    "house"
+   ]
+  },
+  {
+   "id": "wale-fri",
+   "cat": "CHL-26-051",
+   "pos": "A51",
+   "name": "Wale",
+   "qualifier": null,
+   "billing": "Wale",
+   "day": "fri",
+   "stage": "heineken",
+   "start": 1155,
+   "end": 1200,
+   "blurb": "",
+   "tags": [
+    "hip-hop"
+   ]
+  },
+  {
+   "id": "fakemink-fri",
+   "cat": "CHL-26-052",
+   "pos": "A52",
+   "name": "fakemink",
+   "qualifier": null,
+   "billing": "fakemink",
+   "day": "fri",
+   "stage": "gobi",
+   "start": 1160,
+   "end": 1200,
+   "blurb": "",
+   "tags": [
+    "uk rap"
+   ]
+  },
+  {
+   "id": "katseye-fri",
+   "cat": "CHL-26-053",
+   "pos": "A53",
+   "name": "KATSEYE",
+   "qualifier": null,
+   "billing": "KATSEYE",
+   "day": "fri",
+   "stage": "sahara",
+   "start": 1200,
+   "end": 1245,
+   "blurb": "",
+   "tags": [
+    "pop",
+    "girl group"
+   ]
+  },
+  {
+   "id": "turnstile-fri",
+   "cat": "CHL-26-054",
+   "pos": "A54",
+   "name": "Turnstile",
+   "qualifier": null,
+   "billing": "Turnstile",
+   "day": "fri",
+   "stage": "outdoor",
+   "start": 1205,
+   "end": 1260,
+   "blurb": "",
+   "tags": [
+    "hardcore",
+    "alt rock"
+   ]
+  },
+  {
+   "id": "moby-fri",
+   "cat": "CHL-26-055",
+   "pos": "A55",
+   "name": "Moby",
+   "qualifier": null,
+   "billing": "Moby",
+   "day": "fri",
+   "stage": "mojave",
+   "start": 1210,
+   "end": 1260,
+   "blurb": "",
+   "tags": [
+    "electronica"
+   ]
+  },
+  {
+   "id": "john-summit-fri",
+   "cat": "CHL-26-056",
+   "pos": "A56",
+   "name": "John Summit",
+   "qualifier": null,
+   "billing": "John Summit",
+   "day": "fri",
+   "stage": "dolab",
+   "start": 1210,
+   "end": 1270,
+   "blurb": "",
+   "tags": [
+    "tech house"
+   ]
+  },
+  {
+   "id": "zerb-fri",
+   "cat": "CHL-26-057",
+   "pos": "A57",
+   "name": "Zerb",
+   "qualifier": null,
+   "billing": "Zerb",
+   "day": "fri",
+   "stage": "heineken",
+   "start": 1215,
+   "end": 1320,
+   "blurb": "",
+   "tags": [
+    "house"
+   ]
+  },
+  {
+   "id": "cachirula-loojan-fri",
+   "cat": "CHL-26-058",
+   "pos": "A58",
+   "name": "Cachirula & Loojan",
+   "qualifier": null,
+   "billing": "Cachirula & Loojan",
+   "day": "fri",
+   "stage": "sonora",
+   "start": 1225,
+   "end": 1265,
+   "blurb": "",
+   "tags": [],
+   "artists": [
+    "Cachirula",
+    "Loojan"
+   ]
+  },
+  {
+   "id": "holly-humberstone-fri",
+   "cat": "CHL-26-059",
+   "pos": "A59",
+   "name": "Holly Humberstone",
+   "qualifier": null,
+   "billing": "Holly Humberstone",
+   "day": "fri",
+   "stage": "gobi",
+   "start": 1225,
+   "end": 1270,
+   "blurb": "",
+   "tags": [
+    "indie pop"
+   ]
+  },
+  {
+   "id": "max-dean-x-luke-dean-fri",
+   "cat": "CHL-26-060",
+   "pos": "A60",
+   "name": "Max Dean x Luke Dean",
+   "qualifier": null,
+   "billing": "Max Dean x Luke Dean",
+   "day": "fri",
+   "stage": "yuma",
+   "start": 1230,
+   "end": 1305,
+   "blurb": "",
+   "tags": [
+    "house",
+    "tech house"
+   ],
+   "artists": [
+    "Max Dean",
+    "Luke Dean"
+   ]
+  },
+  {
+   "id": "pawsa-fri",
+   "cat": "CHL-26-061",
+   "pos": "A61",
+   "name": "PAWSA",
+   "qualifier": null,
+   "billing": "PAWSA",
+   "day": "fri",
+   "stage": "quasar",
+   "start": 1260,
+   "end": 1380,
+   "blurb": "",
+   "tags": [
+    "tech house"
+   ]
+  },
+  {
+   "id": "sabrina-carpenter-fri",
+   "cat": "CHL-26-062",
+   "pos": "A62",
+   "name": "Sabrina Carpenter",
+   "qualifier": null,
+   "billing": "Sabrina Carpenter",
+   "day": "fri",
+   "stage": "coachella",
+   "start": 1265,
+   "end": 1355,
+   "blurb": "",
+   "tags": [
+    "pop"
+   ]
+  },
+  {
+   "id": "levity-fri",
+   "cat": "CHL-26-063",
+   "pos": "A63",
+   "name": "Levity",
+   "qualifier": null,
+   "billing": "Levity",
+   "day": "fri",
+   "stage": "sahara",
+   "start": 1275,
+   "end": 1340,
+   "blurb": "",
+   "tags": [
+    "dubstep"
+   ]
+  },
+  {
+   "id": "radiohead-kid-a-mnesia-fri-4",
+   "cat": "CHL-26-064",
+   "pos": "A64",
+   "name": "Radiohead: Kid A Mnesia",
+   "qualifier": null,
+   "billing": "Radiohead: Kid A Mnesia",
+   "day": "fri",
+   "stage": "bunker",
+   "start": 1275,
+   "end": 1350,
+   "blurb": "",
+   "tags": [
+    "screening",
+    "art rock"
+   ],
+   "artists": [
+    "Radiohead"
+   ]
+  },
+  {
+   "id": "max-styler-fri",
+   "cat": "CHL-26-065",
+   "pos": "A65",
+   "name": "Max Styler",
+   "qualifier": null,
+   "billing": "Max Styler",
+   "day": "fri",
+   "stage": "yuma",
+   "start": 1305,
+   "end": 1395,
+   "blurb": "",
+   "tags": [
+    "house"
+   ]
+  },
+  {
+   "id": "joost-fri",
+   "cat": "CHL-26-066",
+   "pos": "A66",
+   "name": "Joost",
+   "qualifier": null,
+   "billing": "Joost",
+   "day": "fri",
+   "stage": "gobi",
+   "start": 1310,
+   "end": 1355,
+   "blurb": "",
+   "tags": [
+    "hardstyle",
+    "pop"
+   ]
+  },
+  {
+   "id": "hot-mulligan-fri",
+   "cat": "CHL-26-067",
+   "pos": "A67",
+   "name": "Hot Mulligan",
+   "qualifier": null,
+   "billing": "Hot Mulligan",
+   "day": "fri",
+   "stage": "sonora",
+   "start": 1320,
+   "end": 1365,
+   "blurb": "",
+   "tags": [
+    "emo",
+    "pop-punk"
+   ]
+  },
+  {
+   "id": "disclosure-fri",
+   "cat": "CHL-26-068",
+   "pos": "A68",
+   "name": "Disclosure",
+   "qualifier": null,
+   "billing": "Disclosure",
+   "day": "fri",
+   "stage": "outdoor",
+   "start": 1355,
+   "end": 1430,
+   "blurb": "",
+   "tags": [
+    "uk garage",
+    "house"
+   ]
+  },
+  {
+   "id": "ethel-cain-fri",
+   "cat": "CHL-26-069",
+   "pos": "A69",
+   "name": "Ethel Cain",
+   "qualifier": null,
+   "billing": "Ethel Cain",
+   "day": "fri",
+   "stage": "mojave",
+   "start": 1355,
+   "end": 1405,
+   "blurb": "",
+   "tags": [
+    "gothic americana",
+    "indie"
+   ]
+  },
+  {
+   "id": "swae-lee-fri",
+   "cat": "CHL-26-070",
+   "pos": "A70",
+   "name": "Swae Lee",
+   "qualifier": null,
+   "billing": "Swae Lee",
+   "day": "fri",
+   "stage": "sahara",
+   "start": 1370,
+   "end": 1420,
+   "blurb": "",
+   "tags": [
+    "hip-hop",
+    "r&b"
+   ]
+  },
+  {
+   "id": "creepy-nuts-fri",
+   "cat": "CHL-26-071",
+   "pos": "A71",
+   "name": "Creepy Nuts",
+   "qualifier": null,
+   "billing": "Creepy Nuts",
+   "day": "fri",
+   "stage": "gobi",
+   "start": 1385,
+   "end": 1435,
+   "blurb": "",
+   "tags": [
+    "j-rap"
+   ]
+  },
+  {
+   "id": "gordo-fri",
+   "cat": "CHL-26-072",
+   "pos": "A72",
+   "name": "Gordo",
+   "qualifier": null,
+   "billing": "Gordo",
+   "day": "fri",
+   "stage": "yuma",
+   "start": 1395,
+   "end": 1500,
+   "blurb": "",
+   "tags": [
+    "house",
+    "techno"
+   ]
+  },
+  {
+   "id": "radiohead-kid-a-mnesia-fri-5",
+   "cat": "CHL-26-073",
+   "pos": "A73",
+   "name": "Radiohead: Kid A Mnesia",
+   "qualifier": null,
+   "billing": "Radiohead: Kid A Mnesia",
+   "day": "fri",
+   "stage": "bunker",
+   "start": 1410,
+   "end": 1485,
+   "blurb": "",
+   "tags": [
+    "screening",
+    "art rock"
+   ],
+   "artists": [
+    "Radiohead"
+   ]
+  },
+  {
+   "id": "not-for-radio-fri",
+   "cat": "CHL-26-074",
+   "pos": "A74",
+   "name": "Not For Radio",
+   "qualifier": null,
+   "billing": "Not For Radio",
+   "day": "fri",
+   "stage": "sonora",
+   "start": 1430,
+   "end": 1490,
+   "blurb": "",
+   "tags": [
+    "dream pop"
+   ]
+  },
+  {
+   "id": "blood-orange-fri",
+   "cat": "CHL-26-075",
+   "pos": "A75",
+   "name": "Blood Orange",
+   "qualifier": null,
+   "billing": "Blood Orange",
+   "day": "fri",
+   "stage": "mojave",
+   "start": 1435,
+   "end": 1485,
+   "blurb": "",
+   "tags": [
+    "r&b",
+    "indie"
+   ]
+  },
+  {
+   "id": "sexyy-red-fri",
+   "cat": "CHL-26-076",
+   "pos": "A76",
+   "name": "Sexyy Red",
+   "qualifier": null,
+   "billing": "Sexyy Red",
+   "day": "fri",
+   "stage": "sahara",
+   "start": 1445,
+   "end": 1495,
+   "blurb": "",
+   "tags": [
+    "hip-hop"
+   ]
+  },
+  {
+   "id": "triste-juventud-sat",
+   "cat": "CHL-26-077",
+   "pos": "B1",
+   "name": "Triste Juventud",
+   "qualifier": null,
+   "billing": "Triste Juventud",
+   "day": "sat",
+   "stage": "sonora",
+   "start": 780,
+   "end": 840,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "yamagucci-sat",
+   "cat": "CHL-26-078",
+   "pos": "B2",
+   "name": "Yamagucci",
+   "qualifier": null,
+   "billing": "Yamagucci",
+   "day": "sat",
+   "stage": "yuma",
+   "start": 780,
+   "end": 840,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "lumia-sat",
+   "cat": "CHL-26-079",
+   "pos": "B3",
+   "name": "Lumia",
+   "qualifier": null,
+   "billing": "Lumia",
+   "day": "sat",
+   "stage": "dolab",
+   "start": 780,
+   "end": 845,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "die-spitz-sat",
+   "cat": "CHL-26-080",
+   "pos": "B4",
+   "name": "Die Spitz",
+   "qualifier": null,
+   "billing": "Die Spitz",
+   "day": "sat",
+   "stage": "sonora",
+   "start": 840,
+   "end": 880,
+   "blurb": "",
+   "tags": [
+    "punk",
+    "grunge"
+   ]
+  },
+  {
+   "id": "seek-one-sat",
+   "cat": "CHL-26-081",
+   "pos": "B5",
+   "name": "Seek-One",
+   "qualifier": null,
+   "billing": "Seek-One",
+   "day": "sat",
+   "stage": "sahara",
+   "start": 840,
+   "end": 885,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "genesi-sat",
+   "cat": "CHL-26-082",
+   "pos": "B6",
+   "name": "GENESI",
+   "qualifier": null,
+   "billing": "GENESI",
+   "day": "sat",
+   "stage": "yuma",
+   "start": 840,
+   "end": 900,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "redke-sat",
+   "cat": "CHL-26-083",
+   "pos": "B7",
+   "name": "REDKĒ",
+   "qualifier": null,
+   "billing": "REDKĒ",
+   "day": "sat",
+   "stage": "heineken",
+   "start": 840,
+   "end": 960,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "noga-erez-sat",
+   "cat": "CHL-26-084",
+   "pos": "B8",
+   "name": "Noga Erez",
+   "qualifier": null,
+   "billing": "Noga Erez",
+   "day": "sat",
+   "stage": "gobi",
+   "start": 845,
+   "end": 890,
+   "blurb": "",
+   "tags": [
+    "electropop",
+    "hip-hop"
+   ]
+  },
+  {
+   "id": "baalti-sat",
+   "cat": "CHL-26-085",
+   "pos": "B9",
+   "name": "Baalti",
+   "qualifier": null,
+   "billing": "Baalti",
+   "day": "sat",
+   "stage": "dolab",
+   "start": 845,
+   "end": 910,
+   "blurb": "",
+   "tags": [
+    "electronic",
+    "south asian"
+   ]
+  },
+  {
+   "id": "radiohead-kid-a-mnesia-sat",
+   "cat": "CHL-26-086",
+   "pos": "B10",
+   "name": "Radiohead: Kid A Mnesia",
+   "qualifier": null,
+   "billing": "Radiohead: Kid A Mnesia",
+   "day": "sat",
+   "stage": "bunker",
+   "start": 870,
+   "end": 945,
+   "blurb": "",
+   "tags": [
+    "screening",
+    "art rock"
+   ],
+   "artists": [
+    "Radiohead"
+   ]
+  },
+  {
+   "id": "blondshell-sat",
+   "cat": "CHL-26-087",
+   "pos": "B11",
+   "name": "Blondshell",
+   "qualifier": null,
+   "billing": "Blondshell",
+   "day": "sat",
+   "stage": "outdoor",
+   "start": 880,
+   "end": 925,
+   "blurb": "",
+   "tags": [
+    "indie rock"
+   ]
+  },
+  {
+   "id": "teed-sat",
+   "cat": "CHL-26-088",
+   "pos": "B12",
+   "name": "TEED",
+   "qualifier": null,
+   "billing": "TEED",
+   "day": "sat",
+   "stage": "sahara",
+   "start": 890,
+   "end": 950,
+   "blurb": "",
+   "tags": [
+    "electronic",
+    "dance"
+   ]
+  },
+  {
+   "id": "jack-white-sat",
+   "cat": "CHL-26-089",
+   "pos": "B13",
+   "name": "Jack White",
+   "qualifier": null,
+   "billing": "Jack White",
+   "day": "sat",
+   "stage": "mojave",
+   "start": 900,
+   "end": 945,
+   "blurb": "",
+   "tags": [
+    "garage rock",
+    "blues rock"
+   ]
+  },
+  {
+   "id": "riordan-sat",
+   "cat": "CHL-26-090",
+   "pos": "B14",
+   "name": "Riordan",
+   "qualifier": null,
+   "billing": "Riordan",
+   "day": "sat",
+   "stage": "yuma",
+   "start": 900,
+   "end": 975,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "freak-slug-sat",
+   "cat": "CHL-26-091",
+   "pos": "B15",
+   "name": "Freak Slug",
+   "qualifier": null,
+   "billing": "Freak Slug",
+   "day": "sat",
+   "stage": "sonora",
+   "start": 910,
+   "end": 950,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "roddy-lima-sat",
+   "cat": "CHL-26-092",
+   "pos": "B16",
+   "name": "Roddy Lima",
+   "qualifier": null,
+   "billing": "Roddy Lima",
+   "day": "sat",
+   "stage": "dolab",
+   "start": 910,
+   "end": 975,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "los-hermanos-flores-sat",
+   "cat": "CHL-26-093",
+   "pos": "B17",
+   "name": "Los Hermanos Flores",
+   "qualifier": null,
+   "billing": "Los Hermanos Flores",
+   "day": "sat",
+   "stage": "outdoor",
+   "start": 955,
+   "end": 1005,
+   "blurb": "",
+   "tags": [
+    "cumbia",
+    "salsa"
+   ]
+  },
+  {
+   "id": "zulan-sat",
+   "cat": "CHL-26-094",
+   "pos": "B18",
+   "name": "ZULAN",
+   "qualifier": null,
+   "billing": "ZULAN",
+   "day": "sat",
+   "stage": "sahara",
+   "start": 960,
+   "end": 1010,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "niiko-x-swae-sat",
+   "cat": "CHL-26-095",
+   "pos": "B19",
+   "name": "NIIKO X SWAE",
+   "qualifier": null,
+   "billing": "NIIKO X SWAE",
+   "day": "sat",
+   "stage": "heineken",
+   "start": 960,
+   "end": 1050,
+   "blurb": "",
+   "tags": [],
+   "artists": [
+    "NIIKO X SWAE"
+   ]
+  },
+  {
+   "id": "whatmore-sat",
+   "cat": "CHL-26-096",
+   "pos": "B20",
+   "name": "WHATMORE",
+   "qualifier": null,
+   "billing": "WHATMORE",
+   "day": "sat",
+   "stage": "gobi",
+   "start": 965,
+   "end": 1005,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "jaqck-glam-sat",
+   "cat": "CHL-26-097",
+   "pos": "B21",
+   "name": "Jaqck Glam",
+   "qualifier": null,
+   "billing": "Jaqck Glam",
+   "day": "sat",
+   "stage": "coachella",
+   "start": 975,
+   "end": 1040,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "mahmut-orhan-sat",
+   "cat": "CHL-26-098",
+   "pos": "B22",
+   "name": "Mahmut Orhan",
+   "qualifier": null,
+   "billing": "Mahmut Orhan",
+   "day": "sat",
+   "stage": "yuma",
+   "start": 975,
+   "end": 1050,
+   "blurb": "",
+   "tags": [
+    "deep house"
+   ]
+  },
+  {
+   "id": "baby-j-sat",
+   "cat": "CHL-26-099",
+   "pos": "B23",
+   "name": "Baby J",
+   "qualifier": null,
+   "billing": "Baby J",
+   "day": "sat",
+   "stage": "dolab",
+   "start": 975,
+   "end": 1040,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "ecca-vandal-sat",
+   "cat": "CHL-26-100",
+   "pos": "B24",
+   "name": "Ecca Vandal",
+   "qualifier": null,
+   "billing": "Ecca Vandal",
+   "day": "sat",
+   "stage": "sonora",
+   "start": 980,
+   "end": 1020,
+   "blurb": "",
+   "tags": [
+    "punk",
+    "alt"
+   ]
+  },
+  {
+   "id": "fujii-kaze-sat",
+   "cat": "CHL-26-101",
+   "pos": "B25",
+   "name": "Fujii Kaze",
+   "qualifier": null,
+   "billing": "Fujii Kaze",
+   "day": "sat",
+   "stage": "mojave",
+   "start": 990,
+   "end": 1040,
+   "blurb": "",
+   "tags": [
+    "j-pop"
+   ]
+  },
+  {
+   "id": "radiohead-kid-a-mnesia-sat-2",
+   "cat": "CHL-26-102",
+   "pos": "B26",
+   "name": "Radiohead: Kid A Mnesia",
+   "qualifier": null,
+   "billing": "Radiohead: Kid A Mnesia",
+   "day": "sat",
+   "stage": "bunker",
+   "start": 1005,
+   "end": 1080,
+   "blurb": "",
+   "tags": [
+    "screening",
+    "art rock"
+   ],
+   "artists": [
+    "Radiohead"
+   ]
+  },
+  {
+   "id": "hamdi-sat",
+   "cat": "CHL-26-103",
+   "pos": "B27",
+   "name": "Hamdi",
+   "qualifier": null,
+   "billing": "Hamdi",
+   "day": "sat",
+   "stage": "sahara",
+   "start": 1020,
+   "end": 1075,
+   "blurb": "",
+   "tags": [
+    "bass",
+    "dubstep"
+   ]
+  },
+  {
+   "id": "joezi-sat",
+   "cat": "CHL-26-104",
+   "pos": "B28",
+   "name": "Joezi",
+   "qualifier": null,
+   "billing": "Joezi",
+   "day": "sat",
+   "stage": "quasar",
+   "start": 1020,
+   "end": 1140,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "alex-g-sat",
+   "cat": "CHL-26-105",
+   "pos": "B29",
+   "name": "Alex G",
+   "qualifier": null,
+   "billing": "Alex G",
+   "day": "sat",
+   "stage": "outdoor",
+   "start": 1030,
+   "end": 1080,
+   "blurb": "",
+   "tags": [
+    "indie rock"
+   ]
+  },
+  {
+   "id": "luisa-sonza-sat",
+   "cat": "CHL-26-106",
+   "pos": "B30",
+   "name": "Luísa Sonza",
+   "qualifier": null,
+   "billing": "Luísa Sonza",
+   "day": "sat",
+   "stage": "gobi",
+   "start": 1030,
+   "end": 1070,
+   "blurb": "",
+   "tags": [
+    "brazilian pop"
+   ]
+  },
+  {
+   "id": "starjunk-95-sat",
+   "cat": "CHL-26-107",
+   "pos": "B31",
+   "name": "Starjunk 95",
+   "qualifier": null,
+   "billing": "Starjunk 95",
+   "day": "sat",
+   "stage": "dolab",
+   "start": 1040,
+   "end": 1105,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "addison-rae-sat",
+   "cat": "CHL-26-108",
+   "pos": "B32",
+   "name": "Addison Rae",
+   "qualifier": null,
+   "billing": "Addison Rae",
+   "day": "sat",
+   "stage": "coachella",
+   "start": 1050,
+   "end": 1100,
+   "blurb": "",
+   "tags": [
+    "pop"
+   ]
+  },
+  {
+   "id": "ceremony-sat",
+   "cat": "CHL-26-109",
+   "pos": "B33",
+   "name": "Ceremony",
+   "qualifier": null,
+   "billing": "Ceremony",
+   "day": "sat",
+   "stage": "sonora",
+   "start": 1050,
+   "end": 1090,
+   "blurb": "",
+   "tags": [
+    "hardcore punk",
+    "post-punk"
+   ]
+  },
+  {
+   "id": "ben-sterling-sat",
+   "cat": "CHL-26-110",
+   "pos": "B34",
+   "name": "Ben Sterling",
+   "qualifier": null,
+   "billing": "Ben Sterling",
+   "day": "sat",
+   "stage": "yuma",
+   "start": 1050,
+   "end": 1125,
+   "blurb": "",
+   "tags": [
+    "tech house"
+   ]
+  },
+  {
+   "id": "joshwa-sat",
+   "cat": "CHL-26-111",
+   "pos": "B35",
+   "name": "Joshwa",
+   "qualifier": null,
+   "billing": "Joshwa",
+   "day": "sat",
+   "stage": "heineken",
+   "start": 1050,
+   "end": 1140,
+   "blurb": "",
+   "tags": [
+    "tech house"
+   ]
+  },
+  {
+   "id": "royel-otis-sat",
+   "cat": "CHL-26-112",
+   "pos": "B36",
+   "name": "Royel Otis",
+   "qualifier": null,
+   "billing": "Royel Otis",
+   "day": "sat",
+   "stage": "mojave",
+   "start": 1070,
+   "end": 1115,
+   "blurb": "",
+   "tags": [
+    "indie pop"
+   ]
+  },
+  {
+   "id": "geese-sat",
+   "cat": "CHL-26-113",
+   "pos": "B37",
+   "name": "Geese",
+   "qualifier": null,
+   "billing": "Geese",
+   "day": "sat",
+   "stage": "gobi",
+   "start": 1095,
+   "end": 1140,
+   "blurb": "",
+   "tags": [
+    "indie rock"
+   ]
+  },
+  {
+   "id": "u-uk-uk1mat-u-sat",
+   "cat": "CHL-26-114",
+   "pos": "B38",
+   "name": "¥ØU$UK€ ¥UK1MAT$U",
+   "qualifier": null,
+   "billing": "¥ØU$UK€ ¥UK1MAT$U",
+   "day": "sat",
+   "stage": "sahara",
+   "start": 1095,
+   "end": 1150,
+   "blurb": "",
+   "tags": [
+    "house",
+    "japanese club"
+   ]
+  },
+  {
+   "id": "tinashe-dj-sat",
+   "cat": "CHL-26-115",
+   "pos": "B39",
+   "name": "Tinashe (DJ)",
+   "qualifier": null,
+   "billing": "Tinashe (DJ)",
+   "day": "sat",
+   "stage": "dolab",
+   "start": 1105,
+   "end": 1170,
+   "blurb": "",
+   "tags": [
+    "r&b",
+    "dj set"
+   ],
+   "artists": [
+    "Tinashe"
+   ]
+  },
+  {
+   "id": "rusowsky-sat",
+   "cat": "CHL-26-116",
+   "pos": "B40",
+   "name": "rusowsky",
+   "qualifier": null,
+   "billing": "rusowsky",
+   "day": "sat",
+   "stage": "sonora",
+   "start": 1120,
+   "end": 1160,
+   "blurb": "",
+   "tags": [
+    "spanish pop",
+    "experimental"
+   ]
+  },
+  {
+   "id": "sosa-sat",
+   "cat": "CHL-26-117",
+   "pos": "B41",
+   "name": "SOSA",
+   "qualifier": null,
+   "billing": "SOSA",
+   "day": "sat",
+   "stage": "yuma",
+   "start": 1125,
+   "end": 1215,
+   "blurb": "",
+   "tags": [
+    "tech house"
+   ]
+  },
+  {
+   "id": "giveon-sat",
+   "cat": "CHL-26-118",
+   "pos": "B42",
+   "name": "GIVĒON",
+   "qualifier": null,
+   "billing": "GIVĒON",
+   "day": "sat",
+   "stage": "coachella",
+   "start": 1140,
+   "end": 1190,
+   "blurb": "",
+   "tags": [
+    "r&b"
+   ]
+  },
+  {
+   "id": "afrojack-x-shimza-sat",
+   "cat": "CHL-26-119",
+   "pos": "B43",
+   "name": "Afrojack x Shimza",
+   "qualifier": null,
+   "billing": "Afrojack x Shimza",
+   "day": "sat",
+   "stage": "quasar",
+   "start": 1140,
+   "end": 1260,
+   "blurb": "",
+   "tags": [
+    "house",
+    "edm"
+   ],
+   "artists": [
+    "Afrojack",
+    "Shimza"
+   ]
+  },
+  {
+   "id": "radiohead-kid-a-mnesia-sat-3",
+   "cat": "CHL-26-120",
+   "pos": "B44",
+   "name": "Radiohead: Kid A Mnesia",
+   "qualifier": null,
+   "billing": "Radiohead: Kid A Mnesia",
+   "day": "sat",
+   "stage": "bunker",
+   "start": 1140,
+   "end": 1215,
+   "blurb": "",
+   "tags": [
+    "screening",
+    "art rock"
+   ],
+   "artists": [
+    "Radiohead"
+   ]
+  },
+  {
+   "id": "sombr-sat",
+   "cat": "CHL-26-121",
+   "pos": "B45",
+   "name": "SOMBR",
+   "qualifier": null,
+   "billing": "SOMBR",
+   "day": "sat",
+   "stage": "outdoor",
+   "start": 1145,
+   "end": 1195,
+   "blurb": "",
+   "tags": [
+    "alt pop",
+    "indie"
+   ]
+  },
+  {
+   "id": "coi-leray-sat",
+   "cat": "CHL-26-122",
+   "pos": "B46",
+   "name": "Coi Leray",
+   "qualifier": null,
+   "billing": "Coi Leray",
+   "day": "sat",
+   "stage": "heineken",
+   "start": 1155,
+   "end": 1200,
+   "blurb": "",
+   "tags": [
+    "hip-hop"
+   ]
+  },
+  {
+   "id": "taemin-sat",
+   "cat": "CHL-26-123",
+   "pos": "B47",
+   "name": "Taemin",
+   "qualifier": null,
+   "billing": "Taemin",
+   "day": "sat",
+   "stage": "mojave",
+   "start": 1170,
+   "end": 1220,
+   "blurb": "",
+   "tags": [
+    "k-pop"
+   ]
+  },
+  {
+   "id": "romy-dj-set-sat",
+   "cat": "CHL-26-124",
+   "pos": "B48",
+   "name": "Romy (DJ Set)",
+   "qualifier": null,
+   "billing": "Romy (DJ Set)",
+   "day": "sat",
+   "stage": "dolab",
+   "start": 1170,
+   "end": 1235,
+   "blurb": "",
+   "tags": [
+    "dance",
+    "pop"
+   ],
+   "artists": [
+    "Romy"
+   ]
+  },
+  {
+   "id": "54-ultra-sat",
+   "cat": "CHL-26-125",
+   "pos": "B49",
+   "name": "54 Ultra",
+   "qualifier": null,
+   "billing": "54 Ultra",
+   "day": "sat",
+   "stage": "sonora",
+   "start": 1190,
+   "end": 1230,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "davido-sat",
+   "cat": "CHL-26-126",
+   "pos": "B50",
+   "name": "Davido",
+   "qualifier": null,
+   "billing": "Davido",
+   "day": "sat",
+   "stage": "gobi",
+   "start": 1190,
+   "end": 1235,
+   "blurb": "",
+   "tags": [
+    "afrobeats"
+   ]
+  },
+  {
+   "id": "nine-inch-noize-sat",
+   "cat": "CHL-26-127",
+   "pos": "B51",
+   "name": "Nine Inch Noize",
+   "qualifier": null,
+   "billing": "Nine Inch Noize",
+   "day": "sat",
+   "stage": "sahara",
+   "start": 1200,
+   "end": 1245,
+   "blurb": "",
+   "tags": [
+    "industrial",
+    "electro"
+   ],
+   "artists": [
+    "Nine Inch Nails",
+    "Boys Noize"
+   ]
+  },
+  {
+   "id": "bedouin-sat",
+   "cat": "CHL-26-128",
+   "pos": "B52",
+   "name": "Bedouin",
+   "qualifier": null,
+   "billing": "Bedouin",
+   "day": "sat",
+   "stage": "yuma",
+   "start": 1215,
+   "end": 1305,
+   "blurb": "",
+   "tags": [
+    "organic house"
+   ]
+  },
+  {
+   "id": "sean-paul-sat",
+   "cat": "CHL-26-129",
+   "pos": "B53",
+   "name": "Sean Paul",
+   "qualifier": null,
+   "billing": "Sean Paul",
+   "day": "sat",
+   "stage": "heineken",
+   "start": 1215,
+   "end": 1275,
+   "blurb": "",
+   "tags": [
+    "dancehall"
+   ]
+  },
+  {
+   "id": "labrinth-sat",
+   "cat": "CHL-26-130",
+   "pos": "B54",
+   "name": "Labrinth",
+   "qualifier": null,
+   "billing": "Labrinth",
+   "day": "sat",
+   "stage": "outdoor",
+   "start": 1230,
+   "end": 1285,
+   "blurb": "",
+   "tags": [
+    "pop",
+    "soul"
+   ]
+  },
+  {
+   "id": "andhim-sat",
+   "cat": "CHL-26-131",
+   "pos": "B55",
+   "name": "andhim",
+   "qualifier": null,
+   "billing": "andhim",
+   "day": "sat",
+   "stage": "dolab",
+   "start": 1235,
+   "end": 1300,
+   "blurb": "",
+   "tags": [
+    "house"
+   ]
+  },
+  {
+   "id": "pinkpantheress-sat",
+   "cat": "CHL-26-132",
+   "pos": "B56",
+   "name": "PinkPantheress",
+   "qualifier": null,
+   "billing": "PinkPantheress",
+   "day": "sat",
+   "stage": "mojave",
+   "start": 1255,
+   "end": 1305,
+   "blurb": "",
+   "tags": [
+    "pop",
+    "uk garage"
+   ]
+  },
+  {
+   "id": "the-strokes-sat",
+   "cat": "CHL-26-133",
+   "pos": "B57",
+   "name": "The Strokes",
+   "qualifier": null,
+   "billing": "The Strokes",
+   "day": "sat",
+   "stage": "coachella",
+   "start": 1260,
+   "end": 1330,
+   "blurb": "",
+   "tags": [
+    "indie rock"
+   ]
+  },
+  {
+   "id": "bia-sat",
+   "cat": "CHL-26-134",
+   "pos": "B58",
+   "name": "BIA",
+   "qualifier": null,
+   "billing": "BIA",
+   "day": "sat",
+   "stage": "gobi",
+   "start": 1260,
+   "end": 1305,
+   "blurb": "",
+   "tags": [
+    "hip-hop"
+   ]
+  },
+  {
+   "id": "david-guetta-sat",
+   "cat": "CHL-26-135",
+   "pos": "B59",
+   "name": "David Guetta",
+   "qualifier": null,
+   "billing": "David Guetta",
+   "day": "sat",
+   "stage": "quasar",
+   "start": 1260,
+   "end": 1380,
+   "blurb": "",
+   "tags": [
+    "edm",
+    "house"
+   ]
+  },
+  {
+   "id": "rezz-sat",
+   "cat": "CHL-26-136",
+   "pos": "B60",
+   "name": "REZZ",
+   "qualifier": null,
+   "billing": "REZZ",
+   "day": "sat",
+   "stage": "sahara",
+   "start": 1270,
+   "end": 1325,
+   "blurb": "",
+   "tags": [
+    "midtempo",
+    "bass"
+   ]
+  },
+  {
+   "id": "andruss-sat",
+   "cat": "CHL-26-137",
+   "pos": "B61",
+   "name": "Andruss",
+   "qualifier": null,
+   "billing": "Andruss",
+   "day": "sat",
+   "stage": "heineken",
+   "start": 1275,
+   "end": 1320,
+   "blurb": "",
+   "tags": [
+    "tech house"
+   ]
+  },
+  {
+   "id": "radiohead-kid-a-mnesia-sat-4",
+   "cat": "CHL-26-138",
+   "pos": "B62",
+   "name": "Radiohead: Kid A Mnesia",
+   "qualifier": null,
+   "billing": "Radiohead: Kid A Mnesia",
+   "day": "sat",
+   "stage": "bunker",
+   "start": 1275,
+   "end": 1350,
+   "blurb": "",
+   "tags": [
+    "screening",
+    "art rock"
+   ],
+   "artists": [
+    "Radiohead"
+   ]
+  },
+  {
+   "id": "anfisa-letyago-sat",
+   "cat": "CHL-26-139",
+   "pos": "B63",
+   "name": "Anfisa Letyago",
+   "qualifier": null,
+   "billing": "Anfisa Letyago",
+   "day": "sat",
+   "stage": "dolab",
+   "start": 1300,
+   "end": 1360,
+   "blurb": "",
+   "tags": [
+    "techno"
+   ]
+  },
+  {
+   "id": "mind-enterprises-sat",
+   "cat": "CHL-26-140",
+   "pos": "B64",
+   "name": "Mind Enterprises",
+   "qualifier": null,
+   "billing": "Mind Enterprises",
+   "day": "sat",
+   "stage": "sonora",
+   "start": 1305,
+   "end": 1355,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "boys-noize-sat",
+   "cat": "CHL-26-141",
+   "pos": "B65",
+   "name": "Boys Noize",
+   "qualifier": null,
+   "billing": "Boys Noize",
+   "day": "sat",
+   "stage": "yuma",
+   "start": 1305,
+   "end": 1380,
+   "blurb": "",
+   "tags": [
+    "electro",
+    "techno"
+   ]
+  },
+  {
+   "id": "morat-sat",
+   "cat": "CHL-26-142",
+   "pos": "B66",
+   "name": "Morat",
+   "qualifier": null,
+   "billing": "Morat",
+   "day": "sat",
+   "stage": "gobi",
+   "start": 1330,
+   "end": 1380,
+   "blurb": "",
+   "tags": [
+    "latin pop",
+    "folk-pop"
+   ]
+  },
+  {
+   "id": "interpol-sat",
+   "cat": "CHL-26-143",
+   "pos": "B67",
+   "name": "Interpol",
+   "qualifier": null,
+   "billing": "Interpol",
+   "day": "sat",
+   "stage": "mojave",
+   "start": 1335,
+   "end": 1395,
+   "blurb": "",
+   "tags": [
+    "post-punk revival"
+   ]
+  },
+  {
+   "id": "david-byrne-sat",
+   "cat": "CHL-26-144",
+   "pos": "B68",
+   "name": "David Byrne",
+   "qualifier": null,
+   "billing": "David Byrne",
+   "day": "sat",
+   "stage": "outdoor",
+   "start": 1340,
+   "end": 1400,
+   "blurb": "",
+   "tags": [
+    "art rock",
+    "new wave"
+   ]
+  },
+  {
+   "id": "adriatique-sat",
+   "cat": "CHL-26-145",
+   "pos": "B69",
+   "name": "Adriatique",
+   "qualifier": null,
+   "billing": "Adriatique",
+   "day": "sat",
+   "stage": "sahara",
+   "start": 1350,
+   "end": 1405,
+   "blurb": "",
+   "tags": [
+    "melodic techno"
+   ]
+  },
+  {
+   "id": "kettama-b2b-u-uk-uk1mat-u-sat",
+   "cat": "CHL-26-146",
+   "pos": "B70",
+   "name": "Kettama b2b ¥ØU$UK€ ¥UK1MAT$U",
+   "qualifier": null,
+   "billing": "Kettama b2b ¥ØU$UK€ ¥UK1MAT$U",
+   "day": "sat",
+   "stage": "dolab",
+   "start": 1360,
+   "end": 1430,
+   "blurb": "",
+   "tags": [
+    "house",
+    "breaks"
+   ],
+   "artists": [
+    "KETTAMA",
+    "¥ØU$UK€ ¥UK1MAT$U"
+   ]
+  },
+  {
+   "id": "armin-van-buuren-x-adam-beyer-sat",
+   "cat": "CHL-26-147",
+   "pos": "B71",
+   "name": "Armin van Buuren x Adam Beyer",
+   "qualifier": null,
+   "billing": "Armin van Buuren x Adam Beyer",
+   "day": "sat",
+   "stage": "yuma",
+   "start": 1380,
+   "end": 1500,
+   "blurb": "",
+   "tags": [
+    "trance",
+    "techno"
+   ],
+   "artists": [
+    "Armin van Buuren",
+    "Adam Beyer"
+   ]
+  },
+  {
+   "id": "justin-bieber-sat",
+   "cat": "CHL-26-148",
+   "pos": "B72",
+   "name": "Justin Bieber",
+   "qualifier": null,
+   "billing": "Justin Bieber",
+   "day": "sat",
+   "stage": "coachella",
+   "start": 1405,
+   "end": 1500,
+   "blurb": "",
+   "tags": [
+    "pop",
+    "r&b"
+   ]
+  },
+  {
+   "id": "radiohead-kid-a-mnesia-sat-5",
+   "cat": "CHL-26-149",
+   "pos": "B73",
+   "name": "Radiohead: Kid A Mnesia",
+   "qualifier": null,
+   "billing": "Radiohead: Kid A Mnesia",
+   "day": "sat",
+   "stage": "bunker",
+   "start": 1410,
+   "end": 1485,
+   "blurb": "",
+   "tags": [
+    "screening",
+    "art rock"
+   ],
+   "artists": [
+    "Radiohead"
+   ]
+  },
+  {
+   "id": "prospa-b2b-josh-baker-sat",
+   "cat": "CHL-26-150",
+   "pos": "B74",
+   "name": "Prospa b2b Josh Baker",
+   "qualifier": null,
+   "billing": "Prospa b2b Josh Baker",
+   "day": "sat",
+   "stage": "dolab",
+   "start": 1430,
+   "end": 1500,
+   "blurb": "",
+   "tags": [
+    "rave",
+    "house"
+   ],
+   "artists": [
+    "Prospa",
+    "Josh Baker"
+   ]
+  },
+  {
+   "id": "worship-sat",
+   "cat": "CHL-26-151",
+   "pos": "B75",
+   "name": "Worship",
+   "qualifier": null,
+   "billing": "Worship",
+   "day": "sat",
+   "stage": "sahara",
+   "start": 1435,
+   "end": 1495,
+   "blurb": "",
+   "tags": [
+    "bass",
+    "dubstep"
+   ]
+  },
+  {
+   "id": "panda-chok-sun",
+   "cat": "CHL-26-152",
+   "pos": "C1",
+   "name": "Panda & Chok",
+   "qualifier": null,
+   "billing": "Panda & Chok",
+   "day": "sun",
+   "stage": "sonora",
+   "start": 780,
+   "end": 840,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "le-yora-sun",
+   "cat": "CHL-26-153",
+   "pos": "C2",
+   "name": "LE YORA",
+   "qualifier": null,
+   "billing": "LE YORA",
+   "day": "sun",
+   "stage": "yuma",
+   "start": 780,
+   "end": 840,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "soul-purpose-sun",
+   "cat": "CHL-26-154",
+   "pos": "C3",
+   "name": "Soul Purpose",
+   "qualifier": null,
+   "billing": "Soul Purpose",
+   "day": "sun",
+   "stage": "dolab",
+   "start": 780,
+   "end": 840,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "radiohead-kid-a-mnesia-sun",
+   "cat": "CHL-26-155",
+   "pos": "C4",
+   "name": "Radiohead: Kid A Mnesia",
+   "qualifier": null,
+   "billing": "Radiohead: Kid A Mnesia",
+   "day": "sun",
+   "stage": "bunker",
+   "start": 825,
+   "end": 900,
+   "blurb": "",
+   "tags": [
+    "screening",
+    "art rock"
+   ],
+   "artists": [
+    "Radiohead"
+   ]
+  },
+  {
+   "id": "glitterer-sun",
+   "cat": "CHL-26-156",
+   "pos": "C5",
+   "name": "Glitterer",
+   "qualifier": null,
+   "billing": "Glitterer",
+   "day": "sun",
+   "stage": "sonora",
+   "start": 840,
+   "end": 880,
+   "blurb": "",
+   "tags": [
+    "punk",
+    "indie"
+   ]
+  },
+  {
+   "id": "azzecca-sun",
+   "cat": "CHL-26-157",
+   "pos": "C6",
+   "name": "AZZECCA",
+   "qualifier": null,
+   "billing": "AZZECCA",
+   "day": "sun",
+   "stage": "yuma",
+   "start": 840,
+   "end": 900,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "cincity-sun",
+   "cat": "CHL-26-158",
+   "pos": "C7",
+   "name": "Cincity",
+   "qualifier": null,
+   "billing": "Cincity",
+   "day": "sun",
+   "stage": "dolab",
+   "start": 840,
+   "end": 900,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "flowerovlove-sun",
+   "cat": "CHL-26-159",
+   "pos": "C8",
+   "name": "flowerovlove",
+   "qualifier": null,
+   "billing": "flowerovlove",
+   "day": "sun",
+   "stage": "gobi",
+   "start": 845,
+   "end": 875,
+   "blurb": "",
+   "tags": [
+    "pop"
+   ]
+  },
+  {
+   "id": "wyldeflower-sun",
+   "cat": "CHL-26-160",
+   "pos": "C9",
+   "name": "wyldeflower",
+   "qualifier": null,
+   "billing": "wyldeflower",
+   "day": "sun",
+   "stage": "mojave",
+   "start": 870,
+   "end": 910,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "loboman-sun",
+   "cat": "CHL-26-161",
+   "pos": "C10",
+   "name": "LOBOMAN",
+   "qualifier": null,
+   "billing": "LOBOMAN",
+   "day": "sun",
+   "stage": "sahara",
+   "start": 870,
+   "end": 930,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "gabe-real-sun",
+   "cat": "CHL-26-162",
+   "pos": "C11",
+   "name": "Gabe Real",
+   "qualifier": null,
+   "billing": "Gabe Real",
+   "day": "sun",
+   "stage": "coachella",
+   "start": 885,
+   "end": 930,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "juicewon-sun",
+   "cat": "CHL-26-163",
+   "pos": "C12",
+   "name": "Juicewon",
+   "qualifier": null,
+   "billing": "Juicewon",
+   "day": "sun",
+   "stage": "outdoor",
+   "start": 900,
+   "end": 950,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "the-chats-sun",
+   "cat": "CHL-26-164",
+   "pos": "C13",
+   "name": "The Chats",
+   "qualifier": null,
+   "billing": "The Chats",
+   "day": "sun",
+   "stage": "gobi",
+   "start": 900,
+   "end": 940,
+   "blurb": "",
+   "tags": [
+    "punk"
+   ]
+  },
+  {
+   "id": "friends-sun",
+   "cat": "CHL-26-165",
+   "pos": "C14",
+   "name": "&friends",
+   "qualifier": null,
+   "billing": "&friends",
+   "day": "sun",
+   "stage": "yuma",
+   "start": 900,
+   "end": 975,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "jackie-hollander-sun",
+   "cat": "CHL-26-166",
+   "pos": "C15",
+   "name": "Jackie Hollander",
+   "qualifier": null,
+   "billing": "Jackie Hollander",
+   "day": "sun",
+   "stage": "dolab",
+   "start": 900,
+   "end": 960,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "mild-minds-sun",
+   "cat": "CHL-26-167",
+   "pos": "C16",
+   "name": "Mild Minds",
+   "qualifier": null,
+   "billing": "Mild Minds",
+   "day": "sun",
+   "stage": "heineken",
+   "start": 900,
+   "end": 960,
+   "blurb": "",
+   "tags": [
+    "electronic"
+   ]
+  },
+  {
+   "id": "model-actriz-sun",
+   "cat": "CHL-26-168",
+   "pos": "C17",
+   "name": "Model/Actriz",
+   "qualifier": null,
+   "billing": "Model/Actriz",
+   "day": "sun",
+   "stage": "sonora",
+   "start": 910,
+   "end": 950,
+   "blurb": "",
+   "tags": [
+    "noise rock",
+    "dance-punk"
+   ]
+  },
+  {
+   "id": "samia-sun",
+   "cat": "CHL-26-169",
+   "pos": "C18",
+   "name": "Samia",
+   "qualifier": null,
+   "billing": "Samia",
+   "day": "sun",
+   "stage": "mojave",
+   "start": 915,
+   "end": 955,
+   "blurb": "",
+   "tags": [
+    "indie folk"
+   ]
+  },
+  {
+   "id": "girl-math-vnssa-x-nala-sun",
+   "cat": "CHL-26-170",
+   "pos": "C19",
+   "name": "Girl Math (VNSSA x NALA)",
+   "qualifier": null,
+   "billing": "Girl Math (VNSSA x NALA)",
+   "day": "sun",
+   "stage": "sahara",
+   "start": 935,
+   "end": 995,
+   "blurb": "",
+   "tags": [],
+   "artists": [
+    "VNSSA",
+    "NALA"
+   ]
+  },
+  {
+   "id": "tijuana-panthers-sun",
+   "cat": "CHL-26-171",
+   "pos": "C20",
+   "name": "Tijuana Panthers",
+   "qualifier": null,
+   "billing": "Tijuana Panthers",
+   "day": "sun",
+   "stage": "coachella",
+   "start": 940,
+   "end": 975,
+   "blurb": "",
+   "tags": [
+    "surf rock",
+    "garage"
+   ]
+  },
+  {
+   "id": "gigi-perez-sun",
+   "cat": "CHL-26-172",
+   "pos": "C21",
+   "name": "Gigi Perez",
+   "qualifier": null,
+   "billing": "Gigi Perez",
+   "day": "sun",
+   "stage": "outdoor",
+   "start": 960,
+   "end": 1005,
+   "blurb": "",
+   "tags": [
+    "indie pop",
+    "folk"
+   ]
+  },
+  {
+   "id": "jazzy-sun",
+   "cat": "CHL-26-173",
+   "pos": "C22",
+   "name": "Jazzy",
+   "qualifier": null,
+   "billing": "Jazzy",
+   "day": "sun",
+   "stage": "quasar",
+   "start": 960,
+   "end": 1080,
+   "blurb": "",
+   "tags": [
+    "house",
+    "uk dance"
+   ]
+  },
+  {
+   "id": "brunello-sun",
+   "cat": "CHL-26-174",
+   "pos": "C23",
+   "name": "Brunello",
+   "qualifier": null,
+   "billing": "Brunello",
+   "day": "sun",
+   "stage": "dolab",
+   "start": 960,
+   "end": 1020,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "oskar-med-k-sun",
+   "cat": "CHL-26-175",
+   "pos": "C24",
+   "name": "oskar med k",
+   "qualifier": null,
+   "billing": "oskar med k",
+   "day": "sun",
+   "stage": "heineken",
+   "start": 960,
+   "end": 1050,
+   "blurb": "",
+   "tags": [
+    "house",
+    "disco"
+   ]
+  },
+  {
+   "id": "radiohead-kid-a-mnesia-sun-2",
+   "cat": "CHL-26-176",
+   "pos": "C25",
+   "name": "Radiohead: Kid A Mnesia",
+   "qualifier": null,
+   "billing": "Radiohead: Kid A Mnesia",
+   "day": "sun",
+   "stage": "bunker",
+   "start": 960,
+   "end": 1035,
+   "blurb": "",
+   "tags": [
+    "screening",
+    "art rock"
+   ],
+   "artists": [
+    "Radiohead"
+   ]
+  },
+  {
+   "id": "cobrah-sun",
+   "cat": "CHL-26-177",
+   "pos": "C26",
+   "name": "COBRAH",
+   "qualifier": null,
+   "billing": "COBRAH",
+   "day": "sun",
+   "stage": "gobi",
+   "start": 965,
+   "end": 1010,
+   "blurb": "",
+   "tags": [
+    "electro-pop",
+    "club"
+   ]
+  },
+  {
+   "id": "mestiza-sun",
+   "cat": "CHL-26-178",
+   "pos": "C27",
+   "name": "MËSTIZA",
+   "qualifier": null,
+   "billing": "MËSTIZA",
+   "day": "sun",
+   "stage": "yuma",
+   "start": 975,
+   "end": 1050,
+   "blurb": "",
+   "tags": [
+    "flamenco house"
+   ]
+  },
+  {
+   "id": "jane-remover-sun",
+   "cat": "CHL-26-179",
+   "pos": "C28",
+   "name": "Jane Remover",
+   "qualifier": null,
+   "billing": "Jane Remover",
+   "day": "sun",
+   "stage": "sonora",
+   "start": 980,
+   "end": 1020,
+   "blurb": "",
+   "tags": [
+    "digicore",
+    "shoegaze"
+   ]
+  },
+  {
+   "id": "little-simz-sun",
+   "cat": "CHL-26-180",
+   "pos": "C29",
+   "name": "Little Simz",
+   "qualifier": null,
+   "billing": "Little Simz",
+   "day": "sun",
+   "stage": "mojave",
+   "start": 985,
+   "end": 1030,
+   "blurb": "",
+   "tags": [
+    "uk rap"
+   ]
+  },
+  {
+   "id": "wet-leg-sun",
+   "cat": "CHL-26-181",
+   "pos": "C30",
+   "name": "Wet Leg",
+   "qualifier": null,
+   "billing": "Wet Leg",
+   "day": "sun",
+   "stage": "coachella",
+   "start": 1005,
+   "end": 1050,
+   "blurb": "",
+   "tags": [
+    "indie rock"
+   ]
+  },
+  {
+   "id": "bunt-sun",
+   "cat": "CHL-26-182",
+   "pos": "C31",
+   "name": "BUNT.",
+   "qualifier": null,
+   "billing": "BUNT.",
+   "day": "sun",
+   "stage": "sahara",
+   "start": 1005,
+   "end": 1065,
+   "blurb": "",
+   "tags": [
+    "dance",
+    "folktronica"
+   ]
+  },
+  {
+   "id": "poolside-s-daytime-disco-sun",
+   "cat": "CHL-26-183",
+   "pos": "C32",
+   "name": "Poolside’s Daytime Disco",
+   "qualifier": null,
+   "billing": "Poolside’s Daytime Disco",
+   "day": "sun",
+   "stage": "dolab",
+   "start": 1020,
+   "end": 1080,
+   "blurb": "",
+   "tags": [
+    "disco",
+    "dj set"
+   ],
+   "artists": [
+    "Poolside"
+   ]
+  },
+  {
+   "id": "clipse-sun",
+   "cat": "CHL-26-184",
+   "pos": "C33",
+   "name": "CLIPSE",
+   "qualifier": null,
+   "billing": "CLIPSE",
+   "day": "sun",
+   "stage": "outdoor",
+   "start": 1035,
+   "end": 1090,
+   "blurb": "",
+   "tags": [
+    "hip-hop"
+   ]
+  },
+  {
+   "id": "oklou-sun",
+   "cat": "CHL-26-185",
+   "pos": "C34",
+   "name": "Oklou",
+   "qualifier": null,
+   "billing": "Oklou",
+   "day": "sun",
+   "stage": "gobi",
+   "start": 1035,
+   "end": 1080,
+   "blurb": "",
+   "tags": [
+    "electropop",
+    "ambient pop"
+   ]
+  },
+  {
+   "id": "los-retros-sun",
+   "cat": "CHL-26-186",
+   "pos": "C35",
+   "name": "Los Retros",
+   "qualifier": null,
+   "billing": "Los Retros",
+   "day": "sun",
+   "stage": "sonora",
+   "start": 1050,
+   "end": 1090,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "carlita-x-josh-baker-sun",
+   "cat": "CHL-26-187",
+   "pos": "C36",
+   "name": "Carlita x Josh Baker",
+   "qualifier": null,
+   "billing": "Carlita x Josh Baker",
+   "day": "sun",
+   "stage": "yuma",
+   "start": 1050,
+   "end": 1140,
+   "blurb": "",
+   "tags": [
+    "afro house",
+    "house"
+   ],
+   "artists": [
+    "Carlita",
+    "Josh Baker"
+   ]
+  },
+  {
+   "id": "suicidal-tendencies-sun",
+   "cat": "CHL-26-188",
+   "pos": "C37",
+   "name": "Suicidal Tendencies",
+   "qualifier": null,
+   "billing": "Suicidal Tendencies",
+   "day": "sun",
+   "stage": "mojave",
+   "start": 1055,
+   "end": 1105,
+   "blurb": "",
+   "tags": [
+    "crossover thrash",
+    "hardcore"
+   ]
+  },
+  {
+   "id": "less-than-jake-sun",
+   "cat": "CHL-26-189",
+   "pos": "C38",
+   "name": "Less Than Jake",
+   "qualifier": null,
+   "billing": "Less Than Jake",
+   "day": "sun",
+   "stage": "heineken",
+   "start": 1065,
+   "end": 1125,
+   "blurb": "",
+   "tags": [
+    "ska punk"
+   ]
+  },
+  {
+   "id": "joy-anonymous-sun",
+   "cat": "CHL-26-190",
+   "pos": "C39",
+   "name": "JOY (Anonymous)",
+   "qualifier": null,
+   "billing": "JOY (Anonymous)",
+   "day": "sun",
+   "stage": "quasar",
+   "start": 1080,
+   "end": 1200,
+   "blurb": "",
+   "tags": [
+    "house",
+    "uk dance"
+   ],
+   "artists": [
+    "Joy Anonymous"
+   ]
+  },
+  {
+   "id": "isaiah-rashad-kal-banx-sun",
+   "cat": "CHL-26-191",
+   "pos": "C40",
+   "name": "Isaiah Rashad & Kal Banx",
+   "qualifier": null,
+   "billing": "Isaiah Rashad & Kal Banx",
+   "day": "sun",
+   "stage": "dolab",
+   "start": 1080,
+   "end": 1120,
+   "blurb": "",
+   "tags": [
+    "hip-hop"
+   ],
+   "artists": [
+    "Isaiah Rashad",
+    "Kal Banx"
+   ]
+  },
+  {
+   "id": "major-lazer-sun",
+   "cat": "CHL-26-192",
+   "pos": "C41",
+   "name": "Major Lazer",
+   "qualifier": null,
+   "billing": "Major Lazer",
+   "day": "sun",
+   "stage": "coachella",
+   "start": 1090,
+   "end": 1150,
+   "blurb": "",
+   "tags": [
+    "dancehall",
+    "edm"
+   ]
+  },
+  {
+   "id": "duke-dumont-sun",
+   "cat": "CHL-26-193",
+   "pos": "C42",
+   "name": "Duke Dumont",
+   "qualifier": null,
+   "billing": "Duke Dumont",
+   "day": "sun",
+   "stage": "sahara",
+   "start": 1090,
+   "end": 1150,
+   "blurb": "",
+   "tags": [
+    "house"
+   ]
+  },
+  {
+   "id": "radiohead-kid-a-mnesia-sun-3",
+   "cat": "CHL-26-194",
+   "pos": "C43",
+   "name": "Radiohead: Kid A Mnesia",
+   "qualifier": null,
+   "billing": "Radiohead: Kid A Mnesia",
+   "day": "sun",
+   "stage": "bunker",
+   "start": 1095,
+   "end": 1170,
+   "blurb": "",
+   "tags": [
+    "screening",
+    "art rock"
+   ],
+   "artists": [
+    "Radiohead"
+   ]
+  },
+  {
+   "id": "black-flag-sun",
+   "cat": "CHL-26-195",
+   "pos": "C44",
+   "name": "Black Flag",
+   "qualifier": null,
+   "billing": "Black Flag",
+   "day": "sun",
+   "stage": "gobi",
+   "start": 1110,
+   "end": 1145,
+   "blurb": "",
+   "tags": [
+    "hardcore punk"
+   ]
+  },
+  {
+   "id": "r-z-sun",
+   "cat": "CHL-26-196",
+   "pos": "C45",
+   "name": "RØZ",
+   "qualifier": null,
+   "billing": "RØZ",
+   "day": "sun",
+   "stage": "sonora",
+   "start": 1120,
+   "end": 1170,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "deer-jade-sun",
+   "cat": "CHL-26-197",
+   "pos": "C46",
+   "name": "Deer Jade",
+   "qualifier": null,
+   "billing": "Deer Jade",
+   "day": "sun",
+   "stage": "dolab",
+   "start": 1120,
+   "end": 1180,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "foster-the-people-sun",
+   "cat": "CHL-26-198",
+   "pos": "C47",
+   "name": "Foster the People",
+   "qualifier": null,
+   "billing": "Foster the People",
+   "day": "sun",
+   "stage": "outdoor",
+   "start": 1125,
+   "end": 1180,
+   "blurb": "",
+   "tags": [
+    "indie pop"
+   ]
+  },
+  {
+   "id": "royksopp-sun",
+   "cat": "CHL-26-199",
+   "pos": "C48",
+   "name": "Röyksopp",
+   "qualifier": null,
+   "billing": "Röyksopp",
+   "day": "sun",
+   "stage": "yuma",
+   "start": 1140,
+   "end": 1230,
+   "blurb": "",
+   "tags": [
+    "electronica",
+    "synth-pop"
+   ]
+  },
+  {
+   "id": "motion-city-soundtrack-sun",
+   "cat": "CHL-26-200",
+   "pos": "C49",
+   "name": "Motion City Soundtrack",
+   "qualifier": null,
+   "billing": "Motion City Soundtrack",
+   "day": "sun",
+   "stage": "heineken",
+   "start": 1140,
+   "end": 1200,
+   "blurb": "",
+   "tags": [
+    "pop-punk",
+    "emo"
+   ]
+  },
+  {
+   "id": "iggy-pop-sun",
+   "cat": "CHL-26-201",
+   "pos": "C50",
+   "name": "Iggy Pop",
+   "qualifier": null,
+   "billing": "Iggy Pop",
+   "day": "sun",
+   "stage": "mojave",
+   "start": 1150,
+   "end": 1210,
+   "blurb": "",
+   "tags": [
+    "punk",
+    "rock"
+   ]
+  },
+  {
+   "id": "mochakk-sun",
+   "cat": "CHL-26-202",
+   "pos": "C51",
+   "name": "Mochakk",
+   "qualifier": null,
+   "billing": "Mochakk",
+   "day": "sun",
+   "stage": "sahara",
+   "start": 1165,
+   "end": 1225,
+   "blurb": "",
+   "tags": [
+    "house"
+   ]
+  },
+  {
+   "id": "omar-sun",
+   "cat": "CHL-26-203",
+   "pos": "C52",
+   "name": "Omar+",
+   "qualifier": null,
+   "billing": "Omar+",
+   "day": "sun",
+   "stage": "dolab",
+   "start": 1180,
+   "end": 1245,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "tomora-sun",
+   "cat": "CHL-26-204",
+   "pos": "C53",
+   "name": "TOMORA",
+   "qualifier": null,
+   "billing": "TOMORA",
+   "day": "sun",
+   "stage": "gobi",
+   "start": 1185,
+   "end": 1235,
+   "blurb": "",
+   "tags": [
+    "electronic"
+   ]
+  },
+  {
+   "id": "young-thug-sun",
+   "cat": "CHL-26-205",
+   "pos": "C54",
+   "name": "Young Thug",
+   "qualifier": null,
+   "billing": "Young Thug",
+   "day": "sun",
+   "stage": "coachella",
+   "start": 1190,
+   "end": 1240,
+   "blurb": "",
+   "tags": [
+    "hip-hop",
+    "trap"
+   ]
+  },
+  {
+   "id": "drain-sun",
+   "cat": "CHL-26-206",
+   "pos": "C55",
+   "name": "DRAIN",
+   "qualifier": null,
+   "billing": "DRAIN",
+   "day": "sun",
+   "stage": "sonora",
+   "start": 1200,
+   "end": 1240,
+   "blurb": "",
+   "tags": [
+    "hardcore"
+   ]
+  },
+  {
+   "id": "fatboy-slim-sun",
+   "cat": "CHL-26-207",
+   "pos": "C56",
+   "name": "Fatboy Slim",
+   "qualifier": null,
+   "billing": "Fatboy Slim",
+   "day": "sun",
+   "stage": "quasar",
+   "start": 1200,
+   "end": 1320,
+   "blurb": "",
+   "tags": [
+    "big beat",
+    "house"
+   ]
+  },
+  {
+   "id": "nimino-dj-set-sun",
+   "cat": "CHL-26-208",
+   "pos": "C57",
+   "name": "nimino (DJ Set)",
+   "qualifier": null,
+   "billing": "nimino (DJ Set)",
+   "day": "sun",
+   "stage": "heineken",
+   "start": 1215,
+   "end": 1320,
+   "blurb": "",
+   "tags": [
+    "electronic",
+    "dj set"
+   ],
+   "artists": [
+    "nimino"
+   ]
+  },
+  {
+   "id": "whomadewho-sun",
+   "cat": "CHL-26-209",
+   "pos": "C58",
+   "name": "WhoMadeWho",
+   "qualifier": null,
+   "billing": "WhoMadeWho",
+   "day": "sun",
+   "stage": "yuma",
+   "start": 1230,
+   "end": 1320,
+   "blurb": "",
+   "tags": [
+    "indie dance",
+    "melodic house"
+   ]
+  },
+  {
+   "id": "radiohead-kid-a-mnesia-sun-4",
+   "cat": "CHL-26-210",
+   "pos": "C59",
+   "name": "Radiohead: Kid A Mnesia",
+   "qualifier": null,
+   "billing": "Radiohead: Kid A Mnesia",
+   "day": "sun",
+   "stage": "bunker",
+   "start": 1230,
+   "end": 1305,
+   "blurb": "",
+   "tags": [
+    "screening",
+    "art rock"
+   ],
+   "artists": [
+    "Radiohead"
+   ]
+  },
+  {
+   "id": "laufey-sun",
+   "cat": "CHL-26-211",
+   "pos": "C60",
+   "name": "Laufey",
+   "qualifier": null,
+   "billing": "Laufey",
+   "day": "sun",
+   "stage": "outdoor",
+   "start": 1240,
+   "end": 1300,
+   "blurb": "",
+   "tags": [
+    "jazz pop"
+   ]
+  },
+  {
+   "id": "fka-twigs-sun",
+   "cat": "CHL-26-212",
+   "pos": "C61",
+   "name": "FKA twigs",
+   "qualifier": null,
+   "billing": "FKA twigs",
+   "day": "sun",
+   "stage": "mojave",
+   "start": 1245,
+   "end": 1320,
+   "blurb": "",
+   "tags": [
+    "art pop",
+    "alt r&b"
+   ]
+  },
+  {
+   "id": "omnom-sun",
+   "cat": "CHL-26-213",
+   "pos": "C62",
+   "name": "OMNOM",
+   "qualifier": null,
+   "billing": "OMNOM",
+   "day": "sun",
+   "stage": "dolab",
+   "start": 1245,
+   "end": 1305,
+   "blurb": "",
+   "tags": [
+    "house",
+    "bass"
+   ]
+  },
+  {
+   "id": "the-rapture-sun",
+   "cat": "CHL-26-214",
+   "pos": "C63",
+   "name": "The Rapture",
+   "qualifier": null,
+   "billing": "The Rapture",
+   "day": "sun",
+   "stage": "gobi",
+   "start": 1265,
+   "end": 1315,
+   "blurb": "",
+   "tags": [
+    "dance-punk"
+   ]
+  },
+  {
+   "id": "subtronics-sun",
+   "cat": "CHL-26-215",
+   "pos": "C64",
+   "name": "Subtronics",
+   "qualifier": null,
+   "billing": "Subtronics",
+   "day": "sun",
+   "stage": "sahara",
+   "start": 1265,
+   "end": 1325,
+   "blurb": "",
+   "tags": [
+    "dubstep",
+    "bass"
+   ]
+  },
+  {
+   "id": "french-police-sun",
+   "cat": "CHL-26-216",
+   "pos": "C65",
+   "name": "French Police",
+   "qualifier": null,
+   "billing": "French Police",
+   "day": "sun",
+   "stage": "sonora",
+   "start": 1270,
+   "end": 1320,
+   "blurb": "",
+   "tags": []
+  },
+  {
+   "id": "whethan-sun",
+   "cat": "CHL-26-217",
+   "pos": "C66",
+   "name": "Whethan",
+   "qualifier": null,
+   "billing": "Whethan",
+   "day": "sun",
+   "stage": "dolab",
+   "start": 1305,
+   "end": 1365,
+   "blurb": "",
+   "tags": [
+    "electronic pop"
+   ]
+  },
+  {
+   "id": "karol-g-sun",
+   "cat": "CHL-26-218",
+   "pos": "C67",
+   "name": "KAROL G",
+   "qualifier": null,
+   "billing": "KAROL G",
+   "day": "sun",
+   "stage": "coachella",
+   "start": 1315,
+   "end": 1435,
+   "blurb": "",
+   "tags": [
+    "reggaeton",
+    "latin pop"
+   ]
+  },
+  {
+   "id": "green-velvet-x-ayybo-sun",
+   "cat": "CHL-26-219",
+   "pos": "C68",
+   "name": "Green Velvet x AYYBO",
+   "qualifier": null,
+   "billing": "Green Velvet x AYYBO",
+   "day": "sun",
+   "stage": "yuma",
+   "start": 1320,
+   "end": 1440,
+   "blurb": "",
+   "tags": [
+    "chicago house",
+    "tech house"
+   ],
+   "artists": [
+    "Green Velvet",
+    "AYYBO"
+   ]
+  },
+  {
+   "id": "bigbang-sun",
+   "cat": "CHL-26-220",
+   "pos": "C69",
+   "name": "BIGBANG",
+   "qualifier": null,
+   "billing": "BIGBANG",
+   "day": "sun",
+   "stage": "outdoor",
+   "start": 1350,
+   "end": 1410,
+   "blurb": "",
+   "tags": [
+    "k-pop"
+   ]
+  },
+  {
+   "id": "kaskade-sun",
+   "cat": "CHL-26-221",
+   "pos": "C70",
+   "name": "Kaskade",
+   "qualifier": null,
+   "billing": "Kaskade",
+   "day": "sun",
+   "stage": "sahara",
+   "start": 1365,
+   "end": 1435,
+   "blurb": "",
+   "tags": [
+    "house",
+    "edm"
+   ]
+  },
+  {
+   "id": "anyma-b2b-marlon-hoffstadt-sun",
+   "cat": "CHL-26-222",
+   "pos": "C71",
+   "name": "Anyma b2b Marlon Hoffstadt",
+   "qualifier": null,
+   "billing": "Anyma b2b Marlon Hoffstadt",
+   "day": "sun",
+   "stage": "dolab",
+   "start": 1365,
+   "end": 1440,
+   "blurb": "",
+   "tags": [
+    "melodic techno",
+    "house"
+   ],
+   "artists": [
+    "Anyma",
+    "Marlon Hoffstadt"
+   ]
+  },
+  {
+   "id": "radiohead-kid-a-mnesia-sun-5",
+   "cat": "CHL-26-223",
+   "pos": "C72",
+   "name": "Radiohead: Kid A Mnesia",
+   "qualifier": null,
+   "billing": "Radiohead: Kid A Mnesia",
+   "day": "sun",
+   "stage": "bunker",
+   "start": 1365,
+   "end": 1440,
+   "blurb": "",
+   "tags": [
+    "screening",
+    "art rock"
+   ],
+   "artists": [
+    "Radiohead"
+   ]
+  }
+ ]
+}

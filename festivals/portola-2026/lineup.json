@@ -1,0 +1,1295 @@
+{
+ "festival": {
+  "name": "Portola",
+  "year": 2026,
+  "code": "PRT-26",
+  "venue": "Pier 80, San Francisco",
+  "timeZone": "America/Los_Angeles",
+  "source": "portolamusicfestival.com",
+  "doors": "13:00",
+  "close": "23:00",
+  "days": [
+   {
+    "id": "sat",
+    "label": "SAT",
+    "date": "2026-09-26"
+   },
+   {
+    "id": "sun",
+    "label": "SUN",
+    "date": "2026-09-27"
+   }
+  ],
+  "map": {
+   "title": "THE PIER",
+   "ground": "M20 70 L130 70 L130 18 L600 18 L600 300 L20 300 Z",
+   "water": [
+    [
+     20,
+     300,
+     580,
+     18
+    ],
+    [
+     600,
+     18,
+     14,
+     300
+    ]
+   ],
+   "labels": [
+    [
+     26,
+     92,
+     "ENTRANCE →"
+    ],
+    [
+     26,
+     290,
+     "ILLINOIS ST"
+    ]
+   ],
+   "paths": [
+    [
+     "warehouse",
+     "pier"
+    ],
+    [
+     "pier",
+     "despacio"
+    ],
+    [
+     "ship",
+     "crane"
+    ],
+    [
+     "warehouse",
+     "ship"
+    ],
+    [
+     "pier",
+     "ship"
+    ],
+    [
+     "despacio",
+     "crane"
+    ]
+   ]
+  }
+ },
+ "stages": [
+  {
+   "id": "pier",
+   "name": "Pier Stage",
+   "short": "PIER",
+   "icon": "pier",
+   "x": 0.46,
+   "y": 0.22
+  },
+  {
+   "id": "crane",
+   "name": "Crane Stage",
+   "short": "CRANE",
+   "icon": "crane",
+   "x": 0.88,
+   "y": 0.74
+  },
+  {
+   "id": "warehouse",
+   "name": "Warehouse",
+   "short": "WHSE",
+   "icon": "warehouse",
+   "x": 0.4,
+   "y": 0.78,
+   "wide": true
+  },
+  {
+   "id": "ship",
+   "name": "Ship Tent",
+   "short": "SHIP",
+   "icon": "ship",
+   "x": 0.72,
+   "y": 0.74
+  },
+  {
+   "id": "despacio",
+   "name": "Despacio",
+   "short": "DSPC",
+   "icon": "ball",
+   "x": 0.88,
+   "y": 0.16,
+   "ambient": true
+  }
+ ],
+ "walk": {
+  "pier|crane": 5,
+  "pier|ship": 4,
+  "pier|warehouse": 4,
+  "pier|despacio": 4,
+  "crane|ship": 1,
+  "crane|warehouse": 5,
+  "crane|despacio": 4,
+  "ship|warehouse": 4,
+  "ship|despacio": 4,
+  "warehouse|despacio": 7
+ },
+ "sets": [
+  {
+   "id": "erika-b2b-sf-cowboy-sat",
+   "cat": "PRT-26-001",
+   "pos": "A1",
+   "name": "Erika b2b SF Cowboy",
+   "qualifier": null,
+   "billing": "Erika b2b SF Cowboy",
+   "day": "sat",
+   "stage": "crane",
+   "start": 810,
+   "end": 910,
+   "blurb": "Local SF DJs; house/disco b2b",
+   "tags": [
+    "house",
+    "disco",
+    "sf local"
+   ],
+   "artists": [
+    "Erika",
+    "SF Cowboy"
+   ]
+  },
+  {
+   "id": "airwolf-paradise-sat",
+   "cat": "PRT-26-002",
+   "pos": "A2",
+   "name": "Airwolf Paradise",
+   "qualifier": null,
+   "billing": "Airwolf Paradise",
+   "day": "sat",
+   "stage": "pier",
+   "start": 810,
+   "end": 870,
+   "blurb": "Bay Area DJ duo; house/club edits",
+   "tags": [
+    "house",
+    "club edits",
+    "bay area"
+   ]
+  },
+  {
+   "id": "sam-alfred-sat",
+   "cat": "PRT-26-003",
+   "pos": "A3",
+   "name": "Sam Alfred",
+   "qualifier": null,
+   "billing": "Sam Alfred",
+   "day": "sat",
+   "stage": "warehouse",
+   "start": 810,
+   "end": 885,
+   "blurb": "House / tech-house DJ",
+   "tags": [
+    "house",
+    "tech house",
+    "?"
+   ]
+  },
+  {
+   "id": "felly-fell-sat",
+   "cat": "PRT-26-004",
+   "pos": "A4",
+   "name": "Felly Fell",
+   "qualifier": null,
+   "billing": "Felly Fell",
+   "day": "sat",
+   "stage": "ship",
+   "start": 820,
+   "end": 880,
+   "blurb": "Club DJ",
+   "tags": [
+    "club",
+    "?"
+   ]
+  },
+  {
+   "id": "gelli-haha-sat",
+   "cat": "PRT-26-005",
+   "pos": "A5",
+   "name": "Gelli Haha",
+   "qualifier": null,
+   "billing": "Gelli Haha",
+   "day": "sat",
+   "stage": "pier",
+   "start": 880,
+   "end": 930,
+   "blurb": "LA left-field electro-pop / dance performer",
+   "tags": [
+    "left-field pop",
+    "electro",
+    "performance art"
+   ]
+  },
+  {
+   "id": "despacio-sat",
+   "cat": "PRT-26-006",
+   "pos": "A6",
+   "name": "Despacio",
+   "qualifier": null,
+   "billing": "Despacio",
+   "day": "sat",
+   "stage": "despacio",
+   "start": 885,
+   "end": 1305,
+   "blurb": "All-vinyl Soulwax/2manydjs + James Murphy soundsystem; disco/eclectic",
+   "tags": [
+    "all-vinyl",
+    "disco",
+    "soundsystem",
+    "james murphy"
+   ],
+   "artists": [
+    "2manydjs",
+    "LCD Soundsystem",
+    "Soulwax"
+   ]
+  },
+  {
+   "id": "ranger-trucco-b2b-alisha-sat",
+   "cat": "PRT-26-007",
+   "pos": "A7",
+   "name": "Ranger Trucco b2b Alisha",
+   "qualifier": null,
+   "billing": "Ranger Trucco b2b Alisha",
+   "day": "sat",
+   "stage": "warehouse",
+   "start": 885,
+   "end": 945,
+   "blurb": "Tech house / bouncy house DJs",
+   "tags": [
+    "tech house",
+    "bouncy house"
+   ],
+   "artists": [
+    "Ranger Trucco",
+    "Alisha"
+   ]
+  },
+  {
+   "id": "mgna-crrrta-sat",
+   "cat": "PRT-26-008",
+   "pos": "A8",
+   "name": "MGNA CRRRTA",
+   "qualifier": null,
+   "billing": "MGNA CRRRTA",
+   "day": "sat",
+   "stage": "ship",
+   "start": 890,
+   "end": 930,
+   "blurb": "Italian hardgroove/techno DJ",
+   "tags": [
+    "hardgroove",
+    "techno"
+   ]
+  },
+  {
+   "id": "tricky-sat",
+   "cat": "PRT-26-009",
+   "pos": "A9",
+   "name": "Tricky",
+   "qualifier": null,
+   "billing": "Tricky",
+   "day": "sat",
+   "stage": "crane",
+   "start": 930,
+   "end": 990,
+   "blurb": "Bristol trip-hop pioneer",
+   "tags": [
+    "trip-hop",
+    "bristol",
+    "legend"
+   ]
+  },
+  {
+   "id": "oskar-med-k-sat",
+   "cat": "PRT-26-010",
+   "pos": "A10",
+   "name": "Oskar Med K",
+   "qualifier": null,
+   "billing": "Oskar Med K",
+   "day": "sat",
+   "stage": "pier",
+   "start": 940,
+   "end": 990,
+   "blurb": "Danish house producer; feel-good piano/disco house",
+   "tags": [
+    "piano house",
+    "disco house",
+    "feel-good"
+   ]
+  },
+  {
+   "id": "six-sex-sat",
+   "cat": "PRT-26-011",
+   "pos": "A11",
+   "name": "Six Sex",
+   "qualifier": null,
+   "billing": "Six Sex",
+   "day": "sat",
+   "stage": "ship",
+   "start": 940,
+   "end": 980,
+   "blurb": "Argentine electro-reggaeton / club rap",
+   "tags": [
+    "electro-reggaeton",
+    "club rap",
+    "argentina"
+   ]
+  },
+  {
+   "id": "chloe-caillet-sat",
+   "cat": "PRT-26-012",
+   "pos": "A12",
+   "name": "Chloé Caillet",
+   "qualifier": null,
+   "billing": "Chloé Caillet",
+   "day": "sat",
+   "stage": "warehouse",
+   "start": 945,
+   "end": 1005,
+   "blurb": "French-UK house, disco-tinged club",
+   "tags": [
+    "house",
+    "disco",
+    "vocal club"
+   ]
+  },
+  {
+   "id": "fcukers-sat",
+   "cat": "PRT-26-013",
+   "pos": "A13",
+   "name": "Fcukers",
+   "qualifier": null,
+   "billing": "Fcukers",
+   "day": "sat",
+   "stage": "pier",
+   "start": 1000,
+   "end": 1050,
+   "blurb": "NYC dance-punk / indie-rave duo",
+   "tags": [
+    "dance-punk",
+    "indie rave",
+    "nyc"
+   ]
+  },
+  {
+   "id": "mike-d-5d-sat",
+   "cat": "PRT-26-014",
+   "pos": "A14",
+   "name": "Mike D 5D",
+   "qualifier": "of beastie boys",
+   "billing": "Mike D 5D",
+   "day": "sat",
+   "stage": "ship",
+   "start": 1000,
+   "end": 1050,
+   "blurb": "Mike D (Beastie Boys) DJ set",
+   "tags": [
+    "dj set",
+    "beastie boys",
+    "hip-hop"
+   ],
+   "artists": [
+    "Mike D",
+    "Beastie Boys"
+   ]
+  },
+  {
+   "id": "groove-armada-sat",
+   "cat": "PRT-26-015",
+   "pos": "A15",
+   "name": "Groove Armada",
+   "qualifier": null,
+   "billing": "Groove Armada",
+   "day": "sat",
+   "stage": "warehouse",
+   "start": 1005,
+   "end": 1080,
+   "blurb": "UK house / big-room dance veterans",
+   "tags": [
+    "house",
+    "big beat",
+    "uk legend"
+   ]
+  },
+  {
+   "id": "nimino-sat",
+   "cat": "PRT-26-016",
+   "pos": "A16",
+   "name": "Nimino",
+   "qualifier": null,
+   "billing": "Nimino",
+   "day": "sat",
+   "stage": "crane",
+   "start": 1010,
+   "end": 1070,
+   "blurb": "UK melodic/organic house-pop producer",
+   "tags": [
+    "melodic house",
+    "indie dance"
+   ]
+  },
+  {
+   "id": "tove-lo-sat",
+   "cat": "PRT-26-017",
+   "pos": "A17",
+   "name": "Tove Lo",
+   "qualifier": null,
+   "billing": "Tove Lo",
+   "day": "sat",
+   "stage": "pier",
+   "start": 1060,
+   "end": 1110,
+   "blurb": "Swedish dark electropop singer",
+   "tags": [
+    "electropop",
+    "dark pop",
+    "sweden"
+   ]
+  },
+  {
+   "id": "jyoty-sat",
+   "cat": "PRT-26-018",
+   "pos": "A18",
+   "name": "Jyoty",
+   "qualifier": null,
+   "billing": "Jyoty",
+   "day": "sat",
+   "stage": "ship",
+   "start": 1060,
+   "end": 1120,
+   "blurb": "UK club DJ; garage, bass, jungle, Afro-house blends",
+   "tags": [
+    "uk garage",
+    "bass",
+    "jungle",
+    "afro house"
+   ]
+  },
+  {
+   "id": "max-styler-sat",
+   "cat": "PRT-26-019",
+   "pos": "A19",
+   "name": "Max Styler",
+   "qualifier": null,
+   "billing": "Max Styler",
+   "day": "sat",
+   "stage": "warehouse",
+   "start": 1080,
+   "end": 1155,
+   "blurb": "Tech house / bass house",
+   "tags": [
+    "tech house",
+    "bass house"
+   ]
+  },
+  {
+   "id": "dj-shadow-celebrates-30-years-of-endtroducing-sat",
+   "cat": "PRT-26-020",
+   "pos": "A20",
+   "name": "DJ Shadow",
+   "qualifier": "30 years of endtroducing.....",
+   "billing": "DJ Shadow (Celebrates 30 Years of Endtroducing.....)",
+   "day": "sat",
+   "stage": "crane",
+   "start": 1090,
+   "end": 1150,
+   "blurb": "Sample-based instrumental hip-hop / trip-hop",
+   "tags": [
+    "instrumental hip-hop",
+    "sample collage",
+    "bay area"
+   ]
+  },
+  {
+   "id": "bassvictim-sat",
+   "cat": "PRT-26-021",
+   "pos": "A21",
+   "name": "Bassvictim",
+   "qualifier": null,
+   "billing": "Bassvictim",
+   "day": "sat",
+   "stage": "ship",
+   "start": 1130,
+   "end": 1180,
+   "blurb": "London electroclash / indie sleaze duo",
+   "tags": [
+    "electroclash",
+    "indie sleaze",
+    "london"
+   ]
+  },
+  {
+   "id": "robyn-sat",
+   "cat": "PRT-26-022",
+   "pos": "A22",
+   "name": "Robyn",
+   "qualifier": null,
+   "billing": "Robyn",
+   "day": "sat",
+   "stage": "pier",
+   "start": 1150,
+   "end": 1210,
+   "blurb": "Swedish dance-pop icon (headliner)",
+   "tags": [
+    "dance-pop",
+    "synth-pop",
+    "sweden",
+    "crying in the club"
+   ]
+  },
+  {
+   "id": "kettama-sat",
+   "cat": "PRT-26-023",
+   "pos": "A23",
+   "name": "KETTAMA",
+   "qualifier": null,
+   "billing": "KETTAMA",
+   "day": "sat",
+   "stage": "warehouse",
+   "start": 1155,
+   "end": 1230,
+   "blurb": "Irish UK garage / breaks / house",
+   "tags": [
+    "uk garage",
+    "breaks",
+    "house"
+   ]
+  },
+  {
+   "id": "jigitz-sat",
+   "cat": "PRT-26-024",
+   "pos": "A24",
+   "name": "Jigitz",
+   "qualifier": null,
+   "billing": "Jigitz",
+   "day": "sat",
+   "stage": "ship",
+   "start": 1190,
+   "end": 1240,
+   "blurb": "Hard techno / trance-y rave DJ",
+   "tags": [
+    "melodic house",
+    "indie dance"
+   ]
+  },
+  {
+   "id": "fatboy-slim-sat",
+   "cat": "PRT-26-025",
+   "pos": "A25",
+   "name": "Fatboy Slim",
+   "qualifier": null,
+   "billing": "Fatboy Slim",
+   "day": "sat",
+   "stage": "crane",
+   "start": 1195,
+   "end": 1285,
+   "blurb": "Big beat / house legend",
+   "tags": [
+    "big beat",
+    "house",
+    "legend"
+   ]
+  },
+  {
+   "id": "beltran-b2b-ben-sterling-sat",
+   "cat": "PRT-26-026",
+   "pos": "A26",
+   "name": "Beltran b2b Ben Sterling",
+   "qualifier": null,
+   "billing": "Beltran b2b Ben Sterling",
+   "day": "sat",
+   "stage": "warehouse",
+   "start": 1230,
+   "end": 1305,
+   "blurb": "Tech house / minimal-groove",
+   "tags": [
+    "tech house",
+    "minimal groove"
+   ],
+   "artists": [
+    "Beltran",
+    "Ben Sterling"
+   ]
+  },
+  {
+   "id": "nate-sib-sat",
+   "cat": "PRT-26-027",
+   "pos": "A27",
+   "name": "Nate Sib",
+   "qualifier": null,
+   "billing": "Nate Sib",
+   "day": "sat",
+   "stage": "ship",
+   "start": 1255,
+   "end": 1295,
+   "blurb": "Club DJ",
+   "tags": [
+    "club",
+    "internet rap",
+    "2hollis orbit"
+   ]
+  },
+  {
+   "id": "dog-blood-skrillex-boys-noize-sat",
+   "cat": "PRT-26-028",
+   "pos": "A28",
+   "name": "Dog Blood",
+   "qualifier": "skrillex + boys noize",
+   "billing": "Dog Blood (Skrillex + Boys Noize)",
+   "day": "sat",
+   "stage": "pier",
+   "start": 1260,
+   "end": 1335,
+   "blurb": "Skrillex x Boys Noize; hard electro / bass / techno",
+   "tags": [
+    "electro",
+    "bass",
+    "techno",
+    "headbang"
+   ],
+   "artists": [
+    "Dog Blood",
+    "Skrillex",
+    "Boys Noize"
+   ]
+  },
+  {
+   "id": "prospa-sat",
+   "cat": "PRT-26-029",
+   "pos": "A29",
+   "name": "Prospa",
+   "qualifier": null,
+   "billing": "Prospa",
+   "day": "sat",
+   "stage": "warehouse",
+   "start": 1305,
+   "end": 1380,
+   "blurb": "UK rave / euphoric breakbeat house duo",
+   "tags": [
+    "rave",
+    "breakbeat house",
+    "euphoric"
+   ]
+  },
+  {
+   "id": "melanie-c-dj-set-sat",
+   "cat": "PRT-26-030",
+   "pos": "A30",
+   "name": "Melanie C",
+   "qualifier": "dj set",
+   "billing": "Melanie C (DJ Set)",
+   "day": "sat",
+   "stage": "ship",
+   "start": 1310,
+   "end": 1350,
+   "blurb": "Spice Girl; pop-house DJ set",
+   "tags": [
+    "pop house",
+    "dj set",
+    "spice girl"
+   ]
+  },
+  {
+   "id": "soulwax-sat",
+   "cat": "PRT-26-031",
+   "pos": "A31",
+   "name": "Soulwax",
+   "qualifier": null,
+   "billing": "Soulwax",
+   "day": "sat",
+   "stage": "crane",
+   "start": 1315,
+   "end": 1375,
+   "blurb": "Belgian electro-rock / live electronic band",
+   "tags": [
+    "electro-rock",
+    "live band",
+    "belgium"
+   ]
+  },
+  {
+   "id": "torren-foot-sun",
+   "cat": "PRT-26-032",
+   "pos": "B1",
+   "name": "Torren Foot",
+   "qualifier": null,
+   "billing": "Torren Foot",
+   "day": "sun",
+   "stage": "crane",
+   "start": 810,
+   "end": 870,
+   "blurb": "Australian house / pop-house producer",
+   "tags": [
+    "pop house",
+    "australia"
+   ]
+  },
+  {
+   "id": "clearcast-sun",
+   "cat": "PRT-26-033",
+   "pos": "B2",
+   "name": "Clearcast",
+   "qualifier": null,
+   "billing": "Clearcast",
+   "day": "sun",
+   "stage": "pier",
+   "start": 810,
+   "end": 860,
+   "blurb": "Electronic / club",
+   "tags": [
+    "electronic",
+    "club",
+    "?"
+   ]
+  },
+  {
+   "id": "dean-turnley-sun",
+   "cat": "PRT-26-034",
+   "pos": "B3",
+   "name": "Dean Turnley",
+   "qualifier": null,
+   "billing": "Dean Turnley",
+   "day": "sun",
+   "stage": "warehouse",
+   "start": 810,
+   "end": 870,
+   "blurb": "House DJ",
+   "tags": [
+    "house",
+    "?"
+   ]
+  },
+  {
+   "id": "kaytree-sun",
+   "cat": "PRT-26-035",
+   "pos": "B4",
+   "name": "Kaytree",
+   "qualifier": null,
+   "billing": "Kaytree",
+   "day": "sun",
+   "stage": "ship",
+   "start": 820,
+   "end": 895,
+   "blurb": "Club DJ",
+   "tags": [
+    "club",
+    "?"
+   ]
+  },
+  {
+   "id": "azzecca-sun",
+   "cat": "PRT-26-036",
+   "pos": "B5",
+   "name": "Azzecca",
+   "qualifier": null,
+   "billing": "Azzecca",
+   "day": "sun",
+   "stage": "crane",
+   "start": 870,
+   "end": 930,
+   "blurb": "Tech house / techno DJ",
+   "tags": [
+    "tech house",
+    "techno"
+   ]
+  },
+  {
+   "id": "mind-enterprises-sun",
+   "cat": "PRT-26-037",
+   "pos": "B6",
+   "name": "Mind Enterprises",
+   "qualifier": null,
+   "billing": "Mind Enterprises",
+   "day": "sun",
+   "stage": "pier",
+   "start": 870,
+   "end": 920,
+   "blurb": "Italian indie-disco / synth-pop",
+   "tags": [
+    "indie disco",
+    "synth-pop",
+    "italy"
+   ]
+  },
+  {
+   "id": "silva-bumpa-sun",
+   "cat": "PRT-26-038",
+   "pos": "B7",
+   "name": "Silva Bumpa",
+   "qualifier": null,
+   "billing": "Silva Bumpa",
+   "day": "sun",
+   "stage": "warehouse",
+   "start": 870,
+   "end": 930,
+   "blurb": "UK garage / bumpy house",
+   "tags": [
+    "uk garage",
+    "bumpy house"
+   ]
+  },
+  {
+   "id": "riria-sun",
+   "cat": "PRT-26-039",
+   "pos": "B8",
+   "name": "RIRIA",
+   "qualifier": null,
+   "billing": "RIRIA",
+   "day": "sun",
+   "stage": "ship",
+   "start": 895,
+   "end": 970,
+   "blurb": "Club DJ",
+   "tags": [
+    "club",
+    "?"
+   ]
+  },
+  {
+   "id": "despacio-sun",
+   "cat": "PRT-26-040",
+   "pos": "B9",
+   "name": "Despacio",
+   "qualifier": null,
+   "billing": "Despacio",
+   "day": "sun",
+   "stage": "despacio",
+   "start": 930,
+   "end": 1350,
+   "blurb": "All-vinyl Soulwax/2manydjs + James Murphy soundsystem; disco/eclectic",
+   "tags": [
+    "all-vinyl",
+    "disco",
+    "soundsystem",
+    "james murphy"
+   ],
+   "artists": [
+    "2manydjs",
+    "LCD Soundsystem",
+    "Soulwax"
+   ]
+  },
+  {
+   "id": "channel-tres-sun",
+   "cat": "PRT-26-041",
+   "pos": "B10",
+   "name": "Channel Tres",
+   "qualifier": null,
+   "billing": "Channel Tres",
+   "day": "sun",
+   "stage": "pier",
+   "start": 930,
+   "end": 980,
+   "blurb": "Compton house / hip-hop crossover",
+   "tags": [
+    "house",
+    "hip-hop",
+    "compton"
+   ]
+  },
+  {
+   "id": "brunello-sun",
+   "cat": "PRT-26-042",
+   "pos": "B11",
+   "name": "Brunello",
+   "qualifier": null,
+   "billing": "Brunello",
+   "day": "sun",
+   "stage": "warehouse",
+   "start": 930,
+   "end": 990,
+   "blurb": "Tech house",
+   "tags": [
+    "tech house",
+    "?"
+   ]
+  },
+  {
+   "id": "adela-sun",
+   "cat": "PRT-26-043",
+   "pos": "B12",
+   "name": "ADÉLA",
+   "qualifier": null,
+   "billing": "ADÉLA",
+   "day": "sun",
+   "stage": "crane",
+   "start": 950,
+   "end": 990,
+   "blurb": "Slovak hyperpop / electropop singer",
+   "tags": [
+    "hyperpop",
+    "electropop",
+    "slovakia"
+   ]
+  },
+  {
+   "id": "ear-sun",
+   "cat": "PRT-26-044",
+   "pos": "B13",
+   "name": "EAR",
+   "qualifier": null,
+   "billing": "EAR",
+   "day": "sun",
+   "stage": "ship",
+   "start": 980,
+   "end": 1020,
+   "blurb": "Electronic",
+   "tags": [
+    "art-punk",
+    "electronic"
+   ]
+  },
+  {
+   "id": "sg-lewis-live-sun",
+   "cat": "PRT-26-045",
+   "pos": "B14",
+   "name": "SG Lewis",
+   "qualifier": "live",
+   "billing": "SG Lewis (Live)",
+   "day": "sun",
+   "stage": "pier",
+   "start": 990,
+   "end": 1045,
+   "blurb": "UK nu-disco / dance-pop producer, live",
+   "tags": [
+    "nu-disco",
+    "dance-pop",
+    "live"
+   ]
+  },
+  {
+   "id": "vtss-sun",
+   "cat": "PRT-26-046",
+   "pos": "B15",
+   "name": "VTSS",
+   "qualifier": null,
+   "billing": "VTSS",
+   "day": "sun",
+   "stage": "warehouse",
+   "start": 990,
+   "end": 1050,
+   "blurb": "Polish hard, fast techno",
+   "tags": [
+    "hard techno",
+    "fast",
+    "poland"
+   ]
+  },
+  {
+   "id": "zulan-sun",
+   "cat": "PRT-26-047",
+   "pos": "B16",
+   "name": "Zulan",
+   "qualifier": null,
+   "billing": "Zulan",
+   "day": "sun",
+   "stage": "crane",
+   "start": 1005,
+   "end": 1055,
+   "blurb": "Electronic / club",
+   "tags": [
+    "uk garage",
+    "bassline"
+   ]
+  },
+  {
+   "id": "ben-ufo-sun",
+   "cat": "PRT-26-048",
+   "pos": "B17",
+   "name": "Ben UFO",
+   "qualifier": null,
+   "billing": "Ben UFO",
+   "day": "sun",
+   "stage": "ship",
+   "start": 1030,
+   "end": 1110,
+   "blurb": "Hessle Audio selector; eclectic UK bass/techno",
+   "tags": [
+    "selector",
+    "uk bass",
+    "techno",
+    "hessle audio"
+   ]
+  },
+  {
+   "id": "marlon-hoffstadt-sun",
+   "cat": "PRT-26-049",
+   "pos": "B18",
+   "name": "Marlon Hoffstadt",
+   "qualifier": null,
+   "billing": "Marlon Hoffstadt",
+   "day": "sun",
+   "stage": "warehouse",
+   "start": 1050,
+   "end": 1125,
+   "blurb": "German trance-y house / rave (\"DJ Daddy Trance\")",
+   "tags": [
+    "trance-y house",
+    "rave",
+    "germany"
+   ]
+  },
+  {
+   "id": "mochakk-sun",
+   "cat": "PRT-26-050",
+   "pos": "B19",
+   "name": "Mochakk",
+   "qualifier": null,
+   "billing": "Mochakk",
+   "day": "sun",
+   "stage": "pier",
+   "start": 1055,
+   "end": 1115,
+   "blurb": "Brazilian groovy tech house",
+   "tags": [
+    "groovy tech house",
+    "brazil"
+   ]
+  },
+  {
+   "id": "underscores-sun",
+   "cat": "PRT-26-051",
+   "pos": "B20",
+   "name": "Underscores",
+   "qualifier": null,
+   "billing": "Underscores",
+   "day": "sun",
+   "stage": "crane",
+   "start": 1070,
+   "end": 1120,
+   "blurb": "Hyperpop / electro-pop-punk",
+   "tags": [
+    "hyperpop",
+    "electro pop-punk",
+    "bay area"
+   ]
+  },
+  {
+   "id": "daphni-sun",
+   "cat": "PRT-26-052",
+   "pos": "B21",
+   "name": "Daphni",
+   "qualifier": null,
+   "billing": "Daphni",
+   "day": "sun",
+   "stage": "ship",
+   "start": 1110,
+   "end": 1190,
+   "blurb": "Caribou's club alias; percussive house",
+   "tags": [
+    "percussive house",
+    "caribou alias"
+   ],
+   "artists": [
+    "Daphni",
+    "Caribou"
+   ]
+  },
+  {
+   "id": "tiesto-sun",
+   "cat": "PRT-26-053",
+   "pos": "B22",
+   "name": "Tiësto",
+   "qualifier": null,
+   "billing": "Tiësto",
+   "day": "sun",
+   "stage": "warehouse",
+   "start": 1125,
+   "end": 1215,
+   "blurb": "Trance / big-room EDM legend",
+   "tags": [
+    "trance",
+    "big room",
+    "legend"
+   ]
+  },
+  {
+   "id": "ninajirachi-sun",
+   "cat": "PRT-26-054",
+   "pos": "B23",
+   "name": "Ninajirachi",
+   "qualifier": null,
+   "billing": "Ninajirachi",
+   "day": "sun",
+   "stage": "crane",
+   "start": 1140,
+   "end": 1190,
+   "blurb": "Australian electro / hyperpop-rave producer",
+   "tags": [
+    "electro",
+    "hyperpop",
+    "rave",
+    "australia"
+   ]
+  },
+  {
+   "id": "zara-larsson-sun",
+   "cat": "PRT-26-055",
+   "pos": "B24",
+   "name": "Zara Larsson",
+   "qualifier": null,
+   "billing": "Zara Larsson",
+   "day": "sun",
+   "stage": "pier",
+   "start": 1145,
+   "end": 1205,
+   "blurb": "Swedish pop star",
+   "tags": [
+    "pop",
+    "dance-pop",
+    "sweden"
+   ]
+  },
+  {
+   "id": "kelela-sun",
+   "cat": "PRT-26-056",
+   "pos": "B25",
+   "name": "Kelela",
+   "qualifier": null,
+   "billing": "Kelela",
+   "day": "sun",
+   "stage": "ship",
+   "start": 1205,
+   "end": 1250,
+   "blurb": "Futuristic R&B / electronic",
+   "tags": [
+    "alt r&b",
+    "electronic",
+    "futurist"
+   ]
+  },
+  {
+   "id": "horsegiirl-sun",
+   "cat": "PRT-26-057",
+   "pos": "B26",
+   "name": "horsegiirL",
+   "qualifier": null,
+   "billing": "horsegiirL",
+   "day": "sun",
+   "stage": "crane",
+   "start": 1210,
+   "end": 1260,
+   "blurb": "Berlin hard dance / 'stable techno' persona",
+   "tags": [
+    "hard dance",
+    "stable techno",
+    "berlin"
+   ]
+  },
+  {
+   "id": "overmono-sun",
+   "cat": "PRT-26-058",
+   "pos": "B27",
+   "name": "Overmono",
+   "qualifier": null,
+   "billing": "Overmono",
+   "day": "sun",
+   "stage": "warehouse",
+   "start": 1220,
+   "end": 1280,
+   "blurb": "UK breakbeat / garage-techno duo",
+   "tags": [
+    "breakbeat",
+    "uk garage",
+    "techno"
+   ]
+  },
+  {
+   "id": "swedish-house-mafia-sun",
+   "cat": "PRT-26-059",
+   "pos": "B28",
+   "name": "Swedish House Mafia",
+   "qualifier": null,
+   "billing": "Swedish House Mafia",
+   "day": "sun",
+   "stage": "pier",
+   "start": 1245,
+   "end": 1320,
+   "blurb": "Progressive house supergroup (closer)",
+   "tags": [
+    "progressive house",
+    "big room",
+    "anthems"
+   ]
+  },
+  {
+   "id": "jt-sun",
+   "cat": "PRT-26-060",
+   "pos": "B29",
+   "name": "JT",
+   "qualifier": null,
+   "billing": "JT",
+   "day": "sun",
+   "stage": "ship",
+   "start": 1260,
+   "end": 1290,
+   "blurb": "Rapper (City Girls)",
+   "tags": [
+    "rap",
+    "?"
+   ]
+  },
+  {
+   "id": "parcels-sun",
+   "cat": "PRT-26-061",
+   "pos": "B30",
+   "name": "Parcels",
+   "qualifier": null,
+   "billing": "Parcels",
+   "day": "sun",
+   "stage": "crane",
+   "start": 1290,
+   "end": 1365,
+   "blurb": "Australian disco-funk band",
+   "tags": [
+    "disco-funk",
+    "live band",
+    "australia"
+   ]
+  },
+  {
+   "id": "four-tet-sun",
+   "cat": "PRT-26-062",
+   "pos": "B31",
+   "name": "Four Tet",
+   "qualifier": null,
+   "billing": "Four Tet",
+   "day": "sun",
+   "stage": "warehouse",
+   "start": 1290,
+   "end": 1380,
+   "blurb": "Leftfield electronic / house (live)",
+   "tags": [
+    "leftfield",
+    "house",
+    "folktronica"
+   ]
+  },
+  {
+   "id": "baby-j-sun",
+   "cat": "PRT-26-063",
+   "pos": "B32",
+   "name": "Baby J",
+   "qualifier": null,
+   "billing": "Baby J",
+   "day": "sun",
+   "stage": "ship",
+   "start": 1300,
+   "end": 1350,
+   "blurb": "UK garage / bass-house producer",
+   "tags": [
+    "uk garage",
+    "bass house",
+    "?"
+   ]
+  }
+ ]
+}

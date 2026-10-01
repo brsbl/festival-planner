@@ -1,0 +1,104 @@
+{
+  "style": {
+    "shape": "soft",
+    "wordmark": "solid",
+    "photos": "color",
+    "rules": "dotted",
+    "meter": "dots",
+    "marker": "highlighter",
+    "catalog": "off",
+    "ticker": true,
+    "numbers": "on",
+    "case": "upper",
+    "alternate": true
+  },
+  "fonts": {
+    "display": "Fredoka",
+    "serif": "Fredoka",
+    "body": "Lexend Deca",
+    "mono": "Oswald",
+    "hand": "Fredoka",
+    "google": "family=Fredoka:wdth,wght@75..125,300..700&family=Lexend+Deca:wght@300;400;600&family=Oswald:wght@300;400;500;600"
+  },
+  "day": {
+    "paper": "#BFDDEC",
+    "paper-2": "#F4EDCC",
+    "paper-3": "#FFF9E8",
+    "cream": "#FFF9E8",
+    "ink": "#261A4F",
+    "ink-deep": "#170F33",
+    "ink-70": "#4A3C7C",
+    "ink-50": "#6F64A0",
+    "ink-30": "#8FA9C7",
+    "black": "#161616",
+    "grey": "#4F5A6B",
+    "highlighter": "#FFC32F",
+    "alert": "#F26922",
+    "knock-bg": "#79C531",
+    "knock-fg": "#161616",
+    "spotify": "#1DB954"
+  },
+  "night": {
+    "paper": "#141A1A",
+    "paper-2": "#203030",
+    "paper-3": "#2A3E3D",
+    "cream": "#F8F1D4",
+    "ink": "#F3EAC8",
+    "ink-deep": "#FFFDF4",
+    "ink-70": "#B9C7BE",
+    "ink-50": "#8DA39E",
+    "ink-30": "#3F5A57",
+    "black": "#0B0F0F",
+    "grey": "#A7B3AC",
+    "highlighter": "#7A5FBC",
+    "alert": "#F3788C",
+    "knock-bg": "#7EBFBC",
+    "knock-fg": "#161616",
+    "spotify": "#1ED760"
+  },
+  "texture": false,
+  "wordmark": {
+    "ball": false
+  },
+  "skyline": "none",
+  "copy": {
+    "title": "my roo · {Name} {year}",
+    "side": "DAY {n}",
+    "compiledFor": "radiate positivity, {name}",
+    "sampleTaste": "sample vibes · ask an agent to make it yours",
+    "noTaste": "no vibes yet · ask an agent to make it yours",
+    "lightsOff": "AFTER HOURS",
+    "lightsOn": "SUNRISE SET",
+    "taste": "YOUR ROO",
+    "top": "your top 4",
+    "plan": "YOUR CENTEROO",
+    "catalog": "THE WHOLE FARM",
+    "list": "list",
+    "grid": "grid",
+    "linerNotes": "WHY IT'S YOU",
+    "credits": "FANS ALSO DIG",
+    "footer": "unofficial · radiate positivity",
+    "tiers": {
+      "heavy": {
+        "stamp": "HEADLINER",
+        "filter": "headliners",
+        "hint": "you know every word. camp the rail."
+      },
+      "deep": {
+        "stamp": "TENT PICK",
+        "filter": "tent picks",
+        "hint": "your people's people, under the tent."
+      },
+      "wild": {
+        "stamp": "WANDER IN",
+        "filter": "wander-ins",
+        "hint": "a stretch. the farm rewards the curious."
+      },
+      "new": {
+        "stamp": "NEW ROO",
+        "filter": "new to you",
+        "hint": "no data. radiate positivity."
+      }
+    }
+  }
+}
