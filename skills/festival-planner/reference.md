@@ -97,7 +97,7 @@ Anything left out falls back to a plain, neutral planner (`public/defaults.js`),
 | Key | Where it shows |
 | --- | --- |
 | `title` | Browser tab |
-| `side` | Day prefix (`{letter}` or `{n}`) |
+| `side` | Day prefix (`{letter}` or `{n}`); `""` shows the day label alone, e.g. for a two-weekend festival labelled `W1 FRI` |
 | `taste`, `top`, `plan`, `catalog` | Section names |
 | `map` | Map section name (overrides `festival.map.title`) |
 | `list`, `grid` | Plan view toggles |

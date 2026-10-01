@@ -592,8 +592,8 @@ function renderMast() {
   const words = letters.join("").split(" ").map((w) => { const html = [...w].map((c) => tile(c, at++)).join(""); at++; return html; });
   wm.innerHTML = (words.length > 1 ? words.map((w) => `<span class="word">${w}</span>`).join('<span class="gap" aria-hidden="true"></span>') : words[0])
     + `<span class="yearstack" aria-hidden="true">${[...String(F.year)].map((d) => `<b>${d}</b>`).join("")}</span>`;
-  $("#mast-days").innerHTML = F.days.map((d, i) => `<span class="label${i ? "" : " label--ink"}">${side(i)} · ${esc(d.label)} ${mmdd(d)}</span>`).join("");
-  $("#day-tabs").innerHTML = F.days.map((d, i) => `<button class="label label--btn" role="tab" data-day="${esc(d.id)}">${side(i)} · ${esc(d.label)}</button>`).join("");
+  $("#mast-days").innerHTML = F.days.map((d, i) => `<span class="label${i ? "" : " label--ink"}">${side(i) ? side(i) + " · " : ""}${esc(d.label)} ${mmdd(d)}</span>`).join("");
+  $("#day-tabs").innerHTML = F.days.map((d, i) => `<button class="label label--btn" role="tab" data-day="${esc(d.id)}">${side(i) ? side(i) + " · " : ""}${esc(d.label)}</button>`).join("");
   $("#map-title").textContent = C.map || (F.map && F.map.title) || "THE GROUNDS";
   for (const el of document.querySelectorAll("[data-copy]")) el.textContent = C[el.dataset.copy] ?? el.textContent;
   $("#foot-source").textContent = C.footer + (F.source ? " · times via " + F.source : "");
