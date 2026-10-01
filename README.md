@@ -5,7 +5,7 @@ Your festival schedule, planned from your Spotify. Paste one prompt into [bb](ht
 - dresses the planner in the festival's own look;
 - ranks every act by how well it fits what you listen to.
 
-You get a plan for each day with walking times between stages, a choice of order where your favourites overlap, song previews, and a now-and-next bar that keeps working offline on the grounds.
+You get a plan for each day with walking times between stages, a choice of order where your favourites overlap, song previews, and a now-and-next bar for when you're on the grounds.
 
 ![Five festivals set up from this template: Austin City Limits, Coachella, Bonnaroo, Outside Lands, and Portola 2026](docs/social-preview.jpg)
 
@@ -19,6 +19,8 @@ You need a Mac with Apple silicon (or Linux), and a Claude or ChatGPT plan.
 4. **Paste this into the thread:**
 
    > Set up the festival planner from https://github.com/brsbl/festival-planner for **&lt;festival&gt; &lt;year&gt;**, and make it mine from my Spotify.
+
+**Agents:** clone this repository and follow [`skills/festival-planner/SKILL.md`](skills/festival-planner/SKILL.md).
 
 The agent checks in as it goes: with the lineup it found, with screenshots of the look, and with your ranked acts. It also asks which acts you won't miss and how to read your Spotify.
 
@@ -56,6 +58,8 @@ The screenshots use a made-up listener. These are unofficial fan planners, not a
 - **Overlaps** between acts you've marked go show ⇅. Swap to choose who you see first; the times follow.
 - **Grid** puts every stage side by side; tap a set to cycle go, maybe, skip.
 - **The catalogue** lists every act with its match, why it matched, a Spotify link, and ▶ previews.
+
+**On your phone:** sign bb in to your bb account to turn on remote access, then open `https://<your handle>.getbb.app` on your phone and pick the festival from the sidebar. bb has to stay running on your computer.
 
 ## How it's built
 

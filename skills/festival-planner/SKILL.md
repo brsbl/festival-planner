@@ -14,6 +14,8 @@ Tell them up front what the whole job involves: about an hour, mostly research. 
 
 ## 0. Find their copy
 
+Check `node -v` first; the scripts need Node 20 or later. If it's missing or older, ask before installing it: `brew install node` if they use Homebrew, otherwise the macOS installer from nodejs.org, which they open themselves.
+
 `bb festival list` shows what's installed and `bb festival status` shows each festival's folder. If those folders are in a copy they own, work there. Otherwise, or if `bb festival` doesn't exist yet:
 
 ```sh

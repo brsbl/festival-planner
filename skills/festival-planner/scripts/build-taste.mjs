@@ -4,7 +4,7 @@
 //   node build-taste.mjs <work> --profile           print what your library says, to write lanes.json from
 //   node build-taste.mjs <work> --name "<first name>"
 //
-// Inputs: spotify/liked.json, spotify/artists.json, spotify/top.json (if signed in), lanes.json, and the
+// Inputs: spotify/artists.json, spotify/liked.json and spotify/top.json (if read), lanes.json, and the
 // installed festival's lineup (--festival <slug> when more than one is installed), or --lineup <file>.
 // Score (0–98, tapering above 70) = direct (the stronger of: songs you've liked by the act, recent likes counting extra;
 //                         or how high the act is in your top artists and top tracks)
@@ -22,7 +22,7 @@
 //   credit extra artist names that count as liking this act (members, aliases)
 //   told   how many of the act's songs the person says they like that aren't in these likes
 //   skip   Spotify search queries whose match is the wrong artist
-import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { loadLineup, trustedHit } from "./lib.mjs";
 
@@ -35,7 +35,7 @@ if (!work) {
 }
 const read = (...p) => JSON.parse(readFileSync(join(work, ...p), "utf8"));
 const lineup = loadLineup(flag("--lineup"), flag("--festival"));
-const liked = read("spotify", "liked.json").map((t, i) => ({ ...t, i }));
+const liked = (existsSync(join(work, "spotify", "liked.json")) ? read("spotify", "liked.json") : []).map((t, i) => ({ ...t, i }));
 const harvest = read("spotify", "artists.json");
 let lanes = {};
 try { lanes = Object.fromEntries(Object.entries(read("lanes.json")).map(([k, v]) => [k.toLowerCase(), v])); } catch {}
