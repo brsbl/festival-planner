@@ -1,11 +1,11 @@
 # Festival Planner
 
-Your festival schedule, planned from your Spotify. Paste one prompt into [bb](https://getbb.app) and an agent:
+Customized festival planner, built from your Spotify history. Paste one prompt into [bb](https://getbb.app) and an agent:
 - finds the festival's set times;
-- dresses the planner in the festival's own look;
+- themes the planner in the festival's own look;
 - ranks every act by how well it fits what you listen to.
 
-You get a plan for each day with walking times between stages, a choice of order where your favourites overlap, song previews, and a now-and-next bar for when you're on the grounds.
+You get a plan for each day with walking times between stages, song previews for artists you may not know, and a banner of who's on now vs next for when you're on the grounds.
 
 ![Five festivals set up from this template: Austin City Limits, Coachella, Bonnaroo, Outside Lands, and Portola 2026](docs/social-preview.jpg)
 
