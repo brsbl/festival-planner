@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+      - name: Festival folders are built and branded
+        run: |
+          for f in festivals/*/lineup.json examples/*/lineup.json; do node skills/festival-planner/scripts/build-lineup.mjs "$f"; done
+          node skills/festival-planner/scripts/brand.mjs
+          git diff --exit-code festivals examples package.json
+          diff -r festivals/portola-2026 examples/portola-2026
