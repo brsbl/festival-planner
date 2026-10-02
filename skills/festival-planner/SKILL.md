@@ -167,7 +167,15 @@ node $S/import.mjs <work> --festival <slug>
 
 **Check in:** have them reload the festival's page, show the top of the ranked list, and ask what looks off. Adjust `lanes.json` and rerun these three. Offer to delete `<work>/spotify` when they're happy; it holds their song list.
 
-**Offer it on their phone.** Once the check-in is done, ask whether they want the planner on their phone. If they do, run `bb connect status` to see whether remote access is on. If it isn't, walk them through it: in bb, open **Settings → Remote access** and follow it to sign in and pick a handle. Then they open `https://<handle>.getbb.app` on their phone and pick the festival in the sidebar. Remind them to keep their computer on and plugged in, with bb open, while using the planner on their phone.
+### Open it on their phone
+
+Once the check-in is done, ask: "Want to use this on your phone? Your computer will need to stay on and plugged in, with bb open." If they agree, handle the setup yourself. Give them only the next action they need to take, and wait for their reply before continuing.
+
+1. **Check first.** Run `bb connect status --json`. If `state` is `connected`, use its `url` and skip sign-in. Keep their existing account and address.
+2. **Open sign-in if needed.** If `paired` is false, check `bb account status --json`. Reuse a pending sign-in; if the account is still loading, wait for it rather than replacing it. When signed out with no pending sign-in, run `bb account login --json`. Open the returned sign-in link in a visible, user-controlled bb browser tab, using `bb browser create … --reveal` as in the Spotify step. Say: "I opened the bb sign-in page. Sign in with GitHub and tell me when you're done." If it asks them to choose a handle or approve connecting this bb, guide that screen one action at a time. Wait for them to finish.
+3. **Finish the connection.** After sign-in, run `bb connect status --json` again. If `enabled` is false, run `bb connect on --json`; their agreement to phone access covers this. Wait for `state: connected` and a nonempty `url`. If it reports an error, resolve that before saying the phone link is ready. Do not ask them to run terminal commands or copy pairing codes.
+4. **Give them their link.** Send the exact returned `url` as a clickable Markdown link and say: "Open this link in your phone's browser." If it asks them to sign in, tell them to use the same GitHub account. Once bb is open, tell them to open the sidebar and select their festival by its actual name. Ask them to confirm they see their plan before calling setup complete.
+5. **Leave one reminder.** "Keep your computer on and plugged in, with bb open, while you're using the planner on your phone."
 
 ## Later
 

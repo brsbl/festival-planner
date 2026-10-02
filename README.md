@@ -40,7 +40,7 @@ The agent opens [Spotify](https://open.spotify.com) in bb's browser for you. Sig
 
 - Mark acts ✓ go, ? maybe, or ✕ skip and the plan reroutes.
 - **Grid** shows every stage; the **catalogue** lists every act with previews.
-- **On your phone:** the agent will walk you through how to get this set up on your phone at the end.
+- **On your phone:** the agent sets up remote access, opens the bb sign-in page if needed, and gives you a link to open in your phone's browser. Sign in with the same GitHub account if asked, then select your festival in the sidebar.
 
 ## Develop
 
