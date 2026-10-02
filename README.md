@@ -11,6 +11,8 @@ You get a plan for each day with walking times between stages, song previews for
 
 ## Start
 
+Requires **Claude Code or Codex installed and signed in locally** on your computer.
+
 1. [Download bb](https://getbb.app).
 2. Paste this into a new thread:
 
