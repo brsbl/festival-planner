@@ -18,6 +18,8 @@ You get a plan for each day with walking times between stages, song previews for
 Set up the festival planner from https://github.com/brsbl/festival-planner for <festival> <year>, and make it mine from my Spotify.
 ```
 
+For phone access, keep your computer on and plugged in, with bb open.
+
 **Agents:** follow [`skills/festival-planner/SKILL.md`](skills/festival-planner/SKILL.md) from step 0.
 
 ## Spotify

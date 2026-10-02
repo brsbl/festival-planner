@@ -12,6 +12,8 @@ Field-by-field formats are in [reference.md](reference.md). Scripts are in `scri
 
 Tell them up front what the whole job involves: for a festival in `examples/`, under half an hour, most of it reading their Spotify; for a new one, an hour or two, mostly finding set times and designing the look. Check in with them at the three marked points rather than at the end.
 
+Tell them up front that phone access requires their computer to stay on and plugged in, with bb open.
+
 **Do what you can; walk them through the rest.** They may never have used bb or a terminal. Do every step you can yourself, and say what you're about to install or change before you do it. When only they can do something (click a system dialog, sign in, approve a prompt, choose), give one short numbered instruction at a time, say exactly what they'll see, and wait for them to say it's done before the next one.
 
 ## 0. Get ready
@@ -122,15 +124,16 @@ If the planner was installed from git rather than from a copy, run `bb plugin re
 
 ## 2. Make it theirs
 
-**Spotify.** Say what you'll read: their liked songs, and their top artists and tracks for the last month, six months, and all time. Then use the first of these that fits. Every way except playlists needs the bb desktop app.
+**Spotify.** Say what you'll read: their liked songs, and their top artists and tracks for the last month, six months, and all time. Reading their private listening history needs the bb desktop app.
 
-- **bb's browser is already signed in.** Ask them to open a browser tab in bb and go to open.spotify.com. If they see their library, use that tab.
-- **Copy their everyday browser's sign-in (the usual way).** Most people are already signed in to Spotify in Chrome, Arc, Brave, Edge, Firefox, or Safari. Before asking, tell them plainly: this copies *every* cookie in that browser profile into bb's browser, not only Spotify's, so bb's browser will be signed in wherever that browser is. If they'd rather not, use the next option. Then, one step at a time:
-  1. You run `bb browser instances --host <host>` for the window's `--instance` and `--generation`, then `bb browser import-sources --host <host> --instance <id> --generation <gen>`, which lists the browsers and profiles it can copy from. Ask which one they use for Spotify if there's more than one.
-  2. They quit that browser completely (its menu → Quit, or ⌘Q; closing the window isn't enough). The copy refuses while it's running.
-  3. You run `bb browser import-cookies --host <host> --instance <id> --generation <gen> --from <source> --profile <dir>`. Tell them what will pop up first: for Chrome, Arc, Brave, or Edge, macOS asks for their login password to let bb read that browser's "Safe Storage" key in Keychain, and they click **Allow**. Firefox asks nothing. Safari needs Full Disk Access: walk them through System Settings → Privacy & Security → Full Disk Access, turning on bb, then run it again.
-  4. They open a browser tab in bb and go to open.spotify.com. Ask them to confirm they see their library, not a sign-in button. They can reopen their own browser now.
-- **Sign in once in bb's browser.** Ask them to open a browser tab in bb, go to open.spotify.com, click **Log in**, and tell you when they see their library.
+**Sign in directly in bb's browser.** This is the default path. Give one instruction at a time and wait for them to finish before the next:
+
+1. Ask them to open a browser tab in bb and go to open.spotify.com.
+2. If they already see their library, use that tab. Otherwise ask them to click **Log in** and sign in to Spotify themselves.
+3. Ask them to confirm they see their library before reading their Spotify data.
+
+Do not copy cookies from another browser. If they cannot sign in or prefer not to, use public playlists instead.
+
 - **Public playlists, no sign-in.** Ask for public playlists that sound like them: their own, or Liked Songs copied into a playlist. A few hundred songs is enough; a single editorial playlist isn't. Use a headless session (`bb browser-automation open --backend local --headless --machine <host>`), whose page is `main`. This is the only way when they use bb on the web or a phone.
 - **No Spotify.** Run only `--only artists`, ask which acts and artists they love, and record it in `lanes.json` with `pin` and `told`.
 
@@ -162,7 +165,7 @@ node $S/import.mjs <work> --festival <slug>
 
 **Check in:** have them reload the festival's page, show the top of the ranked list, and ask what looks off. Adjust `lanes.json` and rerun these three. Offer to delete `<work>/spotify` when they're happy; it holds their song list.
 
-**Offer it on their phone.** Once the check-in is done, ask whether they want the planner on their phone. If they do, run `bb connect status` to see whether remote access is on. If it isn't, walk them through it: in bb, open **Settings → Remote access** and follow it to sign in and pick a handle. Then they open `https://<handle>.getbb.app` on their phone and pick the festival in the sidebar. bb has to stay open on the computer.
+**Offer it on their phone.** Once the check-in is done, ask whether they want the planner on their phone. If they do, run `bb connect status` to see whether remote access is on. If it isn't, walk them through it: in bb, open **Settings → Remote access** and follow it to sign in and pick a handle. Then they open `https://<handle>.getbb.app` on their phone and pick the festival in the sidebar. Remind them to keep their computer on and plugged in, with bb open, while using the planner on their phone.
 
 ## Later
 
