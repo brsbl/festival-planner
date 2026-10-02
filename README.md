@@ -24,7 +24,7 @@ For phone access, keep your computer on and plugged in, with bb open.
 
 ## Spotify
 
-Sign in at [open.spotify.com](https://open.spotify.com) in a bb browser tab when the agent asks. Your data stays on your machine.
+The agent opens [Spotify](https://open.spotify.com) in bb's browser for you. Sign in when it asks, then tell it when you see your library. Your data stays on your machine.
 
 ## Examples
 

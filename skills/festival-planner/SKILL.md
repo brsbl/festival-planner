@@ -126,18 +126,20 @@ If the planner was installed from git rather than from a copy, run `bb plugin re
 
 **Spotify.** Say what you'll read: their liked songs, and their top artists and tracks for the last month, six months, and all time. Reading their private listening history needs the bb desktop app.
 
-**Sign in directly in bb's browser.** This is the default path. Give one instruction at a time and wait for them to finish before the next:
+**Open Spotify for them.** On desktop, this is the default path. Reuse the Spotify tab you already opened for this setup; otherwise create one yourself. Resolve their desktop host, then run `bb browser instances --host <host> --json` for its instance and generation. Use their chosen window if there are several, and the current thread id from `bb status --json`:
 
-1. Ask them to open a browser tab in bb and go to open.spotify.com.
-2. If they already see their library, use that tab. Otherwise ask them to click **Log in** and sign in to Spotify themselves.
-3. Ask them to confirm they see their library before reading their Spotify data.
+```sh
+bb browser create --host <host> --instance <instance-id> --generation <generation> --thread <thread-id> --url https://open.spotify.com --reveal --json
+```
+
+Keep the returned `tab.tabId`. Leave the tab under user control while they sign in; do not start an automation session yet. Tell them: "I opened Spotify in bb's browser panel. Click **Log in**, sign in, and tell me when you see your library." If they already see their library, skip signing in. Wait for their confirmation before reading their Spotify data. If the panel is not visible, give the single instruction to open this thread's browser panel; do not make them create another tab or enter the URL.
 
 Do not copy cookies from another browser. If they cannot sign in or prefer not to, use public playlists instead.
 
 - **Public playlists, no sign-in.** Ask for public playlists that sound like them: their own, or Liked Songs copied into a playlist. A few hundred songs is enough; a single editorial playlist isn't. Use a headless session (`bb browser-automation open --backend local --headless --machine <host>`), whose page is `main`. This is the only way when they use bb on the web or a phone.
 - **No Spotify.** Run only `--only artists`, ask which acts and artists they love, and record it in `lanes.json` with `pin` and `told`.
 
-With a signed-in tab, hand it to a desktop automation session; the `browser-automation` skill covers `--backend desktop … --tab <tab-id>`. Get the page name with `bb browser-automation pages <session>`.
+After they confirm sign-in, attach a desktop automation session to that same tab using the saved id; the `browser-automation` skill covers `--backend desktop … --tab <tab-id>`. Get the page name with `bb browser-automation pages <session>`. Do not open a fresh tab or profile, which would lose their sign-in.
 
 `<work>` is a scratch folder outside any repository, one per festival (e.g. `~/festival-work/<slug>`). Browser sessions close after 5 idle minutes or 30 in total, so run this right after opening one:
 
