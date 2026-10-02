@@ -1,6 +1,6 @@
 # Festival Planner
 
-Customized festival planner, built from your Spotify history. Paste one prompt into [bb](https://getbb.app) and an agent:
+Customized festival planner, built from your Spotify history. Paste one prompt into [bb](https://getbb.app/?utm_source=github&utm_campaign=festival-planner) and an agent:
 - finds the festival's set times;
 - themes the planner in the festival's own look;
 - ranks every act by how well it fits what you listen to.
@@ -13,7 +13,7 @@ You get a plan for each day with walking times between stages, song previews for
 
 Requires **Claude Code or Codex installed and signed in locally** on your computer.
 
-1. [Download bb](https://getbb.app).
+1. [Download bb](https://getbb.app/?utm_source=github&utm_campaign=festival-planner).
 2. Paste this into a new thread:
 
 ```text
